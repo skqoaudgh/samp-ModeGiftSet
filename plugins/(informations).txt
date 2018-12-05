@@ -1,0 +1,20 @@
+[CrashDetect 4.18]
+http://forum.sa-mp.com/showthread.php?t=262796
+https://github.com/Zeex/samp-plugin-crashdetect/releases
+
+[Audio Plugin v0.5 R2]
+http://forum.sa-mp.com/showthread.php?t=82162
+
+[Streamer Plugin v2.8.2] [vcredist 2015 x86]
+http://forum.sa-mp.com/showthread.php?t=102865
+https://github.com/samp-incognito/samp-streamer-plugin/releases
+https://github.com/samp-incognito/samp-streamer-plugin/wiki
+https://code.google.com/archive/p/samp-streamer-plugin/downloads (SA-MP 구버전 용)
+
+[MySQL Plugin R41-2]
+http://forum.sa-mp.com/showthread.php?t=56564
+https://github.com/pBlueG/SA-MP-MySQL/releases
+http://wiki.sa-mp.com/wiki/MySQL
+
+[MapAndreas v1.2.1]
+http://forum.sa-mp.com/showthread.php?t=275492
