@@ -20,9 +20,9 @@
 
 //-----/ Pre-Defines /
 	//--/ Mode Information /
-#define MODE_NAME				"Title"
+#define MODE_NAME				"Anything You wAnt (AYA)"
 #define MODE_VERSION			"v1.0.001"
-#define SERVER_HOSTNAME			"Acu Server [acu.pe.kr]"
+#define SERVER_HOSTNAME			"[GLOBAL] Do Anything you want"
 
 
 
@@ -45,6 +45,7 @@
 #include "./Modules/Cores/RedefinedFunc.pwn"
 #include "./Modules/Cores/ServerSide.pwn"
 #include "./Modules/Cores/Userdata.pwn"
+#include "./Modules/Cores/Object.pwn"
 		// Functions //
 #include "./Modules/Functions/ExtendedFunc.pwn"
 
@@ -84,6 +85,7 @@ public OnGameModeInit()
 	AddModule("MySQL");
 	AddModule("ServerSide");
 	AddModule("Userdata");
+	AddModule("Object");
 		// Call Modules //
 	InitializeModules();
 	//----------------------------------------

@@ -6,12 +6,13 @@
  *			v1.0.0
  *
  *
- *		First Release:		2017/02/08
- *		Last Update:		2017/02/08
+ *		First Release:		2018/12/07
+ *		Last Update:		2018/12/07
  *
  *
  *
  *		Coded by Acu 2006-2017 @ all rights reserved.
+ *      Updated by Cada
  *			acu.pe.kr@gmail.com
  *			http://acu.pe.kr
  *
@@ -71,7 +72,7 @@ public InitHandler_MySQL()
 {
 	// MySQL 기본 접속 정보 입력
 	if(MySQL_Port == 0)
-		SetMySQLConnectionInfo("127.0.0.1","samp_test","zKcUGJQbcTvPqbaj","samp_test");
+		SetMySQLConnectionInfo("127.0.0.1","root","23468917a!","Gift");
 	//-----
 	printf("---------------------------------");
 	printf("[mysql] Connecting to DB server...");

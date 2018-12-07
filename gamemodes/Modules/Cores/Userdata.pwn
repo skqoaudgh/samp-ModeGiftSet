@@ -6,12 +6,13 @@
  *			v1.0.0
  *
  *
- *		First Release:		2017/02/08
- *		Last Update:		2017/02/08
+ *		First Release:		2018/12/07
+ *		Last Update:		2018/12/07
  *
  *
  *
  *		Coded by Acu 2006-2017 @ all rights reserved.
+ *      Updated by Cada
  *			acu.pe.kr@gmail.com
  *			http://acu.pe.kr
  *
@@ -182,7 +183,7 @@ public DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[])
 stock ShowPlayerLoginDialog(playerid,bool:failed=false)
 {
 	new string[512],button[10];
-	strcat(string,"{FF5A00}개발중인 아쿠 서버{FFFFFF}에 오신 걸 환영합니다!\n");
+	strcat(string,"{FF5A00}Anything You wAnt 서버에{FFFFFF}에 오신 걸 환영합니다!\n");
 	strcat(string,"\n");
 	if(IsPlayerRegistered(playerid))
 	{
@@ -300,9 +301,12 @@ public LoadPlayerDataQE(playerid)
 	;
 	if(cache_num_rows())
 	{
+	    cache_get_value_name_int(0,"Money",value_int); SetPVarInt(playerid,"Money",value_int);
+	    /*
 		cache_get_value_name(0,"Value_S",string); SetPVarString(playerid,"Value_S",string);
 		cache_get_value_name_int(0,"Value_I",value_int); SetPVarInt(playerid,"Value_I",value_int);
 		cache_get_value_name_float(0,"Value_F",value_float); SetPVarFloat(playerid,"Value_F",value_float);
+		*/
 		//-----
 		SetPlayerMoney(playerid,GetPVarInt(playerid,"Money"));
 		SetPlayerScore(playerid,GetPVarInt(playerid,"Level"));
@@ -320,9 +324,12 @@ stock SavePlayerData(playerid)
 		format(string,sizeof(string),"UPDATE user_data SET");
 		format(string,sizeof(string),"%s IP=INET_ATON('%s')",string,P_IP[playerid]);
 		//-----
+		format(string,sizeof(string),"%s,Money=%d",string,GetPVarInt(playerid,"Money"));
+		/*
 		format(string,sizeof(string),"%s,Value_S='%s'",string,GetPVarStringEx(playerid,"Value_S"));
 		format(string,sizeof(string),"%s,Value_I=%d",string,GetPVarInt(playerid,"Value_I"));
 		format(string,sizeof(string),"%s,Value_F=%.1f",string,GetPVarFloat(playerid,"Value_F"));
+		*/
 		//-----
 		format(string,sizeof(string),"%s,LastUpdate=NOW()",string);
 		format(string,sizeof(string),"%s WHERE ID = %d",string,GetPVarInt(playerid,"ID"));
@@ -359,7 +366,7 @@ stock SpawnPlayerEx(playerid)
 	SetSpawnInfo(playerid, 0,0, 0.0,0.0,500.0,0.0, 0,0,0,0,0,0);
 	SpawnPlayer(playerid);
 	//-----
-	SetPlayerPos(playerid, 819.9490,-1364.2925,-0.5078);
-	SetPlayerFacingAngle(playerid, 317.2568);
-	SetPlayerSkin(playerid, 121);
+	SetPlayerPos(playerid, 1479.5483,-1600.0005,13.5469);
+	SetPlayerFacingAngle(playerid, 180.2658);
+	SetPlayerSkin(playerid, 0);
 }

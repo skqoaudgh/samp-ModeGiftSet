@@ -51,7 +51,7 @@ public InitHandler_ServerSide()
 	format(string,sizeof(string),"* %s %s",MODE_NAME,MODE_VERSION);
 	SetGameModeText(string);
 	SendRconCommand("hostname "SERVER_HOSTNAME"");
-	SendRconCommand("mapname Los Angeles");
+	SendRconCommand("mapname GLOBAL");
 	//-----
 	// SA:MP Options
 	SetWorldTime(12);
