@@ -20,8 +20,8 @@
 
 
 //-----/ Defines /
-#define MAX_MAP                     1
-#define DialogID_Map(%1)			10100 + %1
+#define MAX_MAP                     2
+#define DialogID_Map(%1)			10200 + %1
 
 
 
@@ -45,8 +45,11 @@ new
 forward AddHandler_Map();
 forward InitHandler_Map();
 forward CommandHandler_Map(playerid,cmdtext[]);
-forward DisconnectHandler_Map(playerid,reason);
 forward DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[]);
+forward ConnectHandler_Map(playerid);
+forward DisconnectHandler_Map(playerid,reason);
+forward SpawnHandler_Map(playerid);
+
 	//--/ Functions /
 forward UnFreezePlayer(playerid);
 
@@ -57,8 +60,10 @@ public AddHandler_Map()
 {
     AddHandler("Map",InitHandler);
     AddHandler("Map",CommandHandler);
+    AddHandler("Map",ConnectHandler);
     AddHandler("Map",DisconnectHandler);
     AddHandler("Map",DialogHandler);
+    AddHandler("Map",SpawnHandler);
 	//AddTimer("WTF",TIMER_1S_PLAYER);
 }
 
@@ -70,15 +75,19 @@ public InitHandler_Map()
 	    MapInfo[i][Type] = 0;
 	    MapInfo[i][PlayerCount] = 0;
 	}
-	strmid(MapInfo[0][Name], "정자의 모험 리메이크", 0, strlen("정자의 모험 리메이크"));
+	format(MapInfo[0][Name],128,"로비");
+	format(MapInfo[1][Name],128,"정자의 모험 : 리메이크");
 }
-
+//-----/ ConnectHandler_Map /----------------------------------------------
+public ConnectHandler_Map(playerid)
+{
+	MapInfo[0][PlayerCount] ++;
+}
 //-----/ DisconnectHandler_Map /------------------------------------------------
 public DisconnectHandler_Map(playerid,reason)
 {
 	KillTimer(FreezeTimer[playerid]);
 }
-
 //-----/ CommandHandler_Map /---------------------------------------------------
 public CommandHandler_Map(playerid,cmdtext[]) //return 1: processed
 {
@@ -95,7 +104,22 @@ public CommandHandler_Map(playerid,cmdtext[]) //return 1: processed
 	}
 	return 0;
 }
+//-----/ SpawnHandler_Map /---------------------------------------------------
+public SpawnHandler_Map(playerid)
+{
+	if(GetPlayerMap(playerid) == 0)
+	{
+		SetPlayerColor(playerid,COLOR_WHITE);
+		
+		SetPlayerPos(playerid, 1479.5483,-1600.0005,13.5469);
+		SetPlayerFacingAngle(playerid, 180.2658);
+		SetPlayerSkin(playerid, 0);
 
+		SetPlayerHealth(playerid, 100);
+		SetPlayerInterior(playerid, 0);
+		SetPlayerVirtualWorld(playerid, 0);
+	}
+}
 //-----/ DialogHandler_Map /---------------------------------------------------
 public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 {
@@ -103,7 +127,14 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 	{
 		case DialogID_Map(0): // 맵 목록
 		{
-			
+			if(response)
+			{
+			    new beforeIdx = GetPVarInt(playerid,"MapNumber");
+				SetPVarInt(playerid,"MapNumber",listitem);
+				MapInfo[listitem][PlayerCount] ++;
+				MapInfo[beforeIdx][PlayerCount] --;
+				SpawnPlayer(playerid);
+			}
 		}
 	}
 	return 0;
@@ -114,7 +145,7 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 stock FreezePlayer(playerid, time)
 {
     TogglePlayerControllable(playerid,0);
-	FreezeTimer[playerid] = SetTimerEx("UnFreezePlayer",time*1000,"d",playerid);
+	FreezeTimer[playerid] = SetTimerEx("UnFreezePlayer",time*1000,0,"d",playerid);
 }
 
 //-----/ UnFreezePlayer /-------------------------------------------------------
@@ -145,15 +176,12 @@ stock GetPlayerMap(playerid)
 //-----/ ShowPlayerMapList /----------------------------------------------------
 stock ShowPlayerMapList(playerid)
 {
-	new string[1024], temp[56];
+	new string[2048], temp[128];
+	format(string,sizeof(string),""C_PASTEL_YELLOW"번호\t"C_PASTEL_YELLOW"이름\t"C_PASTEL_YELLOW"인원\n");
 	for(new i=0; i<MAX_MAP; i++)
 	{
-	    format(temp,sizeof(temp),"%d\t",i+1);
-		strcat(string,temp);
-	    format(temp,sizeof(temp),"%s\t",MapInfo[i][Name]);
-		strcat(string,temp);
-	    format(temp,sizeof(temp),"%d\n",MapInfo[i][PlayerCount]);
+	    format(temp,sizeof(temp),"%d\t%s\t%d\n",i,MapInfo[i][Name],MapInfo[i][PlayerCount]);
 		strcat(string,temp);
 	}
-	ShowPlayerDialog(playerid, DialogID_Map(0), DIALOG_STYLE_TABLIST_HEADERS, ""C_PASTEL_YELLOW"번호\t"C_PASTEL_YELLOW"이름\t"C_PASTEL_YELLOW"인원", string, "확인","닫기");
+	ShowPlayerDialog(playerid, DialogID_Map(0), DIALOG_STYLE_TABLIST_HEADERS, ""C_PASTEL_GREEN"맵 선택",string, "확인","닫기");
 }

@@ -104,6 +104,7 @@ public InitHandler_MySQL()
 		printf("---------------------------------");
 		printf(" %s %s",MODE_NAME,MODE_VERSION);
 		printf("  Coded by Acu");
+		printf("  Updated by Cada");
 		printf("  acu.pe.kr@gmail.com");
 		printf("---------------------------------\n");
 	}

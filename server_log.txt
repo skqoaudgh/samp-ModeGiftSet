@@ -3517,3 +3517,2031 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [13:39:11] [debug] 66f00000 - 66f17000 MapAndreas.DLL
 [13:39:11] [debug] 6e960000 - 6e9af000 fwpuclnt.dll
 [13:39:11] [debug] 743a0000 - 743b9000 bcrypt.dll
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:21:36] password = ""  (string)
+[18:21:36] 
+[18:21:36] Server Plugins
+[18:21:36] --------------
+[18:21:36]  Loading plugin: crashdetect
+[18:21:36]   CrashDetect plugin 4.19
+[18:21:36]   Loaded.
+[18:21:36]  Loading plugin: mysql
+[18:21:36]  >> plugin.mysql: R41-4 successfully loaded.
+[18:21:36]   Loaded.
+[18:21:36]  Loading plugin: streamer
+[18:21:36] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:21:36]   Loaded.
+[18:21:36]  Loading plugin: audio
+[18:21:36] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:21:36]   Loaded.
+[18:21:36]  Loading plugin: MapAndreas
+[18:21:36]   Loaded.
+[18:21:36]  Loaded 5 plugins.
+
+[18:21:36] 
+[18:21:36] Filterscripts
+[18:21:36] ---------------
+[18:21:36]   Loading filterscript 'Acu.amx'...
+[18:21:36]   Loaded 1 filterscripts.
+
+[18:21:36] ---------------------------------
+[18:21:36] [mysql] Connecting to DB server...
+[18:21:36] 127.0.0.1
+[18:21:36] *** Audio Plugin: Started TCP server on port 7777
+[18:21:36] [mysql] Connected!
+[18:21:36] [mysql] Tables not exist. Creating...
+[18:21:36] [mysql] Done.
+[18:21:36] ---------------------------------
+[18:21:37] 
+
+[18:21:37] ---------------------------------
+[18:21:37]  Anything You wAnt (AYA) v1.0.001
+[18:21:37]   Coded by Acu
+[18:21:37]   acu.pe.kr@gmail.com
+[18:21:37] ---------------------------------
+
+[18:21:37] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:27:24] password = ""  (string)
+[18:27:24] 
+[18:27:24] Server Plugins
+[18:27:24] --------------
+[18:27:24]  Loading plugin: crashdetect
+[18:27:24]   CrashDetect plugin 4.19
+[18:27:24]   Loaded.
+[18:27:24]  Loading plugin: mysql
+[18:27:24]  >> plugin.mysql: R41-4 successfully loaded.
+[18:27:24]   Loaded.
+[18:27:24]  Loading plugin: streamer
+[18:27:24] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:27:24]   Loaded.
+[18:27:24]  Loading plugin: audio
+[18:27:24] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:27:24]   Loaded.
+[18:27:24]  Loading plugin: MapAndreas
+[18:27:24]   Loaded.
+[18:27:24]  Loaded 5 plugins.
+
+[18:27:24] 
+[18:27:24] Filterscripts
+[18:27:24] ---------------
+[18:27:24]   Loading filterscript 'Acu.amx'...
+[18:27:24]   Loaded 1 filterscripts.
+
+[18:27:24] ---------------------------------
+[18:27:24] [mysql] Connecting to DB server...
+[18:27:24] *** Audio Plugin: Started TCP server on port 7777
+[18:27:24] [mysql] Connected!
+[18:27:24] ---------------------------------
+[18:27:24] 
+
+[18:27:24] ---------------------------------
+[18:27:24]  Anything You wAnt (AYA) v1.0.001
+[18:27:24]   Coded by Acu
+[18:27:24]   acu.pe.kr@gmail.com
+[18:27:25] ---------------------------------
+
+[18:27:25] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:28:37] password = ""  (string)
+[18:28:37] 
+[18:28:37] Server Plugins
+[18:28:37] --------------
+[18:28:37]  Loading plugin: crashdetect
+[18:28:37]   CrashDetect plugin 4.19
+[18:28:37]   Loaded.
+[18:28:37]  Loading plugin: mysql
+[18:28:37]  >> plugin.mysql: R41-4 successfully loaded.
+[18:28:37]   Loaded.
+[18:28:37]  Loading plugin: streamer
+[18:28:37] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:28:37]   Loaded.
+[18:28:37]  Loading plugin: audio
+[18:28:37] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:28:37]   Loaded.
+[18:28:37]  Loading plugin: MapAndreas
+[18:28:37]   Loaded.
+[18:28:37]  Loaded 5 plugins.
+
+[18:28:37] 
+[18:28:37] Filterscripts
+[18:28:37] ---------------
+[18:28:37]   Loading filterscript 'Acu.amx'...
+[18:28:37]   Loaded 1 filterscripts.
+
+[18:28:37] ---------------------------------
+[18:28:37] *** Audio Plugin: Started TCP server on port 7777
+[18:28:37] [mysql] Connecting to DB server...
+[18:28:37] [mysql] Connected!
+[18:28:37] ---------------------------------
+[18:28:37] 
+
+[18:28:37] ---------------------------------
+[18:28:37]  ALL IN ONE v1.0.001
+[18:28:37]   Coded by Acu
+[18:28:37]   Updated by Cada
+[18:28:37]   acu.pe.kr@gmail.com
+[18:28:37] ---------------------------------
+
+[18:28:38] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:31:31] password = ""  (string)
+[18:31:31] 
+[18:31:31] Server Plugins
+[18:31:31] --------------
+[18:31:31]  Loading plugin: crashdetect
+[18:31:31]   CrashDetect plugin 4.19
+[18:31:31]   Loaded.
+[18:31:31]  Loading plugin: mysql
+[18:31:31]  >> plugin.mysql: R41-4 successfully loaded.
+[18:31:31]   Loaded.
+[18:31:31]  Loading plugin: streamer
+[18:31:31] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:31:31]   Loaded.
+[18:31:31]  Loading plugin: audio
+[18:31:31] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:31:31]   Loaded.
+[18:31:31]  Loading plugin: MapAndreas
+[18:31:31]   Loaded.
+[18:31:31]  Loaded 5 plugins.
+
+[18:31:32] 
+[18:31:32] Filterscripts
+[18:31:32] ---------------
+[18:31:32]   Loading filterscript 'Acu.amx'...
+[18:31:32]   Loaded 1 filterscripts.
+
+[18:31:32] ---------------------------------
+[18:31:32] [mysql] Connecting to DB server...
+[18:31:32] *** Audio Plugin: Started TCP server on port 7777
+[18:31:32] [mysql] Connected!
+[18:31:32] ---------------------------------
+[18:31:32] 
+
+[18:31:32] ---------------------------------
+[18:31:32]  ALL IN ONE v1.0.001
+[18:31:32]   Coded by Acu
+[18:31:32]   Updated by Cada
+[18:31:32]   acu.pe.kr@gmail.com
+[18:31:32] ---------------------------------
+
+[18:31:32] Number of vehicle models: 12
+[18:31:54] [connection] 127.0.0.1:61794 requests connection cookie.
+[18:31:55] [connection] incoming connection: 127.0.0.1:61794 id: 0
+[18:31:55] [join] Cada has joined the server (0:127.0.0.1)
+[18:31:58] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[18:35:02] *** Audio Plugin: Cada (ID: 0) has disconnected
+[18:35:02] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[18:35:02] [mode] Mode has been unloaded.
+[18:35:14] ---------------------------------
+[18:35:14] [mysql] Connecting to DB server...
+[18:35:14] [mysql] Connected!
+[18:35:14] ---------------------------------
+[18:35:14] 
+
+[18:35:14] ---------------------------------
+[18:35:14]  ALL IN ONE v1.0.001
+[18:35:14]   Coded by Acu
+[18:35:14]   Updated by Cada
+[18:35:14]   acu.pe.kr@gmail.com
+[18:35:14] ---------------------------------
+
+[18:35:14] Number of vehicle models: 12
+[18:35:27] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[18:38:42] *** Audio Plugin: Cada (ID: 0) has disconnected
+[18:38:42] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[18:38:42] [mode] Mode has been unloaded.
+[18:38:54] ---------------------------------
+[18:38:54] [mysql] Connecting to DB server...
+[18:38:54] [mysql] Connected!
+[18:38:54] ---------------------------------
+[18:38:54] 
+
+[18:38:54] ---------------------------------
+[18:38:54]  ALL IN ONE v1.0.001
+[18:38:54]   Coded by Acu
+[18:38:54]   Updated by Cada
+[18:38:54]   acu.pe.kr@gmail.com
+[18:38:54] ---------------------------------
+
+[18:38:54] Number of vehicle models: 12
+[18:39:03] *** Audio Plugin: Cada (ID: 0) has connected
+[18:39:13] *** Audio Plugin: Cada (ID: 0) has disconnected
+[18:39:13] [part] Cada has left the server (0:1)
+[18:39:13] [mysql] Error! Unknown column 'Money' in 'field list'(1054)
+[18:39:13] [mysql]  Callback: ''
+[18:39:13] [mysql]  Query: 'UPDATE user_data SET IP=INET_ATON('127.0.0.1'),Money=0,Value_S='',Value_I=0,Value_F=0.0,LastUpdate=NOW() WHERE ID = 1'
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:42:14] password = ""  (string)
+[18:42:14] 
+[18:42:14] Server Plugins
+[18:42:14] --------------
+[18:42:14]  Loading plugin: crashdetect
+[18:42:14]   CrashDetect plugin 4.19
+[18:42:14]   Loaded.
+[18:42:14]  Loading plugin: mysql
+[18:42:14]  >> plugin.mysql: R41-4 successfully loaded.
+[18:42:14]   Loaded.
+[18:42:14]  Loading plugin: streamer
+[18:42:14] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:42:14]   Loaded.
+[18:42:14]  Loading plugin: audio
+[18:42:14] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:42:14]   Loaded.
+[18:42:14]  Loading plugin: MapAndreas
+[18:42:14]   Loaded.
+[18:42:14]  Loaded 5 plugins.
+
+[18:42:14] 
+[18:42:14] Filterscripts
+[18:42:14] ---------------
+[18:42:14]   Loading filterscript 'Acu.amx'...
+[18:42:14]   Loaded 1 filterscripts.
+
+[18:42:14] ---------------------------------
+[18:42:14] [mysql] Connecting to DB server...
+[18:42:14] *** Audio Plugin: Started TCP server on port 7777
+[18:42:14] [mysql] Connected!
+[18:42:14] ---------------------------------
+[18:42:14] 
+
+[18:42:14] ---------------------------------
+[18:42:14]  ALL IN ONE v1.0.001
+[18:42:14]   Coded by Acu
+[18:42:14]   Updated by Cada
+[18:42:14]   acu.pe.kr@gmail.com
+[18:42:14] ---------------------------------
+
+[18:42:14] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:43:16] password = ""  (string)
+[18:43:16] 
+[18:43:16] Server Plugins
+[18:43:16] --------------
+[18:43:16]  Loading plugin: crashdetect
+[18:43:16]   CrashDetect plugin 4.19
+[18:43:16]   Loaded.
+[18:43:16]  Loading plugin: mysql
+[18:43:16]  >> plugin.mysql: R41-4 successfully loaded.
+[18:43:16]   Loaded.
+[18:43:16]  Loading plugin: streamer
+[18:43:16] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:43:16]   Loaded.
+[18:43:16]  Loading plugin: audio
+[18:43:16] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:43:16]   Loaded.
+[18:43:16]  Loading plugin: MapAndreas
+[18:43:16]   Loaded.
+[18:43:16]  Loaded 5 plugins.
+
+[18:43:17] 
+[18:43:17] Filterscripts
+[18:43:17] ---------------
+[18:43:17]   Loading filterscript 'Acu.amx'...
+[18:43:17]   Loaded 1 filterscripts.
+
+[18:43:17] ---------------------------------
+[18:43:17] [mysql] Connecting to DB server...
+[18:43:17] *** Audio Plugin: Started TCP server on port 7777
+[18:43:17] [mysql] Connected!
+[18:43:17] ---------------------------------
+[18:43:17] 
+
+[18:43:17] ---------------------------------
+[18:43:17]  ALL IN ONE v1.0.001
+[18:43:17]   Coded by Acu
+[18:43:17]   Updated by Cada
+[18:43:17]   acu.pe.kr@gmail.com
+[18:43:17] ---------------------------------
+
+[18:43:17] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:43:41] password = ""  (string)
+[18:43:41] 
+[18:43:41] Server Plugins
+[18:43:41] --------------
+[18:43:41]  Loading plugin: crashdetect
+[18:43:41]   CrashDetect plugin 4.19
+[18:43:41]   Loaded.
+[18:43:41]  Loading plugin: mysql
+[18:43:41]  >> plugin.mysql: R41-4 successfully loaded.
+[18:43:41]   Loaded.
+[18:43:41]  Loading plugin: streamer
+[18:43:41] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:43:41]   Loaded.
+[18:43:41]  Loading plugin: audio
+[18:43:41] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:43:41]   Loaded.
+[18:43:41]  Loading plugin: MapAndreas
+[18:43:41]   Loaded.
+[18:43:41]  Loaded 5 plugins.
+
+[18:43:41] 
+[18:43:41] Filterscripts
+[18:43:41] ---------------
+[18:43:41]   Loading filterscript 'Acu.amx'...
+[18:43:41]   Loaded 1 filterscripts.
+
+[18:43:41] ---------------------------------
+[18:43:41] *** Audio Plugin: Started TCP server on port 7777
+[18:43:41] [mysql] Connecting to DB server...
+[18:43:41] [mysql] Connected!
+[18:43:41] ---------------------------------
+[18:43:41] 
+
+[18:43:41] ---------------------------------
+[18:43:41]  ALL IN ONE v1.0.001
+[18:43:41]   Coded by Acu
+[18:43:41]   Updated by Cada
+[18:43:41]   acu.pe.kr@gmail.com
+[18:43:41] ---------------------------------
+
+[18:43:41] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:43:53] password = ""  (string)
+[18:43:53] 
+[18:43:53] Server Plugins
+[18:43:53] --------------
+[18:43:53]  Loading plugin: crashdetect
+[18:43:53]   CrashDetect plugin 4.19
+[18:43:53]   Loaded.
+[18:43:53]  Loading plugin: mysql
+[18:43:53]  >> plugin.mysql: R41-4 successfully loaded.
+[18:43:53]   Loaded.
+[18:43:53]  Loading plugin: streamer
+[18:43:53] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:43:53]   Loaded.
+[18:43:53]  Loading plugin: audio
+[18:43:53] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:43:53]   Loaded.
+[18:43:53]  Loading plugin: MapAndreas
+[18:43:53]   Loaded.
+[18:43:53]  Loaded 5 plugins.
+
+[18:43:53] 
+[18:43:53] Filterscripts
+[18:43:53] ---------------
+[18:43:53]   Loading filterscript 'Acu.amx'...
+[18:43:53]   Loaded 1 filterscripts.
+
+[18:43:53] ---------------------------------
+[18:43:53] [mysql] Connecting to DB server...
+[18:43:53] *** Audio Plugin: Started TCP server on port 7777
+[18:43:53] [mysql] Connected!
+[18:43:53] ---------------------------------
+[18:43:53] 
+
+[18:43:53] ---------------------------------
+[18:43:53]  ALL IN ONE v1.0.001
+[18:43:53]   Coded by Acu
+[18:43:53]   Updated by Cada
+[18:43:53]   acu.pe.kr@gmail.com
+[18:43:53] ---------------------------------
+
+[18:43:54] Number of vehicle models: 12
+[18:44:12] [connection] 127.0.0.1:52627 requests connection cookie.
+[18:44:13] [connection] incoming connection: 127.0.0.1:52627 id: 0
+[18:44:13] [join] Cada has joined the server (0:127.0.0.1)
+[18:44:19] *** Audio Plugin: Cada (ID: 0) has connected
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:52:20] password = ""  (string)
+[18:52:20] 
+[18:52:20] Server Plugins
+[18:52:20] --------------
+[18:52:20]  Loading plugin: crashdetect
+[18:52:20]   CrashDetect plugin 4.19
+[18:52:20]   Loaded.
+[18:52:20]  Loading plugin: mysql
+[18:52:20]  >> plugin.mysql: R41-4 successfully loaded.
+[18:52:20]   Loaded.
+[18:52:20]  Loading plugin: streamer
+[18:52:20] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:52:20]   Loaded.
+[18:52:20]  Loading plugin: audio
+[18:52:20] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:52:20]   Loaded.
+[18:52:20]  Loading plugin: MapAndreas
+[18:52:20]   Loaded.
+[18:52:20]  Loaded 5 plugins.
+
+[18:52:20] 
+[18:52:20] Filterscripts
+[18:52:20] ---------------
+[18:52:20]   Loading filterscript 'Acu.amx'...
+[18:52:20]   Loaded 1 filterscripts.
+
+[18:52:20] ---------------------------------
+[18:52:20] [mysql] Connecting to DB server...
+[18:52:20] *** Audio Plugin: Started TCP server on port 7777
+[18:52:20] [mysql] Connected!
+[18:52:20] ---------------------------------
+[18:52:20] 
+
+[18:52:20] ---------------------------------
+[18:52:20]  ALL IN ONE v1.0.001
+[18:52:20]   Coded by Acu
+[18:52:20]   Updated by Cada
+[18:52:20]   acu.pe.kr@gmail.com
+[18:52:20] ---------------------------------
+
+[18:52:20] 0
+[18:52:20] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:52:34] password = ""  (string)
+[18:52:34] 
+[18:52:34] Server Plugins
+[18:52:34] --------------
+[18:52:34]  Loading plugin: crashdetect
+[18:52:34]   CrashDetect plugin 4.19
+[18:52:34]   Loaded.
+[18:52:34]  Loading plugin: mysql
+[18:52:34]  >> plugin.mysql: R41-4 successfully loaded.
+[18:52:34]   Loaded.
+[18:52:34]  Loading plugin: streamer
+[18:52:34] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:52:34]   Loaded.
+[18:52:34]  Loading plugin: audio
+[18:52:34] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:52:34]   Loaded.
+[18:52:34]  Loading plugin: MapAndreas
+[18:52:34]   Loaded.
+[18:52:34]  Loaded 5 plugins.
+
+[18:52:34] 
+[18:52:34] Filterscripts
+[18:52:34] ---------------
+[18:52:34]   Loading filterscript 'Acu.amx'...
+[18:52:34]   Loaded 1 filterscripts.
+
+[18:52:34] ---------------------------------
+[18:52:34] [mysql] Connecting to DB server...
+[18:52:34] *** Audio Plugin: Started TCP server on port 7777
+[18:52:34] [mysql] Connected!
+[18:52:34] ---------------------------------
+[18:52:34] 
+
+[18:52:34] ---------------------------------
+[18:52:34]  ALL IN ONE v1.0.001
+[18:52:34]   Coded by Acu
+[18:52:34]   Updated by Cada
+[18:52:34]   acu.pe.kr@gmail.com
+[18:52:34] ---------------------------------
+
+[18:52:34] 
+[18:52:34] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:52:59] password = ""  (string)
+[18:52:59] 
+[18:52:59] Server Plugins
+[18:52:59] --------------
+[18:52:59]  Loading plugin: crashdetect
+[18:52:59]   CrashDetect plugin 4.19
+[18:52:59]   Loaded.
+[18:52:59]  Loading plugin: mysql
+[18:52:59]  >> plugin.mysql: R41-4 successfully loaded.
+[18:52:59]   Loaded.
+[18:52:59]  Loading plugin: streamer
+[18:52:59] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:52:59]   Loaded.
+[18:52:59]  Loading plugin: audio
+[18:52:59] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:52:59]   Loaded.
+[18:52:59]  Loading plugin: MapAndreas
+[18:52:59]   Loaded.
+[18:52:59]  Loaded 5 plugins.
+
+[18:52:59] 
+[18:52:59] Filterscripts
+[18:52:59] ---------------
+[18:52:59]   Loading filterscript 'Acu.amx'...
+[18:52:59]   Loaded 1 filterscripts.
+
+[18:52:59] ---------------------------------
+[18:52:59] [mysql] Connecting to DB server...
+[18:52:59] *** Audio Plugin: Started TCP server on port 7777
+[18:52:59] [mysql] Connected!
+[18:52:59] ---------------------------------
+[18:52:59] 
+
+[18:52:59] ---------------------------------
+[18:52:59]  ALL IN ONE v1.0.001
+[18:52:59]   Coded by Acu
+[18:52:59]   Updated by Cada
+[18:52:59]   acu.pe.kr@gmail.com
+[18:52:59] ---------------------------------
+
+[18:52:59] 
+[18:52:59] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:54:05] password = ""  (string)
+[18:54:05] 
+[18:54:05] Server Plugins
+[18:54:05] --------------
+[18:54:05]  Loading plugin: crashdetect
+[18:54:05]   CrashDetect plugin 4.19
+[18:54:05]   Loaded.
+[18:54:05]  Loading plugin: mysql
+[18:54:05]  >> plugin.mysql: R41-4 successfully loaded.
+[18:54:05]   Loaded.
+[18:54:05]  Loading plugin: streamer
+[18:54:05] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:54:05]   Loaded.
+[18:54:05]  Loading plugin: audio
+[18:54:05] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:54:05]   Loaded.
+[18:54:05]  Loading plugin: MapAndreas
+[18:54:05]   Loaded.
+[18:54:05]  Loaded 5 plugins.
+
+[18:54:05] 
+[18:54:05] Filterscripts
+[18:54:05] ---------------
+[18:54:05]   Loading filterscript 'Acu.amx'...
+[18:54:05]   Loaded 1 filterscripts.
+
+[18:54:05] ---------------------------------
+[18:54:05] [mysql] Connecting to DB server...
+[18:54:05] *** Audio Plugin: Started TCP server on port 7777
+[18:54:05] [mysql] Connected!
+[18:54:05] ---------------------------------
+[18:54:05] 
+
+[18:54:05] ---------------------------------
+[18:54:05]  ALL IN ONE v1.0.001
+[18:54:05]   Coded by Acu
+[18:54:05]   Updated by Cada
+[18:54:05]   acu.pe.kr@gmail.com
+[18:54:05] ---------------------------------
+
+[18:54:06] 
+[18:54:06] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:54:19] password = ""  (string)
+[18:54:19] 
+[18:54:19] Server Plugins
+[18:54:19] --------------
+[18:54:19]  Loading plugin: crashdetect
+[18:54:19]   CrashDetect plugin 4.19
+[18:54:19]   Loaded.
+[18:54:19]  Loading plugin: mysql
+[18:54:19]  >> plugin.mysql: R41-4 successfully loaded.
+[18:54:19]   Loaded.
+[18:54:19]  Loading plugin: streamer
+[18:54:19] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:54:19]   Loaded.
+[18:54:19]  Loading plugin: audio
+[18:54:19] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:54:19]   Loaded.
+[18:54:19]  Loading plugin: MapAndreas
+[18:54:19]   Loaded.
+[18:54:19]  Loaded 5 plugins.
+
+[18:54:19] 
+[18:54:19] Filterscripts
+[18:54:19] ---------------
+[18:54:19]   Loading filterscript 'Acu.amx'...
+[18:54:19]   Loaded 1 filterscripts.
+
+[18:54:19] ---------------------------------
+[18:54:19] [mysql] Connecting to DB server...
+[18:54:19] *** Audio Plugin: Started TCP server on port 7777
+[18:54:19] [mysql] Connected!
+[18:54:19] ---------------------------------
+[18:54:19] 
+
+[18:54:19] ---------------------------------
+[18:54:19]  ALL IN ONE v1.0.001
+[18:54:19]   Coded by Acu
+[18:54:19]   Updated by Cada
+[18:54:19]   acu.pe.kr@gmail.com
+[18:54:19] ---------------------------------
+
+[18:54:19] Map: 
+[18:54:19] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:56:25] password = ""  (string)
+[18:56:25] 
+[18:56:25] Server Plugins
+[18:56:25] --------------
+[18:56:25]  Loading plugin: crashdetect
+[18:56:25]   CrashDetect plugin 4.19
+[18:56:25]   Loaded.
+[18:56:25]  Loading plugin: mysql
+[18:56:25]  >> plugin.mysql: R41-4 successfully loaded.
+[18:56:25]   Loaded.
+[18:56:25]  Loading plugin: streamer
+[18:56:25] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:56:25]   Loaded.
+[18:56:25]  Loading plugin: audio
+[18:56:25] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:56:25]   Loaded.
+[18:56:25]  Loading plugin: MapAndreas
+[18:56:25]   Loaded.
+[18:56:25]  Loaded 5 plugins.
+
+[18:56:25] 
+[18:56:25] Filterscripts
+[18:56:25] ---------------
+[18:56:25]   Loading filterscript 'Acu.amx'...
+[18:56:25]   Loaded 1 filterscripts.
+
+[18:56:25] ---------------------------------
+[18:56:25] *** Audio Plugin: Started TCP server on port 7777
+[18:56:25] [mysql] Connecting to DB server...
+[18:56:25] [mysql] Connected!
+[18:56:25] ---------------------------------
+[18:56:25] 
+
+[18:56:25] ---------------------------------
+[18:56:25]  ALL IN ONE v1.0.001
+[18:56:25]   Coded by Acu
+[18:56:25]   Updated by Cada
+[18:56:25]   acu.pe.kr@gmail.com
+[18:56:25] ---------------------------------
+
+[18:56:25] Map: 
+[18:56:25] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:57:00] password = ""  (string)
+[18:57:00] 
+[18:57:00] Server Plugins
+[18:57:00] --------------
+[18:57:00]  Loading plugin: crashdetect
+[18:57:00]   CrashDetect plugin 4.19
+[18:57:00]   Loaded.
+[18:57:00]  Loading plugin: mysql
+[18:57:00]  >> plugin.mysql: R41-4 successfully loaded.
+[18:57:00]   Loaded.
+[18:57:00]  Loading plugin: streamer
+[18:57:00] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:57:00]   Loaded.
+[18:57:00]  Loading plugin: audio
+[18:57:00] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:57:00]   Loaded.
+[18:57:00]  Loading plugin: MapAndreas
+[18:57:00]   Loaded.
+[18:57:00]  Loaded 5 plugins.
+
+[18:57:00] 
+[18:57:00] Filterscripts
+[18:57:00] ---------------
+[18:57:00]   Loading filterscript 'Acu.amx'...
+[18:57:00]   Loaded 1 filterscripts.
+
+[18:57:00] ---------------------------------
+[18:57:00] *** Audio Plugin: Started TCP server on port 7777
+[18:57:00] [mysql] Connecting to DB server...
+[18:57:00] [mysql] Connected!
+[18:57:00] ---------------------------------
+[18:57:00] 
+
+[18:57:00] ---------------------------------
+[18:57:00]  ALL IN ONE v1.0.001
+[18:57:00]   Coded by Acu
+[18:57:00]   Updated by Cada
+[18:57:00]   acu.pe.kr@gmail.com
+[18:57:00] ---------------------------------
+
+[18:57:00] Map: ·Îºñ
+[18:57:00] Number of vehicle models: 12
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:57:10] password = ""  (string)
+[18:57:10] 
+[18:57:10] Server Plugins
+[18:57:10] --------------
+[18:57:10]  Loading plugin: crashdetect
+[18:57:10]   CrashDetect plugin 4.19
+[18:57:10]   Loaded.
+[18:57:10]  Loading plugin: mysql
+[18:57:10]  >> plugin.mysql: R41-4 successfully loaded.
+[18:57:10]   Loaded.
+[18:57:10]  Loading plugin: streamer
+[18:57:10] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:57:10]   Loaded.
+[18:57:10]  Loading plugin: audio
+[18:57:10] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:57:10]   Loaded.
+[18:57:10]  Loading plugin: MapAndreas
+[18:57:10]   Loaded.
+[18:57:10]  Loaded 5 plugins.
+
+[18:57:10] 
+[18:57:10] Filterscripts
+[18:57:10] ---------------
+[18:57:10]   Loading filterscript 'Acu.amx'...
+[18:57:10]   Loaded 1 filterscripts.
+
+[18:57:10] ---------------------------------
+[18:57:10] *** Audio Plugin: Started TCP server on port 7777
+[18:57:10] [mysql] Connecting to DB server...
+[18:57:10] [mysql] Connected!
+[18:57:10] ---------------------------------
+[18:57:10] 
+
+[18:57:10] ---------------------------------
+[18:57:10]  ALL IN ONE v1.0.001
+[18:57:10]   Coded by Acu
+[18:57:10]   Updated by Cada
+[18:57:10]   acu.pe.kr@gmail.com
+[18:57:10] ---------------------------------
+
+[18:57:10] Number of vehicle models: 12
+[18:57:14] [connection] 127.0.0.1:49381 requests connection cookie.
+[18:57:15] [connection] incoming connection: 127.0.0.1:49381 id: 0
+[18:57:15] [join] Cada has joined the server (0:127.0.0.1)
+[18:57:23] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[18:59:15] *** Audio Plugin: Cada (ID: 0) has disconnected
+[18:59:15] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[18:59:15] [mode] Mode has been unloaded.
+[18:59:15] [debug] Server crashed due to an unknown error
+[18:59:15] [debug] Native backtrace:
+[18:59:15] [debug] #0 004016a3 in ?? () from samp-server.exe
+[18:59:15] [debug] #1 5ade68d1 in ?? () from plugins\mysql.DLL
+[18:59:15] [debug] #2 5ae035d4 in ?? () from plugins\mysql.DLL
+[18:59:15] [debug] #3 5ae06688 in ?? () from plugins\mysql.DLL
+[18:59:15] [debug] #4 5adec52e in ?? () from plugins\mysql.DLL
+[18:59:15] [debug] #5 5adedc7f in ?? () from plugins\mysql.DLL
+[18:59:15] [debug] #6 5adee3d3 in ?? () from plugins\mysql.DLL
+[18:59:15] [debug] #7 00469a66 in ?? () from samp-server.exe
+[18:59:15] [debug] #8 0048d4db in ?? () from samp-server.exe
+[18:59:15] [debug] #9 0049b4a1 in ?? () from samp-server.exe
+[18:59:15] [debug] #10 0049b4b1 in ?? () from samp-server.exe
+[18:59:15] [debug] Registers:
+[18:59:15] [debug] EAX: 9c000000 EBX: 5ae1a888 ECX: 00000000 EDX: ffffffff
+[18:59:15] [debug] ESI: 02ab2738 EDI: 0019fc10 EBP: 0049b4a1 ESP: 0019fe98
+[18:59:15] [debug] EIP: 0049b4b1 EFLAGS: 00010287
+[18:59:15] [debug] Stack:
+[18:59:15] [debug] ESP+00000000: 004ab4a0 0019ff70 004ab0e1 ffffffff
+[18:59:15] [debug] ESP+00000020: 00000094 00000006 00000002 000023f0
+[18:59:15] [debug] ESP+00000040: 00000000 00000000 00000000 00000000
+[18:59:15] [debug] ESP+00000060: 00000000 00000000 00000000 00000000
+[18:59:15] [debug] ESP+00000080: 00000000 00000000 00000000 00000000
+[18:59:15] [debug] ESP+000000a0: 00000000 00000000 00000000 00000000
+[18:59:15] [debug] ESP+000000c0: 00000000 00000000 c0000094 00000000
+[18:59:15] [debug] ESP+000000e0: 004ba530 00000000 0019ff94 76208484
+[18:59:15] [debug] ESP+00000100: 77b8302c 00379000 394541ab 00000000
+[18:59:15] [debug] ESP+00000120: 00000000 00000000 394541ab 0019ffa0
+[18:59:15] [debug] ESP+00000140: 00000000 0019ffec 77b82ffa ffffffff
+[18:59:15] [debug] ESP+00000160: 00379000 00000000 78746341 00000020
+[18:59:15] [debug] ESP+00000180: 00000020 00000000 00000014 00000001
+[18:59:15] [debug] ESP+000001a0: 00000000 00000000 00000000 00000000
+[18:59:15] [debug] ESP+000001c0: 00000044 000002e0 0000025c 00000000
+[18:59:15] [debug] ESP+000001e0: 00000342 00000000 2d59495b 000008cc
+[18:59:15] [debug] ESP+00000200: 32ceeacd 00000bfc 00000042 00000c40
+[18:59:15] [debug] ESP+00000220: 0000005e 00000fd0 00000362 00000000
+[18:59:15] [debug] ESP+00000240: 00000392 00000010 00000009 000000ec
+[18:59:15] [debug] ESP+00000260: 00000001 00000002 00001758 000007a0
+[18:59:15] [debug] ESP+00000280: 00000001 00000004 00002d84 00000314
+[18:59:15] [debug] ESP+000002a0: 00000002 00000006 00003130 000000cc
+[18:59:15] [debug] ESP+000002c0: 00000001 00000009 000032ec 00000028
+[18:59:15] [debug] ESP+000002e0: 00000001 64487353 0000002c 00000001
+[18:59:15] [debug] ESP+00000300: 00000001 000015a4 0000002c 0000005e
+[18:59:15] [debug] ESP+00000320: 00000000 00000000 00000000 00000000
+[18:59:15] [debug] ESP+00000340: 00000038 00000000 003a0043 0057005c
+[18:59:15] [debug] ESP+00000360: 006e0069 00780053 005c0073 00000000
+[18:59:15] [debug] ESP+00000380: 0000025c 00000001 f33271ba 000003c0
+[18:59:15] [debug] ESP+000003a0: 2d59495b 00000750 00000032 00000784
+[18:59:15] [debug] ESP+000003c0: 00000042 00000ac4 00000330 00000004
+[18:59:15] [debug] ESP+000003e0: 00000362 00000005 b1280544 000011b8
+[18:59:15] [debug] Loaded modules:
+[18:59:15] [debug] 00400000 - 00519000 samp-server.exe
+[18:59:15] [debug] 77b20000 - 77cb0000 ntdll.dll
+[18:59:15] [debug] 761f0000 - 762d0000 KERNEL32.DLL
+[18:59:15] [debug] 75d30000 - 75f14000 KERNELBASE.dll
+[18:59:15] [debug] 762d0000 - 7761a000 SHELL32.dll
+[18:59:15] [debug] 75f20000 - 75fdf000 msvcrt.dll
+[18:59:15] [debug] 75cf0000 - 75d29000 cfgmgr32.dll
+[18:59:15] [debug] 74450000 - 7456e000 ucrtbase.dll
+[18:59:15] [debug] 778e0000 - 77968000 shcore.dll
+[18:59:15] [debug] 74a10000 - 74ad0000 RPCRT4.dll
+[18:59:15] [debug] 743e0000 - 74400000 SspiCli.dll
+[18:59:15] [debug] 743d0000 - 743da000 CRYPTBASE.dll
+[18:59:15] [debug] 749b0000 - 74a08000 bcryptPrimitives.dll
+[18:59:15] [debug] 75c90000 - 75cd4000 sechost.dll
+[18:59:15] [debug] 74750000 - 749ac000 combase.dll
+[18:59:15] [debug] 74ee0000 - 75499000 windows.storage.dll
+[18:59:15] [debug] 75600000 - 75678000 advapi32.dll
+[18:59:15] [debug] 754a0000 - 754e5000 shlwapi.dll
+[18:59:15] [debug] 77970000 - 77992000 GDI32.dll
+[18:59:15] [debug] 77750000 - 778b4000 gdi32full.dll
+[18:59:15] [debug] 74570000 - 745ed000 msvcp_win.dll
+[18:59:15] [debug] 74ae0000 - 74c6d000 USER32.dll
+[18:59:15] [debug] 778c0000 - 778d7000 win32u.dll
+[18:59:15] [debug] 755f0000 - 755ff000 kernel.appcore.dll
+[18:59:15] [debug] 75c70000 - 75c88000 profapi.dll
+[18:59:15] [debug] 75680000 - 756c5000 powrprof.dll
+[18:59:15] [debug] 74d80000 - 74d88000 FLTLIB.DLL
+[18:59:15] [debug] 725e0000 - 725e8000 WSOCK32.dll
+[18:59:15] [debug] 734b0000 - 734d4000 WINMM.dll
+[18:59:15] [debug] 76180000 - 761e7000 WS2_32.dll
+[18:59:15] [debug] 733a0000 - 733c3000 winmmbase.dll
+[18:59:15] [debug] 776c0000 - 776e6000 IMM32.DLL
+[18:59:15] [debug] 5aea0000 - 5aef1000 crashdetect.DLL
+[18:59:15] [debug] 5ae30000 - 5ae99000 MSVCP100.dll
+[18:59:15] [debug] 57720000 - 577df000 MSVCR100.dll
+[18:59:15] [debug] 5ade0000 - 5ae2e000 mysql.DLL
+[18:59:15] [debug] 576a0000 - 57711000 MSVCP140.dll
+[18:59:15] [debug] 65250000 - 65265000 VCRUNTIME140.dll
+[18:59:15] [debug] 65280000 - 6529a000 log-core.dll
+[18:59:15] [debug] 575d0000 - 5769d000 libmariadb.dll
+[18:59:15] [debug] 75fe0000 - 76176000 CRYPT32.dll
+[18:59:15] [debug] 776b0000 - 776be000 MSASN1.dll
+[18:59:15] [debug] 68df0000 - 68dfa000 Secur32.dll
+[18:59:15] [debug] 722f0000 - 72301000 napinsp.dll
+[18:59:15] [debug] 71ed0000 - 71ee6000 pnrpnsp.dll
+[18:59:15] [debug] 71eb0000 - 71ec3000 NLAapi.dll
+[18:59:15] [debug] 732b0000 - 73306000 mswsock.dll
+[18:59:15] [debug] 71e20000 - 71eae000 DNSAPI.dll
+[18:59:15] [debug] 74ad0000 - 74ad7000 NSI.dll
+[18:59:15] [debug] 74310000 - 74340000 IPHLPAPI.DLL
+[18:59:15] [debug] 71e10000 - 71e1c000 winrnr.dll
+[18:59:15] [debug] 70750000 - 70758000 rasadhlp.dll
+[18:59:15] [debug] 57560000 - 575c7000 streamer.DLL
+[18:59:15] [debug] 57510000 - 5755f000 audio.DLL
+[18:59:15] [debug] 5adc0000 - 5add7000 MapAndreas.DLL
+[18:59:15] [debug] 6e970000 - 6e9bf000 fwpuclnt.dll
+[18:59:15] [debug] 74340000 - 74359000 bcrypt.dll
+[18:59:15] [debug] 71d30000 - 71dac000 uxtheme.dll
+[18:59:15] [debug] 74c80000 - 74d7c000 ole32.dll
+[18:59:15] [debug] 74190000 - 74310000 PROPSYS.dll
+[18:59:15] [debug] 74650000 - 746e6000 OLEAUT32.dll
+[18:59:15] [debug] 77620000 - 776a3000 clbcatq.dll
+[18:59:15] [debug] 6f400000 - 6f43d000 edputil.dll
+[18:59:15] [debug] 6f1d0000 - 6f36c000 urlmon.dll
+[18:59:15] [debug] 6efa0000 - 6f1c8000 iertutil.dll
+[18:59:15] [debug] 70800000 - 7081a000 CLDAPI.dll
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:59:18] password = ""  (string)
+[18:59:18] 
+[18:59:18] Server Plugins
+[18:59:18] --------------
+[18:59:18]  Loading plugin: crashdetect
+[18:59:18]   CrashDetect plugin 4.19
+[18:59:18]   Loaded.
+[18:59:18]  Loading plugin: mysql
+[18:59:18]  >> plugin.mysql: R41-4 successfully loaded.
+[18:59:18]   Loaded.
+[18:59:18]  Loading plugin: streamer
+[18:59:18] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[18:59:18]   Loaded.
+[18:59:18]  Loading plugin: audio
+[18:59:18] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[18:59:18]   Loaded.
+[18:59:18]  Loading plugin: MapAndreas
+[18:59:18]   Loaded.
+[18:59:18]  Loaded 5 plugins.
+
+[18:59:18] 
+[18:59:18] Filterscripts
+[18:59:18] ---------------
+[18:59:18]   Loading filterscript 'Acu.amx'...
+[18:59:18]   Loaded 1 filterscripts.
+
+[18:59:18] ---------------------------------
+[18:59:18] *** Audio Plugin: Started TCP server on port 7777
+[18:59:18] [mysql] Connecting to DB server...
+[18:59:18] [mysql] Connected!
+[18:59:18] ---------------------------------
+[18:59:18] 
+
+[18:59:18] ---------------------------------
+[18:59:18]  ALL IN ONE v1.0.001
+[18:59:18]   Coded by Acu
+[18:59:18]   Updated by Cada
+[18:59:18]   acu.pe.kr@gmail.com
+[18:59:18] ---------------------------------
+
+[18:59:19] Number of vehicle models: 12
+[18:59:33] [connection] 127.0.0.1:64811 requests connection cookie.
+[18:59:34] [connection] incoming connection: 127.0.0.1:64811 id: 0
+[18:59:34] [join] Cada has joined the server (0:127.0.0.1)
+[18:59:36] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[19:00:09] *** Audio Plugin: Cada (ID: 0) has disconnected
+[19:00:09] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[19:00:09] [mode] Mode has been unloaded.
+[19:00:09] [debug] Server crashed due to an unknown error
+[19:00:09] [debug] Native backtrace:
+[19:00:09] [debug] #0 004016a3 in ?? () from samp-server.exe
+[19:00:09] [debug] #1 577268d1 in ?? () from plugins\mysql.DLL
+[19:00:09] [debug] #2 577435d4 in ?? () from plugins\mysql.DLL
+[19:00:09] [debug] #3 57746688 in ?? () from plugins\mysql.DLL
+[19:00:09] [debug] #4 5772c52e in ?? () from plugins\mysql.DLL
+[19:00:09] [debug] #5 5772dc7f in ?? () from plugins\mysql.DLL
+[19:00:09] [debug] #6 5772e3d3 in ?? () from plugins\mysql.DLL
+[19:00:09] [debug] #7 00469a66 in ?? () from samp-server.exe
+[19:00:09] [debug] #8 0048d4db in ?? () from samp-server.exe
+[19:00:09] [debug] #9 0049b4a1 in ?? () from samp-server.exe
+[19:00:09] [debug] #10 0049b4b1 in ?? () from samp-server.exe
+[19:00:09] [debug] Registers:
+[19:00:09] [debug] EAX: 9b800000 EBX: 5775a888 ECX: 00000000 EDX: ffffffff
+[19:00:09] [debug] ESI: 02b32738 EDI: 0019fc10 EBP: 0049b4a1 ESP: 0019fe98
+[19:00:09] [debug] EIP: 0049b4b1 EFLAGS: 00010287
+[19:00:09] [debug] Stack:
+[19:00:09] [debug] ESP+00000000: 004ab4a0 0019ff70 004ab0e1 ffffffff
+[19:00:09] [debug] ESP+00000020: 00000094 00000006 00000002 000023f0
+[19:00:09] [debug] ESP+00000040: 00000000 00000000 00000000 00000000
+[19:00:09] [debug] ESP+00000060: 00000000 00000000 00000000 00000000
+[19:00:09] [debug] ESP+00000080: 00000000 00000000 00000000 00000000
+[19:00:09] [debug] ESP+000000a0: 00000000 00000000 00000000 00000000
+[19:00:09] [debug] ESP+000000c0: 00000000 00000000 c0000094 00000000
+[19:00:09] [debug] ESP+000000e0: 004ba530 00000000 0019ff94 76208484
+[19:00:09] [debug] ESP+00000100: 77b8302c 003c5000 95fe7f49 00000000
+[19:00:09] [debug] ESP+00000120: 00000000 00000000 95fe7f49 0019ffa0
+[19:00:09] [debug] ESP+00000140: 00000000 0019ffec 77b82ffa ffffffff
+[19:00:09] [debug] ESP+00000160: 003c5000 00000000 78746341 00000020
+[19:00:09] [debug] ESP+00000180: 00000020 00000000 00000014 00000001
+[19:00:09] [debug] ESP+000001a0: 00000000 00000000 00000000 00000000
+[19:00:09] [debug] ESP+000001c0: 00000044 000002e0 0000025c 00000000
+[19:00:09] [debug] ESP+000001e0: 00000342 00000000 2d59495b 000008cc
+[19:00:09] [debug] ESP+00000200: 32ceeacd 00000bfc 00000042 00000c40
+[19:00:09] [debug] ESP+00000220: 0000005e 00000fd0 00000362 00000000
+[19:00:09] [debug] ESP+00000240: 00000392 00000010 00000009 000000ec
+[19:00:09] [debug] ESP+00000260: 00000001 00000002 00001758 000007a0
+[19:00:09] [debug] ESP+00000280: 00000001 00000004 00002d84 00000314
+[19:00:09] [debug] ESP+000002a0: 00000002 00000006 00003130 000000cc
+[19:00:09] [debug] ESP+000002c0: 00000001 00000009 000032ec 00000028
+[19:00:09] [debug] ESP+000002e0: 00000001 64487353 0000002c 00000001
+[19:00:09] [debug] ESP+00000300: 00000001 000015a4 0000002c 0000005e
+[19:00:09] [debug] ESP+00000320: 00000000 00000000 00000000 00000000
+[19:00:09] [debug] ESP+00000340: 00000038 00000000 003a0043 0057005c
+[19:00:09] [debug] ESP+00000360: 006e0069 00780053 005c0073 00000000
+[19:00:09] [debug] ESP+00000380: 0000025c 00000001 f33271ba 000003c0
+[19:00:09] [debug] ESP+000003a0: 2d59495b 00000750 00000032 00000784
+[19:00:09] [debug] ESP+000003c0: 00000042 00000ac4 00000330 00000004
+[19:00:09] [debug] ESP+000003e0: 00000362 00000005 b1280544 000011b8
+[19:00:09] [debug] Loaded modules:
+[19:00:09] [debug] 00400000 - 00519000 samp-server.exe
+[19:00:09] [debug] 77b20000 - 77cb0000 ntdll.dll
+[19:00:09] [debug] 761f0000 - 762d0000 KERNEL32.DLL
+[19:00:09] [debug] 75d30000 - 75f14000 KERNELBASE.dll
+[19:00:09] [debug] 762d0000 - 7761a000 SHELL32.dll
+[19:00:09] [debug] 75f20000 - 75fdf000 msvcrt.dll
+[19:00:09] [debug] 75cf0000 - 75d29000 cfgmgr32.dll
+[19:00:09] [debug] 74450000 - 7456e000 ucrtbase.dll
+[19:00:09] [debug] 778e0000 - 77968000 shcore.dll
+[19:00:09] [debug] 74a10000 - 74ad0000 RPCRT4.dll
+[19:00:09] [debug] 743e0000 - 74400000 SspiCli.dll
+[19:00:09] [debug] 743d0000 - 743da000 CRYPTBASE.dll
+[19:00:09] [debug] 749b0000 - 74a08000 bcryptPrimitives.dll
+[19:00:09] [debug] 75c90000 - 75cd4000 sechost.dll
+[19:00:09] [debug] 74750000 - 749ac000 combase.dll
+[19:00:09] [debug] 74ee0000 - 75499000 windows.storage.dll
+[19:00:09] [debug] 75600000 - 75678000 advapi32.dll
+[19:00:09] [debug] 754a0000 - 754e5000 shlwapi.dll
+[19:00:09] [debug] 77970000 - 77992000 GDI32.dll
+[19:00:09] [debug] 77750000 - 778b4000 gdi32full.dll
+[19:00:09] [debug] 74570000 - 745ed000 msvcp_win.dll
+[19:00:09] [debug] 74ae0000 - 74c6d000 USER32.dll
+[19:00:09] [debug] 778c0000 - 778d7000 win32u.dll
+[19:00:09] [debug] 755f0000 - 755ff000 kernel.appcore.dll
+[19:00:09] [debug] 75c70000 - 75c88000 profapi.dll
+[19:00:09] [debug] 75680000 - 756c5000 powrprof.dll
+[19:00:09] [debug] 74d80000 - 74d88000 FLTLIB.DLL
+[19:00:09] [debug] 734b0000 - 734d4000 WINMM.dll
+[19:00:09] [debug] 725e0000 - 725e8000 WSOCK32.dll
+[19:00:09] [debug] 76180000 - 761e7000 WS2_32.dll
+[19:00:09] [debug] 733a0000 - 733c3000 winmmbase.dll
+[19:00:09] [debug] 776c0000 - 776e6000 IMM32.DLL
+[19:00:09] [debug] 5aea0000 - 5aef1000 crashdetect.DLL
+[19:00:09] [debug] 5ade0000 - 5ae9f000 MSVCR100.dll
+[19:00:09] [debug] 57770000 - 577d9000 MSVCP100.dll
+[19:00:09] [debug] 57720000 - 5776e000 mysql.DLL
+[19:00:09] [debug] 65280000 - 65295000 VCRUNTIME140.dll
+[19:00:09] [debug] 65250000 - 6526a000 log-core.dll
+[19:00:09] [debug] 576a0000 - 57711000 MSVCP140.dll
+[19:00:09] [debug] 575d0000 - 5769d000 libmariadb.dll
+[19:00:09] [debug] 75fe0000 - 76176000 CRYPT32.dll
+[19:00:09] [debug] 776b0000 - 776be000 MSASN1.dll
+[19:00:09] [debug] 68df0000 - 68dfa000 Secur32.dll
+[19:00:09] [debug] 722f0000 - 72301000 napinsp.dll
+[19:00:09] [debug] 71ed0000 - 71ee6000 pnrpnsp.dll
+[19:00:09] [debug] 71eb0000 - 71ec3000 NLAapi.dll
+[19:00:09] [debug] 732b0000 - 73306000 mswsock.dll
+[19:00:09] [debug] 71e20000 - 71eae000 DNSAPI.dll
+[19:00:09] [debug] 74ad0000 - 74ad7000 NSI.dll
+[19:00:09] [debug] 74310000 - 74340000 IPHLPAPI.DLL
+[19:00:09] [debug] 71e10000 - 71e1c000 winrnr.dll
+[19:00:09] [debug] 70750000 - 70758000 rasadhlp.dll
+[19:00:09] [debug] 57560000 - 575c7000 streamer.DLL
+[19:00:09] [debug] 57510000 - 5755f000 audio.DLL
+[19:00:09] [debug] 5adc0000 - 5add7000 MapAndreas.DLL
+[19:00:09] [debug] 6e970000 - 6e9bf000 fwpuclnt.dll
+[19:00:09] [debug] 74340000 - 74359000 bcrypt.dll
+[19:00:09] [debug] 71d30000 - 71dac000 uxtheme.dll
+[19:00:09] [debug] 74c80000 - 74d7c000 ole32.dll
+[19:00:09] [debug] 74190000 - 74310000 PROPSYS.dll
+[19:00:09] [debug] 74650000 - 746e6000 OLEAUT32.dll
+[19:00:09] [debug] 77620000 - 776a3000 clbcatq.dll
+[19:00:09] [debug] 6f400000 - 6f43d000 edputil.dll
+[19:00:09] [debug] 6f1d0000 - 6f36c000 urlmon.dll
+[19:00:09] [debug] 6efa0000 - 6f1c8000 iertutil.dll
+[19:00:09] [debug] 70800000 - 7081a000 CLDAPI.dll
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:00:11] password = ""  (string)
+[19:00:11] 
+[19:00:11] Server Plugins
+[19:00:11] --------------
+[19:00:11]  Loading plugin: crashdetect
+[19:00:11]   CrashDetect plugin 4.19
+[19:00:11]   Loaded.
+[19:00:11]  Loading plugin: mysql
+[19:00:11]  >> plugin.mysql: R41-4 successfully loaded.
+[19:00:11]   Loaded.
+[19:00:11]  Loading plugin: streamer
+[19:00:11] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[19:00:11]   Loaded.
+[19:00:11]  Loading plugin: audio
+[19:00:11] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[19:00:11]   Loaded.
+[19:00:11]  Loading plugin: MapAndreas
+[19:00:11]   Loaded.
+[19:00:11]  Loaded 5 plugins.
+
+[19:00:11] 
+[19:00:11] Filterscripts
+[19:00:11] ---------------
+[19:00:11]   Loading filterscript 'Acu.amx'...
+[19:00:11]   Loaded 1 filterscripts.
+
+[19:00:11] ---------------------------------
+[19:00:11] [mysql] Connecting to DB server...
+[19:00:11] *** Audio Plugin: Started TCP server on port 7777
+[19:00:11] [mysql] Connected!
+[19:00:11] ---------------------------------
+[19:00:11] 
+
+[19:00:11] ---------------------------------
+[19:00:11]  ALL IN ONE v1.0.001
+[19:00:11]   Coded by Acu
+[19:00:11]   Updated by Cada
+[19:00:11]   acu.pe.kr@gmail.com
+[19:00:11] ---------------------------------
+
+[19:00:12] Number of vehicle models: 12
+[19:00:25] [connection] 127.0.0.1:53216 requests connection cookie.
+[19:00:26] [connection] incoming connection: 127.0.0.1:53216 id: 0
+[19:00:26] [join] Cada has joined the server (0:127.0.0.1)
+[19:00:30] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[19:02:37] *** Audio Plugin: Cada (ID: 0) has disconnected
+[19:02:37] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[19:02:37] [mode] Mode has been unloaded.
+[19:02:37] [debug] Server crashed due to an unknown error
+[19:02:37] [debug] Native backtrace:
+[19:02:37] [debug] #0 004016a3 in ?? () from samp-server.exe
+[19:02:37] [debug] #1 5ade68d1 in ?? () from plugins\mysql.DLL
+[19:02:37] [debug] #2 5ae035d4 in ?? () from plugins\mysql.DLL
+[19:02:37] [debug] #3 5ae06688 in ?? () from plugins\mysql.DLL
+[19:02:37] [debug] #4 5adec52e in ?? () from plugins\mysql.DLL
+[19:02:37] [debug] #5 5adedc7f in ?? () from plugins\mysql.DLL
+[19:02:37] [debug] #6 5adee3d3 in ?? () from plugins\mysql.DLL
+[19:02:37] [debug] #7 00469a66 in ?? () from samp-server.exe
+[19:02:37] [debug] #8 0048d4db in ?? () from samp-server.exe
+[19:02:37] [debug] #9 0049b4a1 in ?? () from samp-server.exe
+[19:02:37] [debug] #10 0049b4b1 in ?? () from samp-server.exe
+[19:02:37] [debug] Registers:
+[19:02:37] [debug] EAX: 9b800000 EBX: 5ae1a888 ECX: 00000000 EDX: ffffffff
+[19:02:37] [debug] ESI: 02b22738 EDI: 0019fc10 EBP: 0049b4a1 ESP: 0019fe98
+[19:02:37] [debug] EIP: 0049b4b1 EFLAGS: 00010287
+[19:02:37] [debug] Stack:
+[19:02:37] [debug] ESP+00000000: 004ab4a0 0019ff70 004ab0e1 ffffffff
+[19:02:37] [debug] ESP+00000020: 00000094 00000006 00000002 000023f0
+[19:02:37] [debug] ESP+00000040: 00000000 00000000 00000000 00000000
+[19:02:37] [debug] ESP+00000060: 00000000 00000000 00000000 00000000
+[19:02:37] [debug] ESP+00000080: 00000000 00000000 00000000 00000000
+[19:02:37] [debug] ESP+000000a0: 00000000 00000000 00000000 00000000
+[19:02:37] [debug] ESP+000000c0: 00000000 00000000 c0000094 00000000
+[19:02:37] [debug] ESP+000000e0: 004ba530 00000000 0019ff94 76208484
+[19:02:37] [debug] ESP+00000100: 77b8302c 002da000 6fec228c 00000000
+[19:02:37] [debug] ESP+00000120: 00000000 00000000 6fec228c 0019ffa0
+[19:02:37] [debug] ESP+00000140: 00000000 0019ffec 77b82ffa ffffffff
+[19:02:37] [debug] ESP+00000160: 002da000 00000000 78746341 00000020
+[19:02:37] [debug] ESP+00000180: 00000020 00000000 00000014 00000001
+[19:02:37] [debug] ESP+000001a0: 00000000 00000000 00000000 00000000
+[19:02:37] [debug] ESP+000001c0: 00000044 000002e0 0000025c 00000000
+[19:02:37] [debug] ESP+000001e0: 00000342 00000000 2d59495b 000008cc
+[19:02:37] [debug] ESP+00000200: 32ceeacd 00000bfc 00000042 00000c40
+[19:02:37] [debug] ESP+00000220: 0000005e 00000fd0 00000362 00000000
+[19:02:37] [debug] ESP+00000240: 00000392 00000010 00000009 000000ec
+[19:02:37] [debug] ESP+00000260: 00000001 00000002 00001758 000007a0
+[19:02:37] [debug] ESP+00000280: 00000001 00000004 00002d84 00000314
+[19:02:37] [debug] ESP+000002a0: 00000002 00000006 00003130 000000cc
+[19:02:37] [debug] ESP+000002c0: 00000001 00000009 000032ec 00000028
+[19:02:37] [debug] ESP+000002e0: 00000001 64487353 0000002c 00000001
+[19:02:37] [debug] ESP+00000300: 00000001 000015a4 0000002c 0000005e
+[19:02:37] [debug] ESP+00000320: 00000000 00000000 00000000 00000000
+[19:02:37] [debug] ESP+00000340: 00000038 00000000 003a0043 0057005c
+[19:02:37] [debug] ESP+00000360: 006e0069 00780053 005c0073 00000000
+[19:02:37] [debug] ESP+00000380: 0000025c 00000001 f33271ba 000003c0
+[19:02:37] [debug] ESP+000003a0: 2d59495b 00000750 00000032 00000784
+[19:02:37] [debug] ESP+000003c0: 00000042 00000ac4 00000330 00000004
+[19:02:37] [debug] ESP+000003e0: 00000362 00000005 b1280544 000011b8
+[19:02:37] [debug] Loaded modules:
+[19:02:37] [debug] 00400000 - 00519000 samp-server.exe
+[19:02:37] [debug] 77b20000 - 77cb0000 ntdll.dll
+[19:02:37] [debug] 761f0000 - 762d0000 KERNEL32.DLL
+[19:02:37] [debug] 75d30000 - 75f14000 KERNELBASE.dll
+[19:02:37] [debug] 762d0000 - 7761a000 SHELL32.dll
+[19:02:37] [debug] 75f20000 - 75fdf000 msvcrt.dll
+[19:02:37] [debug] 75cf0000 - 75d29000 cfgmgr32.dll
+[19:02:37] [debug] 74450000 - 7456e000 ucrtbase.dll
+[19:02:37] [debug] 778e0000 - 77968000 shcore.dll
+[19:02:37] [debug] 74a10000 - 74ad0000 RPCRT4.dll
+[19:02:37] [debug] 743e0000 - 74400000 SspiCli.dll
+[19:02:37] [debug] 743d0000 - 743da000 CRYPTBASE.dll
+[19:02:37] [debug] 749b0000 - 74a08000 bcryptPrimitives.dll
+[19:02:37] [debug] 75c90000 - 75cd4000 sechost.dll
+[19:02:37] [debug] 74750000 - 749ac000 combase.dll
+[19:02:37] [debug] 74ee0000 - 75499000 windows.storage.dll
+[19:02:37] [debug] 75600000 - 75678000 advapi32.dll
+[19:02:37] [debug] 754a0000 - 754e5000 shlwapi.dll
+[19:02:37] [debug] 77970000 - 77992000 GDI32.dll
+[19:02:37] [debug] 77750000 - 778b4000 gdi32full.dll
+[19:02:37] [debug] 74570000 - 745ed000 msvcp_win.dll
+[19:02:37] [debug] 74ae0000 - 74c6d000 USER32.dll
+[19:02:37] [debug] 778c0000 - 778d7000 win32u.dll
+[19:02:37] [debug] 755f0000 - 755ff000 kernel.appcore.dll
+[19:02:37] [debug] 75c70000 - 75c88000 profapi.dll
+[19:02:37] [debug] 75680000 - 756c5000 powrprof.dll
+[19:02:37] [debug] 74d80000 - 74d88000 FLTLIB.DLL
+[19:02:37] [debug] 734b0000 - 734d4000 WINMM.dll
+[19:02:37] [debug] 733a0000 - 733c3000 WINMMBASE.dll
+[19:02:37] [debug] 725e0000 - 725e8000 WSOCK32.dll
+[19:02:37] [debug] 76180000 - 761e7000 WS2_32.dll
+[19:02:37] [debug] 776c0000 - 776e6000 IMM32.DLL
+[19:02:37] [debug] 5aea0000 - 5aef1000 crashdetect.DLL
+[19:02:37] [debug] 5ae30000 - 5ae99000 MSVCP100.dll
+[19:02:37] [debug] 57720000 - 577df000 MSVCR100.dll
+[19:02:37] [debug] 5ade0000 - 5ae2e000 mysql.DLL
+[19:02:37] [debug] 575d0000 - 5769d000 libmariadb.dll
+[19:02:37] [debug] 576a0000 - 57711000 MSVCP140.dll
+[19:02:37] [debug] 65280000 - 6529a000 log-core.dll
+[19:02:37] [debug] 65250000 - 65265000 VCRUNTIME140.dll
+[19:02:37] [debug] 75fe0000 - 76176000 CRYPT32.dll
+[19:02:37] [debug] 776b0000 - 776be000 MSASN1.dll
+[19:02:37] [debug] 68df0000 - 68dfa000 Secur32.dll
+[19:02:37] [debug] 722f0000 - 72301000 napinsp.dll
+[19:02:37] [debug] 71ed0000 - 71ee6000 pnrpnsp.dll
+[19:02:37] [debug] 71eb0000 - 71ec3000 NLAapi.dll
+[19:02:37] [debug] 732b0000 - 73306000 mswsock.dll
+[19:02:37] [debug] 71e20000 - 71eae000 DNSAPI.dll
+[19:02:37] [debug] 74ad0000 - 74ad7000 NSI.dll
+[19:02:37] [debug] 74310000 - 74340000 IPHLPAPI.DLL
+[19:02:37] [debug] 71e10000 - 71e1c000 winrnr.dll
+[19:02:37] [debug] 70750000 - 70758000 rasadhlp.dll
+[19:02:37] [debug] 57560000 - 575c7000 streamer.DLL
+[19:02:37] [debug] 57510000 - 5755f000 audio.DLL
+[19:02:37] [debug] 5adc0000 - 5add7000 MapAndreas.DLL
+[19:02:37] [debug] 6e970000 - 6e9bf000 fwpuclnt.dll
+[19:02:37] [debug] 74340000 - 74359000 bcrypt.dll
+[19:02:37] [debug] 71d30000 - 71dac000 uxtheme.dll
+[19:02:37] [debug] 74c80000 - 74d7c000 ole32.dll
+[19:02:37] [debug] 74190000 - 74310000 PROPSYS.dll
+[19:02:37] [debug] 74650000 - 746e6000 OLEAUT32.dll
+[19:02:37] [debug] 77620000 - 776a3000 clbcatq.dll
+[19:02:37] [debug] 6f400000 - 6f43d000 edputil.dll
+[19:02:37] [debug] 6f1d0000 - 6f36c000 urlmon.dll
+[19:02:37] [debug] 6efa0000 - 6f1c8000 iertutil.dll
+[19:02:37] [debug] 70800000 - 7081a000 CLDAPI.dll
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:02:41] password = ""  (string)
+[19:02:41] 
+[19:02:41] Server Plugins
+[19:02:41] --------------
+[19:02:41]  Loading plugin: crashdetect
+[19:02:41]   CrashDetect plugin 4.19
+[19:02:41]   Loaded.
+[19:02:41]  Loading plugin: mysql
+[19:02:41]  >> plugin.mysql: R41-4 successfully loaded.
+[19:02:41]   Loaded.
+[19:02:41]  Loading plugin: streamer
+[19:02:41] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[19:02:41]   Loaded.
+[19:02:41]  Loading plugin: audio
+[19:02:41] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[19:02:41]   Loaded.
+[19:02:41]  Loading plugin: MapAndreas
+[19:02:41]   Loaded.
+[19:02:41]  Loaded 5 plugins.
+
+[19:02:41] 
+[19:02:41] Filterscripts
+[19:02:41] ---------------
+[19:02:41]   Loading filterscript 'Acu.amx'...
+[19:02:41]   Loaded 1 filterscripts.
+
+[19:02:41] ---------------------------------
+[19:02:41] [mysql] Connecting to DB server...
+[19:02:41] *** Audio Plugin: Started TCP server on port 7777
+[19:02:41] [mysql] Connected!
+[19:02:41] ---------------------------------
+[19:02:41] 
+
+[19:02:41] ---------------------------------
+[19:02:41]  ALL IN ONE v1.0.001
+[19:02:41]   Coded by Acu
+[19:02:41]   Updated by Cada
+[19:02:41]   acu.pe.kr@gmail.com
+[19:02:41] ---------------------------------
+
+[19:02:41] Number of vehicle models: 12
+[19:02:55] [connection] 127.0.0.1:65154 requests connection cookie.
+[19:02:56] [connection] incoming connection: 127.0.0.1:65154 id: 0
+[19:02:56] [join] Cada has joined the server (0:127.0.0.1)
+[19:03:03] *** Audio Plugin: Cada (ID: 0) has connected
+[19:03:54] [death] Cada died 54
+[19:04:36] *** Audio Plugin: Cada (ID: 0) has disconnected
+[19:04:36] [part] Cada has left the server (0:1)
+[19:04:36] [mysql] Error! Unknown column 'Value_S' in 'field list'(1054)
+[19:04:37] [mysql]  Callback: ''
+[19:04:37] [mysql]  Query: 'UPDATE user_data SET IP=INET_ATON('127.0.0.1'),Money=0,Value_S='',Value_I=0,Value_F=0.0,LastUpdate=NOW() WHERE ID = 1'
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:06:27] password = ""  (string)
+[19:06:27] 
+[19:06:27] Server Plugins
+[19:06:27] --------------
+[19:06:27]  Loading plugin: crashdetect
+[19:06:27]   CrashDetect plugin 4.19
+[19:06:27]   Loaded.
+[19:06:27]  Loading plugin: mysql
+[19:06:27]  >> plugin.mysql: R41-4 successfully loaded.
+[19:06:27]   Loaded.
+[19:06:27]  Loading plugin: streamer
+[19:06:27] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[19:06:27]   Loaded.
+[19:06:27]  Loading plugin: audio
+[19:06:27] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[19:06:27]   Loaded.
+[19:06:27]  Loading plugin: MapAndreas
+[19:06:27]   Loaded.
+[19:06:27]  Loaded 5 plugins.
+
+[19:06:27] 
+[19:06:27] Filterscripts
+[19:06:27] ---------------
+[19:06:27]   Loading filterscript 'Acu.amx'...
+[19:06:27]   Loaded 1 filterscripts.
+
+[19:06:27] ---------------------------------
+[19:06:27] [mysql] Connecting to DB server...
+[19:06:27] *** Audio Plugin: Started TCP server on port 7777
+[19:06:27] [mysql] Connected!
+[19:06:27] ---------------------------------
+[19:06:27] 
+
+[19:06:27] ---------------------------------
+[19:06:27]  ALL IN ONE v1.0.001
+[19:06:27]   Coded by Acu
+[19:06:27]   Updated by Cada
+[19:06:27]   acu.pe.kr@gmail.com
+[19:06:27] ---------------------------------
+
+[19:06:27] Number of vehicle models: 12
+[19:06:51] [connection] 127.0.0.1:63765 requests connection cookie.
+[19:06:52] [connection] incoming connection: 127.0.0.1:63765 id: 0
+[19:06:53] [join] Cada has joined the server (0:127.0.0.1)
+[19:06:58] *** Audio Plugin: Cada (ID: 0) has connected
+[19:09:45] [death] Cada died 54
+Console input: gmx
+[19:21:13] *** Audio Plugin: Cada (ID: 0) has disconnected
+[19:21:13] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[19:21:13] [mode] Mode has been unloaded.
+[19:21:25] ---------------------------------
+[19:21:25] [mysql] Connecting to DB server...
+[19:21:25] [mysql] Connected!
+[19:21:25] ---------------------------------
+[19:21:25] 
+
+[19:21:25] ---------------------------------
+[19:21:25]  ALL IN ONE v1.0.001
+[19:21:25]   Coded by Acu
+[19:21:25]   Updated by Cada
+[19:21:25]   acu.pe.kr@gmail.com
+[19:21:25] ---------------------------------
+
+[19:21:25] Number of vehicle models: 12
+[19:21:50] [part] Cada has left the server (0:0)
+[19:21:52] [connection] 127.0.0.1:52901 requests connection cookie.
+[19:21:53] [connection] incoming connection: 127.0.0.1:52901 id: 0
+[19:21:53] [join] Cada has joined the server (0:127.0.0.1)
+[19:21:58] *** Audio Plugin: Cada (ID: 0) has connected
+[19:22:55] [death] Cada died 255
+Console input: gmx
+[19:23:44] *** Audio Plugin: Cada (ID: 0) has disconnected
+[19:23:44] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[19:23:44] [mode] Mode has been unloaded.
+[19:23:56] ---------------------------------
+[19:23:56] [mysql] Connecting to DB server...
+[19:23:56] [mysql] Connected!
+[19:23:56] ---------------------------------
+[19:23:56] 
+
+[19:23:56] ---------------------------------
+[19:23:56]  ALL IN ONE v1.0.001
+[19:23:56]   Coded by Acu
+[19:23:56]   Updated by Cada
+[19:23:56]   acu.pe.kr@gmail.com
+[19:23:56] ---------------------------------
+
+[19:23:56] Number of vehicle models: 12
+[19:24:13] *** Audio Plugin: Cada (ID: 0) has connected
+[19:25:28] [death] Cada died 255
+Console input: gmx
+[19:27:08] *** Audio Plugin: Cada (ID: 0) has disconnected
+[19:27:08] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[19:27:08] [mode] Mode has been unloaded.
+[19:27:20] ---------------------------------
+[19:27:20] [mysql] Connecting to DB server...
+[19:27:20] [mysql] Connected!
+[19:27:20] ---------------------------------
+[19:27:20] 
+
+[19:27:20] ---------------------------------
+[19:27:20]  ALL IN ONE v1.0.001
+[19:27:20]   Coded by Acu
+[19:27:20]   Updated by Cada
+[19:27:20]   acu.pe.kr@gmail.com
+[19:27:20] ---------------------------------
+
+[19:27:20] Number of vehicle models: 12
+[19:27:20] *** Audio Plugin: Cada (ID: 0) has connected
+[19:27:39] [death] Cada died 54
+Console input: gmx
+[19:28:30] *** Audio Plugin: Cada (ID: 0) has disconnected
+[19:28:30] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[19:28:30] [mode] Mode has been unloaded.
+[19:28:42] ---------------------------------
+[19:28:42] [mysql] Connecting to DB server...
+[19:28:42] [mysql] Connected!
+[19:28:43] ---------------------------------
+[19:28:43] 
+
+[19:28:43] ---------------------------------
+[19:28:43]  ALL IN ONE v1.0.001
+[19:28:43]   Coded by Acu
+[19:28:43]   Updated by Cada
+[19:28:43]   acu.pe.kr@gmail.com
+[19:28:43] ---------------------------------
+
+[19:28:43] Number of vehicle models: 12
+[19:28:50] *** Audio Plugin: Cada (ID: 0) has connected
+[19:29:02] [death] Cada died 54
+[19:29:22] [death] Cada died 54
+Console input: gmx
+[19:36:04] *** Audio Plugin: Cada (ID: 0) has disconnected
+[19:36:04] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[19:36:04] [mode] Mode has been unloaded.
+[19:36:16] ---------------------------------
+[19:36:16] [mysql] Connecting to DB server...
+[19:36:16] [mysql] Connected!
+[19:36:16] ---------------------------------
+[19:36:16] 
+
+[19:36:16] ---------------------------------
+[19:36:16]  ALL IN ONE v1.0.001
+[19:36:16]   Coded by Acu
+[19:36:16]   Updated by Cada
+[19:36:16]   acu.pe.kr@gmail.com
+[19:36:16] ---------------------------------
+
+[19:36:16] Number of vehicle models: 12
+[19:36:18] *** Audio Plugin: Cada (ID: 0) has connected
+[19:38:21] [death] Cada died 54
+Console input: gmx
+[19:39:46] *** Audio Plugin: Cada (ID: 0) has disconnected
+[19:39:46] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[19:39:46] [mode] Mode has been unloaded.
+[19:39:58] ---------------------------------
+[19:39:58] [mysql] Connecting to DB server...
+[19:39:58] [mysql] Connected!
+[19:39:58] ---------------------------------
+[19:39:58] 
+
+[19:39:58] ---------------------------------
+[19:39:58]  ALL IN ONE v1.0.001
+[19:39:58]   Coded by Acu
+[19:39:58]   Updated by Cada
+[19:39:58]   acu.pe.kr@gmail.com
+[19:39:58] ---------------------------------
+
+[19:39:58] Number of vehicle models: 12
+[19:40:02] 1
+[19:40:07] *** Audio Plugin: Cada (ID: 0) has connected
+[19:40:07] 0
+[19:40:16] 1
+[19:42:33] *** Audio Plugin: Cada (ID: 0) has disconnected
+[19:42:33] [part] Cada has left the server (0:1)

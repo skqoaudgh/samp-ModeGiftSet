@@ -31,8 +31,9 @@
 forward AddHandler_ServerSide();
 forward InitHandler_ServerSide();
 forward ExitHandler_ServerSide();
-
-
+forward RequestClassHandler_ServerSide(playerid,classid);
+	//-/ Function /
+forward ForceSpawnPlayer(playerid);
 
 
 
@@ -42,6 +43,7 @@ public AddHandler_ServerSide()
 {
 	AddHandler("ServerSide",InitHandler);
 	AddHandler("ServerSide",ExitHandler);
+	AddHandler("ServerSide",RequestClassHandler);
 }
 //-----/ InitHandler_ServerSide /-----------------------------------------------
 public InitHandler_ServerSide()
@@ -71,4 +73,15 @@ public ExitHandler_ServerSide()
 {
 	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	printf("[mode] Mode has been unloaded.");
+}
+//-----/ RequestClassHandler_ServerSide /---------------------------------------
+public RequestClassHandler_ServerSide(playerid,classid)
+{
+	SetTimerEx("ForceSpawnPlayer",20,0,"d",playerid);
+}
+
+//==========/ Functions /=======================================================
+public ForceSpawnPlayer(playerid)
+{
+	SpawnPlayer(playerid);
 }

@@ -23,6 +23,7 @@ new bool:Goal[MAX_PLAYERS];
 forward AddHandler_1_Run();
 forward InitHandler_1_Run();
 forward PickUpHandler_1_Run(playerid,pickupid);
+forward SpawnHandler_1_Run(playerid);
 	//--/ Functions /
 
 
@@ -32,6 +33,7 @@ public AddHandler_1_Run()
 {
 	AddHandler("1_Run",InitHandler);
 	AddHandler("1_Run",PickUpHandler);
+	AddHandler("1_Run",SpawnHandler);
 	//AddTimer("WTF",TIMER_1S_PLAYER);
 }
 
@@ -840,14 +842,18 @@ public InitHandler_1_Run()
 }
 
 //-----/ SpawnHandler_1_Run /---------------------------------------------------
-public SpawnHandler_WTF(playerid)
+public SpawnHandler_1_Run(playerid)
 {
 	if(GetPlayerMap(playerid) == 1)
 	{
 		SetPlayerPos(playerid,6919.6401,-3086.9556,56.2338);
 		SetPlayerFacingAngle(playerid,268.6034);
-		FreezePlayer(playerid,3);
+		FreezePlayer(playerid,2);
 
+		SetPlayerHealth(playerid,10);
+		SetPlayerInterior(playerid,0);
+		SetPlayerVirtualWorld(playerid,0);
+		
 		Goal[playerid] = false;
 	}
 }

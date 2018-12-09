@@ -20,9 +20,9 @@
 
 //-----/ Pre-Defines /
 	//--/ Mode Information /
-#define MODE_NAME				"Anything You wAnt (AYA)"
+#define MODE_NAME				"ALL IN ONE"
 #define MODE_VERSION			"v1.0.001"
-#define SERVER_HOSTNAME			"[GLOBAL] Do Anything you want"
+#define SERVER_HOSTNAME			"[GLOBAL][0.3.7] ALL IN ONE SERVER"
 
 
 
@@ -49,7 +49,8 @@
 #include "./Modules/Cores/Map.pwn"
 		// Functions //
 #include "./Modules/Functions/ExtendedFunc.pwn"
-
+		// Game //
+#include "./Modules/Game/1_Run.pwn"
 
 
 //-----/ Defines /
@@ -64,7 +65,8 @@
  <VirtualID List>
    Max Value: 2,147,483,647
 	10000: Core
-	10100: Map
+	10100: Userdata
+	10200: Map
 */	
 
 
@@ -87,6 +89,8 @@ public OnGameModeInit()
 	AddModule("Userdata");
 	AddModule("Object");
 	AddModule("Map");
+	    // Game //
+    AddModule("1_Run");
 		// Call Modules //
 	InitializeModules();
 	//----------------------------------------

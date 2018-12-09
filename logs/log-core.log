@@ -42,3 +42,23 @@
 [13:30:15] [INFO] received Windows console close event; shutting log-core down
 [13:38:56] [ERROR] exception 0XC0000005 (ACCESS_VIOLATION) from Vectored Exception Handler catched; shutting log-core down
 [13:39:11] [ERROR] exception 0XC0000005 (ACCESS_VIOLATION) from Vectored Exception Handler catched; shutting log-core down
+[18:21:59] [INFO] received Windows console close event; shutting log-core down
+[18:28:32] [INFO] received Windows console close event; shutting log-core down
+[18:30:57] [INFO] received Windows console close event; shutting log-core down
+[18:41:57] [INFO] received Windows console close event; shutting log-core down
+[18:42:40] [INFO] received Windows console close event; shutting log-core down
+[18:43:39] [INFO] received Windows console close event; shutting log-core down
+[18:43:52] [INFO] received Windows console close event; shutting log-core down
+[18:52:18] [INFO] received Windows console close event; shutting log-core down
+[18:52:31] [INFO] received Windows console close event; shutting log-core down
+[18:52:55] [INFO] received Windows console close event; shutting log-core down
+[18:53:00] [INFO] received Windows console close event; shutting log-core down
+[18:54:15] [INFO] received Windows console close event; shutting log-core down
+[18:54:20] [INFO] received Windows console close event; shutting log-core down
+[18:56:26] [INFO] received Windows console close event; shutting log-core down
+[18:57:01] [INFO] received Windows console close event; shutting log-core down
+[18:59:15] [ERROR] exception 0XC0000094 (INTEGER_DIVIDE_BY_ZERO) from Vectored Exception Handler catched; shutting log-core down
+[19:00:09] [ERROR] exception 0XC0000094 (INTEGER_DIVIDE_BY_ZERO) from Vectored Exception Handler catched; shutting log-core down
+[19:02:37] [ERROR] exception 0XC0000094 (INTEGER_DIVIDE_BY_ZERO) from Vectored Exception Handler catched; shutting log-core down
+[19:06:25] [INFO] received Windows console close event; shutting log-core down
+[19:42:36] [INFO] received Windows console close event; shutting log-core down

@@ -183,7 +183,7 @@ public DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[])
 stock ShowPlayerLoginDialog(playerid,bool:failed=false)
 {
 	new string[512],button[10];
-	strcat(string,"{FF5A00}Anything You wAnt 서버에{FFFFFF}에 오신 걸 환영합니다!\n");
+	strcat(string,"{FF5A00}ALL IN ONE 서버에{FFFFFF}에 오신 걸 환영합니다!\n");
 	strcat(string,"\n");
 	if(IsPlayerRegistered(playerid))
 	{
@@ -302,14 +302,15 @@ public LoadPlayerDataQE(playerid)
 	if(cache_num_rows())
 	{
 	    cache_get_value_name_int(0,"Money",value_int); SetPVarInt(playerid,"Money",value_int);
-
-		cache_get_value_name(0,"Value_S",string); SetPVarString(playerid,"Value_S",string);
-		cache_get_value_name_int(0,"Value_I",value_int); SetPVarInt(playerid,"Value_I",value_int);
-		cache_get_value_name_float(0,"Value_F",value_float); SetPVarFloat(playerid,"Value_F",value_float);
+        cache_get_value_name_int(0,"Point",value_int); SetPVarInt(playerid,"Point",value_int);
+        
+		//cache_get_value_name(0,"Value_S",string); SetPVarString(playerid,"Value_S",string);
+		//cache_get_value_name_int(0,"Value_I",value_int); SetPVarInt(playerid,"Value_I",value_int);
+		//cache_get_value_name_float(0,"Value_F",value_float); SetPVarFloat(playerid,"Value_F",value_float);
 
 		//-----
 		SetPlayerMoney(playerid,GetPVarInt(playerid,"Money"));
-		SetPlayerScore(playerid,GetPVarInt(playerid,"Level"));
+		SetPlayerScore(playerid,GetPVarInt(playerid,"Point"));
 		//-----
 		P_LoggedIn[playerid] = true;
 		SpawnPlayerEx(playerid);
@@ -325,10 +326,11 @@ stock SavePlayerData(playerid)
 		format(string,sizeof(string),"%s IP=INET_ATON('%s')",string,P_IP[playerid]);
 		//-----
 		format(string,sizeof(string),"%s,Money=%d",string,GetPVarInt(playerid,"Money"));
-
-		format(string,sizeof(string),"%s,Value_S='%s'",string,GetPVarStringEx(playerid,"Value_S"));
-		format(string,sizeof(string),"%s,Value_I=%d",string,GetPVarInt(playerid,"Value_I"));
-		format(string,sizeof(string),"%s,Value_F=%.1f",string,GetPVarFloat(playerid,"Value_F"));
+        format(string,sizeof(string),"%s,Point=%d",string,GetPVarInt(playerid,"Point"));
+        
+		//format(string,sizeof(string),"%s,Value_S='%s'",string,GetPVarStringEx(playerid,"Value_S"));
+		//format(string,sizeof(string),"%s,Value_I=%d",string,GetPVarInt(playerid,"Value_I"));
+		//format(string,sizeof(string),"%s,Value_F=%.1f",string,GetPVarFloat(playerid,"Value_F"));
 
 		//-----
 		format(string,sizeof(string),"%s,LastUpdate=NOW()",string);
@@ -363,11 +365,16 @@ stock ChangePlayerPassword(playerid,password[])
 stock SpawnPlayerEx(playerid)
 {
 	SetPlayerColor(playerid,COLOR_WHITE);
-	SetSpawnInfo(playerid, 0,0, 0.0,0.0,500.0,0.0, 0,0,0,0,0,0);
+	SetSpawnInfo(playerid, 0,0, 1479.5483,-1600.0005,13.5469,0.0, 0,0,0,0,0,0);
 	SpawnPlayer(playerid);
 	//-----
 	SetPlayerPos(playerid, 1479.5483,-1600.0005,13.5469);
 	SetPlayerFacingAngle(playerid, 180.2658);
 	SetPlayerSkin(playerid, 0);
+	
+	SetPlayerHealth(playerid, 100);
+	SetPlayerInterior(playerid, 0);
+	SetPlayerVirtualWorld(playerid, 0);
+
 	SetPVarInt(playerid,"MapNumber",0);
 }

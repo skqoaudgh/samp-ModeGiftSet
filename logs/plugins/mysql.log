@@ -174,3 +174,51 @@
 [13:39:08] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2019 'Can't initialize character set unknown (path: compiled_in)'
 [13:39:08] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2019 'Can't initialize character set unknown (path: compiled_in)'
 [13:39:08] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2019 'Can't initialize character set unknown (path: compiled_in)'
+[18:32:25] [ERROR] cache_get_value_name_int: field 'Money' not found
+[18:32:25] [ERROR] cache_get_value_name: field 'Value_S' not found
+[18:32:25] [ERROR] cache_get_value_name_int: field 'Value_I' not found
+[18:32:25] [ERROR] cache_get_value_name_float: field 'Value_F' not found
+[18:32:37] [ERROR] cache_get_value_name_int: field 'Money' not found
+[18:32:37] [ERROR] cache_get_value_name: field 'Value_S' not found
+[18:32:37] [ERROR] cache_get_value_name_int: field 'Value_I' not found
+[18:32:37] [ERROR] cache_get_value_name_float: field 'Value_F' not found
+[18:35:02] [ERROR] error #1054 while executing query "UPDATE user_data SET IP=INET_ATON('127.0.0.1'),Money=0,Value_S='',Value_I=0,Value_F=0.0,LastUpdate=NOW() WHERE ID = 1": Unknown column 'Money' in 'field list'
+[18:35:02] [ERROR] CCallback::Execute - invalid AMX instance
+[18:35:14] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'Gift'
+[18:35:32] [ERROR] cache_get_value_name_int: field 'Money' not found
+[18:35:32] [ERROR] cache_get_value_name: field 'Value_S' not found
+[18:35:32] [ERROR] cache_get_value_name_int: field 'Value_I' not found
+[18:35:32] [ERROR] cache_get_value_name_float: field 'Value_F' not found
+[18:38:42] [ERROR] error #1054 while executing query "UPDATE user_data SET IP=INET_ATON('127.0.0.1'),Money=0,Value_S='',Value_I=0,Value_F=0.0,LastUpdate=NOW() WHERE ID = 1": Unknown column 'Money' in 'field list'
+[18:38:42] [ERROR] CCallback::Execute - invalid AMX instance
+[18:38:54] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'Gift'
+[18:39:02] [ERROR] cache_get_value_name_int: field 'Money' not found
+[18:39:02] [ERROR] cache_get_value_name: field 'Value_S' not found
+[18:39:02] [ERROR] cache_get_value_name_int: field 'Value_I' not found
+[18:39:02] [ERROR] cache_get_value_name_float: field 'Value_F' not found
+[18:39:13] [ERROR] error #1054 while executing query "UPDATE user_data SET IP=INET_ATON('127.0.0.1'),Money=0,Value_S='',Value_I=0,Value_F=0.0,LastUpdate=NOW() WHERE ID = 1": Unknown column 'Money' in 'field list'
+[18:44:17] [ERROR] cache_get_value_name: field 'Value_S' not found
+[18:44:17] [ERROR] cache_get_value_name_int: field 'Value_I' not found
+[18:44:17] [ERROR] cache_get_value_name_float: field 'Value_F' not found
+[18:57:18] [ERROR] cache_get_value_name: field 'Value_S' not found
+[18:57:18] [ERROR] cache_get_value_name_int: field 'Value_I' not found
+[18:57:18] [ERROR] cache_get_value_name_float: field 'Value_F' not found
+[18:59:15] [ERROR] error #1054 while executing query "UPDATE user_data SET IP=INET_ATON('127.0.0.1'),Money=0,Value_S='',Value_I=0,Value_F=0.0,LastUpdate=NOW() WHERE ID = 1": Unknown column 'Value_S' in 'field list'
+[18:59:37] [ERROR] cache_get_value_name: field 'Value_S' not found
+[18:59:37] [ERROR] cache_get_value_name_int: field 'Value_I' not found
+[18:59:37] [ERROR] cache_get_value_name_float: field 'Value_F' not found
+[19:00:09] [ERROR] error #1054 while executing query "UPDATE user_data SET IP=INET_ATON('127.0.0.1'),Money=0,Value_S='',Value_I=0,Value_F=0.0,LastUpdate=NOW() WHERE ID = 1": Unknown column 'Value_S' in 'field list'
+[19:00:29] [ERROR] cache_get_value_name: field 'Value_S' not found
+[19:00:29] [ERROR] cache_get_value_name_int: field 'Value_I' not found
+[19:00:29] [ERROR] cache_get_value_name_float: field 'Value_F' not found
+[19:02:37] [ERROR] error #1054 while executing query "UPDATE user_data SET IP=INET_ATON('127.0.0.1'),Money=0,Value_S='',Value_I=0,Value_F=0.0,LastUpdate=NOW() WHERE ID = 1": Unknown column 'Value_S' in 'field list'
+[19:02:58] [ERROR] cache_get_value_name: field 'Value_S' not found
+[19:02:58] [ERROR] cache_get_value_name_int: field 'Value_I' not found
+[19:02:58] [ERROR] cache_get_value_name_float: field 'Value_F' not found
+[19:04:36] [ERROR] error #1054 while executing query "UPDATE user_data SET IP=INET_ATON('127.0.0.1'),Money=0,Value_S='',Value_I=0,Value_F=0.0,LastUpdate=NOW() WHERE ID = 1": Unknown column 'Value_S' in 'field list'
+[19:21:25] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'Gift'
+[19:23:56] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'Gift'
+[19:27:20] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'Gift'
+[19:28:42] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'Gift'
+[19:36:16] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'Gift'
+[19:39:58] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'Gift'
