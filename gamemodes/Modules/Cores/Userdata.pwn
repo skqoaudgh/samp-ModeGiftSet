@@ -302,11 +302,11 @@ public LoadPlayerDataQE(playerid)
 	if(cache_num_rows())
 	{
 	    cache_get_value_name_int(0,"Money",value_int); SetPVarInt(playerid,"Money",value_int);
-	    /*
+
 		cache_get_value_name(0,"Value_S",string); SetPVarString(playerid,"Value_S",string);
 		cache_get_value_name_int(0,"Value_I",value_int); SetPVarInt(playerid,"Value_I",value_int);
 		cache_get_value_name_float(0,"Value_F",value_float); SetPVarFloat(playerid,"Value_F",value_float);
-		*/
+
 		//-----
 		SetPlayerMoney(playerid,GetPVarInt(playerid,"Money"));
 		SetPlayerScore(playerid,GetPVarInt(playerid,"Level"));
@@ -325,11 +325,11 @@ stock SavePlayerData(playerid)
 		format(string,sizeof(string),"%s IP=INET_ATON('%s')",string,P_IP[playerid]);
 		//-----
 		format(string,sizeof(string),"%s,Money=%d",string,GetPVarInt(playerid,"Money"));
-		/*
+
 		format(string,sizeof(string),"%s,Value_S='%s'",string,GetPVarStringEx(playerid,"Value_S"));
 		format(string,sizeof(string),"%s,Value_I=%d",string,GetPVarInt(playerid,"Value_I"));
 		format(string,sizeof(string),"%s,Value_F=%.1f",string,GetPVarFloat(playerid,"Value_F"));
-		*/
+
 		//-----
 		format(string,sizeof(string),"%s,LastUpdate=NOW()",string);
 		format(string,sizeof(string),"%s WHERE ID = %d",string,GetPVarInt(playerid,"ID"));
@@ -369,4 +369,5 @@ stock SpawnPlayerEx(playerid)
 	SetPlayerPos(playerid, 1479.5483,-1600.0005,13.5469);
 	SetPlayerFacingAngle(playerid, 180.2658);
 	SetPlayerSkin(playerid, 0);
+	SetPVarInt(playerid,"MapNumber",0);
 }

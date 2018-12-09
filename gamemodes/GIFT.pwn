@@ -46,6 +46,7 @@
 #include "./Modules/Cores/ServerSide.pwn"
 #include "./Modules/Cores/Userdata.pwn"
 #include "./Modules/Cores/Object.pwn"
+#include "./Modules/Cores/Map.pwn"
 		// Functions //
 #include "./Modules/Functions/ExtendedFunc.pwn"
 
@@ -63,13 +64,12 @@
  <VirtualID List>
    Max Value: 2,147,483,647
 	10000: Core
+	10100: Map
 */	
 
 
 
 //-----/ Forwards /
-
-
 
 
 
@@ -86,6 +86,7 @@ public OnGameModeInit()
 	AddModule("ServerSide");
 	AddModule("Userdata");
 	AddModule("Object");
+	AddModule("Map");
 		// Call Modules //
 	InitializeModules();
 	//----------------------------------------

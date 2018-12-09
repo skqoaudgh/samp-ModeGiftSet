@@ -1,23 +1,4 @@
 /*
- *
- *		[For a better future, Enthusiasm of Acu]
- *
- *			Extended Functions
- *			v1.0.0
- *
- *
- *		First Release:		2017/02/08
- *		Last Update:		2017/02/08
- *
- *
- *
- *		Coded by Acu 2006-2017 @ all rights reserved.
- *			acu.pe.kr@gmail.com
- *			http://acu.pe.kr
- *
- *
- */
-/*
   [Functions]
 	GetPlayerNameEx(playerid)
 	GetPlayerIP(playerid)

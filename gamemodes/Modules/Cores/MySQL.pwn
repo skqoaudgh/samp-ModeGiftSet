@@ -93,7 +93,7 @@ public InitHandler_MySQL()
 		Wait(3000),Crash();
 	} else {
 		printf("[mysql] Connected!");
-		mysql_set_charset("euckr",MySQL_Handle_Main); // pawn 소스가 euc-kr이므로 맞춰준다. (pawn 컴파일러가 utf8 미지원)
+  		mysql_set_charset("euckr",MySQL_Handle_Main); // pawn 소스가 euc-kr이므로 맞춰준다. (pawn 컴파일러가 utf8 미지원)
 		//------
 		// 테이블 정보 확인
 		CheckMySQLTables();
