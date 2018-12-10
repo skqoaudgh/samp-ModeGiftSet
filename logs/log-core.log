@@ -62,3 +62,4 @@
 [19:02:37] [ERROR] exception 0XC0000094 (INTEGER_DIVIDE_BY_ZERO) from Vectored Exception Handler catched; shutting log-core down
 [19:06:25] [INFO] received Windows console close event; shutting log-core down
 [19:42:36] [INFO] received Windows console close event; shutting log-core down
+[14:44:13] [INFO] received Windows console close event; shutting log-core down

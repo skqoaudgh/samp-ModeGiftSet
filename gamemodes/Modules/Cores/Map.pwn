@@ -20,7 +20,7 @@
 
 
 //-----/ Defines /
-#define MAX_MAP                     3
+#define MAX_MAP                     4
 #define DialogID_Map(%1)			10200 + %1
 
 
@@ -78,6 +78,7 @@ public InitHandler_Map()
 	format(MapInfo[0][Name],128,"로비");
 	format(MapInfo[1][Name],128,"정자의 모험 : 리메이크");
 	format(MapInfo[2][Name],128,"대통령 지키기");
+	format(MapInfo[3][Name],128,"돌아온 시발모드 : 삽 대전");
 }
 //-----/ ConnectHandler_Map /----------------------------------------------
 public ConnectHandler_Map(playerid)
@@ -112,6 +113,7 @@ public SpawnHandler_Map(playerid)
 	{
 		SetPlayerColor(playerid,COLOR_WHITE);
 		
+		SetPlayerWorldBounds(playerid,20000.0000, -20000.0000, 20000.0000, -20000.0000);
 		SetPlayerPos(playerid, 1479.5483,-1600.0005,13.5469);
 		SetPlayerFacingAngle(playerid, 180.2658);
 		SetPlayerSkin(playerid, 0);

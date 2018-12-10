@@ -5545,3 +5545,1005 @@ Console input: gmx
 [19:40:16] 1
 [19:42:33] *** Audio Plugin: Cada (ID: 0) has disconnected
 [19:42:33] [part] Cada has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:57:31] password = ""  (string)
+[13:57:31] 
+[13:57:31] Server Plugins
+[13:57:31] --------------
+[13:57:31]  Loading plugin: crashdetect
+[13:57:31]   CrashDetect plugin 4.19
+[13:57:31]   Loaded.
+[13:57:31]  Loading plugin: mysql
+[13:57:31]  >> plugin.mysql: R41-4 successfully loaded.
+[13:57:31]   Loaded.
+[13:57:31]  Loading plugin: streamer
+[13:57:31] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[13:57:31]   Loaded.
+[13:57:31]  Loading plugin: audio
+[13:57:31] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[13:57:31]   Loaded.
+[13:57:31]  Loading plugin: MapAndreas
+[13:57:31]   Loaded.
+[13:57:31]  Loaded 5 plugins.
+
+[13:57:31] 
+[13:57:31] Filterscripts
+[13:57:31] ---------------
+[13:57:31]   Loading filterscript 'Acu.amx'...
+[13:57:31]   Loaded 1 filterscripts.
+
+[13:57:31] ---------------------------------
+[13:57:31] *** Audio Plugin: Started TCP server on port 7777
+[13:57:31] [mysql] Connecting to DB server...
+[13:57:32] [mysql] Connected!
+[13:57:32] ---------------------------------
+[13:57:32] 
+
+[13:57:32] ---------------------------------
+[13:57:32]  ALL IN ONE v1.0.001
+[13:57:32]   Coded by Acu
+[13:57:32]   Updated by Cada
+[13:57:32]   acu.pe.kr@gmail.com
+[13:57:32] ---------------------------------
+
+[13:57:32] Number of vehicle models: 69
+[13:58:09] [connection] 127.0.0.1:58994 requests connection cookie.
+[13:58:10] [connection] incoming connection: 127.0.0.1:58994 id: 0
+[13:58:10] [join] Cada has joined the server (0:127.0.0.1)
+[13:58:13] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[13:59:26] *** Audio Plugin: Cada (ID: 0) has disconnected
+[13:59:26] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[13:59:26] [mode] Mode has been unloaded.
+[13:59:38] ---------------------------------
+[13:59:38] [mysql] Connecting to DB server...
+[13:59:38] [mysql] Connected!
+[13:59:38] ---------------------------------
+[13:59:38] 
+
+[13:59:38] ---------------------------------
+[13:59:38]  ALL IN ONE v1.0.001
+[13:59:38]   Coded by Acu
+[13:59:38]   Updated by Cada
+[13:59:38]   acu.pe.kr@gmail.com
+[13:59:38] ---------------------------------
+
+[13:59:38] Number of vehicle models: 69
+[13:59:40] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[14:06:04] *** Audio Plugin: Cada (ID: 0) has disconnected
+[14:06:04] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[14:06:04] [mode] Mode has been unloaded.
+[14:06:16] ---------------------------------
+[14:06:16] [mysql] Connecting to DB server...
+[14:06:16] [mysql] Connected!
+[14:06:16] ---------------------------------
+[14:06:16] 
+
+[14:06:16] ---------------------------------
+[14:06:16]  ALL IN ONE v1.0.001
+[14:06:16]   Coded by Acu
+[14:06:16]   Updated by Cada
+[14:06:16]   acu.pe.kr@gmail.com
+[14:06:16] ---------------------------------
+
+[14:06:16] Number of vehicle models: 69
+[14:06:21] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[14:10:14] *** Audio Plugin: Cada (ID: 0) has disconnected
+[14:10:14] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[14:10:14] [mode] Mode has been unloaded.
+[14:10:26] ---------------------------------
+[14:10:26] [mysql] Connecting to DB server...
+[14:10:26] [mysql] Connected!
+[14:10:26] ---------------------------------
+[14:10:26] 
+
+[14:10:26] ---------------------------------
+[14:10:26]  ALL IN ONE v1.0.001
+[14:10:26]   Coded by Acu
+[14:10:26]   Updated by Cada
+[14:10:26]   acu.pe.kr@gmail.com
+[14:10:26] ---------------------------------
+
+[14:10:26] Number of vehicle models: 69
+[14:10:31] *** Audio Plugin: Cada (ID: 0) has connected
+[14:10:41] [chat] [Cada]: d
+Console input: gmx
+[14:14:27] *** Audio Plugin: Cada (ID: 0) has disconnected
+[14:14:27] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[14:14:27] [mode] Mode has been unloaded.
+[14:14:39] ---------------------------------
+[14:14:39] [mysql] Connecting to DB server...
+[14:14:39] [mysql] Connected!
+[14:14:39] ---------------------------------
+[14:14:39] 
+
+[14:14:39] ---------------------------------
+[14:14:39]  ALL IN ONE v1.0.001
+[14:14:39]   Coded by Acu
+[14:14:39]   Updated by Cada
+[14:14:39]   acu.pe.kr@gmail.com
+[14:14:39] ---------------------------------
+
+[14:14:39] Number of vehicle models: 69
+[14:14:39] *** Audio Plugin: Cada (ID: 0) has connected
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:07] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:08] [warning] client exceeded 'ackslimit' 127.0.0.1:58994 (3987) Limit: 3000/sec
+[14:15:24] *** Audio Plugin: Cada (ID: 0) has disconnected
+[14:15:34] [part] Cada has left the server (0:0)
+Console input: gmx
+[14:17:25] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[14:17:25] [mode] Mode has been unloaded.
+[14:17:37] ---------------------------------
+[14:17:37] [mysql] Connecting to DB server...
+[14:17:37] [mysql] Connected!
+[14:17:37] ---------------------------------
+[14:17:37] 
+
+[14:17:37] ---------------------------------
+[14:17:37]  ALL IN ONE v1.0.001
+[14:17:37]   Coded by Acu
+[14:17:37]   Updated by Cada
+[14:17:37]   acu.pe.kr@gmail.com
+[14:17:37] ---------------------------------
+
+[14:17:37] Number of vehicle models: 69
+[14:17:54] [connection] 127.0.0.1:51908 requests connection cookie.
+[14:17:55] [connection] incoming connection: 127.0.0.1:51908 id: 0
+[14:17:56] [join] Cada has joined the server (0:127.0.0.1)
+[14:17:59] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[14:20:53] *** Audio Plugin: Cada (ID: 0) has disconnected
+[14:20:53] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[14:20:53] [mode] Mode has been unloaded.
+[14:21:05] ---------------------------------
+[14:21:05] [mysql] Connecting to DB server...
+[14:21:05] [mysql] Connected!
+[14:21:05] ---------------------------------
+[14:21:05] 
+
+[14:21:05] ---------------------------------
+[14:21:05]  ALL IN ONE v1.0.001
+[14:21:05]   Coded by Acu
+[14:21:05]   Updated by Cada
+[14:21:05]   acu.pe.kr@gmail.com
+[14:21:05] ---------------------------------
+
+[14:21:05] Number of vehicle models: 69
+[14:21:12] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[14:26:38] *** Audio Plugin: Cada (ID: 0) has disconnected
+[14:26:38] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[14:26:38] [mode] Mode has been unloaded.
+[14:26:50] ---------------------------------
+[14:26:50] [mysql] Connecting to DB server...
+[14:26:50] [mysql] Connected!
+[14:26:50] ---------------------------------
+[14:26:50] 
+
+[14:26:50] ---------------------------------
+[14:26:50]  ALL IN ONE v1.0.001
+[14:26:50]   Coded by Acu
+[14:26:50]   Updated by Cada
+[14:26:50]   acu.pe.kr@gmail.com
+[14:26:50] ---------------------------------
+
+[14:26:50] Number of vehicle models: 69
+[14:27:07] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[14:31:38] *** Audio Plugin: Cada (ID: 0) has disconnected
+[14:31:38] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[14:31:38] [mode] Mode has been unloaded.
+[14:31:50] ---------------------------------
+[14:31:50] [mysql] Connecting to DB server...
+[14:31:50] [mysql] Connected!
+[14:31:50] ---------------------------------
+[14:31:50] 
+
+[14:31:50] ---------------------------------
+[14:31:50]  ALL IN ONE v1.0.001
+[14:31:50]   Coded by Acu
+[14:31:50]   Updated by Cada
+[14:31:50]   acu.pe.kr@gmail.com
+[14:31:50] ---------------------------------
+
+[14:31:50] Number of vehicle models: 69
+[14:31:53] *** Audio Plugin: Cada (ID: 0) has connected
+[14:32:39] RCON (In-Game): Player #0 (Cada) has logged in.
+[14:32:44] RCON (In-Game): Player [Cada] sent command: loadfs fsdebug
+[14:32:44]   Filterscript 'fsdebug.amx' load failed.
+[14:33:18] RCON (In-Game): Player [Cada] sent command: loadfs fsdebug
+[14:33:18] 
+  *********************
+  * SA:MP DEBUG 0.2   *
+[14:33:18]   * By Simon Campbell *
+  *********************
+[14:33:18]   * Version: 0.5d      *
+  *********************
+[14:33:18]   * -- LOADED         *
+  *********************
+
+[14:33:18]   Filterscript 'fsdebug.amx' loaded.
+Console input: gmx
+[14:37:15] *** Audio Plugin: Cada (ID: 0) has disconnected
+[14:37:15] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[14:37:15] [mode] Mode has been unloaded.
+[14:37:27] ---------------------------------
+[14:37:27] [mysql] Connecting to DB server...
+[14:37:27] [mysql] Connected!
+[14:37:27] ---------------------------------
+[14:37:27] 
+
+[14:37:27] ---------------------------------
+[14:37:27]  ALL IN ONE v1.0.001
+[14:37:27]   Coded by Acu
+[14:37:27]   Updated by Cada
+[14:37:27]   acu.pe.kr@gmail.com
+[14:37:27] ---------------------------------
+
+[14:37:27] Number of vehicle models: 68
+[14:37:37] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[14:39:21] *** Audio Plugin: Cada (ID: 0) has disconnected
+[14:39:21] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[14:39:21] [mode] Mode has been unloaded.
+[14:39:33] ---------------------------------
+[14:39:33] [mysql] Connecting to DB server...
+[14:39:33] [mysql] Connected!
+[14:39:33] ---------------------------------
+[14:39:33] 
+
+[14:39:33] ---------------------------------
+[14:39:33]  ALL IN ONE v1.0.001
+[14:39:33]   Coded by Acu
+[14:39:33]   Updated by Cada
+[14:39:33]   acu.pe.kr@gmail.com
+[14:39:33] ---------------------------------
+
+[14:39:33] Number of vehicle models: 68
+[14:39:35] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[14:40:55] *** Audio Plugin: Cada (ID: 0) has disconnected
+[14:40:55] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[14:40:55] [mode] Mode has been unloaded.
+[14:41:07] ---------------------------------
+[14:41:07] [mysql] Connecting to DB server...
+[14:41:07] [mysql] Connected!
+[14:41:07] ---------------------------------
+[14:41:07] 
+
+[14:41:07] ---------------------------------
+[14:41:07]  ALL IN ONE v1.0.001
+[14:41:07]   Coded by Acu
+[14:41:07]   Updated by Cada
+[14:41:07]   acu.pe.kr@gmail.com
+[14:41:07] ---------------------------------
+
+[14:41:07] Number of vehicle models: 68
+[14:41:20] *** Audio Plugin: Cada (ID: 0) has connected
+[14:41:27] 0
+[14:43:49] *** Audio Plugin: Cada (ID: 0) has disconnected
+[14:43:49] [part] Cada has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:13:32] password = ""  (string)
+[23:13:32] 
+[23:13:32] Server Plugins
+[23:13:32] --------------
+[23:13:32]  Loading plugin: crashdetect
+[23:13:32]   CrashDetect plugin 4.19
+[23:13:32]   Loaded.
+[23:13:32]  Loading plugin: mysql
+[23:13:32]  >> plugin.mysql: R41-4 successfully loaded.
+[23:13:32]   Loaded.
+[23:13:32]  Loading plugin: streamer
+[23:13:32] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[23:13:32]   Loaded.
+[23:13:32]  Loading plugin: audio
+[23:13:32] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[23:13:32]   Loaded.
+[23:13:32]  Loading plugin: MapAndreas
+[23:13:32]   Loaded.
+[23:13:32]  Loaded 5 plugins.
+
+[23:13:32] 
+[23:13:32] Filterscripts
+[23:13:32] ---------------
+[23:13:32]   Loading filterscript 'Acu.amx'...
+[23:13:32]   Loaded 1 filterscripts.
+
+[23:13:32] ---------------------------------
+[23:13:32] [mysql] Connecting to DB server...
+[23:13:32] *** Audio Plugin: Started TCP server on port 7777
+[23:13:32] [mysql] Connected!
+[23:13:32] ---------------------------------
+[23:13:32] 
+
+[23:13:32] ---------------------------------
+[23:13:32]  ALL IN ONE v1.0.001
+[23:13:32]   Coded by Acu
+[23:13:32]   Updated by Cada
+[23:13:32]   acu.pe.kr@gmail.com
+[23:13:32] ---------------------------------
+
+[23:13:32] Number of vehicle models: 68
+[23:13:46] [connection] 127.0.0.1:54601 requests connection cookie.
+[23:13:47] [connection] incoming connection: 127.0.0.1:54601 id: 0
+[23:13:48] [join] Cada has joined the server (0:127.0.0.1)
+[23:13:53] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[23:14:27] *** Audio Plugin: Cada (ID: 0) has disconnected
+[23:14:27] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[23:14:27] [mode] Mode has been unloaded.
+[23:14:39] ---------------------------------
+[23:14:39] [mysql] Connecting to DB server...
+[23:14:39] [mysql] Connected!
+[23:14:39] ---------------------------------
+[23:14:39] 
+
+[23:14:39] ---------------------------------
+[23:14:39]  ALL IN ONE v1.0.001
+[23:14:39]   Coded by Acu
+[23:14:39]   Updated by Cada
+[23:14:39]   acu.pe.kr@gmail.com
+[23:14:39] ---------------------------------
+
+[23:14:39] Number of vehicle models: 68
+[23:15:05] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[23:17:00] *** Audio Plugin: Cada (ID: 0) has disconnected
+[23:17:00] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[23:17:00] [mode] Mode has been unloaded.
+[23:17:12] ---------------------------------
+[23:17:12] [mysql] Connecting to DB server...
+[23:17:12] [mysql] Connected!
+[23:17:12] ---------------------------------
+[23:17:12] 
+
+[23:17:12] ---------------------------------
+[23:17:12]  ALL IN ONE v1.0.001
+[23:17:12]   Coded by Acu
+[23:17:12]   Updated by Cada
+[23:17:12]   acu.pe.kr@gmail.com
+[23:17:12] ---------------------------------
+
+[23:17:12] Number of vehicle models: 68
+[23:17:22] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[23:19:37] *** Audio Plugin: Cada (ID: 0) has disconnected
+[23:19:37] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[23:19:37] [mode] Mode has been unloaded.
+[23:19:49] ---------------------------------
+[23:19:49] [mysql] Connecting to DB server...
+[23:19:49] [mysql] Connected!
+[23:19:49] ---------------------------------
+[23:19:49] 
+
+[23:19:49] ---------------------------------
+[23:19:49]  ALL IN ONE v1.0.001
+[23:19:49]   Coded by Acu
+[23:19:49]   Updated by Cada
+[23:19:49]   acu.pe.kr@gmail.com
+[23:19:49] ---------------------------------
+
+[23:19:49] Number of vehicle models: 68
+[23:19:58] *** Audio Plugin: Cada (ID: 0) has connected
+Console input: gmx
+[23:21:00] *** Audio Plugin: Cada (ID: 0) has disconnected
+[23:21:00] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[23:21:00] [mode] Mode has been unloaded.
+[23:21:12] ---------------------------------
+[23:21:12] [mysql] Connecting to DB server...
+[23:21:12] [mysql] Connected!
+[23:21:12] ---------------------------------
+[23:21:12] 
+
+[23:21:12] ---------------------------------
+[23:21:12]  ALL IN ONE v1.0.001
+[23:21:12]   Coded by Acu
+[23:21:12]   Updated by Cada
+[23:21:12]   acu.pe.kr@gmail.com
+[23:21:12] ---------------------------------
+
+[23:21:12] Number of vehicle models: 68
+[23:21:15] *** Audio Plugin: Cada (ID: 0) has connected
+[23:23:29] [death] Cada died 54
+[23:23:48] [death] Cada died 255

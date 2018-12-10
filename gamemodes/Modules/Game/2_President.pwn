@@ -507,7 +507,7 @@ public DeathHandler_2_President(playerid,killerid,reason)
 {
 	if(playerid == PresidentPlayer)
 	{
-        SendMessage(2, COLOR_PASTEL_GREEN, "* 테러리스트 팀이 대통령을 암살해 승리하였습니다! (Point +5, Money +500)");
+        SendMessage(2, COLOR_PASTEL_GREEN, "* 테러리스트 팀이 대통령을 암살해 승리하였습니다! (Point +10, Money +1000)");
         SendMessage(2, COLOR_PASTEL_GREEN, "* 잠시 후 새로운 라운드가 시작됩니다.");
         KillTimer(RoundTimer);
         SetTimer("EndRound",5000,0);
@@ -524,6 +524,16 @@ public DeathHandler_2_President(playerid,killerid,reason)
 				}
 			}
   		}
+	}
+	new WeaponName[32], string[128];
+    GetWeaponName(reason, WeaponName, sizeof(WeaponName));
+	if(killerid != INVALID_PLAYER_ID)
+	{
+		format(string,sizeof(string),"* %s (%d) 님이 %s (%d) 님을 %s (으)로 죽였습니다 (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
+		SendMessage(2, COLOR_RED, string);
+		
+		SetPVarInt(killerid,"Point",GetPVarInt(killerid,"Point")+1);
+		SetPVarInt(killerid,"Money",GetPVarInt(killerid,"Money")+100);
 	}
 }
 //-----/ StateHandler_2_President /---------------------------------------------
