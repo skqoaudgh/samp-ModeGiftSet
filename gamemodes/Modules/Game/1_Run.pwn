@@ -395,6 +395,7 @@ public InitHandler_1_Run()
 	AddStaticVehicleEx(420, 7428.3232,-3084.4948, 609.4654, 360.0, -1, -1, 1);
 	AddStaticVehicleEx(420, 7408.0332,-3083.3989, 581.1718, 360.0, -1, -1, 1);
 	AddStaticVehicleEx(420, 7407.6298,-3084.6972, 580.4014, 56.0, -1, -1, 1);
+	
 	AddStaticVehicleEx(420, 7700.2431,-3097.3032, 957.1947, 156.0, -1, -1, 1);
 	AddStaticVehicleEx(420, 7692.7241,-3095.9865, 945.1166, 327.0, -1, -1, 1);
 	AddStaticVehicleEx(420, 7690.4077,-3096.6032, 942.9391, 204.0, -1, -1, 1);
@@ -853,6 +854,7 @@ public SpawnHandler_1_Run(playerid)
 		SetPlayerHealth(playerid,10);
 		SetPlayerInterior(playerid,0);
 		SetPlayerVirtualWorld(playerid,0);
+		SetPlayerTime(playerid, 12, 0);
 		
 		Goal[playerid] = false;
 	}
@@ -864,14 +866,25 @@ public PickUpHandler_1_Run(playerid,pickupid)
 	if(pickupid == GoalPickup && !Goal[playerid])
 	{
 	    new string[256];
-	    Goal[playerid] = true;
-	    format(string,sizeof(string),"*** %s (%d) 님이 정상에 도달했습니다! (Point +20, Money +2000) ***",GetPlayerNameEx(playerid),playerid);
-	    SendMessage(playerid,COLOR_PASTEL_YELLOW,string);
-	    SendClientMessage(playerid,COLOR_WHITE,"* 재도전 하려면 [/맵]을 통해 다시 입장해 주시길 바랍니다.");
+	    new len = GetPlayerLanguage(playerid);
 	    
+	    Goal[playerid] = true;
+	    if(len == 0)
+	    {
+	    	format(string,sizeof(string),"*** %s (%d) 님이 정상에 도달했습니다! (Point +50, Money +5000) ***",GetPlayerNameEx(playerid),playerid);
+	    	SendMessage(playerid,COLOR_PASTEL_YELLOW,string);
+	    	SendClientMessage(playerid,COLOR_WHITE,"* 재도전 하려면 [/맵]을 통해 다시 입장해 주시길 바랍니다.");
+	    }
+	    else
+	    {
+		    format(string,sizeof(string),"*** %s (%d) has reached the top! (Point +50, Money +5000) ***",GetPlayerNameEx(playerid),playerid);
+		    SendMessage(playerid,COLOR_PASTEL_YELLOW,string);
+		    SendClientMessage(playerid,COLOR_WHITE,"* If you want to try again this game, use [/map].");
+	    }
+
 	    PlayerPlaySound(playerid, 1150, 0.0, 0.0, 0.0);
-	    SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")+20);
-		SetPVarInt(playerid,"Money",GetPVarInt(playerid,"Money")+2000);
+	    SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")+50);
+		SetPVarInt(playerid,"Money",GetPVarInt(playerid,"Money")+5000);
 	}
 }
 

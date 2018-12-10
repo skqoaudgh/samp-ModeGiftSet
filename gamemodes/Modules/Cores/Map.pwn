@@ -30,7 +30,8 @@
 enum mInfo
 {
 	Type,       // 0:아케이드
-	Name[128],
+	KrName[128],
+	EnName[128],
 	PlayerCount
 }
 new
@@ -75,10 +76,15 @@ public InitHandler_Map()
 	    MapInfo[i][Type] = 0;
 	    MapInfo[i][PlayerCount] = 0;
 	}
-	format(MapInfo[0][Name],128,"로비");
-	format(MapInfo[1][Name],128,"정자의 모험 : 리메이크");
-	format(MapInfo[2][Name],128,"대통령 지키기");
-	format(MapInfo[3][Name],128,"돌아온 시발모드 : 삽 대전");
+	format(MapInfo[0][KrName],128,"로비");
+	format(MapInfo[1][KrName],128,"정자의 모험 : 리메이크");
+	format(MapInfo[2][KrName],128,"대통령 지키기");
+	format(MapInfo[3][KrName],128,"돌아온 시발모드 : 삽 대전");
+	
+	format(MapInfo[0][EnName],128,"Lobby");
+	format(MapInfo[1][EnName],128,"Sperm Adventure : Remake");
+	format(MapInfo[2][EnName],128,"Protect President");
+	format(MapInfo[3][EnName],128,"Fuck Mode Returned: Shovel DM");
 }
 //-----/ ConnectHandler_Map /----------------------------------------------
 public ConnectHandler_Map(playerid)
@@ -117,7 +123,7 @@ public SpawnHandler_Map(playerid)
 		SetPlayerPos(playerid, 1479.5483,-1600.0005,13.5469);
 		SetPlayerFacingAngle(playerid, 180.2658);
 		SetPlayerSkin(playerid, 0);
-
+        SetPlayerTime(playerid, 0, 0);
         ResetPlayerWeapons(playerid);
 		SetPlayerHealth(playerid, 100);
 		SetPlayerArmour(playerid, 0);
@@ -140,7 +146,13 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 				{
 			        KillTimer(GetRoundTimer());
 			        SetPresidentPlayer(-1);
-			        SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] 대통령이 접속을 종료해 게임이 중단됩니다. 대통령이 새롭게 선정되면 게임이 재개됩니다.");
+			        if(GetPlayerLanguage(playerid) == 0)
+			        	SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] 대통령이 접속을 종료해 게임이 중단됩니다. 대통령이 새롭게 선정되면 게임이 재개됩니다.");
+					else
+					{
+					    SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] The game is paused because the president is disconnected.");
+					    SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] The game will resume when new president is selected.");
+					}
 				}
 				SetPlayerHasTeam(playerid, false);
 				HidePlayerTeamTD(playerid);
@@ -194,11 +206,21 @@ stock GetPlayerMap(playerid)
 stock ShowPlayerMapList(playerid)
 {
 	new string[2048], temp[128];
-	format(string,sizeof(string),""C_PASTEL_YELLOW"번호\t"C_PASTEL_YELLOW"이름\t"C_PASTEL_YELLOW"인원\n");
+	new len = GetPlayerLanguage(playerid);
+	if(len == 0)
+		format(string,sizeof(string),""C_PASTEL_YELLOW"번호\t"C_PASTEL_YELLOW"이름\t"C_PASTEL_YELLOW"인원\n");
+	else
+	    format(string,sizeof(string),""C_PASTEL_YELLOW"No.\t"C_PASTEL_YELLOW"Name\t"C_PASTEL_YELLOW"Playing\n");
 	for(new i=0; i<MAX_MAP; i++)
 	{
-	    format(temp,sizeof(temp),"%d\t%s\t%d\n",i,MapInfo[i][Name],MapInfo[i][PlayerCount]);
+		if(len == 0)
+	    	format(temp,sizeof(temp),"%d\t%s\t%d\n",i,MapInfo[i][KrName],MapInfo[i][PlayerCount]);
+		else
+		    format(temp,sizeof(temp),"%d\t%s\t%d\n",i,MapInfo[i][EnName],MapInfo[i][PlayerCount]);
 		strcat(string,temp);
 	}
-	ShowPlayerDialog(playerid, DialogID_Map(0), DIALOG_STYLE_TABLIST_HEADERS, ""C_PASTEL_GREEN"맵 선택",string, "확인","닫기");
+	if(len == 0)
+		ShowPlayerDialog(playerid, DialogID_Map(0), DIALOG_STYLE_TABLIST_HEADERS, ""C_PASTEL_GREEN"맵 선택",string, "확인","닫기");
+	else
+	    ShowPlayerDialog(playerid, DialogID_Map(0), DIALOG_STYLE_TABLIST_HEADERS, ""C_PASTEL_GREEN"Select Map",string, "OK","Cancel");
 }

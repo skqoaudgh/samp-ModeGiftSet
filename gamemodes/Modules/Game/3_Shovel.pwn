@@ -148,6 +148,7 @@ public SpawnHandler_3_Shovel(playerid)
         SetPlayerHealth(playerid, 20.0);
         SetPlayerArmour(playerid, 0.0);
         SetPlayerWorldBounds(playerid,958.0458, 906.5814, -1108.8313, -1160.3292);
+        SetPlayerTime(playerid, 12, 0);
         
         ResetPlayerWeapons(playerid);
         GivePlayerWeapon(playerid, 6, 1);
@@ -164,7 +165,10 @@ public DeathHandler_3_Shovel(playerid,killerid,reason)
     GetWeaponName(reason, WeaponName, sizeof(WeaponName));
 	if(killerid != INVALID_PLAYER_ID)
 	{
-		format(string,sizeof(string),"* %s (%d) ¥‘¿Ã %s (%d) ¥‘¿ª %s (¿∏)∑Œ ¡◊ø¥Ω¿¥œ¥Ÿ (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
+	    if(GetPlayerLanguage(playerid) == 0)
+			format(string,sizeof(string),"* %s (%d) ¥‘¿Ã %s (%d) ¥‘¿ª %s (¿∏)∑Œ ¡◊ø¥Ω¿¥œ¥Ÿ (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
+		else
+		    format(string,sizeof(string),"* %s (%d) has killed %s (%d) with %s (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
 		SendMessage(2, COLOR_RED, string);
 
 		SetPVarInt(killerid,"Point",GetPVarInt(killerid,"Point")+1);

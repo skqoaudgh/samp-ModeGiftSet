@@ -439,6 +439,7 @@ public SpawnHandler_2_President(playerid)
 		{
 		    SelectedTeam[playerid] = 0;
 		    ShowPlayerTeamTD(playerid);
+		    SetPlayerTime(playerid, 12, 0);
 		    
 		    FreezePlayer(playerid);
 		    SetPlayerSkin(playerid,280);
@@ -490,7 +491,13 @@ public DisconnectHandler_2_President(playerid,reason)
     {
         KillTimer(RoundTimer);
         PresidentPlayer = -1;
-        SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] 대통령이 접속을 종료해 게임이 중단됩니다. 대통령이 새롭게 선정되면 게임이 재개됩니다.");
+		if(GetPlayerLanguage(playerid) == 0)
+        	SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] 대통령이 접속을 종료해 게임이 중단됩니다. 대통령이 새롭게 선정되면 게임이 재개됩니다.");
+		else
+		{
+		    SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] The game is paused because the president is disconnected.");
+		    SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] The game will resume when new president is selected.");
+		}
     }
 }
 //-----/ CommandHandler_2_President /-------------------------------------------
@@ -507,8 +514,16 @@ public DeathHandler_2_President(playerid,killerid,reason)
 {
 	if(playerid == PresidentPlayer)
 	{
-        SendMessage(2, COLOR_PASTEL_GREEN, "* 테러리스트 팀이 대통령을 암살해 승리하였습니다! (Point +10, Money +1000)");
-        SendMessage(2, COLOR_PASTEL_GREEN, "* 잠시 후 새로운 라운드가 시작됩니다.");
+	    if(GetPlayerLanguage(playerid) == 0)
+	    {
+        	SendMessage(2, COLOR_PASTEL_GREEN, "* 테러리스트 팀이 대통령을 암살해 승리하였습니다! (Point +10, Money +1000)");
+        	SendMessage(2, COLOR_PASTEL_GREEN, "* 잠시 후 새로운 라운드가 시작됩니다.");
+	    }
+		else
+		{
+        	SendMessage(2, COLOR_PASTEL_GREEN, "* Terrorist team has killed the president, Win the game! (Point +10, Money +1000)");
+        	SendMessage(2, COLOR_PASTEL_GREEN, "* Next round will be start soon.");
+		}
         KillTimer(RoundTimer);
         SetTimer("EndRound",5000,0);
 
@@ -529,7 +544,10 @@ public DeathHandler_2_President(playerid,killerid,reason)
     GetWeaponName(reason, WeaponName, sizeof(WeaponName));
 	if(killerid != INVALID_PLAYER_ID)
 	{
-		format(string,sizeof(string),"* %s (%d) 님이 %s (%d) 님을 %s (으)로 죽였습니다 (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
+	    if(GetPlayerLanguage(playerid) == 0)
+			format(string,sizeof(string),"* %s (%d) 님이 %s (%d) 님을 %s (으)로 죽였습니다 (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
+		else
+		    format(string,sizeof(string),"* %s (%d) has killed %s (%d) with %s (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
 		SendMessage(2, COLOR_RED, string);
 		
 		SetPVarInt(killerid,"Point",GetPVarInt(killerid,"Point")+1);
@@ -545,7 +563,10 @@ public StateHandler_2_President(playerid,newstate,oldstate)
 	    if(PresidentPlayer == playerid)
 		{
 	        RemovePlayerFromVehicle(playerid);
-	        SendClientMessage(playerid, COLOR_WHITE, "* 대통령은 운전을 할 수 없습니다!");
+	        if(GetPlayerLanguage(playerid) == 0)
+	        	SendClientMessage(playerid, COLOR_WHITE, "* 대통령은 운전을 할 수 없습니다!");
+			else
+			    SendClientMessage(playerid, COLOR_WHITE, "* President can`t drive a vehicle!");
 	    }
 	}
 }
@@ -584,20 +605,42 @@ public KeyHandler_2_President(playerid,newkeys,oldkeys)
 		    if(newkeys == KEY_YES) // 선택
 		    {
 		        PlayerTeam[playerid] = true;
-
+				new len = GetPlayerLanguage(playerid);
 		        if(SelectedTeam[playerid] >= 0 && SelectedTeam[playerid] <= 2) // 보디가드 팀 선택
 		        {
-		            if(TeamBalance >= 5) return SendClientMessage(playerid,COLOR_WHITE,"* 팀 밸런스가 적절치 않습니다. 테러리스트 팀을 선택해주세요.");
+		            if(TeamBalance >= 5)
+					{
+					    if(len == 0)
+					    	SendClientMessage(playerid,COLOR_WHITE,"* 팀 밸런스가 적절치 않습니다. 테러리스트 팀을 선택해주세요.");
+						else
+						    SendClientMessage(playerid,COLOR_WHITE,"* Team balance is not appropriate. Please select a terrorist team.");
+					    return 0;
+					}
+					
 		            TeamBalance ++;
 		        }
 		        else if(SelectedTeam[playerid] >= 4 && SelectedTeam[playerid] <= 6) // 테러리스트 팀 선택
 		        {
-		            if(TeamBalance <= -5) return SendClientMessage(playerid,COLOR_WHITE,"* 팀 밸런스가 적절치 않습니다. 경호 팀을 선택해주세요.");
+		            if(TeamBalance <= -5)
+					{
+					    if(len == 0)
+					    	SendClientMessage(playerid,COLOR_WHITE,"* 팀 밸런스가 적절치 않습니다. 경호 팀을 선택해주세요.");
+						else
+						    SendClientMessage(playerid,COLOR_WHITE,"* Team balance is not appropriate. Please select a bodyguard team.");
+					    return 0;
+					}
 		            TeamBalance --;
 		        }
 		        else // 대통령 선택
 				{
-					if(PresidentPlayer != -1) return SendClientMessage(playerid,COLOR_WHITE,"* 이미 대통령이 선택되었습니다. 다른 클래스를 선택해주세요.");
+					if(PresidentPlayer != -1)
+					{
+					    if(len == 0)
+					    	SendClientMessage(playerid,COLOR_WHITE,"* 이미 대통령이 선택되었습니다. 다른 클래스를 선택해주세요.");
+						else
+						    SendClientMessage(playerid,COLOR_WHITE,"* The president has already been selected. Please select another class.");
+						return 0;
+					}
 					PresidentPlayer = playerid;
 					if(LeftTime <= 0)
 						LeftTime = ROUND_TIME;
@@ -748,8 +791,26 @@ public Round()
 	if(LeftTime <= 0)
     {
         //ClearChatting();
-        SendMessage(2, COLOR_PASTEL_GREEN, "* 대통령이 제한시간 동안 생존하여 승리하였습니다! (Point +5, Money +500)");
-        SendMessage(2, COLOR_PASTEL_GREEN, "* 잠시 후 새로운 라운드가 시작됩니다.");
+        for(new i=0; i<MAX_PLAYERS; i++)
+        {
+            if(IsPlayerConnected(i))
+            {
+                if(GetPlayerMap(i) == 2)
+                {
+			        if(GetPlayerLanguage(i) == 0)
+			        {
+				        SendClientMessage(i, COLOR_PASTEL_GREEN, "* 대통령이 제한시간 동안 생존하여 승리하였습니다! (Point +5, Money +500)");
+				        SendClientMessage(i, COLOR_PASTEL_GREEN, "* 잠시 후 새로운 라운드가 시작됩니다.");
+			        }
+			        else
+			        {
+				        SendClientMessage(i, COLOR_PASTEL_GREEN, "* The president survive during round time, Win the game! (Point +5, Money +500)");
+				        SendClientMessage(i, COLOR_PASTEL_GREEN, "* Next round will be start soon.");
+			        }
+                }
+            }
+        }
+
         KillTimer(RoundTimer);
         SetTimer("EndRound",5000,0);
         

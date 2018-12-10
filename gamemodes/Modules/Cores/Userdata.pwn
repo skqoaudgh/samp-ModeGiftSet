@@ -22,7 +22,8 @@
   [Functions]
 	ShowPlayerLoginDialog(playerid,bool:failed=false)
 	ShowPlayerChangePasswordDialog(playerid)
-
+    ShowPlayerChangeLanguageDialog(playerid)
+    
 	CheckPlayerAccount(playerid)
 	LoginPlayer(playerid,password[])
 	RegisterPlayer(playerid,password[])
@@ -31,6 +32,8 @@
 	IsPlayerLoggedIn(playerid)
 	IsPlayerRegistered(playerid)
 	ChangePlayerPassword(playerid,password[])
+	GetPlayerLanguage(playerid)
+	IsPlayerSelectLanguage(playerid)
 */
 
 //-----/ Pre-Processing /
@@ -52,7 +55,8 @@ new
 	bool:P_Registered[MAX_PLAYERS],
 	bool:P_LoggedIn[MAX_PLAYERS],
 	P_LoginRetry[MAX_PLAYERS],
-	P_IP[MAX_PLAYERS][16]
+	P_IP[MAX_PLAYERS][16],
+	bool:P_Selected[MAX_PLAYERS]
 ;
 
 
@@ -102,6 +106,7 @@ public DisconnectHandler_Userdata(playerid,reason)
 	P_Registered[playerid] = false;
 	P_LoggedIn[playerid] = false;
 	P_LoginRetry[playerid] = 0;
+	P_Selected[playerid] = false;
 }
 //-----/ RequestSpawnHandler_Userdata /-----------------------------------------
 public RequestSpawnHandler_Userdata(playerid)
@@ -129,7 +134,10 @@ public CommandHandler_Userdata(playerid,cmdtext[])
 	if(!strcmp("/저장",cmdtext) || !strcmp("/sav",cmdtext,true))
 	{
 		SavePlayerData(playerid);
-		SendClientMessage(playerid,COLOR_WHITE,"[!] 데이터가 저장되었습니다.");
+		if(GetPlayerLanguage(playerid) == 0)
+			SendClientMessage(playerid,COLOR_WHITE,"[!] 데이터가 저장되었습니다.");
+		else
+		    SendClientMessage(playerid,COLOR_WHITE,"[!] The data has been saved.");
 		return 1;
 	}
 
@@ -138,7 +146,13 @@ public CommandHandler_Userdata(playerid,cmdtext[])
 		ShowPlayerChangePasswordDialog(playerid);
 		return 1;
 	}
-
+	
+	if(!strcmp("/language",cmdtext) || !strcmp("/lan",cmdtext) || !strcmp("/언어",cmdtext) || !strcmp("/언어변경",cmdtext))
+	{
+		ShowPlayerChangeLanguageDialog(playerid);
+		return 1;
+	}
+	
 	return 0;
 }
 //-----/ DialogHandler_Userdata /-----------------------------------------------
@@ -166,9 +180,26 @@ public DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[])
 				if(strlen(inputtext) >= 4 && strlen(inputtext) <= 32)
 				{
 					ChangePlayerPassword(playerid,inputtext);
-					SendClientMessage(playerid,COLOR_WHITE,"[!] 암호가 변경되었습니다.");
+					if(GetPlayerLanguage(playerid) == 0)
+						SendClientMessage(playerid,COLOR_WHITE,"[!] 암호가 변경되었습니다.");
+					else
+					    SendClientMessage(playerid,COLOR_WHITE,"[!] The password has been changed.");
 				} else ShowPlayerChangePasswordDialog(playerid);
 			}
+		}
+		case DialogID_Userdata(2): // 언어 변경
+		{
+			if(response)
+			{
+			    if(GetPVarInt(playerid,"Language") == 0)
+			        SetPVarInt(playerid,"Language",1);
+				else
+				    SetPVarInt(playerid,"Language",0);
+			    ShowPlayerChangeLanguageDialog(playerid);
+			}
+			else
+			    if(!IsPlayerLoggedIn(playerid))
+ 	    			ShowPlayerLoginDialog(playerid);
 		}
 	}
 	return 0;
@@ -183,47 +214,126 @@ public DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[])
 stock ShowPlayerLoginDialog(playerid,bool:failed=false)
 {
 	new string[512],button[10];
-	strcat(string,"{FF5A00}ALL IN ONE 서버에{FFFFFF}에 오신 걸 환영합니다!\n");
+	new len = GetPlayerLanguage(playerid);
+	if(len == 0)
+		strcat(string,"{FF5A00}ALL IN ONE 서버{FFFFFF}에 오신 걸 환영합니다!\n");
+	else
+	    strcat(string,"{FFFFFF}Welcome to the {FF5A00}ALL IN ONE Server!\n");
 	strcat(string,"\n");
 	if(IsPlayerRegistered(playerid))
 	{
 		button = "로그인";
 		if(failed)
-			strcat(string,"{FF69B4}비밀번호를 틀리셨어요. 다시 시도해보세요!\n");
+		{
+            if(len == 0)
+                strcat(string,"{FF69B4}비밀번호를 틀리셨어요. 다시 시도해보세요!\n");
+			else
+			    strcat(string,"{FF69B4}You entered wrong password. Try again!\n");
+		}
 		else
-			strcat(string,"{FF69B4}이미 등록되어 있는 닉네임이군요!\n");
+		{
+		    if(len == 0)
+		    	strcat(string,"{FF69B4}이미 등록되어 있는 닉네임이군요!\n");
+			else
+			    strcat(string,"{FF69B4}This account is already registered!\n");
+		}
 		strcat(string,"\n");
-		strcat(string,"{FFFFFF}이 닉네임에 로그인 하시려면\n");
-	} else {
-		button = "계정 등록";
-		strcat(string,"{FF69B4}오, 이런! 안타깝게도 계정이 없으시군요!\n");
-		strcat(string,"\n");
-		strcat(string,"{FFFFFF}이 닉네임으로 가입하시려면\n");
+		if(len == 0)
+			strcat(string,"{FFFFFF}이 닉네임에 로그인 하시려면\n");
+		else
+            strcat(string,"{FFFFFF}To login this account,\n");
 	}
-	strcat(string,"아래 입력칸에 비밀번호를 입력하세요!\n");
-	strcat(string,"\n");
-	strcat(string,"{F0E68C}입력하신 소중한 비밀번호는\n");
-	strcat(string,"{FFFF00}SHA-1 160bit 알고리즘{F0E68C}으로 암호화되므로\n");
-	strcat(string,"서버 관리자도 알 수 없으니 안심하세요!");
+	else
+	{
+	    if(IsPlayerSelectLanguage(playerid))
+	    {
+	        if(len == 0)
+	        {
+	            button = "계정 등록";
+				strcat(string,"{FF69B4}오, 이런! 안타깝게도 계정이 없으시군요!\n");
+				strcat(string,"\n");
+				strcat(string,"{FFFFFF}이 닉네임으로 가입하시려면\n");
+			}
+			else
+			{
+			    button = "Regist";
+				strcat(string,"{FF69B4}Oooh! Unfortunately, This account is not registered!\n");
+				strcat(string,"\n");
+				strcat(string,"{FFFFFF}To regist this account,\n");
+			}
+	    }
+	    else
+	    {
+	        ShowPlayerChangeLanguageDialog(playerid);
+	        return;
+	    }
+	}
+	if(len == 0)
+	{
+		strcat(string,"아래 입력칸에 비밀번호를 입력하세요!\n");
+		strcat(string,"\n");
+		strcat(string,"{F0E68C}입력하신 소중한 비밀번호는\n");
+		strcat(string,"{FFFF00}SHA-1 160bit 알고리즘{F0E68C}으로 암호화되므로\n");
+		strcat(string,"서버 관리자도 알 수 없으니 안심하세요!");
+	}
+	else
+	{
+		strcat(string,"Enter your password in the input box below!\n");
+		strcat(string,"\n");
+		strcat(string,"{F0E68C}The password that you entered\n");
+		strcat(string,"{F0E68C}is encrypted{FFFF00}for SHA-1 160bit algorithm\n");
+		strcat(string,"Server administrator never see your password. Feel safe!");
+	}
 	ShowPlayerDialog(playerid,DialogID_Userdata(0),DIALOG_STYLE_PASSWORD,"Login System",string,button,"");
 }
 //-----/ ShowPlayerChangePasswordDialog /---------------------------------------
 stock ShowPlayerChangePasswordDialog(playerid)
 {
 	new string[256];
-	strcat(string,"{FF69B4}비밀번호를 변경하시려구요?\n");
-	strcat(string,"\n");
-	strcat(string,"{FFFFFF}이 계정의 비밀번호를 변경하시려면\n");
-	strcat(string,"아래 입력칸에 변경하실 비밀번호를 입력하세요!\n");
-	strcat(string,"\n");
-	strcat(string,"{F0E68C}입력하신 소중한 비밀번호는\n");
-	strcat(string,"{FFFF00}SHA-1 160bit 알고리즘{F0E68C}으로 암호화되므로\n");
-	strcat(string,"관리자도 알 수 없으니 안심하세요!");
+	if(GetPlayerLanguage(playerid) == 0)
+	{
+		strcat(string,"{FF69B4}비밀번호를 변경하시려구요?\n");
+		strcat(string,"\n");
+		strcat(string,"{FFFFFF}이 계정의 비밀번호를 변경하시려면\n");
+		strcat(string,"아래 입력칸에 변경하실 비밀번호를 입력하세요!\n");
+		strcat(string,"\n");
+		strcat(string,"{F0E68C}입력하신 소중한 비밀번호는\n");
+		strcat(string,"{FFFF00}SHA-1 160bit 알고리즘{F0E68C}으로 암호화되므로\n");
+		strcat(string,"관리자도 알 수 없으니 안심하세요!");
+	}
+	else
+	{
+		strcat(string,"{FF69B4}Do you want to change password?\n");
+		strcat(string,"\n");
+		strcat(string,"{FFFFFF}To change your password of this account,\n");
+		strcat(string,"Enter your new password in the input box below!\n");
+		strcat(string,"\n");
+		strcat(string,"{F0E68C}The password that you entered\n");
+		strcat(string,"{F0E68C}is encrypted{FFFF00}for SHA-1 160bit algorithm\n");
+		strcat(string,"Server administrator never see your password. Feel safe!");
+	}
 	ShowPlayerDialog(playerid,DialogID_Userdata(1),DIALOG_STYLE_PASSWORD,"Login System",string,"변경","취소");
 }
-
-
-
+//-----/ ShowPlayerChangeLanguageDialog /---------------------------------------
+stock ShowPlayerChangeLanguageDialog(playerid)
+{
+	new lan = GetPVarInt(playerid,"Language");
+	new string[256];
+	if(lan == 0) // 한국어 사용 중
+	{
+	    strcat(string,""C_PASTEL_YELLOW"한국어 (Selected)\n");
+	    strcat(string,"English");
+	}
+	else // 영어 사용 중
+	{
+	    strcat(string,"한국어\n");
+	    strcat(string,""C_PASTEL_YELLOW"English (Selected)");
+	}
+	if(IsPlayerLoggedIn(playerid))
+ 		ShowPlayerDialog(playerid,DialogID_Userdata(2),DIALOG_STYLE_LIST,"Language Setting",string,"변경","취소");
+ 	else
+ 	    ShowPlayerLoginDialog(playerid);
+}
 
 
 //==========/ Account Functions /===============================================
@@ -240,7 +350,10 @@ public CheckPlayerAccountQE(playerid)
 	new value;
 	if(cache_num_rows() > 1)
 	{
-		SendClientMessage(playerid,COLOR_WHITE,"[!] 데이터베이스에 중복 계정이 발생하여 이 닉네임을 사용할 수 없습니다. 관리자 문의 바랍니다.");
+	    if(GetPlayerLanguage(playerid) == 0)
+			SendClientMessage(playerid,COLOR_WHITE,"[!] 데이터베이스에 중복 계정이 발생하여 이 닉네임을 사용할 수 없습니다. 관리자 문의 바랍니다.");
+		else
+		    SendClientMessage(playerid,COLOR_WHITE,"[!] This account can`t be used because a duplicate account has occurred in the database. Please contact the administrator.");
 		Kick(playerid);
 	} else {
 		if(cache_num_rows() == 1) // 계정 존재
@@ -271,7 +384,6 @@ public LoginPlayerQE(playerid)
 		// Failed
 		if(++P_LoginRetry[playerid] >= 3)
 		{
-			SendClientMessage(playerid,COLOR_RED,"로그인을 3회 실패하여 강퇴됩니다.");
 			Kick(playerid);
 		} else {
 			ShowPlayerLoginDialog(playerid,true);
@@ -355,9 +467,16 @@ stock ChangePlayerPassword(playerid,password[])
 	format(string,sizeof(string),"UPDATE user_data SET Password = SHA1('%s') WHERE Username = '%s'",mysql_string_escape(password),GetPlayerNameEx(playerid));
 	mysql_pquery(GetMySQLHandle(),string);
 }
-
-
-
+//-----/ GetPlayerLanguage /----------------------------------------------------
+stock GetPlayerLanguage(playerid)
+{
+	return GetPVarInt(playerid,"Language");
+}
+//-----/ IsPlayerSelectLanguage /---------------------------------------------------
+stock IsPlayerSelectLanguage(playerid)
+{
+	return P_Selected[playerid];
+}
 
 
 //==========/ Spawn Functions /=================================================
