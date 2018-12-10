@@ -51,7 +51,7 @@
 #include "./Modules/Functions/ExtendedFunc.pwn"
 		// Game //
 #include "./Modules/Game/1_Run.pwn"
-
+#include "./Modules/Game/2_President.pwn"
 
 //-----/ Defines /
 #define DialogID(%1)			10000 + %1
@@ -91,6 +91,7 @@ public OnGameModeInit()
 	AddModule("Map");
 	    // Game //
     AddModule("1_Run");
+    AddModule("2_President");
 		// Call Modules //
 	InitializeModules();
 	//----------------------------------------

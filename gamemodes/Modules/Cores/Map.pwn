@@ -4,7 +4,7 @@
 	ShowPlayerMapList(playerid)
 	FreezePlayer(playerid)
 	UnFreezePlayer(playerid)
-	SendMessage(playerid, text[])
+	SendMessage(playerid, color, text[])
 */
 
 //-----/ Pre-Processing /
@@ -20,7 +20,7 @@
 
 
 //-----/ Defines /
-#define MAX_MAP                     2
+#define MAX_MAP                     3
 #define DialogID_Map(%1)			10200 + %1
 
 
@@ -77,6 +77,7 @@ public InitHandler_Map()
 	}
 	format(MapInfo[0][Name],128,"로비");
 	format(MapInfo[1][Name],128,"정자의 모험 : 리메이크");
+	format(MapInfo[2][Name],128,"대통령 지키기");
 }
 //-----/ ConnectHandler_Map /----------------------------------------------
 public ConnectHandler_Map(playerid)
@@ -115,7 +116,9 @@ public SpawnHandler_Map(playerid)
 		SetPlayerFacingAngle(playerid, 180.2658);
 		SetPlayerSkin(playerid, 0);
 
+        ResetPlayerWeapons(playerid);
 		SetPlayerHealth(playerid, 100);
+		SetPlayerArmour(playerid, 0);
 		SetPlayerInterior(playerid, 0);
 		SetPlayerVirtualWorld(playerid, 0);
 	}
@@ -129,6 +132,17 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 		{
 			if(response)
 			{
+			    // 게임 진행 중, 게임 변경 시 처리
+				// 대통령 지키기
+				if(GetPresidentPlayer() == playerid)
+				{
+			        KillTimer(GetRoundTimer());
+			        SetPresidentPlayer(-1);
+			        SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] 대통령이 접속을 종료해 게임이 중단됩니다. 대통령이 새롭게 선정되면 게임이 재개됩니다.");
+				}
+				SetPlayerHasTeam(playerid, false);
+				HidePlayerTeamTD(playerid);
+			    //-----
 			    new beforeIdx = GetPVarInt(playerid,"MapNumber");
 				SetPVarInt(playerid,"MapNumber",listitem);
 				MapInfo[listitem][PlayerCount] ++;
@@ -142,10 +156,11 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 
 //==========/ Functions /=======================================================
 //-----/ FreezePlayer /---------------------------------------------------------
-stock FreezePlayer(playerid, time)
+stock FreezePlayer(playerid, time=0)
 {
     TogglePlayerControllable(playerid,0);
-	FreezeTimer[playerid] = SetTimerEx("UnFreezePlayer",time*1000,0,"d",playerid);
+    if(time > 0)
+		FreezeTimer[playerid] = SetTimerEx("UnFreezePlayer",time*1000,0,"d",playerid);
 }
 
 //-----/ UnFreezePlayer /-------------------------------------------------------

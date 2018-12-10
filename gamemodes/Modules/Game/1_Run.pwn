@@ -865,13 +865,13 @@ public PickUpHandler_1_Run(playerid,pickupid)
 	{
 	    new string[256];
 	    Goal[playerid] = true;
-	    format(string,sizeof(string),"*** %s (%d) 님이 정상에 도달했습니다! (Point +10, Money +1000) ***",GetPlayerNameEx(playerid),playerid);
+	    format(string,sizeof(string),"*** %s (%d) 님이 정상에 도달했습니다! (Point +20, Money +2000) ***",GetPlayerNameEx(playerid),playerid);
 	    SendMessage(playerid,COLOR_PASTEL_YELLOW,string);
 	    SendClientMessage(playerid,COLOR_WHITE,"* 재도전 하려면 [/맵]을 통해 다시 입장해 주시길 바랍니다.");
 	    
 	    PlayerPlaySound(playerid, 1150, 0.0, 0.0, 0.0);
-	    SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")+10);
-		SetPVarInt(playerid,"Money",GetPVarInt(playerid,"Money")+1000);
+	    SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")+20);
+		SetPVarInt(playerid,"Money",GetPVarInt(playerid,"Money")+2000);
 	}
 }
 

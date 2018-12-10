@@ -4,7 +4,9 @@
 	GetPlayerIP(playerid)
 	SetPlayerMoney(playerid,money)
 	GetPVarStringEx(playerid,varname[])
-
+    TextDrawShowForAllEx(playerid, Text:TD)
+ 	TextDrawHideForAllEx(mapid, Text:TD)
+ 	
 	strcpy(dest[],src[])
 	strtok(const string[],&index,separator=' ')
 	strblank(input[])
@@ -51,8 +53,19 @@ stock GetPVarStringEx(playerid,varname[])
 	GetPVarString(playerid,varname,string,100);
 	return string;
 }
-
-
+//-----/ TextDrawShowForAllEx /------------------------------------------------------
+stock TextDrawShowForAllEx(mapid, Text:TD)
+{
+	for(new i=0; i<MAX_PLAYERS; i++)
+	    if(GetPlayerMap(i) == mapid)
+	        TextDrawShowForPlayer(i,TD);
+}
+stock TextDrawHideForAllEx(mapid, Text:TD)
+{
+	for(new i=0; i<MAX_PLAYERS; i++)
+	    if(GetPlayerMap(i) == mapid)
+	        TextDrawHideForPlayer(i,TD);
+}
 
 
 
