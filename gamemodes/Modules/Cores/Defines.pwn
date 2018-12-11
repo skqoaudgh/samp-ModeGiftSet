@@ -35,6 +35,8 @@
 #define COLOR_GREEN		  		0x00FF00FF
 #define COLOR_BLUE		  		0x0000FFFF
 #define COLOR_YELLOW			0xFFFF00FF
+#define COLOR_TEAM              0x30A9DEFF
+
 #define C_WHITE					"{FFFFFF}"
 #define C_GREY 					"{AAAAAA}"
 #define C_BLACK					"{000000}"

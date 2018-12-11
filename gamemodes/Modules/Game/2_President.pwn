@@ -527,15 +527,16 @@ public DeathHandler_2_President(playerid,killerid,reason)
         KillTimer(RoundTimer);
         SetTimer("EndRound",5000,0);
 
-		for(new i=0; i<MAX_PLAYERS; i++)
+		for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
 		{
-			if(GetPlayerMap(i) == 2)
+			pid = GetConnectedPlayerID(i);
+			if(GetPlayerMap(pid) == 2)
 			{
 			    PlayerPlaySound(i, 139, 0.0, 0.0, 0.0);
-				if(SelectedTeam[i] >= 4 && SelectedTeam[i] <= 6)
+				if(SelectedTeam[pid] >= 4 && SelectedTeam[pid] <= 6)
 				{
-		    		SetPVarInt(i,"Point",GetPVarInt(i,"Point")+20);
-					SetPVarInt(i,"Money",GetPVarInt(i,"Money")+2000);
+		    		SetPVarInt(pid,"Point",GetPVarInt(pid,"Point")+20);
+					SetPVarInt(pid,"Money",GetPVarInt(pid,"Money")+2000);
 				}
 			}
   		}
@@ -545,9 +546,9 @@ public DeathHandler_2_President(playerid,killerid,reason)
 	if(killerid != INVALID_PLAYER_ID)
 	{
 	    if(GetPlayerLanguage(playerid) == 0)
-			format(string,sizeof(string),"* %s (%d) 님이 %s (%d) 님을 %s (으)로 죽였습니다 (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
+			format(string,sizeof(string),"* %s(%d) 님이 %s(%d) 님을 %s (으)로 죽였습니다 (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
 		else
-		    format(string,sizeof(string),"* %s (%d) has killed %s (%d) with %s (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
+		    format(string,sizeof(string),"* %s(%d) has killed %s(%d) with %s (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
 		SendMessage(2, COLOR_RED, string);
 		
 		SetPVarInt(killerid,"Point",GetPVarInt(killerid,"Point")+1);
@@ -791,38 +792,37 @@ public Round()
 	if(LeftTime <= 0)
     {
         //ClearChatting();
-        for(new i=0; i<MAX_PLAYERS; i++)
-        {
-            if(IsPlayerConnected(i))
+		for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
+		{
+			pid = GetConnectedPlayerID(i);
+            if(GetPlayerMap(pid) == 2)
             {
-                if(GetPlayerMap(i) == 2)
-                {
-			        if(GetPlayerLanguage(i) == 0)
-			        {
-				        SendClientMessage(i, COLOR_PASTEL_GREEN, "* 대통령이 제한시간 동안 생존하여 승리하였습니다! (Point +5, Money +500)");
-				        SendClientMessage(i, COLOR_PASTEL_GREEN, "* 잠시 후 새로운 라운드가 시작됩니다.");
-			        }
-			        else
-			        {
-				        SendClientMessage(i, COLOR_PASTEL_GREEN, "* The president survive during round time, Win the game! (Point +5, Money +500)");
-				        SendClientMessage(i, COLOR_PASTEL_GREEN, "* Next round will be start soon.");
-			        }
-                }
+		        if(GetPlayerLanguage(pid) == 0)
+		        {
+			        SendClientMessage(pid, COLOR_PASTEL_GREEN, "* 대통령이 제한시간 동안 생존하여 승리하였습니다! (Point +5, Money +500)");
+			        SendClientMessage(pid, COLOR_PASTEL_GREEN, "* 잠시 후 새로운 라운드가 시작됩니다.");
+		        }
+		        else
+		        {
+			        SendClientMessage(pid, COLOR_PASTEL_GREEN, "* The president survive during round time, Win the game! (Point +5, Money +500)");
+			        SendClientMessage(pid, COLOR_PASTEL_GREEN, "* Next round will be start soon.");
+		        }
             }
         }
 
         KillTimer(RoundTimer);
         SetTimer("EndRound",5000,0);
         
-		for(new i=0; i<MAX_PLAYERS; i++)
+		for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
 		{
-			if(GetPlayerMap(i) == 2)
+			pid = GetConnectedPlayerID(i);
+			if(GetPlayerMap(pid) == 2)
 			{
-			    PlayerPlaySound(i, 139, 0.0, 0.0, 0.0);
-				if(SelectedTeam[i] >= 0 && SelectedTeam[i] <= 3)
+			    PlayerPlaySound(pid, 139, 0.0, 0.0, 0.0);
+				if(SelectedTeam[pid] >= 0 && SelectedTeam[pid] <= 3)
 				{
-		    		SetPVarInt(i,"Point",GetPVarInt(i,"Point")+20);
-					SetPVarInt(i,"Money",GetPVarInt(i,"Money")+2000);
+		    		SetPVarInt(pid,"Point",GetPVarInt(pid,"Point")+20);
+					SetPVarInt(pid,"Money",GetPVarInt(pid,"Money")+2000);
 				}
 			}
   		}
@@ -834,13 +834,14 @@ public EndRound()
 	PresidentPlayer = -1;
 	TeamBalance = 3;
 	LeftTime = 0;
-	for(new i=0; i<MAX_PLAYERS; i++)
+	for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
 	{
-		if(GetPlayerMap(i) == 2)
+		pid = GetConnectedPlayerID(i);
+		if(GetPlayerMap(pid) == 2)
 		{
-		    PlayerTeam[i] = false;
-		    PlayerPlaySound(i, 0, 0.0, 0.0, 0.0);
-		    SpawnPlayer(i);
+		    PlayerTeam[pid] = false;
+		    PlayerPlaySound(pid, 0, 0.0, 0.0, 0.0);
+		    SpawnPlayer(pid);
 		}
 	}
 	for(new i = 1; i < MAX_VEHICLES; i++)

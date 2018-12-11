@@ -4,7 +4,6 @@
 	ShowPlayerMapList(playerid)
 	FreezePlayer(playerid)
 	UnFreezePlayer(playerid)
-	SendMessage(playerid, color, text[])
 */
 
 //-----/ Pre-Processing /
@@ -181,19 +180,6 @@ stock FreezePlayer(playerid, time=0)
 public UnFreezePlayer(playerid)
 {
     TogglePlayerControllable(playerid,1);
-}
-
-//-----/ SendMessage /----------------------------------------------------------
-stock SendMessage(playerid, color, text[])
-{
-	for(new i=0; i<MAX_PLAYERS; i++)
-	{
-	    if(IsPlayerConnected(playerid))
-	    {
-	        if(GetPVarInt(playerid,"MapNumber") == GetPVarInt(i,"MapNumber")) // playerid와 같은 게임을 진행 중인 플레이어
-				SendClientMessage(i, color, text);
-	    }
-	}
 }
 
 //-----/ GetPlayerMap /---------------------------------------------------------

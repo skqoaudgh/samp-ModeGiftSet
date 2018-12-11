@@ -22,7 +22,6 @@
   [Functions]
 	ShowPlayerLoginDialog(playerid,bool:failed=false)
 	ShowPlayerChangePasswordDialog(playerid)
-    ShowPlayerChangeLanguageDialog(playerid)
     
 	CheckPlayerAccount(playerid)
 	LoginPlayer(playerid,password[])
@@ -32,7 +31,7 @@
 	IsPlayerLoggedIn(playerid)
 	IsPlayerRegistered(playerid)
 	ChangePlayerPassword(playerid,password[])
-	GetPlayerLanguage(playerid)
+	
 	IsPlayerSelectLanguage(playerid)
 */
 
@@ -187,26 +186,9 @@ public DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[])
 				} else ShowPlayerChangePasswordDialog(playerid);
 			}
 		}
-		case DialogID_Userdata(2): // 언어 변경
-		{
-			if(response)
-			{
-			    if(GetPVarInt(playerid,"Language") == 0)
-			        SetPVarInt(playerid,"Language",1);
-				else
-				    SetPVarInt(playerid,"Language",0);
-			    ShowPlayerChangeLanguageDialog(playerid);
-			}
-			else
-			    if(!IsPlayerLoggedIn(playerid))
- 	    			ShowPlayerLoginDialog(playerid);
-		}
 	}
 	return 0;
 }
-
-
-
 
 
 //==========/ GUI Login Functions /=============================================
@@ -314,27 +296,6 @@ stock ShowPlayerChangePasswordDialog(playerid)
 	}
 	ShowPlayerDialog(playerid,DialogID_Userdata(1),DIALOG_STYLE_PASSWORD,"Login System",string,"변경","취소");
 }
-//-----/ ShowPlayerChangeLanguageDialog /---------------------------------------
-stock ShowPlayerChangeLanguageDialog(playerid)
-{
-	new lan = GetPVarInt(playerid,"Language");
-	new string[256];
-	if(lan == 0) // 한국어 사용 중
-	{
-	    strcat(string,""C_PASTEL_YELLOW"한국어 (Selected)\n");
-	    strcat(string,"English");
-	}
-	else // 영어 사용 중
-	{
-	    strcat(string,"한국어\n");
-	    strcat(string,""C_PASTEL_YELLOW"English (Selected)");
-	}
-	if(IsPlayerLoggedIn(playerid))
- 		ShowPlayerDialog(playerid,DialogID_Userdata(2),DIALOG_STYLE_LIST,"Language Setting",string,"변경","취소");
- 	else
- 	    ShowPlayerLoginDialog(playerid);
-}
-
 
 //==========/ Account Functions /===============================================
 //-----/ CheckPlayerAccount /---------------------------------------------------
@@ -415,7 +376,8 @@ public LoadPlayerDataQE(playerid)
 	{
 	    cache_get_value_name_int(0,"Money",value_int); SetPVarInt(playerid,"Money",value_int);
         cache_get_value_name_int(0,"Point",value_int); SetPVarInt(playerid,"Point",value_int);
-        
+	    cache_get_value_name_int(0,"ToggleGlobal",value_int); SetPVarInt(playerid,"ToggleGlobal",value_int);
+        cache_get_value_name_int(0,"TogglePM",value_int); SetPVarInt(playerid,"TogglePM",value_int);
 		//cache_get_value_name(0,"Value_S",string); SetPVarString(playerid,"Value_S",string);
 		//cache_get_value_name_int(0,"Value_I",value_int); SetPVarInt(playerid,"Value_I",value_int);
 		//cache_get_value_name_float(0,"Value_F",value_float); SetPVarFloat(playerid,"Value_F",value_float);
@@ -439,7 +401,8 @@ stock SavePlayerData(playerid)
 		//-----
 		format(string,sizeof(string),"%s,Money=%d",string,GetPVarInt(playerid,"Money"));
         format(string,sizeof(string),"%s,Point=%d",string,GetPVarInt(playerid,"Point"));
-        
+		format(string,sizeof(string),"%s,ToggleGlobal=%d",string,GetPVarInt(playerid,"ToggleGlobal"));
+        format(string,sizeof(string),"%s,TogglePM=%d",string,GetPVarInt(playerid,"TogglePM"));
 		//format(string,sizeof(string),"%s,Value_S='%s'",string,GetPVarStringEx(playerid,"Value_S"));
 		//format(string,sizeof(string),"%s,Value_I=%d",string,GetPVarInt(playerid,"Value_I"));
 		//format(string,sizeof(string),"%s,Value_F=%.1f",string,GetPVarFloat(playerid,"Value_F"));
@@ -467,17 +430,6 @@ stock ChangePlayerPassword(playerid,password[])
 	format(string,sizeof(string),"UPDATE user_data SET Password = SHA1('%s') WHERE Username = '%s'",mysql_string_escape(password),GetPlayerNameEx(playerid));
 	mysql_pquery(GetMySQLHandle(),string);
 }
-//-----/ GetPlayerLanguage /----------------------------------------------------
-stock GetPlayerLanguage(playerid)
-{
-	return GetPVarInt(playerid,"Language");
-}
-//-----/ IsPlayerSelectLanguage /---------------------------------------------------
-stock IsPlayerSelectLanguage(playerid)
-{
-	return P_Selected[playerid];
-}
-
 
 //==========/ Spawn Functions /=================================================
 //-----/ SpawnPlayerEx /--------------------------------------------------------

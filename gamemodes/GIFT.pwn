@@ -44,11 +44,15 @@
 #include "./Modules/Cores/MySQL.pwn"
 #include "./Modules/Cores/RedefinedFunc.pwn"
 #include "./Modules/Cores/ServerSide.pwn"
+#include "./Modules/Cores/PlayerSide.pwn"
 #include "./Modules/Cores/Userdata.pwn"
 #include "./Modules/Cores/Object.pwn"
 #include "./Modules/Cores/Map.pwn"
 		// Functions //
 #include "./Modules/Functions/ExtendedFunc.pwn"
+		// Command //
+#include "./Modules/Command/Chatting.pwn"
+#include "./Modules/Command/Admin.pwn"
 		// Game //
 #include "./Modules/Game/1_Run.pwn"
 #include "./Modules/Game/2_President.pwn"
@@ -68,6 +72,7 @@
 	10000: Core
 	10100: Userdata
 	10200: Map
+	10300: Toggle
 */	
 
 
@@ -87,9 +92,13 @@ public OnGameModeInit()
 	AddModule("Timer");
 	AddModule("MySQL");
 	AddModule("ServerSide");
+	AddModule("PlayerSide");
 	AddModule("Userdata");
 	AddModule("Object");
 	AddModule("Map");
+	AddModule("Admin");
+	    // Command //
+    AddModule("Chatting");
 	    // Game //
     AddModule("1_Run");
     AddModule("2_President");
