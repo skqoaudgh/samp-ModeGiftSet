@@ -78,6 +78,7 @@ public SpawnHandler_0_Lobby(playerid)
 {
 	if(GetPlayerMap(playerid) == 0)
 	{
+	    ClearChatting(playerid);
 		SetPlayerColor(playerid,COLOR_WHITE);
 
 		SetPlayerWorldBounds(playerid,20000.0000, -20000.0000, 20000.0000, -20000.0000);

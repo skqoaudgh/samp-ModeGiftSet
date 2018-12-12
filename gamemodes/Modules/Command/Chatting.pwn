@@ -8,6 +8,7 @@
 	SendMessage(playerid, color, text[])
 	SendTeamMessage(playerid, text[])
 	SendClientMessageToAdmin(color,text[])
+	ClearChatting(playerid);
 */
 
 //-----/ Pre-Processing /
@@ -305,6 +306,12 @@ stock ShowPlayerChangeLanguageDialog(playerid)
 }
 
 //==========/ Message Functions /===============================================
+//-----/ ClearChatting /--------------------------------------------------------
+stock ClearChatting(playerid)
+{
+	for(new i=0; i<20; i++)
+	    SendClientMessage(playerid,COLOR_BLACK," ");
+}
 //-----/ SendMessage /----------------------------------------------------------
 stock SendMessage(playerid, color, text[])
 {

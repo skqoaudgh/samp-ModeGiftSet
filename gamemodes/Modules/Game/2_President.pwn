@@ -451,6 +451,26 @@ public SpawnHandler_2_President(playerid)
 		}
 		else // 리스폰
 		{
+		    ClearChatting(playerid);
+			if(GetPlayerLanguage(playerid) == 0)
+			{
+			    SendClientMessage(playerid,COLOR_GREEN,"          대통령 지키기");
+			    SendClientMessage(playerid,COLOR_GREEN,"대통령이 테러리스트의 위협을 받고 있습니다.");
+			    SendClientMessage(playerid,COLOR_GREEN,"당신은 경호 팀 혹은 테러리스트 팀이 되어 목적을 달성해야 합니다.");
+			    SendClientMessage(playerid,COLOR_GREEN,"경호 팀은 대통령이 죽지 않도록 제한 시간을 버텨내야 합니다.");
+			    SendClientMessage(playerid,COLOR_GREEN,"테러리스트 팀은 제한 시간 내에 대통령을 죽여야 합니다.");
+			    SendClientMessage(playerid,COLOR_GREEN,"보상: Point +10, Money +1000");
+			}
+			else
+			{
+			    SendClientMessage(playerid,COLOR_GREEN,"          Protect President");
+			    SendClientMessage(playerid,COLOR_GREEN,"The president is threatened by terrorists.");
+			    SendClientMessage(playerid,COLOR_GREEN,"You will be a bodyguard or a terrorist team to achieve your goals.");
+			    SendClientMessage(playerid,COLOR_GREEN,"Bodyguard team must protect the president from terrorists within the time limit.");
+			    SendClientMessage(playerid,COLOR_GREEN,"Terrorist team must kill the president within the time limit.");
+			    SendClientMessage(playerid,COLOR_GREEN,"Reward: Point +10, Money +1000");
+			}
+			//-----
 		    switch(SelectedTeam[playerid])
 		    {
 		        case 0..2: // 경호
@@ -505,7 +525,24 @@ public CommandHandler_2_President(playerid,cmdtext[])
 {
 	if(GetPlayerMap(playerid) == 2)
 	{
-
+		new
+			cmd[256],idx
+			//string[128]
+		;
+		if(!strcmp("/help",cmd) || !strcmp("/?",cmd) || !strcmp("/도움말",cmd))
+		{
+			if(GetPlayerLanguage(playerid) == 0)
+			{
+				SendClientMessage(playerid,COLOR_GREY,"[!] 팀채팅 - (/t)eam");
+				SendClientMessage(playerid,COLOR_GREY,"[!] 클래스를 변경하기 위해서는 [/맵]으로 다시 입장해주세요.");
+			}
+			else
+			{
+				SendClientMessage(playerid,COLOR_GREY,"[!] TeamChatting - (/t)eam");
+				SendClientMessage(playerid,COLOR_GREY,"[!] If you want to change your class, entering [/map] and re-join the game.");
+			}
+			return 1;
+		}
 	}
 	return 0;
 }
