@@ -1,52 +1,44 @@
 /*
- *
- *		[For a better future, Enthusiasm of Acu]
- *
- *			Module Template
- *			v1.0.0
- *
- *
- *		First Release:		2018/12/07
- *		Last Update:		2018/12/07
- *
- *
- *
- *		Coded by Acu 2006-2017 @ all rights reserved.
- *      Updated by Cada
- *			acu.pe.kr@gmail.com
- *			http://acu.pe.kr
- *
- *
- */
-/*
   [Functions]
 	Function
 */
 
 //-----/ Pre-Processing /
-#if defined _MDPWN_Object
+#if defined _MDPWN_0_Lobby
 	#endinput
 #endif
-#define _MDPWN_Object
+#define _MDPWN_0_Lobby
+
+//-----/ Defines /
+//#define DialogID_WTF(%1)			10000 + %1
+//#define VirtualID_WTF(%1)			10000 + %1
+
+//-----/ News /
+	//--/ 1_Run /
+
 
 //-----/ Forwards /
 	//--/ Handlers /
-forward AddHandler_Object();
-forward InitHandler_Object();
+forward AddHandler_0_Lobby();
+forward InitHandler_0_Lobby();
+forward SpawnHandler_0_Lobby(playerid);
+forward CommandHandler_0_Lobby(playerid,cmdtext[]);
 	//--/ Functions /
 
 
-
 //==========/ Callback Functions /==============================================
-//-----/ AddHandler_Object /----------------------------------------------------
-public AddHandler_Object()
+//-----/ AddHandler_0_Lobby /---------------------------------------------------
+public AddHandler_0_Lobby()
 {
-	AddHandler("Object",InitHandler);
+	AddHandler("0_Lobby",InitHandler);
+	AddHandler("0_Lobby",SpawnHandler);
+	AddHandler("0_Lobby",CommandHandler);
+	//AddTimer("WTF",TIMER_1S_PLAYER);
 }
-//-----/ InitHandler_Object /---------------------------------------------------
-public InitHandler_Object()
+
+//-----/ InitHandler_0_Lobby /--------------------------------------------------
+public InitHandler_0_Lobby()
 {
-	// 로비
 	CreateDynamicObject(19129, 1479.55469, -1615.62549, 13.04200,   0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(19158, 1479.55469, -1615.62549, 14.19750,   0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(19159, 1479.55469, -1615.62549, 17.50750,   0.00000, 0.00000, 0.00000);
@@ -80,3 +72,52 @@ public InitHandler_Object()
 	CreateDynamicObject(18652, 1498.36328, -1616.90723, 14.55590,   90.00000, 0.00000, 0.00000);
 	CreateDynamicObject(19124, 1479.55469, -1615.62549, 13.66750,   0.00000, 0.00000, 0.00000);
 }
+
+//-----/ SpawnHandler_0_Lobby /-------------------------------------------------
+public SpawnHandler_0_Lobby(playerid)
+{
+	if(GetPlayerMap(playerid) == 0)
+	{
+		SetPlayerColor(playerid,COLOR_WHITE);
+
+		SetPlayerWorldBounds(playerid,20000.0000, -20000.0000, 20000.0000, -20000.0000);
+		SetPlayerPos(playerid, 1479.5483,-1600.0005,13.5469);
+		SetPlayerFacingAngle(playerid, 180.2658);
+		SetPlayerSkin(playerid, 0);
+        SetPlayerTime(playerid, 0, 0);
+        ResetPlayerWeapons(playerid);
+		SetPlayerHealth(playerid, 100);
+		SetPlayerArmour(playerid, 0);
+		SetPlayerInterior(playerid, 0);
+		SetPlayerVirtualWorld(playerid, 0);
+	}
+}
+//-----/ CommandHandler_0_Lobby /-------------------------------------------
+public CommandHandler_0_Lobby(playerid,cmdtext[])
+{
+	if(GetPlayerMap(playerid) == 0)
+	{
+		new
+			cmd[384],idx,
+			string[384],temp[384]
+		;
+		cmd = strtok(cmdtext,idx);
+		if(!strcmp("/help",cmd) || !strcmp("/?",cmd) || !strcmp("/도움말",cmd))
+		{
+			if(GetPlayerLanguage(playerid) == 0)
+   			{
+				SendClientMessage(playerid,COLOR_GREY,"[!] User - /저장 /비번변경 /스탯 /토글");
+				SendClientMessage(playerid,COLOR_GREY,"[!] Report - /신고");
+			}
+			else
+			{
+ 				SendClientMessage(playerid,COLOR_GREY,"[!] User - /sav /changepassword /stats /toggle");
+				SendClientMessage(playerid,COLOR_GREY,"[!] Report - /report");
+			}
+			SendClientMessage(playerid,COLOR_GREY,"[!] Chat - (/g)lobal (/t)eam");
+			return 1;
+		}
+	}
+	return 0;
+}
+//==========/ Functions /=======================================================

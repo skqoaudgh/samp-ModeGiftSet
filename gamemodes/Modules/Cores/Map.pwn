@@ -48,8 +48,6 @@ forward CommandHandler_Map(playerid,cmdtext[]);
 forward DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[]);
 forward ConnectHandler_Map(playerid);
 forward DisconnectHandler_Map(playerid,reason);
-forward SpawnHandler_Map(playerid);
-
 	//--/ Functions /
 forward UnFreezePlayer(playerid);
 
@@ -63,7 +61,6 @@ public AddHandler_Map()
     AddHandler("Map",ConnectHandler);
     AddHandler("Map",DisconnectHandler);
     AddHandler("Map",DialogHandler);
-    AddHandler("Map",SpawnHandler);
 	//AddTimer("WTF",TIMER_1S_PLAYER);
 }
 
@@ -110,25 +107,6 @@ public CommandHandler_Map(playerid,cmdtext[]) //return 1: processed
 	    return 1;
 	}
 	return 0;
-}
-//-----/ SpawnHandler_Map /---------------------------------------------------
-public SpawnHandler_Map(playerid)
-{
-	if(GetPlayerMap(playerid) == 0)
-	{
-		SetPlayerColor(playerid,COLOR_WHITE);
-		
-		SetPlayerWorldBounds(playerid,20000.0000, -20000.0000, 20000.0000, -20000.0000);
-		SetPlayerPos(playerid, 1479.5483,-1600.0005,13.5469);
-		SetPlayerFacingAngle(playerid, 180.2658);
-		SetPlayerSkin(playerid, 0);
-        SetPlayerTime(playerid, 0, 0);
-        ResetPlayerWeapons(playerid);
-		SetPlayerHealth(playerid, 100);
-		SetPlayerArmour(playerid, 0);
-		SetPlayerInterior(playerid, 0);
-		SetPlayerVirtualWorld(playerid, 0);
-	}
 }
 //-----/ DialogHandler_Map /---------------------------------------------------
 public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])

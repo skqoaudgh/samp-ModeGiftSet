@@ -46,7 +46,6 @@
 #include "./Modules/Cores/ServerSide.pwn"
 #include "./Modules/Cores/PlayerSide.pwn"
 #include "./Modules/Cores/Userdata.pwn"
-#include "./Modules/Cores/Object.pwn"
 #include "./Modules/Cores/Map.pwn"
 		// Functions //
 #include "./Modules/Functions/ExtendedFunc.pwn"
@@ -54,6 +53,7 @@
 #include "./Modules/Command/Chatting.pwn"
 #include "./Modules/Command/Admin.pwn"
 		// Game //
+#include "./Modules/Game/0_Lobby.pwn"
 #include "./Modules/Game/1_Run.pwn"
 #include "./Modules/Game/2_President.pwn"
 #include "./Modules/Game/3_Shovel.pwn"
@@ -100,6 +100,7 @@ public OnGameModeInit()
 	    // Command //
     AddModule("Chatting");
 	    // Game //
+    AddModule("0_Lobby");
     AddModule("1_Run");
     AddModule("2_President");
     AddModule("3_Shovel");

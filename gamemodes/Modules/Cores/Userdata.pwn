@@ -140,7 +140,7 @@ public CommandHandler_Userdata(playerid,cmdtext[])
 		return 1;
 	}
 
-	if(!strcmp("/비번변경",cmdtext) || !strcmp("/암호변경",cmdtext))
+	if(!strcmp("/비번변경",cmdtext) || !strcmp("/암호변경",cmdtext) || !strcmp("/changepassword",cmdtext) || !strcmp("/cp",cmdtext))
 	{
 		ShowPlayerChangePasswordDialog(playerid);
 		return 1;
