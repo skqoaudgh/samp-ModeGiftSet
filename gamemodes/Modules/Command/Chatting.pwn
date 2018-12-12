@@ -7,6 +7,7 @@
 	
 	SendMessage(playerid, color, text[])
 	SendTeamMessage(playerid, text[])
+	SendClientMessageToAdmin(color,text[])
 */
 
 //-----/ Pre-Processing /
@@ -331,7 +332,16 @@ stock SendTeamMessage(playerid, text[])
 		}
 	}
 }
-
+//-----/ SendClientMessageToAdmin /---------------------------------------------
+stock SendClientMessageToAdmin(color,text[])
+{
+	for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
+	{
+		pid = GetConnectedPlayerID(i);
+		if(IsPlayerAdminEx(pid))
+			SendClientMessage(pid,color,text);
+	}
+}
 //==========/ Get/Set Functions /===============================================
 //-----/ GetPlayerLanguage /----------------------------------------------------
 stock GetPlayerLanguage(playerid)

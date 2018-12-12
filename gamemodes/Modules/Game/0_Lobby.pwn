@@ -98,8 +98,8 @@ public CommandHandler_0_Lobby(playerid,cmdtext[])
 	if(GetPlayerMap(playerid) == 0)
 	{
 		new
-			cmd[384],idx,
-			string[384],temp[384]
+			cmd[384],idx
+			//string[384],temp[384]
 		;
 		cmd = strtok(cmdtext,idx);
 		if(!strcmp("/help",cmd) || !strcmp("/?",cmd) || !strcmp("/µµ¿ò¸»",cmd))
@@ -111,7 +111,7 @@ public CommandHandler_0_Lobby(playerid,cmdtext[])
 			}
 			else
 			{
- 				SendClientMessage(playerid,COLOR_GREY,"[!] User - /sav /changepassword /stats /toggle");
+ 				SendClientMessage(playerid,COLOR_GREY,"[!] User - /sav /changepassword /stat /toggle");
 				SendClientMessage(playerid,COLOR_GREY,"[!] Report - /report");
 			}
 			SendClientMessage(playerid,COLOR_GREY,"[!] Chat - (/g)lobal (/t)eam");

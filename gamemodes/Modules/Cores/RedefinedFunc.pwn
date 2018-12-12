@@ -43,3 +43,13 @@ stock strlen_n(const string[])
 stock strlen_o(const string[])
 	return strlen(string);
 #define strlen strlen_n
+//-----/ GetPlayerMoney /-------------------------------------------------------
+stock GetPlayerMoney_n(playerid)
+{
+	return GetPVarInt(playerid,"Money");
+}
+stock GetPlayerMoney_o(playerid)
+{
+	return GetPlayerMoney(playerid);
+}
+#define GetPlayerMoney GetPlayerMoney_n

@@ -1,24 +1,4 @@
 /*
- *
- *		[For a better future, Enthusiasm of Acu]
- *
- *			Userdata
- *			v1.0.0
- *
- *
- *		First Release:		2018/12/07
- *		Last Update:		2018/12/07
- *
- *
- *
- *		Coded by Acu 2006-2017 @ all rights reserved.
- *      Updated by Cada
- *			acu.pe.kr@gmail.com
- *			http://acu.pe.kr
- *
- *
- */
-/*
   [Functions]
 	ShowPlayerLoginDialog(playerid,bool:failed=false)
 	ShowPlayerChangePasswordDialog(playerid)
@@ -31,7 +11,7 @@
 	IsPlayerLoggedIn(playerid)
 	IsPlayerRegistered(playerid)
 	ChangePlayerPassword(playerid,password[])
-	
+	ShowPlayerStatus(playerid,destid=-1)
 	IsPlayerSelectLanguage(playerid)
 */
 
@@ -45,7 +25,7 @@
 
 //-----/ Defines /
 #define DialogID_Userdata(%1)			10100 + %1
-
+#define AUTOSAVE_TIME					60
 
 
 //-----/ News /
@@ -55,7 +35,8 @@ new
 	bool:P_LoggedIn[MAX_PLAYERS],
 	P_LoginRetry[MAX_PLAYERS],
 	P_IP[MAX_PLAYERS][16],
-	bool:P_Selected[MAX_PLAYERS]
+	bool:P_Selected[MAX_PLAYERS],
+	Player_LastSaveTime[MAX_PLAYERS]
 ;
 
 
@@ -69,6 +50,7 @@ forward RequestSpawnHandler_Userdata(playerid);
 forward TextHandler_Userdata(playerid,text);
 forward CommandHandler_Userdata(playerid,cmdtext[]);
 forward DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[]);
+forward TimerHandler_Userdata_1S_P(playerid);
 	//--/ Functions /
 forward CheckPlayerAccount(playerid);
 forward CheckPlayerAccountQE(playerid);
@@ -89,6 +71,7 @@ public AddHandler_Userdata()
 	AddHandler("Userdata",TextHandler,1);
 	AddHandler("Userdata",CommandHandler,1);
 	AddHandler("Userdata",DialogHandler);
+	AddTimer("Userdata_1S",TIMER_1S_PLAYER);
 }
 //-----/ ConnectHandler_Userdata /----------------------------------------------
 public ConnectHandler_Userdata(playerid)
@@ -106,6 +89,7 @@ public DisconnectHandler_Userdata(playerid,reason)
 	P_LoggedIn[playerid] = false;
 	P_LoginRetry[playerid] = 0;
 	P_Selected[playerid] = false;
+	Player_LastSaveTime[playerid] = 0;
 }
 //-----/ RequestSpawnHandler_Userdata /-----------------------------------------
 public RequestSpawnHandler_Userdata(playerid)
@@ -127,6 +111,10 @@ public TextHandler_Userdata(playerid,text)
 //-----/ CommandHandler_Userdata /----------------------------------------------
 public CommandHandler_Userdata(playerid,cmdtext[])
 {
+	new
+		cmd[384],idx,
+		string[384],temp[384]
+	;
 	if(!IsPlayerLoggedIn(playerid))
 		return 1;
 
@@ -151,7 +139,12 @@ public CommandHandler_Userdata(playerid,cmdtext[])
 		ShowPlayerChangeLanguageDialog(playerid);
 		return 1;
 	}
-	
+
+	if(!strcmp("/½ºÅÝ",cmd) || !strcmp("/½ºÅÈ",cmd) || !strcmp("/stat",cmd,true))
+	{
+		ShowPlayerStatus(playerid,playerid);
+		return 1;
+	}
 	return 0;
 }
 //-----/ DialogHandler_Userdata /-----------------------------------------------
@@ -189,8 +182,18 @@ public DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[])
 	}
 	return 0;
 }
-
-
+//-----/ TimerHandler_Userdata_1S_P /-------------------------------------------
+public TimerHandler_Userdata_1S_P(playerid)
+{
+	if(IsPlayerLoggedIn(playerid))
+	{
+		if(GetPlayerMoney_o(playerid) != GetPlayerMoney(playerid))
+			SetPlayerMoney(playerid,GetPlayerMoney(playerid));
+		if(Player_LastSaveTime[playerid] && GetTickCount() - Player_LastSaveTime[playerid] > AUTOSAVE_TIME * 1000)
+			SavePlayerData(playerid);
+	}
+	return 1;
+}
 //==========/ GUI Login Functions /=============================================
 //-----/ ShowPlayerLoginDialog /------------------------------------------------
 stock ShowPlayerLoginDialog(playerid,bool:failed=false)
@@ -296,6 +299,44 @@ stock ShowPlayerChangePasswordDialog(playerid)
 	}
 	ShowPlayerDialog(playerid,DialogID_Userdata(1),DIALOG_STYLE_PASSWORD,"Login System",string,"º¯°æ","Ãë¼Ò");
 }
+//-----/ ShowPlayerStatus /-----------------------------------------------------
+stock ShowPlayerStatus(playerid,destid=-1)
+{
+	new
+		string[128],
+		status[2560],
+		k,d,w,l,
+		Float:ratio_kd, Float:ratio_wl
+	;
+	//-----
+	if(destid == -1)
+		destid = playerid;
+    //-----
+	k = GetPVarInt(destid,"Kill"), d = GetPVarInt(destid,"Death");
+	if(d == 0) d = 1;
+	ratio_kd = k/d;
+	//-----
+	w = GetPVarInt(destid,"Win"), l = GetPVarInt(destid,"Lose");
+	new temp = w+l;
+	if(temp == 0) temp = 1;
+	ratio_wl = w/(temp);
+	//-----
+	format(status,sizeof(status),"%s\n"C_WHITE"",status);
+	format(status,sizeof(status),"%s\n"C_WHITE"µ·:\t\t"C_GREY"[ $%d ]",status,GetPlayerMoney(destid));
+	format(status,sizeof(status),"%s\n"C_WHITE"",status);
+	format(status,sizeof(status),"%s\n"C_WHITE"·¹º§:\t\t"C_GREY"[ %d ]",status,GetPVarInt(destid,"Level"));
+	format(status,sizeof(status),"%s\n"C_WHITE"Æ÷ÀÎÆ®:\t\t"C_GREY"[ %d/%d ]",status,GetPVarInt(destid,"Point"),(GetPVarInt(destid,"Level")+1)*10);
+	format(status,sizeof(status),"%s\n"C_WHITE"",status);
+	format(status,sizeof(status),"%s\n"C_WHITE"½Â·ü:\t\t"C_GREY"[ %d / %d (%d%) ]",status,GetPVarInt(destid,"Win"),GetPVarInt(destid,"Lose"),ratio_wl);
+	format(status,sizeof(status),"%s\n"C_WHITE"K/D:\t\t"C_GREY"[ %d / %d (%.2f:1) ]",status,GetPVarInt(destid,"Kill"),GetPVarInt(destid,"Death"),ratio_kd);
+	//-----
+	format(string,sizeof(string),"Status of %s(%d)",GetPlayerNameEx(destid),destid);
+
+	if(GetPlayerLanguage(playerid) == 0)
+		ShowPlayerDialog(playerid,DialogID_Userdata(2),DIALOG_STYLE_MSGBOX,string,status,"È®ÀÎ","");
+	else
+	    ShowPlayerDialog(playerid,DialogID_Userdata(2),DIALOG_STYLE_MSGBOX,string,status,"Close","");
+}
 
 //==========/ Account Functions /===============================================
 //-----/ CheckPlayerAccount /---------------------------------------------------
@@ -376,6 +417,11 @@ public LoadPlayerDataQE(playerid)
 	{
 	    cache_get_value_name_int(0,"Money",value_int); SetPVarInt(playerid,"Money",value_int);
         cache_get_value_name_int(0,"Point",value_int); SetPVarInt(playerid,"Point",value_int);
+	    cache_get_value_name_int(0,"Level",value_int); SetPVarInt(playerid,"Level",value_int);
+        cache_get_value_name_int(0,"Kill",value_int); SetPVarInt(playerid,"Kill",value_int);
+	    cache_get_value_name_int(0,"Death",value_int); SetPVarInt(playerid,"Death",value_int);
+        cache_get_value_name_int(0,"Win",value_int); SetPVarInt(playerid,"Win",value_int);
+	    cache_get_value_name_int(0,"Lose",value_int); SetPVarInt(playerid,"Lose",value_int);
 	    cache_get_value_name_int(0,"ToggleGlobal",value_int); SetPVarInt(playerid,"ToggleGlobal",value_int);
         cache_get_value_name_int(0,"TogglePM",value_int); SetPVarInt(playerid,"TogglePM",value_int);
 		//cache_get_value_name(0,"Value_S",string); SetPVarString(playerid,"Value_S",string);
@@ -388,6 +434,7 @@ public LoadPlayerDataQE(playerid)
 		//-----
 		P_LoggedIn[playerid] = true;
 		SpawnPlayerEx(playerid);
+		Player_LastSaveTime[playerid] = GetTickCount();
 	}
 }
 //-----/ SavePlayerData /-------------------------------------------------------
@@ -401,6 +448,11 @@ stock SavePlayerData(playerid)
 		//-----
 		format(string,sizeof(string),"%s,Money=%d",string,GetPVarInt(playerid,"Money"));
         format(string,sizeof(string),"%s,Point=%d",string,GetPVarInt(playerid,"Point"));
+        format(string,sizeof(string),"%s,Level=%d",string,GetPVarInt(playerid,"Level"));
+        format(string,sizeof(string),"%s,Kill=%d",string,GetPVarInt(playerid,"Kill"));
+        format(string,sizeof(string),"%s,Death=%d",string,GetPVarInt(playerid,"Death"));
+        format(string,sizeof(string),"%s,Win=%d",string,GetPVarInt(playerid,"Win"));
+        format(string,sizeof(string),"%s,Lose=%d",string,GetPVarInt(playerid,"Lose"));
 		format(string,sizeof(string),"%s,ToggleGlobal=%d",string,GetPVarInt(playerid,"ToggleGlobal"));
         format(string,sizeof(string),"%s,TogglePM=%d",string,GetPVarInt(playerid,"TogglePM"));
 		//format(string,sizeof(string),"%s,Value_S='%s'",string,GetPVarStringEx(playerid,"Value_S"));
@@ -411,6 +463,8 @@ stock SavePlayerData(playerid)
 		format(string,sizeof(string),"%s,LastUpdate=NOW()",string);
 		format(string,sizeof(string),"%s WHERE ID = %d",string,GetPVarInt(playerid,"ID"));
 		mysql_pquery(GetMySQLHandle(),string);
+		
+		Player_LastSaveTime[playerid] = GetTickCount();
 	}
 }
 //-----/ IsPlayerLoggedIn /-----------------------------------------------------
