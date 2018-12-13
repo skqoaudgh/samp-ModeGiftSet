@@ -116,7 +116,6 @@ public DisconnectHandler_PlayerSide(playerid,reason)
 		}
 	}
 }
-
 //==========/ Functions /=======================================================
 //-----/ IsPlayerTeamChatting /-------------------------------------------------
 stock IsPlayerTeamChatting(playerid)

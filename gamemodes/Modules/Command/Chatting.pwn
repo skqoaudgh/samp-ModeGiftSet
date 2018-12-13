@@ -345,7 +345,7 @@ stock SendClientMessageToAdmin(color,text[])
 	for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
 	{
 		pid = GetConnectedPlayerID(i);
-		if(IsPlayerAdminEx(pid))
+		if(IsPlayerAdminEx(pid) || IsPlayerAdmin(pid))
 			SendClientMessage(pid,color,text);
 	}
 }

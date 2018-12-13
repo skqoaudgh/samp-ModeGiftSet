@@ -853,20 +853,21 @@ public SpawnHandler_1_Run(playerid)
 		if(GetPlayerLanguage(playerid) == 0)
 		{
 		    SendClientMessage(playerid,COLOR_GREEN,"          정자의 모험 : 리메이크");
-		    SendClientMessage(playerid,COLOR_GREEN,"당신은 어느 날, 정자가 되어 여성의 몸 속으로 들어갔습니다.");
-		    SendClientMessage(playerid,COLOR_GREEN,"철벽같은 신체의 면연력을 뚫고 목적지까지 도착해야 합니다.");
-		    SendClientMessage(playerid,COLOR_GREEN,"과연 어떤 정자가 최후의 1인(?)이 될 것인가..");
-		    SendClientMessage(playerid,COLOR_GREEN,"보상: Point +50, Money +5000");
+		    SendClientMessage(playerid,COLOR_WHITE,"당신은 어느 날, 정자가 되어 여성의 몸 속으로 들어갔습니다.");
+		    SendClientMessage(playerid,COLOR_WHITE,"철벽같은 신체의 면연력을 뚫고 목적지까지 도착해야 합니다.");
+		    SendClientMessage(playerid,COLOR_WHITE,"과연 어떤 정자가 최후의 1인(?)이 될 것인가..");
+		    SendClientMessage(playerid,COLOR_WHITE,"보상: Point +50, Money +5000");
 		}
 		else
 		{
 		    SendClientMessage(playerid,COLOR_GREEN,"          Sperm Adventure : Remake");
-		    SendClientMessage(playerid,COLOR_GREEN,"One day, you became a sperm and went into a woman's body.");
-		    SendClientMessage(playerid,COLOR_GREEN,"Your goal is to reach destination point through immunity.");
-		    SendClientMessage(playerid,COLOR_GREEN,"Which sperm will be the last..?");
-		    SendClientMessage(playerid,COLOR_GREEN,"Reward: Point +50, Money +5000");
+		    SendClientMessage(playerid,COLOR_WHITE,"One day, you became a sperm and went into a woman's body.");
+		    SendClientMessage(playerid,COLOR_WHITE,"Your goal is to reach destination point through immunity.");
+		    SendClientMessage(playerid,COLOR_WHITE,"Which sperm will be the last..?");
+		    SendClientMessage(playerid,COLOR_WHITE,"Reward: Point +50, Money +5000");
 		}
 	    //-----
+	    SetPlayerWorldBounds(playerid,20000.0000, -20000.0000, 20000.0000, -20000.0000);
 		SetPlayerPos(playerid,6919.6401,-3086.9556,56.2338);
 		SetPlayerFacingAngle(playerid,268.6034);
 		FreezePlayer(playerid,2);
@@ -874,7 +875,8 @@ public SpawnHandler_1_Run(playerid)
 		SetPlayerHealth(playerid,10);
 		SetPlayerInterior(playerid,0);
 		SetPlayerVirtualWorld(playerid,0);
-		SetPlayerTime(playerid, 12, 0);
+        SetPlayerTime(playerid, 12, 0);
+        SetPlayerWeather(playerid, 0);
 		
 		Goal[playerid] = false;
 	}
@@ -884,12 +886,7 @@ public CommandHandler_1_Run(playerid,cmdtext[]) //return 1: processed
 {
 	if(GetPlayerMap(playerid) == 1)
 	{
-		new
-			cmd[256],idx
-			//string[128]
-		;
-		cmd = strtok(cmdtext,idx);
-		if(!strcmp("/help",cmd) || !strcmp("/?",cmd) || !strcmp("/도움말",cmd))
+		if(!strcmp("/help",cmdtext) || !strcmp("/도움말",cmdtext) || !strcmp("/?",cmdtext))
 		{
 			if(GetPlayerLanguage(playerid) == 0)
 				SendClientMessage(playerid,COLOR_GREY,"[!] 꼭대기까지 올라가세요! 재도전은 [/맵] 을 이용해주세요.");

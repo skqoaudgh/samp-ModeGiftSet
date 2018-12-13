@@ -103,7 +103,6 @@ new Float:SpawnPos[80][3] = {
 forward AddHandler_3_Shovel();
 forward InitHandler_3_Shovel();
 forward SpawnHandler_3_Shovel(playerid);
-forward DeathHandler_3_Shovel(playerid,killerid,reason);
 forward CommandHandler_3_Shovel(playerid,cmdtext[]);
 	//--/ Functions /
 
@@ -114,7 +113,6 @@ public AddHandler_3_Shovel()
 {
 	AddHandler("3_Shovel",InitHandler);
 	AddHandler("3_Shovel",SpawnHandler);
-	AddHandler("3_Shovel",DeathHandler);
 	AddHandler("3_Shovel",CommandHandler);
 	//AddTimer("WTF",TIMER_1S_PLAYER);
 }
@@ -148,16 +146,16 @@ public SpawnHandler_3_Shovel(playerid)
 		if(GetPlayerLanguage(playerid) == 0)
 		{
 		    SendClientMessage(playerid,COLOR_GREEN,"          돌아온 시발모드 : 삽 대전");
-		    SendClientMessage(playerid,COLOR_GREEN,"당신은 삽질을 하던 도중 광기에 둘러쌓인 노동자들을 발견합니다.");
-		    SendClientMessage(playerid,COLOR_GREEN,"이 지옥같은 곳에서 살아남는 방법은 다른 사람들을 죽이는 것 뿐입니다.");
-		    SendClientMessage(playerid,COLOR_GREEN,"포크레인 위를 잘 찾아보면 좋은 물건을 얻을 수 있을지도..?");
+		    SendClientMessage(playerid,COLOR_WHITE,"당신은 삽질을 하던 도중 광기에 둘러쌓인 노동자들을 발견합니다.");
+		    SendClientMessage(playerid,COLOR_WHITE,"이 지옥같은 곳에서 살아남는 방법은 다른 사람들을 죽이는 것 뿐입니다.");
+		    SendClientMessage(playerid,COLOR_WHITE,"포크레인 위를 잘 찾아보면 좋은 물건을 얻을 수 있을지도..?");
 		}
 		else
 		{
 		    SendClientMessage(playerid,COLOR_GREEN,"          Fuck Mode Returned: Shovel DM");
-		    SendClientMessage(playerid,COLOR_GREEN,"You have found workers surrounded by madness while shoveling.");
-		    SendClientMessage(playerid,COLOR_GREEN,"The only way to survive in this hell is to kill others.");
-		    SendClientMessage(playerid,COLOR_GREEN,"If you look up the forklane well, you may get something good..");
+		    SendClientMessage(playerid,COLOR_WHITE,"You have found workers surrounded by madness while shoveling.");
+		    SendClientMessage(playerid,COLOR_WHITE,"The only way to survive in this hell is to kill others.");
+		    SendClientMessage(playerid,COLOR_WHITE,"If you look up the forklane well, you may get something good..");
 		}
 		//-----
 		SetPlayerVirtualWorld(playerid, 3);
@@ -167,7 +165,7 @@ public SpawnHandler_3_Shovel(playerid)
         SetPlayerArmour(playerid, 0.0);
         SetPlayerWorldBounds(playerid,958.0458, 906.5814, -1108.8313, -1160.3292);
         SetPlayerTime(playerid, 12, 0);
-        
+        SetPlayerWeather(playerid, 0);
         ResetPlayerWeapons(playerid);
         GivePlayerWeapon(playerid, 6, 1);
         
@@ -176,34 +174,12 @@ public SpawnHandler_3_Shovel(playerid)
         FreezePlayer(playerid, 2);
 	}
 }
-//-----/ DeathHandler_3_Shovel /---------------------------------------------
-public DeathHandler_3_Shovel(playerid,killerid,reason)
-{
-	new WeaponName[32], string[128];
-    GetWeaponName(reason, WeaponName, sizeof(WeaponName));
-	if(killerid != INVALID_PLAYER_ID)
-	{
-	    if(GetPlayerLanguage(playerid) == 0)
-			format(string,sizeof(string),"* %s(%d) 님이 %s(%d) 님을 %s (으)로 죽였습니다 (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
-		else
-		    format(string,sizeof(string),"* %s(%d) has killed %s(%d) with %s (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
-		SendMessage(2, COLOR_RED, string);
-
-		SetPVarInt(killerid,"Point",GetPVarInt(killerid,"Point")+1);
-		SetPVarInt(killerid,"Money",GetPVarInt(killerid,"Money")+100);
-	}
-}
 //-----/ CommandHandler_3_Shovel /---------------------------------------------------
 public CommandHandler_3_Shovel(playerid,cmdtext[]) //return 1: processed
 {
 	if(GetPlayerMap(playerid) == 2)
 	{
-		new
-			cmd[256],idx
-			//string[128]
-		;
-		cmd = strtok(cmdtext,idx);
-		if(!strcmp("/help",cmd) || !strcmp("/?",cmd) || !strcmp("/도움말",cmd))
+		if(!strcmp("/help",cmdtext) || !strcmp("/도움말",cmdtext) || !strcmp("/?",cmdtext))
 		{
 			if(GetPlayerLanguage(playerid) == 0)
 				SendClientMessage(playerid,COLOR_WHITE,"* 이 맵은 도움말이 없습니다.");

@@ -50,19 +50,20 @@ public CommandHandler_Admin(playerid,cmdtext[])
 {
 	new
 		cmd[384],idx,
-		string[384],temp[384]
+		string[384]
 	;
+	cmd = strtok(cmdtext,idx);
 	if(!strcmp("/신고",cmd) || !strcmp("/report",cmd))
 	{
 		cmd = strtok(cmdtext,idx);
 		if(!strlen(cmd))
 		{
-		    if(GetPlayerLanguage(playerid))
+		    if(GetPlayerLanguage(playerid) == 0)
 		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: /신고 [번호나 이름의 일부] [내용]");
 			else
 			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: /report [playerid or part of name] [Text]");
 		}
-		new destid = ReturnUser(cmd);
+		new destid = strval(cmd);
 		if(destid == INVALID_PLAYER_ID)
 		{
 		    if(GetPlayerLanguage(playerid) == 0)
@@ -73,7 +74,7 @@ public CommandHandler_Admin(playerid,cmdtext[])
 		cmd = strtok(cmdtext,idx);
 		if(!strlen(cmd))
 		{
-		    if(GetPlayerLanguage(playerid))
+		    if(GetPlayerLanguage(playerid) == 0)
 		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: /신고 [번호나 이름의 일부] [내용]");
 			else
 			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: /report [playerid or part of name] [Text]");

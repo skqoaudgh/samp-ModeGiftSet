@@ -51,6 +51,7 @@ forward TextHandler_Userdata(playerid,text);
 forward CommandHandler_Userdata(playerid,cmdtext[]);
 forward DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[]);
 forward TimerHandler_Userdata_1S_P(playerid);
+forward RequestClassHandler_Userdata(playerid,classid);
 	//--/ Functions /
 forward CheckPlayerAccount(playerid);
 forward CheckPlayerAccountQE(playerid);
@@ -71,6 +72,7 @@ public AddHandler_Userdata()
 	AddHandler("Userdata",TextHandler,1);
 	AddHandler("Userdata",CommandHandler,1);
 	AddHandler("Userdata",DialogHandler);
+	AddHandler("Userdata",RequestClassHandler);
 	AddTimer("Userdata_1S",TIMER_1S_PLAYER);
 }
 //-----/ ConnectHandler_Userdata /----------------------------------------------
@@ -101,6 +103,22 @@ public RequestSpawnHandler_Userdata(playerid)
 	}
 	return 1;
 }
+//-----/ RequestClassHandler_Userdata(playerid,classid) /-----------------------------------------
+public RequestClassHandler_Userdata(playerid,classid)
+{
+	if(!IsPlayerLoggedIn(playerid))
+	{
+		SetPlayerPos(playerid,1479.6353,-1597.1534,9.3828);
+		SetPlayerCameraPos(playerid,1479.4426,-1587.1444,33.5469);
+		SetPlayerCameraLookAt(playerid,1479.5486,-1619.1360,14.1123);
+		SetPlayerVirtualWorld(playerid,0);
+		SetPlayerWeather(playerid, 0);
+		SetPlayerTime(playerid,0,0);
+		Streamer_UpdateEx(playerid, 1479.6353,-1597.1534,9.3828);
+		Streamer_UpdateEx(playerid, 1479.6353,-1597.1534,9.3828);
+		FreezePlayer(playerid);
+  	}
+}
 //-----/ TextHandler_Userdata /-------------------------------------------------
 public TextHandler_Userdata(playerid,text)
 {
@@ -111,10 +129,6 @@ public TextHandler_Userdata(playerid,text)
 //-----/ CommandHandler_Userdata /----------------------------------------------
 public CommandHandler_Userdata(playerid,cmdtext[])
 {
-	new
-		cmd[384],idx,
-		string[384],temp[384]
-	;
 	if(!IsPlayerLoggedIn(playerid))
 		return 1;
 
@@ -140,7 +154,7 @@ public CommandHandler_Userdata(playerid,cmdtext[])
 		return 1;
 	}
 
-	if(!strcmp("/스텟",cmd) || !strcmp("/스탯",cmd) || !strcmp("/stat",cmd,true))
+	if(!strcmp("/stat",cmdtext) || !strcmp("/stats",cmdtext) || !strcmp("/스탯",cmdtext) || !strcmp("/내정보",cmdtext))
 	{
 		ShowPlayerStatus(playerid,playerid);
 		return 1;
@@ -312,11 +326,11 @@ stock ShowPlayerStatus(playerid,destid=-1)
 	if(destid == -1)
 		destid = playerid;
     //-----
-	k = GetPVarInt(destid,"Kill"), d = GetPVarInt(destid,"Death");
+	k = GetPVarInt(destid,"Kills"), d = GetPVarInt(destid,"Deaths");
 	if(d == 0) d = 1;
 	ratio_kd = k/d;
 	//-----
-	w = GetPVarInt(destid,"Win"), l = GetPVarInt(destid,"Lose");
+	w = GetPVarInt(destid,"Wins"), l = GetPVarInt(destid,"Loses");
 	new temp = w+l;
 	if(temp == 0) temp = 1;
 	ratio_wl = w/(temp);
@@ -327,8 +341,8 @@ stock ShowPlayerStatus(playerid,destid=-1)
 	format(status,sizeof(status),"%s\n"C_WHITE"레벨:\t\t"C_GREY"[ %d ]",status,GetPVarInt(destid,"Level"));
 	format(status,sizeof(status),"%s\n"C_WHITE"포인트:\t\t"C_GREY"[ %d/%d ]",status,GetPVarInt(destid,"Point"),(GetPVarInt(destid,"Level")+1)*10);
 	format(status,sizeof(status),"%s\n"C_WHITE"",status);
-	format(status,sizeof(status),"%s\n"C_WHITE"승률:\t\t"C_GREY"[ %d / %d (%d%) ]",status,GetPVarInt(destid,"Win"),GetPVarInt(destid,"Lose"),ratio_wl);
-	format(status,sizeof(status),"%s\n"C_WHITE"K/D:\t\t"C_GREY"[ %d / %d (%.2f:1) ]",status,GetPVarInt(destid,"Kill"),GetPVarInt(destid,"Death"),ratio_kd);
+	format(status,sizeof(status),"%s\n"C_WHITE"승률:\t\t"C_GREY"[ %d / %d (%d%) ]",status,GetPVarInt(destid,"Wins"),GetPVarInt(destid,"Losse"),ratio_wl);
+	format(status,sizeof(status),"%s\n"C_WHITE"K/D:\t\t"C_GREY"[ %d / %d (%.2f:1) ]",status,GetPVarInt(destid,"Kills"),GetPVarInt(destid,"Deaths"),ratio_kd);
 	//-----
 	format(string,sizeof(string),"Status of %s(%d)",GetPlayerNameEx(destid),destid);
 
@@ -410,18 +424,20 @@ stock LoadPlayerData(playerid) // 데이터베이스 서버에서 유저 데이터를 가져오기. 
 public LoadPlayerDataQE(playerid)
 {
 	new
-		string[256],
-		value_int,Float:value_float
+		//string[256],
+		value_int
+		//Float:value_float
 	;
 	if(cache_num_rows())
 	{
+	    cache_get_value_name_int(0,"Skin",value_int); SetPVarInt(playerid,"Skin",value_int);
 	    cache_get_value_name_int(0,"Money",value_int); SetPVarInt(playerid,"Money",value_int);
         cache_get_value_name_int(0,"Point",value_int); SetPVarInt(playerid,"Point",value_int);
 	    cache_get_value_name_int(0,"Level",value_int); SetPVarInt(playerid,"Level",value_int);
-        cache_get_value_name_int(0,"Kill",value_int); SetPVarInt(playerid,"Kill",value_int);
-	    cache_get_value_name_int(0,"Death",value_int); SetPVarInt(playerid,"Death",value_int);
-        cache_get_value_name_int(0,"Win",value_int); SetPVarInt(playerid,"Win",value_int);
-	    cache_get_value_name_int(0,"Lose",value_int); SetPVarInt(playerid,"Lose",value_int);
+        cache_get_value_name_int(0,"Kills",value_int); SetPVarInt(playerid,"Kills",value_int);
+	    cache_get_value_name_int(0,"Deaths",value_int); SetPVarInt(playerid,"Deaths",value_int);
+        cache_get_value_name_int(0,"Wins",value_int); SetPVarInt(playerid,"Wins",value_int);
+	    cache_get_value_name_int(0,"Loses",value_int); SetPVarInt(playerid,"Loses",value_int);
 	    cache_get_value_name_int(0,"ToggleGlobal",value_int); SetPVarInt(playerid,"ToggleGlobal",value_int);
         cache_get_value_name_int(0,"TogglePM",value_int); SetPVarInt(playerid,"TogglePM",value_int);
 		//cache_get_value_name(0,"Value_S",string); SetPVarString(playerid,"Value_S",string);
@@ -440,19 +456,20 @@ public LoadPlayerDataQE(playerid)
 //-----/ SavePlayerData /-------------------------------------------------------
 stock SavePlayerData(playerid)
 {
-	new string[1000];
+	new string[2000];
 	if(IsPlayerLoggedIn(playerid))
 	{
 		format(string,sizeof(string),"UPDATE user_data SET");
 		format(string,sizeof(string),"%s IP=INET_ATON('%s')",string,P_IP[playerid]);
 		//-----
+        format(string,sizeof(string),"%s,Skin=%d",string,GetPVarInt(playerid,"Skin"));
 		format(string,sizeof(string),"%s,Money=%d",string,GetPVarInt(playerid,"Money"));
         format(string,sizeof(string),"%s,Point=%d",string,GetPVarInt(playerid,"Point"));
         format(string,sizeof(string),"%s,Level=%d",string,GetPVarInt(playerid,"Level"));
-        format(string,sizeof(string),"%s,Kill=%d",string,GetPVarInt(playerid,"Kill"));
-        format(string,sizeof(string),"%s,Death=%d",string,GetPVarInt(playerid,"Death"));
-        format(string,sizeof(string),"%s,Win=%d",string,GetPVarInt(playerid,"Win"));
-        format(string,sizeof(string),"%s,Lose=%d",string,GetPVarInt(playerid,"Lose"));
+        format(string,sizeof(string),"%s,Kills=%d",string,GetPVarInt(playerid,"Kills"));
+        format(string,sizeof(string),"%s,Deaths=%d",string,GetPVarInt(playerid,"Deaths"));
+        format(string,sizeof(string),"%s,Wins=%d",string,GetPVarInt(playerid,"Wins"));
+        format(string,sizeof(string),"%s,Loses=%d",string,GetPVarInt(playerid,"Loses"));
 		format(string,sizeof(string),"%s,ToggleGlobal=%d",string,GetPVarInt(playerid,"ToggleGlobal"));
         format(string,sizeof(string),"%s,TogglePM=%d",string,GetPVarInt(playerid,"TogglePM"));
 		//format(string,sizeof(string),"%s,Value_S='%s'",string,GetPVarStringEx(playerid,"Value_S"));

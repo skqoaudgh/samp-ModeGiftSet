@@ -21,7 +21,7 @@
 //-----/ Pre-Defines /
 	//--/ Mode Information /
 #define MODE_NAME				"ALL IN ONE"
-#define MODE_VERSION			"v1.0.001"
+#define MODE_VERSION			"v1.0.0"
 #define SERVER_HOSTNAME			"[GLOBAL][0.3.7] ALL IN ONE SERVER"
 
 
@@ -47,6 +47,7 @@
 #include "./Modules/Cores/PlayerSide.pwn"
 #include "./Modules/Cores/Userdata.pwn"
 #include "./Modules/Cores/Map.pwn"
+#include "./Modules/Cores/Death.pwn"
 		// Functions //
 #include "./Modules/Functions/ExtendedFunc.pwn"
 		// Command //
@@ -57,6 +58,7 @@
 #include "./Modules/Game/1_Run.pwn"
 #include "./Modules/Game/2_President.pwn"
 #include "./Modules/Game/3_Shovel.pwn"
+#include "./Modules/Game/4_Zombie.pwn"
 
 //-----/ Defines /
 #define DialogID(%1)			10000 + %1
@@ -97,6 +99,7 @@ public OnGameModeInit()
 	AddModule("Object");
 	AddModule("Map");
 	AddModule("Admin");
+	AddModule("Death");
 	    // Command //
     AddModule("Chatting");
 	    // Game //
@@ -104,6 +107,7 @@ public OnGameModeInit()
     AddModule("1_Run");
     AddModule("2_President");
     AddModule("3_Shovel");
+    AddModule("4_Zombie");
 		// Call Modules //
 	InitializeModules();
 	//----------------------------------------
