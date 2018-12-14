@@ -109,9 +109,9 @@ public CommandHandler_Chatting(playerid,cmdtext[])
 		if(!strlen(cmd))
 		{
 		    if(GetPlayerLanguage(playerid) == 0)
-		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: (/g)lobal [내용]");
+		    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 사용법: (/g)lobal [내용]");
 			else
-			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: (/g)lobal [Text]");
+			    return SendClientMessage(playerid,COLOR_WHITE,"[!] Usage: (/g)lobal [Text]");
 		}
 		strcpy(string,stringslice_c(cmdtext,1));
   		
@@ -151,12 +151,12 @@ public CommandHandler_Chatting(playerid,cmdtext[])
 		if(!strlen(cmd))
 		{
 		    if(GetPlayerLanguage(playerid) == 0)
-		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: /pm [유저번호] [내용]");
+		    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 사용법: /pm [유저번호] [내용]");
 			else
-			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: /pm [playerid] [Text]");
+			    return SendClientMessage(playerid,COLOR_WHITE,"[!] Usage: /pm [playerid] [Text]");
 		}
 			
-		new destid = ReturnUser(cmd);
+		new destid = strval(cmd);
 		if(destid == INVALID_PLAYER_ID)
 		{
 		    if(GetPlayerLanguage(playerid) == 0)
@@ -185,9 +185,9 @@ public CommandHandler_Chatting(playerid,cmdtext[])
 		if(!strlen(temp))
 		{
 		    if(GetPlayerLanguage(playerid) == 0)
-		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: /pm [유저번호] [내용]");
+		    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 사용법: /pm [유저번호] [내용]");
 			else
-			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: /pm [playerid] [Text]");
+			    return SendClientMessage(playerid,COLOR_WHITE,"[!] Usage: /pm [playerid] [Text]");
 		}
 		//-----
 		format(string,sizeof(string),"[PM] >> %s(%d): %s",GetPlayerNameEx(destid),destid,temp);
@@ -345,7 +345,7 @@ stock SendClientMessageToAdmin(color,text[])
 	for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
 	{
 		pid = GetConnectedPlayerID(i);
-		if(IsPlayerAdminEx(pid) || IsPlayerAdmin(pid))
+		if(IsPlayerAdminEx(pid))
 			SendClientMessage(pid,color,text);
 	}
 }

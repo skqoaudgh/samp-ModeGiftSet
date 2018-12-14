@@ -468,6 +468,7 @@ public SpawnHandler_2_President(playerid)
 {
 	if(GetPlayerMap(playerid) == 2)
 	{
+	    SetPlayerWorldBounds(playerid,20000.0000, -20000.0000, 20000.0000, -20000.0000);
 		if(!PlayerTeam[playerid]) // ∆¿ º±≈√
 		{
 		    SelectedTeam[playerid] = 0;
@@ -526,7 +527,6 @@ public SpawnHandler_2_President(playerid)
 		            SetPlayerTeam(playerid, 2);
 				}
 		    }
-		    SetPlayerWorldBounds(playerid,20000.0000, -20000.0000, 20000.0000, -20000.0000);
 	        SetPlayerTime(playerid, 12, 0);
 	        SetPlayerWeather(playerid, 0);
 		    HidePlayerTeamTD(playerid);
@@ -855,6 +855,7 @@ stock HidePlayerTeamTD(playerid)
 	for(new i=0; i<7; i++)
 		for(new j=0; j<4; j++)
         	TextDrawHideForPlayer(playerid,TeamSelectionTD[i][j]);
+    TextDrawHideForPlayer(playerid,TimeTD);
 }
 //-----/ GetPresidentPlayer /---------------------------------------------------
 stock GetPresidentPlayer()

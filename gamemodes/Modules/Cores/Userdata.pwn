@@ -41,7 +41,6 @@ new
 ;
 
 
-
 //-----/ Forwards /
 	//--/ Handlers /
 forward AddHandler_Userdata();
@@ -58,9 +57,6 @@ forward CheckPlayerAccount(playerid);
 forward CheckPlayerAccountQE(playerid);
 forward LoginPlayerQE(playerid);
 forward LoadPlayerDataQE(playerid);
-
-
-
 
 
 //==========/ Callback Functions /==============================================
@@ -341,7 +337,7 @@ stock ShowPlayerStatus(playerid,destid=-1)
 	format(status,sizeof(status),"%s\n"C_WHITE"·¹º§:\t\t"C_GREY"[ %d ]",status,GetPVarInt(destid,"Level"));
 	format(status,sizeof(status),"%s\n"C_WHITE"Æ÷ÀÎÆ®:\t\t"C_GREY"[ %d/%d ]",status,GetPVarInt(destid,"Point"),(GetPVarInt(destid,"Level")+1)*10);
 	format(status,sizeof(status),"%s\n"C_WHITE"",status);
-	format(status,sizeof(status),"%s\n"C_WHITE"½Â·ü:\t\t"C_GREY"[ %d / %d (%d%) ]",status,GetPVarInt(destid,"Wins"),GetPVarInt(destid,"Losse"),ratio_wl);
+	format(status,sizeof(status),"%s\n"C_WHITE"½Â·ü:\t\t"C_GREY"[ %d / %d (%.0f%) ]",status,GetPVarInt(destid,"Wins"),GetPVarInt(destid,"Losse"),ratio_wl);
 	format(status,sizeof(status),"%s\n"C_WHITE"K/D:\t\t"C_GREY"[ %d / %d (%.2f:1) ]",status,GetPVarInt(destid,"Kills"),GetPVarInt(destid,"Deaths"),ratio_kd);
 	//-----
 	format(string,sizeof(string),"Status of %s(%d)",GetPlayerNameEx(destid),destid);

@@ -11,15 +11,9 @@
 #define _MDPWN_Map
 
 
-
-//-----/ Includes /
-
-
-
 //-----/ Defines /
 #define MAX_MAP                     5
 #define DialogID_Map(%1)			10200 + %1
-
 
 
 //-----/ News /
@@ -34,7 +28,6 @@ enum mInfo
 new
 	MapInfo[MAX_MAP][mInfo]
 ;
-
 
 
 //-----/ Forwards /

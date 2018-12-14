@@ -1,6 +1,6 @@
 /*
   [Functions]
-	Function
+	IsPlayerSpawnedEx(playerid)
 */
 
 //-----/ Pre-Processing /
@@ -22,7 +22,8 @@
 
 
 //-----/ News /
-	//--/  /
+	//--/ Death /
+new bool:P_Spanwed[MAX_PLAYERS];
 
 
 
@@ -30,7 +31,7 @@
 	//--/ Handlers /
 forward AddHandler_Death();
 forward DeathHandler_Death(playerid,killerid,reason);
-
+forward SpawnHandler_Death(playerid);
 	//--/ Functions /
 
 
@@ -40,9 +41,15 @@ forward DeathHandler_Death(playerid,killerid,reason);
 public AddHandler_Death()
 {
 	AddHandler("Death",DeathHandler);
+	AddHandler("Death",SpawnHandler);
 	//AddTimer("WTF",TIMER_1S_PLAYER);
 }
-//-----/  /---------------------------------------------------------------------
+//-----/ SpawnHandler_Death /---------------------------------------------------
+public SpawnHandler_Death(playerid)
+{
+    P_Spanwed[playerid] = true;
+}
+//-----/ DeathHandler_Death /---------------------------------------------------
 public DeathHandler_Death(playerid,killerid,reason)
 {
 	new WeaponName[32], string[128];
@@ -58,7 +65,12 @@ public DeathHandler_Death(playerid,killerid,reason)
 		SetPVarInt(killerid,"Point",GetPVarInt(killerid,"Point")+1);
 		SetPVarInt(killerid,"Money",GetPVarInt(killerid,"Money")+100);
 	}
+	P_Spanwed[playerid] = false;
 }
 
 //==========/ Functions /=======================================================
-//-----/  /---------------------------------------------------------------------
+//-----/ IsPlayerSpawnedEx /----------------------------------------------------
+stock IsPlayerSpawnedEx(playerid)
+{
+	return P_Spanwed[playerid];
+}
