@@ -604,8 +604,8 @@ public DeathHandler_2_President(playerid,killerid,reason)
 			    PlayerPlaySound(i, 139, 0.0, 0.0, 0.0);
 				if(SelectedTeam[pid] >= 4 && SelectedTeam[pid] <= 6)
 				{
-		    		SetPVarInt(pid,"Point",GetPVarInt(pid,"Point")+20);
-					SetPVarInt(pid,"Money",GetPVarInt(pid,"Money")+2000);
+		    		GivePlayerPoint(playerid, 10);
+					SetPVarInt(pid,"Money",GetPVarInt(pid,"Money")+1000);
 				}
 			}
   		}
@@ -787,12 +787,12 @@ public Round()
             {
 		        if(GetPlayerLanguage(pid) == 0)
 		        {
-			        SendClientMessage(pid, COLOR_PASTEL_GREEN, "* 대통령이 제한시간 동안 생존하여 승리하였습니다! (Point +5, Money +500)");
+			        SendClientMessage(pid, COLOR_PASTEL_GREEN, "* 대통령이 제한시간 동안 생존하여 승리하였습니다! (Point +10, Money +1000)");
 			        SendClientMessage(pid, COLOR_PASTEL_GREEN, "* 잠시 후 새로운 라운드가 시작됩니다.");
 		        }
 		        else
 		        {
-			        SendClientMessage(pid, COLOR_PASTEL_GREEN, "* The president survive during round time, Win the game! (Point +5, Money +500)");
+			        SendClientMessage(pid, COLOR_PASTEL_GREEN, "* The president survive during round time, Win the game! (Point +10, Money +1000)");
 			        SendClientMessage(pid, COLOR_PASTEL_GREEN, "* Next round will be start soon.");
 		        }
             }
@@ -809,8 +809,8 @@ public Round()
 			    PlayerPlaySound(pid, 139, 0.0, 0.0, 0.0);
 				if(SelectedTeam[pid] >= 0 && SelectedTeam[pid] <= 3)
 				{
-		    		SetPVarInt(pid,"Point",GetPVarInt(pid,"Point")+20);
-					SetPVarInt(pid,"Money",GetPVarInt(pid,"Money")+2000);
+		    		GivePlayerPoint(pid, 10);
+					SetPVarInt(pid,"Money",GetPVarInt(pid,"Money")+1000);
 				}
 			}
   		}

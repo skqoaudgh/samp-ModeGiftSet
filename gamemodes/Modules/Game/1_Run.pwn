@@ -920,7 +920,7 @@ public PickUpHandler_1_Run(playerid,pickupid)
 	    }
 
 	    PlayerPlaySound(playerid, 1150, 0.0, 0.0, 0.0);
-	    SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")+50);
+	    GivePlayerPoint(playerid, 50);
 		SetPVarInt(playerid,"Money",GetPVarInt(playerid,"Money")+5000);
 	}
 }

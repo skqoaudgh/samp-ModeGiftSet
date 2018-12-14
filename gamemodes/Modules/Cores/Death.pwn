@@ -62,7 +62,7 @@ public DeathHandler_Death(playerid,killerid,reason)
 		    format(string,sizeof(string),"* %s(%d) has killed %s(%d) with %s (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
 		SendMessage(2, COLOR_RED, string);
 
-		SetPVarInt(killerid,"Point",GetPVarInt(killerid,"Point")+1);
+		GivePlayerPoint(playerid, 1);
 		SetPVarInt(killerid,"Money",GetPVarInt(killerid,"Money")+100);
 	}
 	P_Spanwed[playerid] = false;

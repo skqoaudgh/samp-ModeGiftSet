@@ -501,10 +501,10 @@ stock ChangePlayerPassword(playerid,password[])
 stock GivePlayerPoint(playerid, value)
 {
 	SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")+value);
-	if(GetPVarInt(playerid,"Point") >= GetPVarInt(destid,"Level")+1)*10)
+	while(GetPVarInt(playerid,"Point") >= (GetPVarInt(playerid,"Level")+1)*10)
 	{
 	    SetPVarInt(playerid,"Level",GetPVarInt(playerid,"Level")+1);
-	    SetPVarInt(playerid,"Point",GetPVarInt(destid,"Level")*10);
+	    SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")-GetPVarInt(playerid,"Level")*10);
 	}
 }
 //==========/ Spawn Functions /=================================================
