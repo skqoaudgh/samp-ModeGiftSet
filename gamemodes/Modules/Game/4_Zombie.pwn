@@ -151,10 +151,10 @@ public SpawnHandler_4_Zombie(playerid)
 		    SetPlayerTeam(playerid, 1);
 		    SetPlayerSkin(playerid, 68);
 			SetPlayerVirtualWorld(playerid, 1);
-			SetPlayerPos(playerid,824.2307,-1103.0940,33.8283);
+			SetPlayerPos(playerid,823.6836,-1102.9181,25.7891);
 			SetPlayerFacingAngle(playerid,265.1960);
-			SetPlayerCameraPos(playerid,827.2307,-1103.0940,34.8283);
-			SetPlayerCameraLookAt(playerid,824.2307,-1103.0940,33.8283);
+			SetPlayerCameraPos(playerid,830.2014,-1102.9973,29.2969);
+			SetPlayerCameraLookAt(playerid,823.6836,-1102.9181,25.7891);
 			FreezePlayer(playerid);
 		}
 	}

@@ -50,6 +50,7 @@
 #include "./Modules/Cores/Death.pwn"
 		// Functions //
 #include "./Modules/Functions/ExtendedFunc.pwn"
+#include "./Modules/Functions/FreezePlayer.pwn"
 		// Command //
 #include "./Modules/Command/Chatting.pwn"
 #include "./Modules/Command/Admin.pwn"
@@ -102,6 +103,8 @@ public OnGameModeInit()
 	AddModule("Death");
 	    // Command //
     AddModule("Chatting");
+        // Function //
+    AddModule("FreezePlayer");
 	    // Game //
     AddModule("0_Lobby");
     AddModule("1_Run");

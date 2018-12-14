@@ -7,7 +7,7 @@
 	GetBalance()
 	SetBalance(value)
 	GetRoundTimer()
-	ShowPlayerTeamTD(playerid)
+	ShowPlayerTeamTD(playerid, id)
 	HidePlayerTeamTD(playerid)
 	SetPlayerHasTeam(playerid,bool:value)
 */
@@ -39,7 +39,7 @@ new bool:PlayerTeam[MAX_PLAYERS];
 new SelectedTeam[MAX_PLAYERS];
 new SkinInfo[] = {280,286,165,147,222,142,221};
 	//--/ TextDraw /
-new Text:TeamSelectionTD[MAX_PLAYERS][4];
+new Text:TeamSelectionTD[7][4];
 new Text:TimeTD, TimeTD_string[128];
 
 //-----/ Forwards /
@@ -383,7 +383,7 @@ public InitHandler_2_President()
     
 	for(new i=702; i<=1006; i++)
 	    SetVehicleVirtualWorld(i, 2);
-	for(new i=0; i<MAX_PLAYERS; i++)
+	for(new i=0; i<7; i++)
 	{
 	 	TeamSelectionTD[i][0] = TextDrawCreate(320.000213, 15.011039, "BODYGUARD");
 		TextDrawLetterSize(TeamSelectionTD[i][0], 1.058999, 5.038813);
@@ -424,6 +424,38 @@ public InitHandler_2_President()
 		TextDrawFont(TeamSelectionTD[i][3], 1);
 		TextDrawSetProportional(TeamSelectionTD[i][3], 1);
 	}
+    TextDrawSetString(TeamSelectionTD[1][1],"Silenced Pistol");
+    TextDrawSetString(TeamSelectionTD[1][2],"TEC-9");
+    TextDrawSetString(TeamSelectionTD[1][3],"Combat Shotgun");
+
+    TextDrawSetString(TeamSelectionTD[2][1],"Desert Eagle");
+    TextDrawSetString(TeamSelectionTD[2][2],"M4");
+    TextDrawSetString(TeamSelectionTD[2][3],"Pump Shotgun");
+		    
+	TextDrawSetString(TeamSelectionTD[3][0],"President");
+	TextDrawSetString(TeamSelectionTD[3][1], "Silenced Pistol");
+	TextDrawSetString(TeamSelectionTD[3][2], " ");
+	TextDrawSetString(TeamSelectionTD[3][3], " ");
+	TextDrawColor(TeamSelectionTD[3][0],-65281);
+	
+	TextDrawSetString(TeamSelectionTD[4][0],"Terrorist");
+    TextDrawSetString(TeamSelectionTD[4][1],"Desert Eagle");
+    TextDrawSetString(TeamSelectionTD[4][2],"AK-47");
+    TextDrawSetString(TeamSelectionTD[4][3],"Pump Shotgun");
+	TextDrawColor(TeamSelectionTD[4][0],-16776961);
+	
+	TextDrawSetString(TeamSelectionTD[5][0],"Terrorist");
+    TextDrawSetString(TeamSelectionTD[5][1],"Micro-Uzi");
+    TextDrawSetString(TeamSelectionTD[5][2],"Combat Shotgun");
+    TextDrawSetString(TeamSelectionTD[5][3],"Grenade");
+	TextDrawColor(TeamSelectionTD[5][0],-16776961);
+	
+	TextDrawSetString(TeamSelectionTD[6][0],"Terrorist");
+	TextDrawSetString(TeamSelectionTD[6][1],"MP5");
+	TextDrawSetString(TeamSelectionTD[6][2],"AK-47");
+	TextDrawSetString(TeamSelectionTD[6][3],"Molotov Cocktail");
+	TextDrawColor(TeamSelectionTD[6][0],-16776961);
+
 	format(TimeTD_string, 128, " ");
 	TimeTD = TextDrawCreate(480, 420, TimeTD_string);
 	TextDrawLetterSize(TimeTD,0.40,1.10);
@@ -439,7 +471,7 @@ public SpawnHandler_2_President(playerid)
 		if(!PlayerTeam[playerid]) // 팀 선택
 		{
 		    SelectedTeam[playerid] = 0;
-		    ShowPlayerTeamTD(playerid);
+		    ShowPlayerTeamTD(playerid, 0);
 		    SetPlayerTime(playerid, 12, 0);
 		    
 		    FreezePlayer(playerid);
@@ -687,75 +719,7 @@ stock SetSelectionInfo(playerid)
     // 스킨
     SetPlayerSkin(playerid,SkinInfo[SelectedTeam[playerid]]);
     PlayerPlaySound(playerid, 1058, 0.0, 0.0, 0.0);
-    HidePlayerTeamTD(playerid);
-	switch(SelectedTeam[playerid])
- 	{
-		// 텍스트드로우
-		case 0:
-		{
-		    TextDrawSetString(TeamSelectionTD[playerid][0],"BODYGUARD");
-		    TextDrawSetString(TeamSelectionTD[playerid][1],"Desert Eagle");
-		    TextDrawSetString(TeamSelectionTD[playerid][2],"MP5");
-		    TextDrawSetString(TeamSelectionTD[playerid][3],"Pump Shotgun");
-			
-		    TextDrawColor(TeamSelectionTD[playerid][0],65535);
-		}
-		case 1:
-		{
-		    TextDrawSetString(TeamSelectionTD[playerid][0],"BODYGUARD");
-		    TextDrawSetString(TeamSelectionTD[playerid][1],"Silenced Pistol");
-		    TextDrawSetString(TeamSelectionTD[playerid][2],"TEC-9");
-		    TextDrawSetString(TeamSelectionTD[playerid][3],"Combat Shotgun");
-
-		    TextDrawColor(TeamSelectionTD[playerid][0],65535);
-		}
-		case 2:
-		{
-		    TextDrawSetString(TeamSelectionTD[playerid][0],"BODYGUARD");
-		    TextDrawSetString(TeamSelectionTD[playerid][1],"Desert Eagle");
-		    TextDrawSetString(TeamSelectionTD[playerid][2],"M4");
-		    TextDrawSetString(TeamSelectionTD[playerid][3],"Pump Shotgun");
-
-		    TextDrawColor(TeamSelectionTD[playerid][0],65535);
-		}
-		case 3:
-		{
-		    TextDrawSetString(TeamSelectionTD[playerid][0],"PRESIDENT");
-		    TextDrawSetString(TeamSelectionTD[playerid][1],"Silenced Pistol");
-		    TextDrawSetString(TeamSelectionTD[playerid][2]," ");
-		    TextDrawSetString(TeamSelectionTD[playerid][3]," ");
-
-		    TextDrawColor(TeamSelectionTD[playerid][0],-65281);
-		}
-		case 4:
-		{
-		    TextDrawSetString(TeamSelectionTD[playerid][0],"TERRORIST");
-		    TextDrawSetString(TeamSelectionTD[playerid][1],"Desert Eagle");
-		    TextDrawSetString(TeamSelectionTD[playerid][2],"AK-47");
-		    TextDrawSetString(TeamSelectionTD[playerid][3],"Pump Shotgun");
-
-		    TextDrawColor(TeamSelectionTD[playerid][0],-16776961);
-		}
-		case 5:
-		{
-		    TextDrawSetString(TeamSelectionTD[playerid][0],"TERRORIST");
-		    TextDrawSetString(TeamSelectionTD[playerid][1],"Micro-Uzi");
-		    TextDrawSetString(TeamSelectionTD[playerid][2],"Combat Shotgun");
-		    TextDrawSetString(TeamSelectionTD[playerid][3],"Grenade");
-
-		    TextDrawColor(TeamSelectionTD[playerid][0],-16776961);
-		}
-		case 6:
-		{
-		    TextDrawSetString(TeamSelectionTD[playerid][0],"TERRORIST");
-		    TextDrawSetString(TeamSelectionTD[playerid][1],"MP5");
-		    TextDrawSetString(TeamSelectionTD[playerid][2],"AK-47");
-		    TextDrawSetString(TeamSelectionTD[playerid][3],"Molotov Cocktail");
-
-		    TextDrawColor(TeamSelectionTD[playerid][0],-16776961);
-		}
-	}
-	ShowPlayerTeamTD(playerid);
+	ShowPlayerTeamTD(playerid, SelectedTeam[playerid]);
 }
 //-----/ GivePlayerWeaponEx /---------------------------------------------------
 stock GivePlayerWeaponEx(playerid,teamid)
@@ -872,16 +836,25 @@ public EndRound()
 		SetVehicleToRespawn(i);
 }
 //-----/ ShowPlayerTeamTD /-----------------------------------------------------
-stock ShowPlayerTeamTD(playerid)
+stock ShowPlayerTeamTD(playerid, id)
 {
-	for(new i=0; i<4; i++)
-        TextDrawShowForPlayer(playerid,TeamSelectionTD[playerid][i]);
+	for(new i=0; i<7; i++)
+	{
+		for(new j=0; j<4; j++)
+		{
+		    if(i==id)
+		        TextDrawShowForPlayer(playerid,TeamSelectionTD[i][j]);
+			else
+			    TextDrawHideForPlayer(playerid,TeamSelectionTD[i][j]);
+		}
+	}
 }
 //-----/ HidePlayerTeamTD /-----------------------------------------------------
 stock HidePlayerTeamTD(playerid)
 {
-	for(new i=0; i<4; i++)
-        TextDrawHideForPlayer(playerid,TeamSelectionTD[playerid][i]);
+	for(new i=0; i<7; i++)
+		for(new j=0; j<4; j++)
+        	TextDrawHideForPlayer(playerid,TeamSelectionTD[i][j]);
 }
 //-----/ GetPresidentPlayer /---------------------------------------------------
 stock GetPresidentPlayer()

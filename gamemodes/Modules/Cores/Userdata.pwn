@@ -2,7 +2,9 @@
   [Functions]
 	ShowPlayerLoginDialog(playerid,bool:failed=false)
 	ShowPlayerChangePasswordDialog(playerid)
+    ShowPlayerStatus(playerid,destid=-1)
     
+    GivePlayerPoint(playerid, value)
 	CheckPlayerAccount(playerid)
 	LoginPlayer(playerid,password[])
 	RegisterPlayer(playerid,password[])
@@ -11,7 +13,6 @@
 	IsPlayerLoggedIn(playerid)
 	IsPlayerRegistered(playerid)
 	ChangePlayerPassword(playerid,password[])
-	ShowPlayerStatus(playerid,destid=-1)
 	IsPlayerSelectLanguage(playerid)
 */
 
@@ -327,15 +328,14 @@ stock ShowPlayerStatus(playerid,destid=-1)
 		destid = playerid;
     //-----
 	k = GetPVarInt(destid,"Kills"), d = GetPVarInt(destid,"Deaths");
-	if(d == 0) d = 1;
-	ratio_kd = k/d;
+	if(d == 0) ratio_kd = 0.0;
+	else ratio_kd = k/d;
 	//-----
 	w = GetPVarInt(destid,"Wins"), l = GetPVarInt(destid,"Loses");
 	new temp = w+l;
-	if(temp == 0) temp = 1;
-	ratio_wl = w/(temp);
+	if(temp == 0) ratio_wl = 0;
+	else ratio_wl = w/(temp);
 	//-----
-	format(status,sizeof(status),"%s\n"C_WHITE"",status);
 	format(status,sizeof(status),"%s\n"C_WHITE"µ·:\t\t"C_GREY"[ $%d ]",status,GetPlayerMoney(destid));
 	format(status,sizeof(status),"%s\n"C_WHITE"",status);
 	format(status,sizeof(status),"%s\n"C_WHITE"·¹º§:\t\t"C_GREY"[ %d ]",status,GetPVarInt(destid,"Level"));
@@ -501,7 +501,16 @@ stock ChangePlayerPassword(playerid,password[])
 	format(string,sizeof(string),"UPDATE user_data SET Password = SHA1('%s') WHERE Username = '%s'",mysql_string_escape(password),GetPlayerNameEx(playerid));
 	mysql_pquery(GetMySQLHandle(),string);
 }
-
+//-----/ GivePlayerPoint /------------------------------------------------------
+stock GivePlayerPoint(playerid, value)
+{
+	SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")+value);
+	if(GetPVarInt(playerid,"Point") >= GetPVarInt(destid,"Level")+1)*10)
+	{
+	    SetPVarInt(playerid,"Level",GetPVarInt(playerid,"Level")+1);
+	    SetPVarInt(playerid,"Point",GetPVarInt(destid,"Level")*10);
+	}
+}
 //==========/ Spawn Functions /=================================================
 //-----/ SpawnPlayerEx /--------------------------------------------------------
 stock SpawnPlayerEx(playerid)

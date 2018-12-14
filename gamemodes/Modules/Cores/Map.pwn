@@ -2,8 +2,6 @@
   [Functions]
 	GetPlayerMap(playerid)
 	ShowPlayerMapList(playerid)
-	FreezePlayer(playerid)
-	UnFreezePlayer(playerid)
 */
 
 //-----/ Pre-Processing /
@@ -34,8 +32,7 @@ enum mInfo
 	PlayerCount
 }
 new
-	MapInfo[MAX_MAP][mInfo],
-	FreezeTimer[MAX_PLAYERS]
+	MapInfo[MAX_MAP][mInfo]
 ;
 
 
@@ -47,9 +44,7 @@ forward InitHandler_Map();
 forward CommandHandler_Map(playerid,cmdtext[]);
 forward DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[]);
 forward ConnectHandler_Map(playerid);
-forward DisconnectHandler_Map(playerid,reason);
 	//--/ Functions /
-forward UnFreezePlayer(playerid);
 
 
 //==========/ Callback Functions /==============================================
@@ -59,7 +54,6 @@ public AddHandler_Map()
     AddHandler("Map",InitHandler);
     AddHandler("Map",CommandHandler);
     AddHandler("Map",ConnectHandler);
-    AddHandler("Map",DisconnectHandler);
     AddHandler("Map",DialogHandler);
 	//AddTimer("WTF",TIMER_1S_PLAYER);
 }
@@ -88,11 +82,6 @@ public InitHandler_Map()
 public ConnectHandler_Map(playerid)
 {
 	MapInfo[0][PlayerCount] ++;
-}
-//-----/ DisconnectHandler_Map /------------------------------------------------
-public DisconnectHandler_Map(playerid,reason)
-{
-	KillTimer(FreezeTimer[playerid]);
 }
 //-----/ CommandHandler_Map /---------------------------------------------------
 public CommandHandler_Map(playerid,cmdtext[]) //return 1: processed
@@ -149,20 +138,6 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 }
 
 //==========/ Functions /=======================================================
-//-----/ FreezePlayer /---------------------------------------------------------
-stock FreezePlayer(playerid, time=0)
-{
-    TogglePlayerControllable(playerid,0);
-    if(time > 0)
-		FreezeTimer[playerid] = SetTimerEx("UnFreezePlayer",time*1000,0,"d",playerid);
-}
-
-//-----/ UnFreezePlayer /-------------------------------------------------------
-public UnFreezePlayer(playerid)
-{
-    TogglePlayerControllable(playerid,1);
-}
-
 //-----/ GetPlayerMap /---------------------------------------------------------
 stock GetPlayerMap(playerid)
 {
