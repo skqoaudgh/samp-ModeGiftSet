@@ -13,7 +13,9 @@
 	IsPlayerLoggedIn(playerid)
 	IsPlayerRegistered(playerid)
 	ChangePlayerPassword(playerid,password[])
+	
 	IsPlayerSelectLanguage(playerid)
+	ShowPlayerChangeLanguageDialog(playerid)
 */
 
 //-----/ Pre-Processing /
@@ -190,6 +192,18 @@ public DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[])
 				} else ShowPlayerChangePasswordDialog(playerid);
 			}
 		}
+		case DialogID_Userdata(2):
+		{
+			if(response)
+			{
+				SetPVarInt(playerid,"Language",listitem);
+				P_Selected[playerid] = true;
+				if(IsPlayerLoggedIn(playerid))
+					ShowPlayerChangeLanguageDialog(playerid);
+			}
+			if(!IsPlayerLoggedIn(playerid))
+				ShowPlayerLoginDialog(playerid);
+		}
 	}
 	return 0;
 }
@@ -209,7 +223,7 @@ public TimerHandler_Userdata_1S_P(playerid)
 //-----/ ShowPlayerLoginDialog /------------------------------------------------
 stock ShowPlayerLoginDialog(playerid,bool:failed=false)
 {
-	new string[512],button[10];
+	new string[350],button[10];
 	new len = GetPlayerLanguage(playerid);
 	if(len == 0)
 		strcat(string,"{FF5A00}ALL IN ONE 서버{FFFFFF}에 오신 걸 환영합니다!\n");
@@ -347,6 +361,23 @@ stock ShowPlayerStatus(playerid,destid=-1)
 	else
 	    ShowPlayerDialog(playerid,DialogID_Userdata(2),DIALOG_STYLE_MSGBOX,string,status,"Close","");
 }
+//-----/ ShowPlayerChangeLanguageDialog /---------------------------------------
+stock ShowPlayerChangeLanguageDialog(playerid)
+{
+	new lan = GetPVarInt(playerid,"Language");
+	new string[256];
+	if(lan == 0) // 한국어 사용 중
+	{
+	    strcat(string,""C_PASTEL_YELLOW"한국어 (Selected)\n");
+	    strcat(string,"English");
+	}
+	else // 영어 사용 중
+	{
+	    strcat(string,"한국어\n");
+	    strcat(string,""C_PASTEL_YELLOW"English (Selected)");
+	}
+ 	ShowPlayerDialog(playerid,DialogID_Userdata(2),DIALOG_STYLE_LIST,"Language Setting",string,"변경","취소");
+}
 
 //==========/ Account Functions /===============================================
 //-----/ CheckPlayerAccount /---------------------------------------------------
@@ -373,6 +404,7 @@ public CheckPlayerAccountQE(playerid)
 			cache_get_value_name_int(0,"ID",value);
 			SetPVarInt(playerid,"ID",value);
 			P_Registered[playerid] = true;
+			SendClientMessage(playerid,COLOR_WHITE,"asdasdasdasdqwd");
 		}
 		//-----
 		ShowPlayerLoginDialog(playerid); // 비밀번호 입력 창 띄우기
@@ -489,6 +521,11 @@ stock IsPlayerLoggedIn(playerid)
 stock IsPlayerRegistered(playerid)
 {
 	return P_Registered[playerid];
+}
+//-----/ IsPlayerSelectLanguage /-----------------------------------------------
+stock IsPlayerSelectLanguage(playerid)
+{
+	return P_Selected[playerid];
 }
 //-----/ ChangePlayerPassword /-------------------------------------------------
 stock ChangePlayerPassword(playerid,password[])

@@ -1,7 +1,6 @@
 /*
   [Functions]
 	ShowPlayerToggleDialog(playerid)
-	ShowPlayerChangeLanguageDialog(playerid)
 
 	GetPlayerLanguage(playerid)
 	
@@ -239,14 +238,6 @@ public DialogHandler_Chatting(playerid,dialogid,response,listitem,inputtext[])
 				ShowPlayerToggleDialog(playerid);
 			}
 		}
-		case DialogID_Chatting(1):
-		{
-			if(response)
-			{
-				SetPVarInt(playerid,"Language",listitem);
-				ShowPlayerChangeLanguageDialog(playerid);
-			}
-		}
 	}
 	return 0;
 }
@@ -283,26 +274,6 @@ stock ShowPlayerToggleDialog(playerid)
 	}
 
 	ShowPlayerDialog(playerid,DialogID_Chatting(0),DIALOG_STYLE_TABLIST,"Chatting Toggle",dialog,"선택","닫기");
-}
-//-----/ ShowPlayerChangeLanguageDialog /---------------------------------------
-stock ShowPlayerChangeLanguageDialog(playerid)
-{
-	new lan = GetPVarInt(playerid,"Language");
-	new string[256];
-	if(lan == 0) // 한국어 사용 중
-	{
-	    strcat(string,""C_PASTEL_YELLOW"한국어 (Selected)\n");
-	    strcat(string,"English");
-	}
-	else // 영어 사용 중
-	{
-	    strcat(string,"한국어\n");
-	    strcat(string,""C_PASTEL_YELLOW"English (Selected)");
-	}
-	if(IsPlayerLoggedIn(playerid))
- 		ShowPlayerDialog(playerid,DialogID_Chatting(1),DIALOG_STYLE_LIST,"Language Setting",string,"변경","취소");
- 	else
- 	    ShowPlayerLoginDialog(playerid);
 }
 
 //==========/ Message Functions /===============================================
@@ -354,9 +325,4 @@ stock SendClientMessageToAdmin(color,text[])
 stock GetPlayerLanguage(playerid)
 {
 	return GetPVarInt(playerid,"Language");
-}
-//-----/ IsPlayerSelectLanguage /-----------------------------------------------
-stock IsPlayerSelectLanguage(playerid)
-{
-	return P_Selected[playerid];
 }

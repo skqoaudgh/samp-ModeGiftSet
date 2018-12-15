@@ -79,6 +79,10 @@ public SpawnHandler_0_Lobby(playerid)
 	if(GetPlayerMap(playerid) == 0)
 	{
 	    ClearChatting(playerid);
+	    if(GetPlayerLanguage(playerid) == 0)
+	    	SendClientMessage(playerid,COLOR_GREEN,"* [/맵] 명령어를 입력하면 여러 종류의 게임을 만나볼 수 있습니다.");
+		else
+		    SendClientMessage(playerid,COLOR_GREEN,"* Enter [/map] to play a lot of games.");
 		SetPlayerColor(playerid,COLOR_WHITE);
 
 		SetPlayerWorldBounds(playerid,20000.0000, -20000.0000, 20000.0000, -20000.0000);

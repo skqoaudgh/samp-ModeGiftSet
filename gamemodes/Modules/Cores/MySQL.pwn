@@ -72,7 +72,7 @@ public InitHandler_MySQL()
 {
 	// MySQL 기본 접속 정보 입력
 	if(MySQL_Port == 0)
-		SetMySQLConnectionInfo("127.0.0.1","root","23468917a!","Gift");
+		SetMySQLConnectionInfo("127.0.0.1","root","23468917a!","gift");
 	//-----
 	printf("---------------------------------");
 	printf("[mysql] Connecting to DB server...");
