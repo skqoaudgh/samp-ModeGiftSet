@@ -1,5 +1,7 @@
 /*
   [Functions]
+    GivePlayerMoneyEx(playerid, value)
+    GivePlayerPoint(playerid, value)
 	GetPlayerNameEx(playerid)
 	GetPlayerIP(playerid)
 	SetPlayerMoney(playerid,money)
@@ -66,8 +68,21 @@ stock TextDrawHideForAllEx(mapid, Text:TD)
 	    if(GetPlayerMap(i) == mapid)
 	        TextDrawHideForPlayer(i,TD);
 }
-
-
+//-----/ GivePlayerPoint /------------------------------------------------------
+stock GivePlayerPoint(playerid, value)
+{
+	SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")+value);
+	while(GetPVarInt(playerid,"Point") >= (GetPVarInt(playerid,"Level")+1)*10)
+	{
+	    SetPVarInt(playerid,"Level",GetPVarInt(playerid,"Level")+1);
+	    SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")-GetPVarInt(playerid,"Level")*10);
+	}
+}
+stock GivePlayerMoneyEx(playerid, value)
+{
+	new cur = GetPVarInt(playerid,"Money");
+	SetPVarInt(playerid,"Money",cur+value);
+}
 
 
 //==========/ String Functions /================================================

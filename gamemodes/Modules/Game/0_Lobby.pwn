@@ -80,15 +80,15 @@ public SpawnHandler_0_Lobby(playerid)
 	{
 	    ClearChatting(playerid);
 	    if(GetPlayerLanguage(playerid) == 0)
-	    	SendClientMessage(playerid,COLOR_GREEN,"* [/맵] 명령어를 입력하면 여러 종류의 게임을 만나볼 수 있습니다.");
+	    	SendClientMessage(playerid,COLOR_GREEN,"* [/help] 를 통해 서버 명령어를 확인할 수 있습니다.");
 		else
-		    SendClientMessage(playerid,COLOR_GREEN,"* Enter [/map] to play a lot of games.");
+		    SendClientMessage(playerid,COLOR_GREEN,"* Enter [/map] to see server commands");
 		SetPlayerColor(playerid,COLOR_WHITE);
 
 		SetPlayerWorldBounds(playerid,20000.0000, -20000.0000, 20000.0000, -20000.0000);
 		SetPlayerPos(playerid, 1479.5483,-1600.0005,13.5469);
 		SetPlayerFacingAngle(playerid, 180.2658);
-		SetPlayerSkin(playerid, 0);
+		SetPlayerSkin(playerid,GetPVarInt(playerid,"Skin"));
         SetPlayerTime(playerid, 0, 0);
         SetPlayerWeather(playerid, 0);
         ResetPlayerWeapons(playerid);
@@ -113,12 +113,16 @@ public CommandHandler_0_Lobby(playerid,cmdtext[])
 		{
 			if(GetPlayerLanguage(playerid) == 0)
    			{
-				SendClientMessage(playerid,COLOR_GREY,"[!] User - /저장 /비번변경 /스탯 /토글");
+				SendClientMessage(playerid,COLOR_GREY,"[!] User - /저장 /비번변경 /스탯 /토글 /언어변경");
+				SendClientMessage(playerid,COLOR_GREY,"[!] Game - /맵");
+				SendClientMessage(playerid,COLOR_GREY,"[!] Style - /스킨 /악세사리");
 				SendClientMessage(playerid,COLOR_GREY,"[!] Report - /신고");
 			}
 			else
 			{
- 				SendClientMessage(playerid,COLOR_GREY,"[!] User - /sav /changepassword /stat /toggle");
+ 				SendClientMessage(playerid,COLOR_GREY,"[!] User - /sav /changepassword /stat /toggle /language");
+				SendClientMessage(playerid,COLOR_GREY,"[!] Game - /map");
+				SendClientMessage(playerid,COLOR_GREY,"[!] Style - /skin /toy");
 				SendClientMessage(playerid,COLOR_GREY,"[!] Report - /report");
 			}
 			SendClientMessage(playerid,COLOR_GREY,"[!] Chat - (/g)lobal (/t)eam");

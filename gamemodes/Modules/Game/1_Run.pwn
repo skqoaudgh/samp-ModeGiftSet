@@ -872,6 +872,7 @@ public SpawnHandler_1_Run(playerid)
 		SetPlayerFacingAngle(playerid,268.6034);
 		FreezePlayer(playerid,2);
 
+		SetPlayerSkin(playerid,GetPVarInt(playerid,"Skin"));
 		SetPlayerHealth(playerid,10);
 		SetPlayerInterior(playerid,0);
 		SetPlayerVirtualWorld(playerid,0);

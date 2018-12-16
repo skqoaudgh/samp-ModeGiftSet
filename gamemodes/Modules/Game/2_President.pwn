@@ -724,7 +724,6 @@ stock SetSelectionInfo(playerid)
 //-----/ GivePlayerWeaponEx /---------------------------------------------------
 stock GivePlayerWeaponEx(playerid,teamid)
 {
-	printf("%d",teamid);
     ResetPlayerWeapons(playerid);
 	switch(teamid)
 	{

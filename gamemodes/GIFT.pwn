@@ -7,11 +7,12 @@
  *
  *
  *		First Release:	2015/12/01
- *		Last Update:	2017/02/09
+ *		Last Update:	2018/12/16
  *
  *
  *
  *		Coded by Acu 2006-2017 @ all rights reserved.
+ *      Updated by Cada 2018
  *			acu.pe.kr@gmail.com
  *			http://acu.pe.kr
  *
@@ -21,7 +22,7 @@
 //-----/ Pre-Defines /
 	//--/ Mode Information /
 #define MODE_NAME				"ALL IN ONE"
-#define MODE_VERSION			"v1.0.0"
+#define MODE_VERSION			"v1.1.1"
 #define SERVER_HOSTNAME			"[GLOBAL][0.3.7] ALL IN ONE SERVER"
 
 
@@ -54,6 +55,7 @@
 		// Command //
 #include "./Modules/Command/Chatting.pwn"
 #include "./Modules/Command/Admin.pwn"
+#include "./Modules/Command/Skin.pwn"
 		// Game //
 #include "./Modules/Game/0_Lobby.pwn"
 #include "./Modules/Game/1_Run.pwn"
@@ -103,6 +105,8 @@ public OnGameModeInit()
 	AddModule("Death");
 	    // Command //
     AddModule("Chatting");
+    AddModule("Admin");
+    AddModule("Skin");
         // Function //
     AddModule("FreezePlayer");
 	    // Game //

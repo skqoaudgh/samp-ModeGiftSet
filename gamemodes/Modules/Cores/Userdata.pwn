@@ -4,7 +4,6 @@
 	ShowPlayerChangePasswordDialog(playerid)
     ShowPlayerStatus(playerid,destid=-1)
     
-    GivePlayerPoint(playerid, value)
 	CheckPlayerAccount(playerid)
 	LoginPlayer(playerid,password[])
 	RegisterPlayer(playerid,password[])
@@ -216,6 +215,8 @@ public TimerHandler_Userdata_1S_P(playerid)
 			SetPlayerMoney(playerid,GetPlayerMoney(playerid));
 		if(Player_LastSaveTime[playerid] && GetTickCount() - Player_LastSaveTime[playerid] > AUTOSAVE_TIME * 1000)
 			SavePlayerData(playerid);
+		if(GetPlayerScore(playerid) != GetPVarInt(playerid,"Level"))
+		    SetPlayerScore(playerid, GetPVarInt(playerid,"Level"));
 	}
 	return 1;
 }
@@ -404,7 +405,6 @@ public CheckPlayerAccountQE(playerid)
 			cache_get_value_name_int(0,"ID",value);
 			SetPVarInt(playerid,"ID",value);
 			P_Registered[playerid] = true;
-			SendClientMessage(playerid,COLOR_WHITE,"asdasdasdasdqwd");
 		}
 		//-----
 		ShowPlayerLoginDialog(playerid); // 비밀번호 입력 창 띄우기
@@ -533,16 +533,6 @@ stock ChangePlayerPassword(playerid,password[])
 	new string[145];
 	format(string,sizeof(string),"UPDATE user_data SET Password = SHA1('%s') WHERE Username = '%s'",mysql_string_escape(password),GetPlayerNameEx(playerid));
 	mysql_pquery(GetMySQLHandle(),string);
-}
-//-----/ GivePlayerPoint /------------------------------------------------------
-stock GivePlayerPoint(playerid, value)
-{
-	SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")+value);
-	while(GetPVarInt(playerid,"Point") >= (GetPVarInt(playerid,"Level")+1)*10)
-	{
-	    SetPVarInt(playerid,"Level",GetPVarInt(playerid,"Level")+1);
-	    SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")-GetPVarInt(playerid,"Level")*10);
-	}
 }
 //==========/ Spawn Functions /=================================================
 //-----/ SpawnPlayerEx /--------------------------------------------------------

@@ -168,6 +168,7 @@ public SpawnHandler_3_Shovel(playerid)
         SetPlayerWeather(playerid, 0);
         ResetPlayerWeapons(playerid);
         GivePlayerWeapon(playerid, 6, 1);
+        SetPlayerSkin(playerid,GetPVarInt(playerid,"Skin"));
         
         new rand = random(80);
         SetPlayerPos(playerid, SpawnPos[rand][0], SpawnPos[rand][1], SpawnPos[rand][2]);
