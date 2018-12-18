@@ -49,6 +49,7 @@
 #include "./Modules/Cores/Userdata.pwn"
 #include "./Modules/Cores/Map.pwn"
 #include "./Modules/Cores/Death.pwn"
+#include "./Modules/Cores/MapRader.pwn"
 		// Functions //
 #include "./Modules/Functions/ExtendedFunc.pwn"
 #include "./Modules/Functions/FreezePlayer.pwn"

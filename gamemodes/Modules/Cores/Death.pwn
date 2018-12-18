@@ -64,6 +64,8 @@ public DeathHandler_Death(playerid,killerid,reason)
 
 		GivePlayerPoint(playerid, 1);
 		SetPVarInt(killerid,"Money",GetPVarInt(killerid,"Money")+100);
+		SetPVarInt(killerid,"Kills",GetPVarInt(killerid,"Kills")+1);
+		SetPVarInt(playerid,"Deaths",GetPVarInt(killerid,"Deaths")+1);
 	}
 	P_Spanwed[playerid] = false;
 }

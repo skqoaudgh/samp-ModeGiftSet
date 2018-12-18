@@ -123,6 +123,7 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 				SetPVarInt(playerid,"MapNumber",listitem);
 				MapInfo[listitem][PlayerCount] ++;
 				MapInfo[beforeIdx][PlayerCount] --;
+				SetPlayerMarkerForPlayerEx(playerid, GetPlayerColor(playerid));
 				SpawnPlayer(playerid);
 			}
 		}

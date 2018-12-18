@@ -29,6 +29,8 @@
 #define ROUND_TIME                  900 // 15분:초단위
 
 //-----/ News /
+	// -- President /
+new begin, end;
 	//--/ Game Info /
 new PresidentPlayer = -1;
 new TeamBalance = 3;
@@ -75,7 +77,7 @@ public AddHandler_2_President()
 //-----/ InitHandler_2_President /----------------------------------------------------
 public InitHandler_2_President()
 {
-	AddStaticVehicle(490, -2776.4350, -281.3627, 7.1575, 356.34, 62, 21);
+	begin = AddStaticVehicle(490, -2776.4350, -281.3627, 7.1575, 356.34, 62, 21);
 	AddStaticVehicle(490, -2755.3508, -311.3744, 7.1648, 4.53, 73, 55);
 	AddStaticVehicle(490, -2768.2883, -312.7353, 7.1648, 4.03, 23, 12);
 	AddStaticVehicle(541, -2759.8747, -295.0179, 6.6958, 358.79, 36, 23);
@@ -379,9 +381,9 @@ public InitHandler_2_President()
     AddStaticVehicle(510,-2117.9612,-2414.6831,30.8345,317.3947,6,6);
     AddStaticVehicle(510,-2119.6567,-2413.3928,30.8343,327.3878,39,39);
     AddStaticVehicle(510,-2121.1689,-2412.1409,30.8344,321.5261,46,46);
-    AddStaticVehicle(497,-2094.5247,-2426.6028,35.0990,229.1125,0,1);
+    end = AddStaticVehicle(497,-2094.5247,-2426.6028,35.0990,229.1125,0,1);
     
-	for(new i=702; i<=1006; i++)
+	for(new i=begin; i<=end; i++)
 	    SetVehicleVirtualWorld(i, 2);
 	for(new i=0; i<7; i++)
 	{
@@ -731,7 +733,7 @@ stock GivePlayerWeaponEx(playerid,teamid)
 	    {
 	        GivePlayerWeapon(playerid, 24, 9000);
 	        GivePlayerWeapon(playerid, 29, 9000);
-	        GivePlayerWeapon(playerid, 23, 9000);
+	        GivePlayerWeapon(playerid, 25, 9000);
 	    }
 	    case 1:
 	    {
