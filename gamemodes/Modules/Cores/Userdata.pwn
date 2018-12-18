@@ -358,9 +358,9 @@ stock ShowPlayerStatus(playerid,destid=-1)
 	format(string,sizeof(string),"Status of %s(%d)",GetPlayerNameEx(destid),destid);
 
 	if(GetPlayerLanguage(playerid) == 0)
-		ShowPlayerDialog(playerid,DialogID_Userdata(2),DIALOG_STYLE_MSGBOX,string,status,"확인","");
+		ShowPlayerDialog(playerid,DialogID_Userdata(3),DIALOG_STYLE_MSGBOX,string,status,"확인","");
 	else
-	    ShowPlayerDialog(playerid,DialogID_Userdata(2),DIALOG_STYLE_MSGBOX,string,status,"Close","");
+	    ShowPlayerDialog(playerid,DialogID_Userdata(3),DIALOG_STYLE_MSGBOX,string,status,"Close","");
 }
 //-----/ ShowPlayerChangeLanguageDialog /---------------------------------------
 stock ShowPlayerChangeLanguageDialog(playerid)
