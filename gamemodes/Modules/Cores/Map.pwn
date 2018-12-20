@@ -12,7 +12,7 @@
 
 
 //-----/ Defines /
-#define MAX_MAP                     5
+#define MAX_MAP                     6
 #define DialogID_Map(%1)			10200 + %1
 
 
@@ -66,12 +66,14 @@ public InitHandler_Map()
 	format(MapInfo[2][KrName],128,"대통령 지키기");
 	format(MapInfo[3][KrName],128,"돌아온 시발모드 : 삽 대전");
 	format(MapInfo[4][KrName],128,"돌아온 시발모드 : 좀비 서바이벌");
+	format(MapInfo[5][KrName],128,"돌아온 시발모드 : 69 질주");
 	
 	format(MapInfo[0][EnName],128,"Lobby");
 	format(MapInfo[1][EnName],128,"Sperm Adventure : Remake");
 	format(MapInfo[2][EnName],128,"Protect President");
 	format(MapInfo[3][EnName],128,"Fuck Mode Returned: Shovel DM");
 	format(MapInfo[4][EnName],128,"Fuck Mode Returned: Zombie Survival");
+	format(MapInfo[5][EnName],128,"Fuck Mode Returned: 69 Scamper");
 }
 //-----/ ConnectHandler_Map /----------------------------------------------
 public ConnectHandler_Map(playerid)

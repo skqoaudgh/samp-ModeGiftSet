@@ -63,6 +63,7 @@
 #include "./Modules/Game/2_President.pwn"
 #include "./Modules/Game/3_Shovel.pwn"
 #include "./Modules/Game/4_Zombie.pwn"
+#include "./Modules/Game/5_69.pwn"
 
 //-----/ Defines /
 #define DialogID(%1)			10000 + %1
@@ -116,6 +117,7 @@ public OnGameModeInit()
     AddModule("2_President");
     AddModule("3_Shovel");
     AddModule("4_Zombie");
+    AddModule("5_69");
 		// Call Modules //
 	InitializeModules();
 	//----------------------------------------
