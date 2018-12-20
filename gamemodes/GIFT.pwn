@@ -22,7 +22,7 @@
 //-----/ Pre-Defines /
 	//--/ Mode Information /
 #define MODE_NAME				"ALL IN ONE"
-#define MODE_VERSION			"v1.1.1"
+#define MODE_VERSION			"v1.1.3"
 #define SERVER_HOSTNAME			"[GLOBAL][0.3.7] ALL IN ONE SERVER"
 
 

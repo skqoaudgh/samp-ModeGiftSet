@@ -76,7 +76,7 @@ public ConnectHandler_Admin(playerid)
 {
 	Player_Text_Info[playerid] = CreatePlayerTextDraw(playerid, 150.000000, 390.000000, "LOADING");
 	PlayerTextDrawBackgroundColor(playerid, Player_Text_Info[playerid], 255);
-	PlayerTextDrawFont(playerid, Player_Text_Info[playerid], 1);
+	PlayerTextDrawFont(playerid, Player_Text_Info[playerid], 2);
 	PlayerTextDrawLetterSize(playerid, Player_Text_Info[playerid], 0.350000, 1.300000);
 	PlayerTextDrawColor(playerid, Player_Text_Info[playerid], -1);
 	PlayerTextDrawSetOutline(playerid, Player_Text_Info[playerid], 0);
