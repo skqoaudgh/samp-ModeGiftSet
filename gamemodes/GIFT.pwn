@@ -53,6 +53,7 @@
 		// Functions //
 #include "./Modules/Functions/ExtendedFunc.pwn"
 #include "./Modules/Functions/FreezePlayer.pwn"
+#include "./Modules/Functions/BGM.pwn"
 		// Command //
 #include "./Modules/Command/Chatting.pwn"
 #include "./Modules/Command/Admin.pwn"

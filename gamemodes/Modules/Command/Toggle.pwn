@@ -80,6 +80,19 @@ public DialogHandler_Toggle(playerid,dialogid,response,listitem,inputtext[])
 						else
 							SetPVarInt(playerid,"TogglePM",1);
 					}
+					case 2:
+					{
+						if(GetPVarInt(playerid,"ToggleBGM"))
+						{
+							SetPVarInt(playerid,"ToggleBGM",0);
+							StopAudioStreamForPlayerEx(playerid);
+						}
+						else
+						{
+							SetPVarInt(playerid,"ToggleBGM",1);
+							SendClientMessage(playerid,COLOR_WHITE,"[!] 다음 리스폰 때부터 변경사항이 적용됩니다.");
+						}
+					}
 				}
 				SavePlayerData(playerid);
 				ShowPlayerToggleDialog(playerid);
@@ -101,11 +114,16 @@ stock ShowPlayerToggleDialog(playerid)
 			strcat(dialog,"> 전체 채팅\t"C_PASTEL_GREEN"허용\n");
 		else
 			strcat(dialog,"> 전체 채팅\t"C_PASTEL_RED"거부\n");
-
+			
 		if(GetPVarInt(playerid,"TogglePM"))
 			strcat(dialog,"> 귓속말\t"C_PASTEL_GREEN"허용\n");
 		else
 			strcat(dialog,"> 귓속말\t"C_PASTEL_RED"거부\n");
+			
+		if(GetPVarInt(playerid,"ToggleBGM"))
+			strcat(dialog,"> 배경음악\t"C_PASTEL_GREEN"허용\n");
+		else
+			strcat(dialog,"> 배경음악\t"C_PASTEL_RED"거부\n");
 	}
 	else
 	{
@@ -118,6 +136,11 @@ stock ShowPlayerToggleDialog(playerid)
 			strcat(dialog,"> Private Message\t"C_PASTEL_GREEN"Enabled\n");
 		else
 			strcat(dialog,"> Private Message\t"C_PASTEL_RED"Disabled\n");
+			
+		if(GetPVarInt(playerid,"ToggleBGM"))
+			strcat(dialog,"> Background Music\t"C_PASTEL_GREEN"Enabled\n");
+		else
+			strcat(dialog,"> Background Music\t"C_PASTEL_RED"Disabled\n");
 	}
 
 	ShowPlayerDialog(playerid,DialogID_Toggle(0),DIALOG_STYLE_TABLIST,"Chatting Toggle",dialog,"선택","닫기");

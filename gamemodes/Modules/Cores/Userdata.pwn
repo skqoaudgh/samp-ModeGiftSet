@@ -468,6 +468,7 @@ public LoadPlayerDataQE(playerid)
 	    cache_get_value_name_int(0,"Loses",value_int); SetPVarInt(playerid,"Loses",value_int);
 	    cache_get_value_name_int(0,"ToggleGlobal",value_int); SetPVarInt(playerid,"ToggleGlobal",value_int);
         cache_get_value_name_int(0,"TogglePM",value_int); SetPVarInt(playerid,"TogglePM",value_int);
+        cache_get_value_name_int(0,"ToggleBGM",value_int); SetPVarInt(playerid,"ToggleBGM",value_int);
 		//cache_get_value_name(0,"Value_S",string); SetPVarString(playerid,"Value_S",string);
 		//cache_get_value_name_int(0,"Value_I",value_int); SetPVarInt(playerid,"Value_I",value_int);
 		//cache_get_value_name_float(0,"Value_F",value_float); SetPVarFloat(playerid,"Value_F",value_float);
@@ -500,6 +501,7 @@ stock SavePlayerData(playerid)
         format(string,sizeof(string),"%s,Loses=%d",string,GetPVarInt(playerid,"Loses"));
 		format(string,sizeof(string),"%s,ToggleGlobal=%d",string,GetPVarInt(playerid,"ToggleGlobal"));
         format(string,sizeof(string),"%s,TogglePM=%d",string,GetPVarInt(playerid,"TogglePM"));
+        format(string,sizeof(string),"%s,ToggleBGM=%d",string,GetPVarInt(playerid,"ToggleBGM"));
 		//format(string,sizeof(string),"%s,Value_S='%s'",string,GetPVarStringEx(playerid,"Value_S"));
 		//format(string,sizeof(string),"%s,Value_I=%d",string,GetPVarInt(playerid,"Value_I"));
 		//format(string,sizeof(string),"%s,Value_F=%.1f",string,GetPVarFloat(playerid,"Value_F"));

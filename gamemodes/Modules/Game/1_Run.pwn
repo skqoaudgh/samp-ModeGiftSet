@@ -703,6 +703,7 @@ public SpawnHandler_1_Run(playerid)
         SetPlayerTime(playerid, 12, 0);
         SetPlayerWeather(playerid, 0);
 		SetPlayerMapIcon(playerid,0,8627.5850,-3086.4553,2079.874,53,0,MAPICON_GLOBAL);
+		PlayAudioStreamForPlayerEx(playerid);
 		
 		Goal[playerid] = false;
 	}
