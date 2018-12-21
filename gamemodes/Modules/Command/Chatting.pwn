@@ -1,9 +1,6 @@
 /*
   [Functions]
-	ShowPlayerToggleDialog(playerid)
-
 	GetPlayerLanguage(playerid)
-	
 	SendMessage(playerid, color, text[])
 	SendTeamMessage(playerid, text[])
 	SendClientMessageToAdmin(color,text[])
@@ -17,21 +14,6 @@
 #define _MDPWN_Chatting
 
 
-
-//-----/ Includes /
-
-
-
-//-----/ Defines /
-#define DialogID_Chatting(%1)			10300 + %1
-
-
-
-//-----/ News /
-	//--/  /
-
-
-
 //-----/ Forwards /
 	//--/ Handlers /
 forward AddHandler_Chatting();
@@ -42,15 +24,12 @@ forward DialogHandler_Chatting(playerid,dialogid,response,listitem,inputtext[]);
 
 
 
-
-
 //==========/ Callback Functions /==============================================
 //-----/ AddHandler_Chatting /--------------------------------------------------
 public AddHandler_Chatting()
 {
     AddHandler("Chatting",TextHandler,100);
 	AddHandler("Chatting",CommandHandler);
-	AddHandler("Chatting",DialogHandler);
 	//AddHandler("WTF",InitHandler);
 	//AddTimer("WTF",TIMER_1S_PLAYER);
 }
@@ -82,12 +61,6 @@ public CommandHandler_Chatting(playerid,cmdtext[])
 		string[384],temp[384]
 	;
 	cmd = strtok(cmdtext,idx);
-	if(!strcmp("/채팅",cmd) || !strcmp("/스위치",cmd) || !strcmp("/토글",cmd) || !strcmp("/toggle",cmd) || !strcmp("/tog",cmd))
-	{
-		ShowPlayerToggleDialog(playerid);
-		return 1;
-	}
-	
 	if(!strcmp("/g",cmd,true) || !strcmp("/global",cmd,true) || !strcmp("/o",cmd,true) || !strcmp("/ooc",cmd,true))
 	{
 	    /*
@@ -207,73 +180,6 @@ public CommandHandler_Chatting(playerid,cmdtext[])
 		return 1;
  	}
 	return 0;
-}
-//-----/ DialogHandler_Chatting /-----------------------------------------------
-public DialogHandler_Chatting(playerid,dialogid,response,listitem,inputtext[])
-{
-	switch(dialogid)
-	{
-		case DialogID_Chatting(0):
-		{
-			if(response)
-			{
-				switch(listitem)
-				{
-					case 0:
-					{
-						if(GetPVarInt(playerid,"ToggleGlobal"))
-							SetPVarInt(playerid,"ToggleGlobal",0);
-						else
-							SetPVarInt(playerid,"ToggleGlobal",1);
-					}
-					case 1:
-					{
-						if(GetPVarInt(playerid,"TogglePM"))
-							SetPVarInt(playerid,"TogglePM",0);
-						else
-							SetPVarInt(playerid,"TogglePM",1);
-					}
-				}
-				SavePlayerData(playerid);
-				ShowPlayerToggleDialog(playerid);
-			}
-		}
-	}
-	return 0;
-}
-
-//==========/ Dialog Functions /================================================
-//-----/ ShowPlayerToggleDialog /-----------------------------------------------
-stock ShowPlayerToggleDialog(playerid)
-{
-	new dialog[1000];
-
-	if(GetPlayerLanguage(playerid) == 0)
-	{
-		if(GetPVarInt(playerid,"ToggleGlobal"))
-			strcat(dialog,"> 전체 채팅\t"C_PASTEL_GREEN"허용\n");
-		else
-			strcat(dialog,"> 전체 채팅\t"C_PASTEL_RED"거부\n");
-
-		if(GetPVarInt(playerid,"TogglePM"))
-			strcat(dialog,"> 귓속말\t"C_PASTEL_GREEN"허용\n");
-		else
-			strcat(dialog,"> 귓속말\t"C_PASTEL_RED"거부\n");
-	}
-	else
-	{
-		if(GetPVarInt(playerid,"ToggleGlobal"))
-			strcat(dialog,"> Global Chatting\t"C_PASTEL_GREEN"Enabled\n");
-		else
-			strcat(dialog,"> Global Chatting\t"C_PASTEL_RED"Disabled\n");
-
-		if(GetPVarInt(playerid,"TogglePM"))
-			strcat(dialog,"> Private Message\t"C_PASTEL_GREEN"Enabled\n");
-		else
-			strcat(dialog,"> Private Message\t"C_PASTEL_RED"Disabled\n");
-	}
-
-	ShowPlayerDialog(playerid,DialogID_Chatting(0),DIALOG_STYLE_TABLIST,"Chatting Toggle",dialog,"선택","닫기");
 }
 
 //==========/ Message Functions /===============================================

@@ -22,7 +22,7 @@
 //-----/ Pre-Defines /
 	//--/ Mode Information /
 #define MODE_NAME				"ALL IN ONE"
-#define MODE_VERSION			"v1.1.3"
+#define MODE_VERSION			"v1.1.4"
 #define SERVER_HOSTNAME			"[GLOBAL][0.3.7] ALL IN ONE SERVER"
 
 
@@ -57,6 +57,7 @@
 #include "./Modules/Command/Chatting.pwn"
 #include "./Modules/Command/Admin.pwn"
 #include "./Modules/Command/Skin.pwn"
+#include "./Modules/Command/Toggle.pwn"
 		// Game //
 #include "./Modules/Game/0_Lobby.pwn"
 #include "./Modules/Game/1_Run.pwn"
@@ -109,6 +110,7 @@ public OnGameModeInit()
     AddModule("Chatting");
     AddModule("Admin");
     AddModule("Skin");
+    AddModule("Toggle");
         // Function //
     AddModule("FreezePlayer");
 	    // Game //

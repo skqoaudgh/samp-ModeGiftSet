@@ -44,7 +44,7 @@ public InitHandler_5_69()
 	SetTimer("Boom_B", 3000, true);
 	SetTimer("Boom_C", 2000, true);
 	
-	_GoalPickup = CreatePickup(19605,1,-1657.5291,-164.8431,14.1484,0);
+	_GoalPickup = CreatePickup(19605,1,-1657.5291,-164.8431,14.1484,5);
 	
 	begin = AddStaticVehicleEx(511, -1657.6016, -164.8854, 13.8088, 316.0, -1, -1, 1);
 	AddStaticVehicleEx(593, -1194.5156, -276.262, 13.8088, 44.0, -1, -1, 1);
@@ -229,6 +229,8 @@ public SpawnHandler_5_69(playerid)
 		SetPlayerVirtualWorld(playerid,5);
         SetPlayerTime(playerid, 12, 0);
         SetPlayerWeather(playerid, 0);
+        SetPlayerMapIcon(playerid,0,-1657.5291,-164.8431,14.1484,53,0,MAPICON_GLOBAL);
+        
         _Goal[playerid] = false;
 	}
 }

@@ -84,6 +84,7 @@ public ConnectHandler_Map(playerid)
 public DisconnectHandler_Map(playerid,reason)
 {
     MapInfo[GetPlayerMap(playerid)][PlayerCount] --;
+    RemovePlayerMapIcon(playerid, 0);
 }
 //-----/ CommandHandler_Map /---------------------------------------------------
 public CommandHandler_Map(playerid,cmdtext[]) //return 1: processed
@@ -127,6 +128,7 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 				SetPlayerTeam(playerid,NO_TEAM);
 				SetPlayerHasTeam(playerid, false);
 				HidePlayerTeamTD(playerid);
+				RemovePlayerMapIcon(playerid, 0);
 			    //-----
 			    new beforeIdx = GetPVarInt(playerid,"MapNumber");
 				SetPVarInt(playerid,"MapNumber",listitem);
