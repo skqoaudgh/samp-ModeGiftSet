@@ -117,11 +117,6 @@ public DisconnectHandler_PlayerSide(playerid,reason)
 	}
 }
 //==========/ Functions /=======================================================
-//-----/ IsPlayerTeamChatting /-------------------------------------------------
-stock IsPlayerTeamChatting(playerid)
-{
-	return GetPVarInt(playerid,"TeamChat");
-}
 //-----/ ReturnUser /-----------------------------------------------------------
 stock ReturnUser(text[])
 {

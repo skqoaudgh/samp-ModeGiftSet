@@ -126,7 +126,8 @@ public CommandHandler_0_Lobby(playerid,cmdtext[])
 				SendClientMessage(playerid,COLOR_GREY,"[!] Style - /skin /toy");
 				SendClientMessage(playerid,COLOR_GREY,"[!] Report - /report");
 			}
-			SendClientMessage(playerid,COLOR_GREY,"[!] Chat - (/g)lobal (/t)eam");
+			SendClientMessage(playerid,COLOR_GREY,"[!] Global Chat - (/g)lobal");
+			SendClientMessage(playerid,COLOR_GREY,"[!] Team Chat - NUM4");
 			return 1;
 		}
 	}

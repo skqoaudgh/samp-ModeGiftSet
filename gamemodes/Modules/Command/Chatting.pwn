@@ -20,6 +20,7 @@ forward AddHandler_Chatting();
 forward TextHandler_Chatting(playerid,text[]);
 forward CommandHandler_Chatting(playerid,cmdtext[]);
 forward DialogHandler_Chatting(playerid,dialogid,response,listitem,inputtext[]);
+forward KeyHandler_Chatting(playerid,newkeys,oldkeys);
 	//--/ Functions /
 
 
@@ -30,6 +31,7 @@ public AddHandler_Chatting()
 {
     AddHandler("Chatting",TextHandler,100);
 	AddHandler("Chatting",CommandHandler);
+	AddHandler("Chatting",KeyHandler);
 	//AddHandler("WTF",InitHandler);
 	//AddTimer("WTF",TIMER_1S_PLAYER);
 }
@@ -181,6 +183,28 @@ public CommandHandler_Chatting(playerid,cmdtext[])
  	}
 	return 0;
 }
+//-----/ KeyHandler_Chatting /--------------------------------------------------
+public KeyHandler_Chatting(playerid,newkeys,oldkeys)
+{
+	if(newkeys == KEY_ANALOG_LEFT)
+	{
+	    if(GetPlayerTeam(playerid) != NO_TEAM)
+	    {
+	        if(GetPVarInt(playerid,"TeamChat"))
+	        {
+	            SetPVarInt(playerid,"TeamChat", 0);
+	            SendClientMessage(playerid,COLOR_WHITE,"[!] 팀 채팅이 비활성화하였습니다.");
+	        }
+	            
+	        else if(!GetPVarInt(playerid,"TeamChat"))
+	        {
+	            SetPVarInt(playerid,"TeamChat", 1);
+	            SendClientMessage(playerid,COLOR_WHITE,"[!] 팀 채팅이 활성화하였습니다.");
+	        }
+	    }
+	}
+	return 0;
+}
 
 //==========/ Message Functions /===============================================
 //-----/ ClearChatting /--------------------------------------------------------
@@ -212,7 +236,7 @@ stock SendTeamMessage(playerid, text[])
 				format(string,sizeof(string),"[팀채팅] %s(%d): %s",GetPlayerNameEx(playerid),playerid,text);
 			else
 			    format(string,sizeof(string),"[TeamChatting] %s(%d): %s",GetPlayerNameEx(playerid),playerid,text);
-			SendClientMessage(pid, COLOR_TEAM, text);
+			SendClientMessage(pid, COLOR_TEAM, string);
 		}
 	}
 }
@@ -231,4 +255,9 @@ stock SendClientMessageToAdmin(color,text[])
 stock GetPlayerLanguage(playerid)
 {
 	return GetPVarInt(playerid,"Language");
+}
+//-----/ IsPlayerTeamChatting /-------------------------------------------------
+stock IsPlayerTeamChatting(playerid)
+{
+	return GetPVarInt(playerid,"TeamChat");
 }

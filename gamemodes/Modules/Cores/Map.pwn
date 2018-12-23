@@ -135,6 +135,7 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 				MapInfo[listitem][PlayerCount] ++;
 				MapInfo[beforeIdx][PlayerCount] --;
 				SetPlayerMarkerForPlayerEx(playerid, GetPlayerColor(playerid));
+				StopAudioStreamForPlayerEx(playerid);
 				SpawnPlayer(playerid);
 			}
 		}
