@@ -2,6 +2,7 @@
   [Functions]
 	GetPlayerLanguage(playerid)
 	SendMessage(playerid, color, text[])
+	SendMapMessage(mapid, color, text[])
 	SendTeamMessage(playerid, text[])
 	SendClientMessageToAdmin(color,text[])
 	ClearChatting(playerid);
@@ -220,6 +221,16 @@ stock SendMessage(playerid, color, text[])
 	{
 		pid = GetConnectedPlayerID(i);
         if(GetPlayerMap(pid) == GetPlayerMap(playerid)) // playerid와 같은 게임을 진행 중인 플레이어
+			SendClientMessage(pid, color, text);
+	}
+}
+//-----/ SendMapMessage /-------------------------------------------------------
+stock SendMapMessage(mapid, color, text[])
+{
+	for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
+	{
+		pid = GetConnectedPlayerID(i);
+        if(GetPlayerMap(pid) == mapid) // playerid와 같은 게임을 진행 중인 플레이어
 			SendClientMessage(pid, color, text);
 	}
 }

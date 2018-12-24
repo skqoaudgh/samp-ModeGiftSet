@@ -479,7 +479,7 @@ public SpawnHandler_2_President(playerid)
 		    
 		    FreezePlayer(playerid);
 		    SetPlayerSkin(playerid,280);
-		    SetPlayerVirtualWorld(playerid,10);
+		    SetPlayerVirtualWorld(playerid,playerid+13);
 		    SetPlayerPos(playerid,1124.4611,-2037.0797,69.8841);
 		    SetPlayerFacingAngle(playerid,268.3331);
 		    SetPlayerCameraPos(playerid,1133.5934,-2037.3018,72.5078);
@@ -587,13 +587,13 @@ public DeathHandler_2_President(playerid,killerid,reason)
 	{
 	    if(GetPlayerLanguage(playerid) == 0)
 	    {
-        	SendMessage(2, COLOR_PASTEL_GREEN, "* 테러리스트 팀이 대통령을 암살해 승리하였습니다! (Point +10, Money +1000)");
-        	SendMessage(2, COLOR_PASTEL_GREEN, "* 잠시 후 새로운 라운드가 시작됩니다.");
+        	SendMapMessage(2, COLOR_PASTEL_GREEN, "* 테러리스트 팀이 대통령을 암살해 승리하였습니다! (Point +10, Money +1000)");
+        	SendMapMessage(2, COLOR_PASTEL_GREEN, "* 잠시 후 새로운 라운드가 시작됩니다.");
 	    }
 		else
 		{
-        	SendMessage(2, COLOR_PASTEL_GREEN, "* Terrorist team has killed the president, Win the game! (Point +10, Money +1000)");
-        	SendMessage(2, COLOR_PASTEL_GREEN, "* Next round will be start soon.");
+        	SendMapMessage(2, COLOR_PASTEL_GREEN, "* Terrorist team has killed the president, Win the game! (Point +10, Money +1000)");
+        	SendMapMessage(2, COLOR_PASTEL_GREEN, "* Next round will be start soon.");
 		}
         KillTimer(RoundTimer);
         SetTimer("EndRound",5000,0);
@@ -606,7 +606,7 @@ public DeathHandler_2_President(playerid,killerid,reason)
 			    PlayerPlaySound(i, 139, 0.0, 0.0, 0.0);
 				if(SelectedTeam[pid] >= 4 && SelectedTeam[pid] <= 6)
 				{
-		    		GivePlayerPoint(playerid, 10);
+		    		GivePlayerPoint(pid, 10);
 					SetPVarInt(pid,"Money",GetPVarInt(pid,"Money")+1000);
 				}
 			}

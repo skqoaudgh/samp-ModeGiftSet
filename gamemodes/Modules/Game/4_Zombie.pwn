@@ -110,7 +110,7 @@ public SpawnHandler_4_Zombie(playerid)
 		    SendClientMessage(playerid,COLOR_WHITE,"You have to survive from zombies in a fortified graveyard.");
 		}
 		//-----
-		SetPlayerVirtualWorld(playerid, 4);
+		SetPlayerVirtualWorld(playerid, playerid+13);
 		SetPlayerInterior(playerid, 0);
         SetPlayerWorldBounds(playerid,939.6846, 808.0087, -1056.0449, -1129.5148);
         SetPlayerTime(playerid, 0, 0);
@@ -150,7 +150,7 @@ public SpawnHandler_4_Zombie(playerid)
 		    GameTextForPlayer(playerid,"~b~Human", 10000, 3);
 		    SetPlayerTeam(playerid, 1);
 		    SetPlayerSkin(playerid, 68);
-			SetPlayerVirtualWorld(playerid, 1);
+			SetPlayerVirtualWorld(playerid, 4);
 			SetPlayerPos(playerid,823.6836,-1102.9181,25.7891);
 			SetPlayerFacingAngle(playerid,265.1960);
 			SetPlayerCameraPos(playerid,827.4348,-1102.9203,28.1943);

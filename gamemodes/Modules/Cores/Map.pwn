@@ -12,7 +12,7 @@
 
 
 //-----/ Defines /
-#define MAX_MAP                     6
+#define MAX_MAP                     7
 #define DialogID_Map(%1)			10200 + %1
 
 
@@ -67,6 +67,7 @@ public InitHandler_Map()
 	format(MapInfo[3][KrName],128,"돌아온 시발모드 : 삽 대전");
 	format(MapInfo[4][KrName],128,"돌아온 시발모드 : 좀비 서바이벌");
 	format(MapInfo[5][KrName],128,"돌아온 시발모드 : 69 질주");
+	format(MapInfo[6][KrName],128,"경찰과 도둑");
 	
 	format(MapInfo[0][EnName],128,"Lobby");
 	format(MapInfo[1][EnName],128,"Sperm Adventure : Remake");
@@ -74,6 +75,7 @@ public InitHandler_Map()
 	format(MapInfo[3][EnName],128,"Fuck Mode Returned: Shovel DM");
 	format(MapInfo[4][EnName],128,"Fuck Mode Returned: Zombie Survival");
 	format(MapInfo[5][EnName],128,"Fuck Mode Returned: 69 Scamper");
+	format(MapInfo[6][EnName],128,"Cops and Robbers");
 }
 //-----/ ConnectHandler_Map /----------------------------------------------
 public ConnectHandler_Map(playerid)
@@ -127,6 +129,7 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 				}
 				SetPlayerTeam(playerid,NO_TEAM);
 				SetPlayerHasTeam(playerid, false);
+				ResetVariable_6(playerid);
 				HidePlayerTeamTD(playerid);
 				RemovePlayerMapIcon(playerid, 0);
 			    //-----

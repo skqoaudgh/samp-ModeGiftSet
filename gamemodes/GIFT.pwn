@@ -22,7 +22,7 @@
 //-----/ Pre-Defines /
 	//--/ Mode Information /
 #define MODE_NAME				"ALL IN ONE"
-#define MODE_VERSION			"v1.1.4"
+#define MODE_VERSION			"v1.1.5"
 #define SERVER_HOSTNAME			"[GLOBAL][0.3.7] ALL IN ONE SERVER"
 
 
@@ -66,6 +66,7 @@
 #include "./Modules/Game/3_Shovel.pwn"
 #include "./Modules/Game/4_Zombie.pwn"
 #include "./Modules/Game/5_69.pwn"
+#include "./Modules/Game/6_CnR.pwn"
 
 //-----/ Defines /
 #define DialogID(%1)			10000 + %1
@@ -121,6 +122,7 @@ public OnGameModeInit()
     AddModule("3_Shovel");
     AddModule("4_Zombie");
     AddModule("5_69");
+    AddModule("6_CnR");
 		// Call Modules //
 	InitializeModules();
 	//----------------------------------------
