@@ -378,7 +378,17 @@ public SpawnHandler_6_CnR(playerid)
 				}
 				if(criminalplayer == jailedplayer)
 				{
-					SendMessage(playerid,COLOR_GREY, "[!] 모든 도둑이 경찰에게 잡혔습니다. 모든 도둑들이 풀려납니다!");
+					for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
+					{
+						pid = GetConnectedPlayerID(i);
+						if(GetPlayerMap(pid) == 6)
+						{
+							if(GetPlayerLanguage(pid) == 0)
+								SendClientMessage(playerid,COLOR_YELLOW, "[!] 모든 도둑이 경찰에게 잡혔습니다. 모든 도둑들이 풀려납니다!");
+							else
+							    SendClientMessage(playerid,COLOR_YELLOW, "[!] All the robbers were caught by the cop. they will be released!");
+						}
+					}
 					ReleaseFromJail();
 				}
 			}
@@ -395,8 +405,11 @@ public DisconnectHandler_6_CnR(playerid,reason)
 //-----/ DeathHandler_6_CnR /---------------------------------------------------
 public DeathHandler_6_CnR(playerid,killerid,reason)
 {
-	if(GetPlayerTeam(playerid) == 2)
-	    Player_Jailed[playerid] = true;
+	if(GetPlayerMap(playerid) == 6)
+	{
+		if(GetPlayerTeam(playerid) == 2)
+		    Player_Jailed[playerid] = true;
+	}
 }
 //-----/ CommandHandler_6_CnR /---------------------------------------------------
 public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
@@ -416,37 +429,76 @@ public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
 				SendClientMessage(playerid,COLOR_WHITE,"* This map has no help message.");
 			return 1;
 		}
+		if(!strcmp("/release",cmd) || !strcmp("/석방",cmd))
+		{
+		    if(!IsPlayerAdminEx(playerid))
+		    {
+			    if(GetPlayerLanguage(playerid) == 0)
+			    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 이 관리자 명령어를 사용할 권한이 없습니다.");
+				else
+				    return SendClientMessage(playerid,COLOR_WHITE,"[!] You do not have permission to use this administrator command.");
+			}
+			
+			for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
+			{
+				pid = GetConnectedPlayerID(i);
+				if(GetPlayerMap(pid) == 6)
+				{
+					if(GetPlayerLanguage(pid) == 0)
+						SendClientMessage(playerid,COLOR_YELLOW, "[!] 관리자가 모든 도둑들을 석방시켰습니다.");
+					else
+					    SendClientMessage(playerid,COLOR_YELLOW, "[!] The Administrator released all the robbers.");
+				}
+			}
+			
+			ReleaseFromJail();
+			return 1;
+		}
 	}
 	return 0;
 }
 
 public EnterCPHandler_6_CnR(playerid)
 {
-	if(GetPlayerTeam(playerid) == 2)
+	if(GetPlayerTeam(playerid) == 6)
 	{
-		if(Rescue_Protocol[playerid] == 1)
+		if(GetPlayerTeam(playerid) == 2)
 		{
-			DisablePlayerCheckpoint(playerid);
-			SetPlayerCheckpoint(playerid, 246.5764, 67.1342, 1003.6409, 2.0);
-			Rescue_Protocol[playerid] = 2;
-			GameTextForPlayer(playerid, "~r~Find the checkpoint inside the police station to rescue your team mates!", 10000, 4);
-		}
-		else if(Rescue_Protocol[playerid] == 2)
-		{
-			DisablePlayerCheckpoint(playerid);
-			SetPlayerCheckpoint(playerid, 268.3572, 77.8658, 1001.039, 2.0);
-			Rescue_Protocol[playerid] = 3;
-		}
-		else if(Rescue_Protocol[playerid] == 3)
-		{
-			DisablePlayerCheckpoint(playerid);
-			SetPlayerCheckpoint(playerid, 1546.2869, -1675.637, 13.562, 2.0);
-			Rescue_Protocol[playerid] = 1;
-			ReleaseFromJail();
-			GameTextForPlayer(playerid, "~r~You rescued your team mates! ~n~(Money +500, Point +5)", 10000, 4);
-    		GivePlayerPoint(playerid, 5);
-			SetPVarInt(playerid,"Money",GetPVarInt(playerid,"Money")+500);
-			
+			if(Rescue_Protocol[playerid] == 1)
+			{
+				DisablePlayerCheckpoint(playerid);
+				SetPlayerCheckpoint(playerid, 246.5764, 67.1342, 1003.6409, 2.0);
+				Rescue_Protocol[playerid] = 2;
+				GameTextForPlayer(playerid, "~r~Find the checkpoint inside the police station to rescue your team mates!", 10000, 4);
+			}
+			else if(Rescue_Protocol[playerid] == 2)
+			{
+				DisablePlayerCheckpoint(playerid);
+				SetPlayerCheckpoint(playerid, 268.3572, 77.8658, 1001.039, 2.0);
+				Rescue_Protocol[playerid] = 3;
+			}
+			else if(Rescue_Protocol[playerid] == 3)
+			{
+				DisablePlayerCheckpoint(playerid);
+				SetPlayerCheckpoint(playerid, 1546.2869, -1675.637, 13.562, 2.0);
+				Rescue_Protocol[playerid] = 1;
+				for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
+				{
+					pid = GetConnectedPlayerID(i);
+					if(GetPlayerMap(pid) == 6)
+					{
+						if(GetPlayerLanguage(pid) == 0)
+							SendClientMessage(playerid,COLOR_YELLOW, "[!] 한 도둑이 석방된 도둑들을 풀어주는데 성공했습니다!");
+						else
+						    SendClientMessage(playerid,COLOR_YELLOW, "[!] A robber succeeded in freeing the freed robbers!");
+					}
+				}
+				ReleaseFromJail();
+				GameTextForPlayer(playerid, "~r~You rescued your team mates! ~n~(Money +500, Point +5)", 10000, 4);
+	    		GivePlayerPoint(playerid, 5);
+				SetPVarInt(playerid,"Money",GetPVarInt(playerid,"Money")+500);
+
+			}
 		}
 	}
 }
@@ -553,5 +605,4 @@ stock ReleaseFromJail()
 			GivePlayerWeapon(pid, 24, 56);
 		}
 	}
-	SendMapMessage(6,COLOR_YELLOW, "[!] 도둑들이 감방에서 풀려났습니다!");
 }
