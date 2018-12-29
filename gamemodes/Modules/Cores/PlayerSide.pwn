@@ -74,9 +74,9 @@ public ConnectHandler_PlayerSide(playerid)
 		{
 			pid = GetConnectedPlayerID(i);
 			if(GetPlayerLanguage(pid) == 0)
-			    format(string,sizeof(string),"%s(%d) 님이 접속하였습니다.",GetPlayerNameEx(pid),pid);
+			    format(string,sizeof(string),"%s(%d) 님이 접속하였습니다.",GetPlayerNameEx(playerid),playerid);
 			else
-			    format(string,sizeof(string),"%s(%d) has joined server.",GetPlayerNameEx(pid),pid);
+			    format(string,sizeof(string),"%s(%d) has joined server.",GetPlayerNameEx(playerid),playerid);
             SendClientMessage(pid,COLOR_GREY,string);
 		}
 	}
@@ -100,7 +100,7 @@ public DisconnectHandler_PlayerSide(playerid,reason)
 					case 1: string = " ";
 					case 2: string = "(킥&밴)";
 				}
-				format(string,sizeof(string),"%s(%d) 님이 접속을 종료하였습니다. %s",GetPlayerNameEx(pid),pid, string);
+				format(string,sizeof(string),"%s(%d) 님이 접속을 종료하였습니다. %s",GetPlayerNameEx(playerid),playerid, string);
 			}
 			else
 			{
@@ -110,7 +110,7 @@ public DisconnectHandler_PlayerSide(playerid,reason)
 					case 1: string = " ";
 					case 2: string = "(Kick&Ban)";
 				}
-				format(string,sizeof(string),"%s(%d) has quit server. %s",GetPlayerNameEx(pid),pid, string);
+				format(string,sizeof(string),"%s(%d) has quit server. %s",GetPlayerNameEx(playerid),playerid, string);
 			}
             SendClientMessage(pid,COLOR_GREY,string);
 		}
