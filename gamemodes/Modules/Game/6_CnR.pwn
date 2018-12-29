@@ -810,7 +810,7 @@ public KeyHandler_6_CnR(playerid,newkeys,oldkeys)
 	{
 		if(!PlayerTeam[playerid])
 		{
-		    if(newkeys == KEY_YES) // 선택
+		    if(newkeys == KEY_JUMP || newkeys == KEY_YES) // 선택
 		    {
 		        PlayerTeam[playerid] = true;
 				new len = GetPlayerLanguage(playerid);

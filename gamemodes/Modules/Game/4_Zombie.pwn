@@ -214,7 +214,7 @@ public KeyHandler_4_Zombie(playerid,newkeys,oldkeys)
 	{
 		if(IsPlayerInTeamSelection[playerid])
 		{
-		    if(newkeys == KEY_YES) // 선택
+		    if(newkeys == KEY_JUMP || newkeys == KEY_YES) // 선택
 		    {
 		        IsPlayerInTeamSelection[playerid] = false;
 		        PlayerPlaySound(playerid, 1057, 0.0, 0.0, 0.0);
