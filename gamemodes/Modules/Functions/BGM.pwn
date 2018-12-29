@@ -33,24 +33,28 @@ forward PlayAudioStreamForPlayerEx(playerid);
 //-----/ PlayAudioStreamForPlayerEx /-------------------------------------------
 public PlayAudioStreamForPlayerEx(playerid)
 {
-	new map = GetPlayerMap(playerid);
-	StopAudioStreamForPlayerEx(playerid);
-	switch(map)
+	if(GetPVarInt(playerid,"ToggleBGM") == 1)
 	{
-	    case 0:
+		new map = GetPlayerMap(playerid);
+		StopAudioStreamForPlayerEx(playerid);
+		switch(map)
 		{
-		    PlayAudioStreamForPlayer(playerid, BGMInfo[0][URL]);
-		    BGMtimer[playerid] = SetTimerEx("PlayAudioStreamForPlayerEx",BGMInfo[0][Length]*1000,false,"d",playerid);
-		}
-	    case 1:
-	    {
-		    PlayAudioStreamForPlayer(playerid, BGMInfo[1][URL]);
-		    BGMtimer[playerid] = SetTimerEx("PlayAudioStreamForPlayerEx",BGMInfo[1][Length]*1000,false,"d",playerid);
-		}
-	    case 5:
-	    {
-		    PlayAudioStreamForPlayer(playerid, BGMInfo[2][URL]);
-		    BGMtimer[playerid] = SetTimerEx("PlayAudioStreamForPlayerEx",BGMInfo[2][Length]*1000,false,"d",playerid);
+		    case 0:
+			{
+			    PlayAudioStreamForPlayer(playerid, BGMInfo[0][URL]);
+			    BGMtimer[playerid] = SetTimerEx("PlayAudioStreamForPlayerEx",BGMInfo[0][Length]*1000,false,"d",playerid);
+			}
+		    case 1:
+		    {
+			    PlayAudioStreamForPlayer(playerid, BGMInfo[1][URL]);
+			    BGMtimer[playerid] = SetTimerEx("PlayAudioStreamForPlayerEx",BGMInfo[1][Length]*1000,false,"d",playerid);
+			}
+		    case 5:
+		    {
+			    PlayAudioStreamForPlayer(playerid, BGMInfo[2][URL]);
+			    BGMtimer[playerid] = SetTimerEx("PlayAudioStreamForPlayerEx",BGMInfo[2][Length]*1000,false,"d",playerid);
+			}
+			default: { }
 		}
 	}
 }

@@ -5,6 +5,7 @@
 	SendMapMessage(mapid, color, text[])
 	SendTeamMessage(playerid, text[])
 	SendClientMessageToAdmin(color,text[])
+	SendLocalMessage(playerid, color, text[])
 	ClearChatting(playerid);
 */
 
@@ -39,21 +40,12 @@ public AddHandler_Chatting()
 //-----/ TextHandler_Chatting /-------------------------------------------------
 public TextHandler_Chatting(playerid,text[])
 {
-	new string[384];
 	if(IsPlayerTeamChatting(playerid))
 	{
 	    SendTeamMessage(playerid, text);
 	    return 1;
 	}
-	for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
-	{
-		pid = GetConnectedPlayerID(i);
-		if(GetPlayerLanguage(pid) == 0)
-			format(string,sizeof(string),"[지역] %s(%d): %s",GetPlayerNameEx(playerid),playerid,text);
-		else
-		    format(string,sizeof(string),"[Local] %s(%d): %s",GetPlayerNameEx(playerid),playerid,text);
-		SendClientMessage(pid, GetPlayerColor(playerid), string);
-	}
+	SendLocalMessage(playerid, GetPlayerColor(playerid), text);
 	return 1;
 }
 //-----/ CommandHandler_Chatting /----------------------------------------------
@@ -259,6 +251,23 @@ stock SendClientMessageToAdmin(color,text[])
 		pid = GetConnectedPlayerID(i);
 		if(IsPlayerAdminEx(pid))
 			SendClientMessage(pid,color,text);
+	}
+}
+//-----/ SendLocalMessage /-----------------------------------------------------
+stock SendLocalMessage(playerid, color, text[])
+{
+    new string[384];
+	for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
+	{
+		pid = GetConnectedPlayerID(i);
+		if(GetPlayerMap(playerid) == GetPlayerMap(pid))
+		{
+			if(GetPlayerLanguage(pid) == 0)
+				format(string,sizeof(string),"[지역] %s(%d): %s",GetPlayerNameEx(playerid),playerid,text);
+			else
+			    format(string,sizeof(string),"[Local] %s(%d): %s",GetPlayerNameEx(playerid),playerid,text);
+			SendClientMessage(pid, color, string);
+		}
 	}
 }
 //==========/ Get/Set Functions /===============================================

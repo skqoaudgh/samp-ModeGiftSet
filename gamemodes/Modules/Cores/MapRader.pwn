@@ -50,8 +50,14 @@ stock SetPlayerMarkerForPlayerEx(playerid, color) // pid가 playerid를 color 색깔
 	{
 		pid = GetConnectedPlayerID(i);
 		if(GetPlayerMap(pid) == GetPlayerMap(playerid)) // 같은 맵에 있는 사람들만 색깔 보이게
+		{
 		    SetPlayerMarkerForPlayer(pid, playerid, color);
+		    SetPlayerMarkerForPlayer(playerid, pid, GetPlayerColor(pid));
+		}
 		else    // 다른 맵에 있는 사람들은 안보이게
-		    SetPlayerMarkerForPlayer(pid, playerid, color | 0x000000FF);
+		{
+			SetPlayerMarkerForPlayer(pid, playerid, color | 0x000000FF);
+			SetPlayerMarkerForPlayer(playerid, pid, color | 0x000000FF);
+		}
 	}
 }

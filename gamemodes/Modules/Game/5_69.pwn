@@ -224,13 +224,13 @@ public SpawnHandler_5_69(playerid)
 		FreezePlayer(playerid,2);
 
 		SetPlayerSkin(playerid,GetPVarInt(playerid,"Skin"));
+		SetPlayerColor(playerid,COLOR_GREY);
 		SetPlayerHealth(playerid,100);
 		SetPlayerInterior(playerid,0);
 		SetPlayerVirtualWorld(playerid,5);
         SetPlayerTime(playerid, 12, 0);
         SetPlayerWeather(playerid, 0);
         SetPlayerMapIcon(playerid,0,-1657.5291,-164.8431,14.1484,53,0,MAPICON_GLOBAL);
-        PlayAudioStreamForPlayerEx(playerid);
 
         _Goal[playerid] = false;
 	}

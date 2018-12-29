@@ -97,6 +97,7 @@ public SpawnHandler_0_Lobby(playerid)
 		SetPlayerInterior(playerid, 0);
 		SetPlayerVirtualWorld(playerid, 0);
 		SetPlayerTeam(playerid,NO_TEAM);
+		
 		PlayAudioStreamForPlayerEx(playerid);
 	}
 }
