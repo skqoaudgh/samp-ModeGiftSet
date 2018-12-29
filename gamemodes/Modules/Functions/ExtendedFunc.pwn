@@ -45,7 +45,7 @@ stock GetPlayerIP(playerid)
 //-----/ SetPlayerMoney /-------------------------------------------------------
 stock SetPlayerMoney(playerid,money)
 {
-	GivePlayerMoney(playerid,money-GetPlayerMoney(playerid));
+	GivePlayerMoney(playerid,money-GetPlayerMoney_o(playerid));
 	return 1;
 }
 //-----/ GetPVarStringEx /------------------------------------------------------
@@ -78,6 +78,7 @@ stock GivePlayerPoint(playerid, value)
 	    SetPVarInt(playerid,"Point",GetPVarInt(playerid,"Point")-GetPVarInt(playerid,"Level")*10);
 	}
 }
+//-----/ GivePlayerMoneyEx /----------------------------------------------------
 stock GivePlayerMoneyEx(playerid, value)
 {
 	new cur = GetPVarInt(playerid,"Money");

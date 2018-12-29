@@ -5,6 +5,8 @@
 	ReleaseFromJail()
 	SendGangMessage(playerid,text[])
 	DestroyGang(gangid)
+	ShowPlayerWeaponDialog(playerid)
+	ShowPlayerWeaponDialog(playerid)
 */
 
 //-----/ Pre-Processing /
@@ -14,8 +16,8 @@
 #define _MDPWN_6_CnR
 
 //-----/ Defines /
-//#define DialogID_WTF(%1)			10000 + %1
-//#define VirtualID_WTF(%1)			10000 + %1
+#define DialogID_6_CnR(%1)			10400 + %1
+#define MAX_WEAPON                  18
 
 //-----/ News /
 	//--/ CnR /
@@ -32,6 +34,26 @@ new Player_Gang_ID[MAX_PLAYERS];
 new Player_Gang_Timer[MAX_PLAYERS];
 new Player_Gang_Invited[MAX_PLAYERS];
 
+new WeaponInfo[18][3] = {
+	{9,200,1}, // Chainsaw
+	{16,250,5}, // Grenade
+	{17,250,5}, // Molotov Cocktail
+	{22,100,102}, // 9mm
+	{23,50,102}, // Silenced 9mm
+	{24,200,42}, // Deagle
+	{25,200,30}, // Shotgun
+	{26,300,30}, // Sawnoff Shotgun
+	{27,300,42}, // Combat Shotgun
+	{28,250,200}, // Micro SMG/Uzi
+	{29,200,180}, // MP5
+	{30,400,210}, // AK47
+	{31,500,250}, // M4
+	{32,250,200}, // TEC-9
+	{33,200,30}, // Country Rifle
+	{34,300,20}, // Sniper Rifle
+	{35,350,2}, // RPG
+	{36,350,2} // HS Rocket
+};
 	//--/ Spawn Position /
 new Float:Cop_Spawn[4][3] = {
 	{ 1545.16, -1676.0311, 13.5598 },
@@ -65,6 +87,7 @@ forward UpdateHandler_6_CnR(playerid);
 forward DisconnectHandler_6_CnR(playerid,reason);
 forward DeathHandler_6_CnR(playerid,killerid,reason);
 forward EnterCPHandler_6_CnR(playerid);
+forward DialogHandler_6_CnR(playerid,dialogid,response,listitem,inputtext[]);
 	//--/ Functions /
 forward GangInviteTimeout(playerid);
 
@@ -79,6 +102,7 @@ public AddHandler_6_CnR()
 	AddHandler("6_CnR",UpdateHandler);
 	AddHandler("6_CnR",DeathHandler);
 	AddHandler("6_CnR",EnterCPHandler);
+	AddHandler("6_CnR",DialogHandler);
 }
 
 //-----/ InitHandler_6_CnR /----------------------------------------------------
@@ -434,9 +458,9 @@ public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
 		if(!strcmp("/help",cmd) || !strcmp("/?",cmd) || !strcmp("/도움말",cmd))
 		{
 			if(GetPlayerLanguage(playerid) == 0)
-				SendClientMessage(playerid,COLOR_WHITE,"* /갱");
+				SendClientMessage(playerid,COLOR_WHITE,"* /갱 /갱채팅 /무기구입");
 			else
-				SendClientMessage(playerid,COLOR_WHITE,"* /gang");
+				SendClientMessage(playerid,COLOR_WHITE,"* /gang /gangchat /buygun");
 			return 1;
 		}
 		if(!strcmp("/release",cmd) || !strcmp("/석방",cmd))
@@ -464,7 +488,13 @@ public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
 			ReleaseFromJail();
 			return 1;
 		}
-
+		
+		if(!strcmp("/무기구입",cmd) || !strcmp("/buygun",cmd))
+		{
+		    ShowPlayerWeaponDialog(playerid);
+		    return 1;
+		}
+		
 		if(!strcmp("/갱",cmd) || !strcmp("/gang",cmd) || !strcmp("/팩션",cmd) || !strcmp("/faction",cmd))
 		{
 			cmd = strtok(cmdtext,idx);
@@ -707,7 +737,7 @@ public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
 //-----/ EnterCPHandler_6_CnR /-------------------------------------------------
 public EnterCPHandler_6_CnR(playerid)
 {
-	if(GetPlayerTeam(playerid) == 6)
+	if(GetPlayerMap(playerid) == 6)
 	{
 		if(GetPlayerTeam(playerid) == 2)
 		{
@@ -743,8 +773,7 @@ public EnterCPHandler_6_CnR(playerid)
 				ReleaseFromJail();
 				GameTextForPlayer(playerid, "~r~You rescued your team mates! ~n~(Money +500, Point +5)", 10000, 4);
 	    		GivePlayerPoint(playerid, 5);
-				SetPVarInt(playerid,"Money",GetPVarInt(playerid,"Money")+500);
-
+				GivePlayerMoneyEx(playerid, 500);
 			}
 		}
 	}
@@ -819,6 +848,36 @@ public KeyHandler_6_CnR(playerid,newkeys,oldkeys)
 	}
 	return 0;
 }
+//-----/ DialogHandler_6_CnR /--------------------------------------------------
+public DialogHandler_6_CnR(playerid,dialogid,response,listitem,inputtext[])
+{
+	switch(dialogid)
+	{
+	    case DialogID_6_CnR(0):
+	    {
+	        if(response)
+	        {
+				if(GetPlayerMoney(playerid) < WeaponInfo[listitem][1])
+				{
+				    if(GetPlayerLanguage(playerid) == 0)
+				        return SendClientMessage(playerid,COLOR_WHITE,"[!] 소지금이 부족합니다.");
+					else
+					    return SendClientMessage(playerid,COLOR_WHITE,"[!] You don`t have enough money.");
+				}
+				GivePlayerWeapon(playerid,WeaponInfo[listitem][0],WeaponInfo[listitem][2]);
+				GivePlayerMoneyEx(playerid,-WeaponInfo[listitem][1]);
+				
+				if(GetPlayerLanguage(playerid) == 0)
+					SendClientMessage(playerid, COLOR_WHITE, "* 선택한 무기를 구입하였습니다.");
+				else
+				    SendClientMessage(playerid, COLOR_WHITE, "* You bought the weapon that you selected.");
+	        }
+	    }
+	}
+	return 0;
+}
+
+
 //==========/ Functions /=======================================================
 //-----/ SetSelectionInfo_6 /---------------------------------------------------
 stock SetSelectionInfo_6(playerid)
@@ -901,4 +960,27 @@ public GangInviteTimeout(playerid)
 {
 	KillTimer(Player_Gang_Timer[playerid]);
 	Player_Gang_Invited[playerid] = 0;
+}
+//-----/ ShowPlayerWeaponDialog /-----------------------------------------------
+stock ShowPlayerWeaponDialog(playerid)
+{
+	new string[2048];
+	new str[128];
+	if(GetPlayerLanguage(playerid) == 0)
+		strcat(string,""C_PASTEL_YELLOW"이름\t"C_PASTEL_YELLOW"가격\t"C_PASTEL_YELLOW"총알\n");
+	else
+	    strcat(string,""C_PASTEL_YELLOW"Name\t"C_PASTEL_YELLOW"Price\t"C_PASTEL_YELLOW"Ammo\n");
+	    
+	for(new i=0; i<MAX_WEAPON; i++)
+	{
+		new gunname[32];
+	    GetWeaponName(WeaponInfo[i][0], gunname, sizeof(gunname));
+	    format(str,sizeof(str),""C_WHITE"%s\t"C_WHITE"%d\t"C_WHITE"%d\n",gunname,WeaponInfo[i][1],WeaponInfo[i][2]);
+  		strcat(string,str);
+	}
+		
+    if(GetPlayerLanguage(playerid) == 0)
+		ShowPlayerDialog(playerid,DialogID_6_CnR(0),DIALOG_STYLE_TABLIST_HEADERS,""C_PASTEL_GREEN"무기 구입"C_WHITE" (일회성 무기입니다. 사망할 시 무기가 사라집니다) ",string,"구입","취소");
+	else
+	    ShowPlayerDialog(playerid,DialogID_6_CnR(0),DIALOG_STYLE_TABLIST_HEADERS,""C_PASTEL_GREEN"Buy Weapon"C_WHITE" (This weapon is one-off. If you die, you will lose your all weapons) ",string,"Buy","Cancel");
 }

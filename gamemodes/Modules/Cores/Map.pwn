@@ -140,6 +140,7 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 				SetPlayerMarkerForPlayerEx(playerid, GetPlayerColor(playerid));
     			StopAudioStreamForPlayerEx(playerid);
     			PlayAudioStreamForPlayerEx(playerid);
+    			DisablePlayerCheckpoint(playerid);
 				SpawnPlayer(playerid);
 			}
 		}

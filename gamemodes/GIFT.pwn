@@ -83,6 +83,7 @@
 	10100: Userdata
 	10200: Map
 	10300: Toggle
+	10400: 6_CnR Weapon Buying
 */	
 
 

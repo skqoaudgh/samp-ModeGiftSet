@@ -20,6 +20,7 @@ new PlayerText:Skin_Textdraw[MAX_PLAYERS][10][2];
 new PlayerText:PageIndex_Textdraw[MAX_PLAYERS];
 new PlayerText:SkinBox_Textdraw[MAX_PLAYERS][10];
 	//--/ Dialog Info /
+new bool:Player_In_SkinDialog[MAX_PLAYERS];
 new PlayerPage[MAX_PLAYERS];
 new PlayerSelectSkin[MAX_PLAYERS];
 
@@ -564,6 +565,7 @@ public DisconnectHandler_Skin(playerid,reason)
 {
 	PlayerPage[playerid] = 1;
 	PlayerSelectSkin[playerid] = 0;
+	Player_In_SkinDialog[playerid] = false;
 	CancelSelectTextDraw(playerid);
 }
 //-----/ CommandHandler_Skin /--------------------------------------------------
@@ -622,7 +624,7 @@ public CommandHandler_Skin(playerid,cmdtext[])
 //-----/ ClickTDHandler_Skin /--------------------------------------------------
 public ClickTDHandler_Skin(playerid,Text:clickedid)
 {
-	if(clickedid == DialogFrame_Textdraw[9] || clickedid == Text:INVALID_TEXT_DRAW )
+	if(Player_In_SkinDialog[playerid] && (clickedid == DialogFrame_Textdraw[9] || clickedid == Text:INVALID_TEXT_DRAW))
 	{
         TogglePlayerSkinDialog(playerid, false);
 		PlayerPage[playerid] = 1;
@@ -638,13 +640,13 @@ public ClickTDHandler_Skin(playerid,Text:clickedid)
 		        return SendClientMessage(playerid,COLOR_WHITE,"[!] 소지금이 부족합니다.");
 			else
 			    return SendClientMessage(playerid,COLOR_WHITE,"[!] You don`t have enough money.");
-			//-----
 		}
 	    if(GetPlayerLanguage(playerid) == 0)
    			SendClientMessage(playerid,COLOR_WHITE,"[!] 새로운 스킨을 구입했습니다.");
 		else
 		    SendClientMessage(playerid,COLOR_WHITE,"[!] You have bought new skin");
-		    
+		//-----
+		TogglePlayerSkinDialog(playerid, false);
 		SetPlayerSkin(playerid,PlayerSelectSkin[playerid]);
 		SetPVarInt(playerid,"Skin",PlayerSelectSkin[playerid]);
 		GivePlayerMoneyEx(playerid, -500);
@@ -702,6 +704,7 @@ stock TogglePlayerSkinDialog(playerid, bool:toggle)
 	    for(new i=0; i<10; i++)
 	        PlayerTextDrawShow(playerid,SkinBox_Textdraw[playerid][i]);
 	    PlayerTextDrawShow(playerid,PageIndex_Textdraw[playerid]);
+	    Player_In_SkinDialog[playerid] = true;
 	}
 	else // hide
 	{
@@ -717,6 +720,8 @@ stock TogglePlayerSkinDialog(playerid, bool:toggle)
 	        
 	    }
 	    PlayerTextDrawHide(playerid,PageIndex_Textdraw[playerid]);
+	    Player_In_SkinDialog[playerid] = false;
+	    CancelSelectTextDraw(playerid);
 	}
 }
 //-----/ SetPlayerSkinPage /----------------------------------------------------
