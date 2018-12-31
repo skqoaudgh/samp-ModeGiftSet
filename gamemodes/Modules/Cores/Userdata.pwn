@@ -157,6 +157,62 @@ public CommandHandler_Userdata(playerid,cmdtext[])
 		ShowPlayerStatus(playerid,playerid);
 		return 1;
 	}
+	//-----
+	new
+		cmd[384],idx,
+		string[384]
+	;
+	cmd = strtok(cmdtext,idx);
+	if(!strcmp("/gc",cmd) || !strcmp("/givecash",cmd) || !strcmp("/돈주기",cmd) || !strcmp("/지불",cmd))
+	{
+		cmd = strtok(cmdtext,idx);
+		if(!strlen(cmd))
+		{
+		    if(GetPlayerLanguage(playerid) == 0)
+		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: /돈주기 [번호] [금액]");
+			else
+			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: (/g)ive(c)ash [playerid] [value]");
+		}
+		new destid = strval(cmd);
+		if(destid == INVALID_PLAYER_ID)
+		{
+		    if(GetPlayerLanguage(playerid) == 0)
+		    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 잘못된 유저 정보입니다.");
+			else
+			    return SendClientMessage(playerid,COLOR_WHITE,"[!] You entered invalid playerid.");
+		}
+		cmd = strtok(cmdtext,idx);
+		if(!strlen(cmd))
+		{
+		    if(GetPlayerLanguage(playerid) == 0)
+		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: /돈주기 [번호] [금액]");
+			else
+			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: (/g)ive(c)ash [playerid] [value]");
+		}
+		new value = strval(cmd);
+		if(value < 0 || value > GetPlayerMoney(playerid))
+		{
+		    if(GetPlayerLanguage(playerid) == 0)
+		    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 부적절한 금액입니다.");
+			else
+			    return SendClientMessage(playerid,COLOR_WHITE,"[!] You entered invalid value.");
+		}
+		//-----
+		GivePlayerMoneyEx(playerid,-value);
+	    if(GetPlayerLanguage(playerid) == 0)
+	        format(string,sizeof(string),"* 당신은 %s(%d) 님에게 [%d]원을 주었습니다.",GetPlayerNameEx(destid),destid,value);
+		else
+		    format(string,sizeof(string),"* You have sent %s(%d) $%d",GetPlayerNameEx(destid),destid,value);
+  		SendClientMessage(playerid,COLOR_WHITE,string);
+		//-----
+		GivePlayerMoneyEx(destid,value);
+	    if(GetPlayerLanguage(destid) == 0)
+	        format(string,sizeof(string),"* 당신은 %s(%d) 님으로부터 [%d]원을 받았습니다.",GetPlayerNameEx(playerid),playerid,value);
+		else
+		    format(string,sizeof(string),"* You have recieved $%d from %s(%d)",value,GetPlayerNameEx(playerid),playerid);
+  		SendClientMessage(destid,COLOR_WHITE,string);
+		return 1;
+	}
 	return 0;
 }
 //-----/ DialogHandler_Userdata /-----------------------------------------------

@@ -54,6 +54,7 @@
 #include "./Modules/Functions/ExtendedFunc.pwn"
 #include "./Modules/Functions/FreezePlayer.pwn"
 #include "./Modules/Functions/BGM.pwn"
+#include "./Modules/Functions/InfoText.pwn"
 		// Command //
 #include "./Modules/Command/Chatting.pwn"
 #include "./Modules/Command/Admin.pwn"
@@ -116,6 +117,7 @@ public OnGameModeInit()
     AddModule("Toggle");
         // Function //
     AddModule("FreezePlayer");
+    AddModule("InfoText");
 	    // Game //
     AddModule("0_Lobby");
     AddModule("1_Run");
