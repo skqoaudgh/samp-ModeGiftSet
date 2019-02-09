@@ -8,11 +8,13 @@
 	GetPVarStringEx(playerid,varname[])
     TextDrawShowForAllEx(playerid, Text:TD)
  	TextDrawHideForAllEx(mapid, Text:TD)
+ 	DelayedGivePlayerWeapon(playerid, weaponid, ammo)
  	
 	strcpy(dest[],src[])
 	strtok(const string[],&index,separator=' ')
 	strblank(input[])
-
+    split(const src[],dest[][],delimiter='|')
+    
 	Wait(time)
 	Crash()
 */
@@ -23,6 +25,8 @@
 #endif
 #define _MDPWN_ExtendedFunc
 
+//-----/ Forwards /
+forward DelayedGivePlayerWeapon2(playerid, weaponid, ammo);
 
 
 
@@ -122,10 +126,29 @@ stock strblank(input[])
 		strcpy(string,"/Empty/");
 	return string;
 }
-
-
-
-
+//-----/ split /----------------------------------------------------------------
+stock split(const src[],dest[][],delimiter='|')
+{
+	new left,right,pieces;
+	for(new i,t=strlen(src); i<=t; i++)
+		if(src[i] == delimiter || i == t)
+		{
+			right = strmid(dest[pieces],src, left,i, t+1);
+			dest[pieces++][right] = '\0';
+			left = i+1;
+		}
+	return pieces;
+}
+//-----/ DelayedGivePlayerWeapon /----------------------------------------------
+stock DelayedGivePlayerWeapon(playerid, weaponid, ammo)
+{
+	SetTimerEx("GivePlayerWeaponEx2",200,false,"iii",playerid,weaponid,ammo);
+}
+//-----/ DelayedGivePlayerWeapon2 /---------------------------------------------
+public DelayedGivePlayerWeapon2(playerid, weaponid, ammo)
+{
+	GivePlayerWeapon(playerid, weaponid, ammo);
+}
 
 //==========/ Server-side Functions /===========================================
 //-----/ Wait /-----------------------------------------------------------------

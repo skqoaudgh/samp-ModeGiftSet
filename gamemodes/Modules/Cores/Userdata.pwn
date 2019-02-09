@@ -76,9 +76,12 @@ public AddHandler_Userdata()
 //-----/ ConnectHandler_Userdata /----------------------------------------------
 public ConnectHandler_Userdata(playerid)
 {
-	SetPlayerColor(playerid,COLOR_GREY);
-	CheckPlayerAccount(playerid);
-	strcpy(P_IP[playerid],GetPlayerIP(playerid));
+    if(!IsPlayerNPC(playerid))
+    {
+		SetPlayerColor(playerid,COLOR_GREY);
+		CheckPlayerAccount(playerid);
+		strcpy(P_IP[playerid],GetPlayerIP(playerid));
+	}
 }
 //-----/ DisconnectHandler_Userdata /-------------------------------------------
 public DisconnectHandler_Userdata(playerid,reason)
@@ -94,7 +97,7 @@ public DisconnectHandler_Userdata(playerid,reason)
 //-----/ RequestSpawnHandler_Userdata /-----------------------------------------
 public RequestSpawnHandler_Userdata(playerid)
 {
-	if(!IsPlayerLoggedIn(playerid))
+	if(!IsPlayerLoggedIn(playerid) && !IsPlayerNPC(playerid))
 	{
 		ShowPlayerLoginDialog(playerid);
 		return 0;
@@ -104,7 +107,7 @@ public RequestSpawnHandler_Userdata(playerid)
 //-----/ RequestClassHandler_Userdata(playerid,classid) /-----------------------------------------
 public RequestClassHandler_Userdata(playerid,classid)
 {
-	if(!IsPlayerLoggedIn(playerid))
+	if(!IsPlayerLoggedIn(playerid) && !IsPlayerNPC(playerid))
 	{
 		SetPlayerPos(playerid,1479.6353,-1597.1534,9.3828);
 		SetPlayerCameraPos(playerid,1479.4426,-1587.1444,33.5469);
@@ -253,6 +256,7 @@ public DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[])
 			{
 				SetPVarInt(playerid,"Language",listitem);
 				P_Selected[playerid] = true;
+				TogglePlayer3DText(playerid,listitem);
 				if(IsPlayerLoggedIn(playerid))
 					ShowPlayerChangeLanguageDialog(playerid);
 			}
@@ -532,6 +536,7 @@ public LoadPlayerDataQE(playerid)
 		//-----
 		SetPlayerMoney(playerid,GetPVarInt(playerid,"Money"));
 		SetPlayerScore(playerid,GetPVarInt(playerid,"Point"));
+		TogglePlayer3DText(playerid,GetPlayerLanguage(playerid));
 		//-----
 		P_LoggedIn[playerid] = true;
 		SpawnPlayerEx(playerid);

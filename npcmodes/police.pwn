@@ -3,7 +3,7 @@
 #define VEHICLE		PLAYER_RECORDING_TYPE_DRIVER
 #define WALK		PLAYER_RECORDING_TYPE_ONFOOT
 
-#define REC_FILE			"filename"
+#define REC_FILE			"police"
 #define RECORDING_TYPE		WALK
 #define PLAYING_LOOP		true
 

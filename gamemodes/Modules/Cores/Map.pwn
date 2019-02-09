@@ -2,6 +2,7 @@
   [Functions]
 	GetPlayerMap(playerid)
 	ShowPlayerMapList(playerid)
+	GetMapPlayingCount(mapid)
 */
 
 //-----/ Pre-Processing /
@@ -176,4 +177,9 @@ stock ShowPlayerMapList(playerid)
 		ShowPlayerDialog(playerid, DialogID_Map(0), DIALOG_STYLE_TABLIST_HEADERS, ""C_PASTEL_GREEN"∏  º±≈√",string, "»Æ¿Œ","¥›±‚");
 	else
 	    ShowPlayerDialog(playerid, DialogID_Map(0), DIALOG_STYLE_TABLIST_HEADERS, ""C_PASTEL_GREEN"Select Map",string, "OK","Cancel");
+}
+//-----/ GetMapPlayingCount /---------------------------------------------------
+stock GetMapPlayingCount(mapid)
+{
+	return MapInfo[mapid][PlayerCount];
 }

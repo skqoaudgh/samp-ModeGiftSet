@@ -6547,3 +6547,4787 @@ Console input: gmx
 [23:21:15] *** Audio Plugin: Cada (ID: 0) has connected
 [23:23:29] [death] Cada died 54
 [23:23:48] [death] Cada died 255
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:54:20] password = ""  (string)
+[14:54:20] 
+[14:54:20] Server Plugins
+[14:54:20] --------------
+[14:54:20]  Loading plugin: crashdetect
+[14:54:20]   CrashDetect plugin 4.19
+[14:54:20]   Loaded.
+[14:54:20]  Loading plugin: mysql
+[14:54:20]  >> plugin.mysql: R41-4 successfully loaded.
+[14:54:20]   Loaded.
+[14:54:20]  Loading plugin: streamer
+[14:54:20] 
+
+*** Streamer Plugin v2.9.3 by Incognito loaded ***
+
+[14:54:20]   Loaded.
+[14:54:20]  Loading plugin: audio
+[14:54:20] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[14:54:20]   Loaded.
+[14:54:20]  Loading plugin: MapAndreas
+[14:54:20]   Loaded.
+[14:54:20]  Loaded 5 plugins.
+
+[14:54:20] 
+[14:54:20] Filterscripts
+[14:54:20] ---------------
+[14:54:20]   Loading filterscript 'Acu.amx'...
+[14:54:20]   Loaded 1 filterscripts.
+
+[14:54:20] *** Streamer Plugin: Include file version (0x294) does not match plugin version (0x293) (script might need to be recompiled with the correct include file).
+[14:54:20] ---------------------------------
+[14:54:20] *** Audio Plugin: Started TCP server on port 7777
+[14:54:20] [mysql] Connecting to DB server...
+[14:54:20] [mysql] Connected!
+[14:54:20] ---------------------------------
+[14:54:20] 
+
+[14:54:20] ---------------------------------
+[14:54:20]  ALL IN ONE v1.1.5
+[14:54:20]   Coded by Acu
+[14:54:20]   Updated by Cada
+[14:54:20]   acu.pe.kr@gmail.com
+[14:54:20] ---------------------------------
+
+[14:54:21] Number of vehicle models: 109
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:54:59] password = ""  (string)
+[14:54:59] 
+[14:54:59] Server Plugins
+[14:54:59] --------------
+[14:54:59]  Loading plugin: crashdetect
+[14:54:59]   CrashDetect plugin 4.19
+[14:54:59]   Loaded.
+[14:54:59]  Loading plugin: mysql
+[14:54:59]  >> plugin.mysql: R41-4 successfully loaded.
+[14:54:59]   Loaded.
+[14:54:59]  Loading plugin: streamer
+[14:54:59] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[14:54:59]   Loaded.
+[14:54:59]  Loading plugin: audio
+[14:54:59] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[14:54:59]   Loaded.
+[14:54:59]  Loading plugin: MapAndreas
+[14:54:59]   Loaded.
+[14:54:59]  Loaded 5 plugins.
+
+[14:54:59] 
+[14:54:59] Filterscripts
+[14:54:59] ---------------
+[14:54:59]   Loading filterscript 'Acu.amx'...
+[14:54:59]   Loaded 1 filterscripts.
+
+[14:54:59] ---------------------------------
+[14:54:59] [mysql] Connecting to DB server...
+[14:54:59] *** Audio Plugin: Started TCP server on port 7777
+[14:54:59] [mysql] Connected!
+[14:54:59] ---------------------------------
+[14:54:59] 
+
+[14:54:59] ---------------------------------
+[14:54:59]  ALL IN ONE v1.1.5
+[14:54:59]   Coded by Acu
+[14:54:59]   Updated by Cada
+[14:54:59]   acu.pe.kr@gmail.com
+[14:54:59] ---------------------------------
+
+[14:54:59] Number of vehicle models: 109
+[14:55:21] [connection] 127.0.0.1:57268 requests connection cookie.
+[14:55:22] [connection] incoming connection: 127.0.0.1:57268 id: 0
+[14:55:22] [join] Cada_Test has joined the server (0:127.0.0.1)
+[14:55:25] *** Audio Plugin: Cada_Test (ID: 0) has connected
+[14:55:34] RCON (In-Game): Player #0 (Cada_Test) failed login.
+[14:55:36] RCON (In-Game): Player #0 (Cada_Test) has logged in.
+[14:55:45] RCON (In-Game): Player [Cada_Test] sent command: loadfs fsdebug
+[14:55:45]   Filterscript 'fsdebug.amx' load failed.
+Console input: gmx
+[14:57:47] *** Audio Plugin: Cada_Test (ID: 0) has disconnected
+[14:57:47] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[14:57:47] [mode] Mode has been unloaded.
+[14:57:59] ---------------------------------
+[14:57:59] [mysql] Connecting to DB server...
+[14:57:59] [mysql] Connected!
+[14:57:59] ---------------------------------
+[14:57:59] 
+
+[14:57:59] ---------------------------------
+[14:57:59]  ALL IN ONE v1.1.5
+[14:57:59]   Coded by Acu
+[14:57:59]   Updated by Cada
+[14:57:59]   acu.pe.kr@gmail.com
+[14:57:59] ---------------------------------
+
+[14:57:59] Number of vehicle models: 109
+[14:58:10] *** Audio Plugin: Cada_Test (ID: 0) has connected
+Console input: gmx
+[15:01:52] *** Audio Plugin: Cada_Test (ID: 0) has disconnected
+[15:01:52] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[15:01:52] [mode] Mode has been unloaded.
+[15:02:04] ---------------------------------
+[15:02:05] [mysql] Connecting to DB server...
+[15:02:05] [mysql] Connected!
+[15:02:05] ---------------------------------
+[15:02:05] 
+
+[15:02:05] ---------------------------------
+[15:02:05]  ALL IN ONE v1.1.5
+[15:02:05]   Coded by Acu
+[15:02:05]   Updated by Cada
+[15:02:05]   acu.pe.kr@gmail.com
+[15:02:05] ---------------------------------
+
+[15:02:05] Number of vehicle models: 109
+[15:02:14] *** Audio Plugin: Cada_Test (ID: 0) has connected
+Console input: gmx
+[15:03:36] *** Audio Plugin: Cada_Test (ID: 0) has disconnected
+[15:03:36] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[15:03:36] [mode] Mode has been unloaded.
+[15:03:48] ---------------------------------
+[15:03:48] [mysql] Connecting to DB server...
+[15:03:48] [mysql] Connected!
+[15:03:48] ---------------------------------
+[15:03:48] 
+
+[15:03:48] ---------------------------------
+[15:03:48]  ALL IN ONE v1.1.5
+[15:03:48]   Coded by Acu
+[15:03:48]   Updated by Cada
+[15:03:48]   acu.pe.kr@gmail.com
+[15:03:48] ---------------------------------
+
+[15:03:48] Number of vehicle models: 109
+[15:04:05] *** Audio Plugin: Cada_Test (ID: 0) has connected
+Console input: gmx
+[15:08:20] *** Audio Plugin: Cada_Test (ID: 0) has disconnected
+[15:08:20] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[15:08:20] [mode] Mode has been unloaded.
+[15:08:32] ---------------------------------
+[15:08:32] [mysql] Connecting to DB server...
+[15:08:32] [mysql] Connected!
+[15:08:32] ---------------------------------
+[15:08:32] 
+
+[15:08:32] ---------------------------------
+[15:08:32]  ALL IN ONE v1.1.5
+[15:08:32]   Coded by Acu
+[15:08:32]   Updated by Cada
+[15:08:32]   acu.pe.kr@gmail.com
+[15:08:32] ---------------------------------
+
+[15:08:32] Number of vehicle models: 109
+[15:08:44] *** Audio Plugin: Cada_Test (ID: 0) has connected
+Console input: gmx
+[15:09:08] *** Audio Plugin: Cada_Test (ID: 0) has disconnected
+[15:09:08] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[15:09:08] [mode] Mode has been unloaded.
+[15:09:20] ---------------------------------
+[15:09:20] [mysql] Connecting to DB server...
+[15:09:20] [mysql] Connected!
+[15:09:20] ---------------------------------
+[15:09:20] 
+
+[15:09:20] ---------------------------------
+[15:09:20]  ALL IN ONE v1.1.5
+[15:09:20]   Coded by Acu
+[15:09:20]   Updated by Cada
+[15:09:20]   acu.pe.kr@gmail.com
+[15:09:20] ---------------------------------
+
+[15:09:20] Number of vehicle models: 109
+[15:09:22] *** Audio Plugin: Cada_Test (ID: 0) has connected
+Console input: gmx
+[15:10:03] *** Audio Plugin: Cada_Test (ID: 0) has disconnected
+[15:10:03] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[15:10:03] [mode] Mode has been unloaded.
+[15:10:15] ---------------------------------
+[15:10:15] [mysql] Connecting to DB server...
+[15:10:15] [mysql] Connected!
+[15:10:15] ---------------------------------
+[15:10:15] 
+
+[15:10:15] ---------------------------------
+[15:10:15]  ALL IN ONE v1.1.5
+[15:10:15]   Coded by Acu
+[15:10:15]   Updated by Cada
+[15:10:15]   acu.pe.kr@gmail.com
+[15:10:15] ---------------------------------
+
+[15:10:15] Number of vehicle models: 109
+[15:10:25] *** Audio Plugin: Cada_Test (ID: 0) has connected
+[15:10:42] *** Audio Plugin: Cada_Test (ID: 0) has disconnected
+[15:10:42] [part] Cada_Test has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:48:10] password = ""  (string)
+[00:48:10] 
+[00:48:10] Server Plugins
+[00:48:10] --------------
+[00:48:10]  Loading plugin: crashdetect
+[00:48:10]   CrashDetect plugin 4.19
+[00:48:10]   Loaded.
+[00:48:10]  Loading plugin: mysql
+[00:48:11]  >> plugin.mysql: R41-4 successfully loaded.
+[00:48:11]   Loaded.
+[00:48:11]  Loading plugin: streamer
+[00:48:11] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[00:48:11]   Loaded.
+[00:48:11]  Loading plugin: audio
+[00:48:12] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[00:48:12]   Loaded.
+[00:48:12]  Loading plugin: MapAndreas
+[00:48:12]   Loaded.
+[00:48:12]  Loaded 5 plugins.
+
+[00:48:12] 
+[00:48:12] Filterscripts
+[00:48:12] ---------------
+[00:48:12]   Loading filterscript 'Acu.amx'...
+[00:48:12]   Loaded 1 filterscripts.
+
+[00:48:12] ---------------------------------
+[00:48:12] [mysql] Connecting to DB server...
+[00:48:12] *** Audio Plugin: Started TCP server on port 7777
+[00:48:12] [mysql] Connected!
+[00:48:12] ---------------------------------
+[00:48:12] 
+
+[00:48:12] ---------------------------------
+[00:48:12]  ALL IN ONE v1.1.5
+[00:48:12]   Coded by Acu
+[00:48:12]   Updated by Cada
+[00:48:12]   acu.pe.kr@gmail.com
+[00:48:12] ---------------------------------
+
+[00:48:13] Number of vehicle models: 109
+[00:48:37] [connection] 127.0.0.1:63449 requests connection cookie.
+[00:48:38] [connection] incoming connection: 127.0.0.1:63449 id: 0
+[00:48:38] [join] Cada_Test has joined the server (0:127.0.0.1)
+[00:48:41] *** Audio Plugin: Cada_Test (ID: 0) has connected
+[00:50:52] *** Audio Plugin: Cada_Test (ID: 0) has disconnected
+[00:50:52] [part] Cada_Test has left the server (0:1)
+Console input: gmx
+[01:11:45] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[01:11:45] [mode] Mode has been unloaded.
+[01:11:57] ---------------------------------
+[01:11:57] [mysql] Connecting to DB server...
+[01:11:57] [mysql] Connected!
+[01:11:57] ---------------------------------
+[01:11:57] 
+
+[01:11:57] ---------------------------------
+[01:11:57]  ALL IN ONE v1.1.5
+[01:11:57]   Coded by Acu
+[01:11:57]   Updated by Cada
+[01:11:57]   acu.pe.kr@gmail.com
+[01:11:57] ---------------------------------
+
+[01:11:57] [connection] 127.0.0.1:50532 requests connection cookie.
+[01:11:57] [connection] 127.0.0.1:50533 requests connection cookie.
+[01:11:57] [connection] 127.0.0.1:50534 requests connection cookie.
+[01:11:57] [connection] 127.0.0.1:50535 requests connection cookie.
+[01:11:57] Number of vehicle models: 109
+[01:11:58] [connection] 127.0.0.1:50536 requests connection cookie.
+[01:11:58] [connection] 127.0.0.1:50537 requests connection cookie.
+[01:11:58] [connection] incoming connection: 127.0.0.1:50532 id: 0
+[01:11:58] [connection] incoming connection: 127.0.0.1:50533 id: 1
+[01:11:58] [connection] incoming connection: 127.0.0.1:50534 id: 2
+[01:11:58] [connection] incoming connection: 127.0.0.1:50535 id: 0
+[01:11:59] [connection] incoming connection: 127.0.0.1:50536 id: 3
+[01:11:59] [connection] incoming connection: 127.0.0.1:50537 id: 1
+[01:12:20] [connection] 127.0.0.1:50539 requests connection cookie.
+[01:12:21] [connection] incoming connection: 127.0.0.1:50539 id: 0
+[01:12:21] [join] Cada_Test has joined the server (0:127.0.0.1)
+[01:12:24] *** Audio Plugin: Cada_Test (ID: 0) has connected
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:12:41] password = ""  (string)
+[01:12:41] 
+[01:12:41] Server Plugins
+[01:12:41] --------------
+[01:12:41]  Loading plugin: crashdetect
+[01:12:41]   CrashDetect plugin 4.19
+[01:12:41]   Loaded.
+[01:12:41]  Loading plugin: mysql
+[01:12:41]  >> plugin.mysql: R41-4 successfully loaded.
+[01:12:41]   Loaded.
+[01:12:41]  Loading plugin: streamer
+[01:12:41] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[01:12:41]   Loaded.
+[01:12:41]  Loading plugin: audio
+[01:12:41] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[01:12:41]   Loaded.
+[01:12:41]  Loading plugin: MapAndreas
+[01:12:41]   Loaded.
+[01:12:41]  Loaded 5 plugins.
+
+[01:12:41] 
+[01:12:41] Filterscripts
+[01:12:41] ---------------
+[01:12:41]   Loading filterscript 'Acu.amx'...
+[01:12:41]   Loaded 1 filterscripts.
+
+[01:12:41] ---------------------------------
+[01:12:41] [mysql] Connecting to DB server...
+[01:12:41] *** Audio Plugin: Started TCP server on port 7777
+[01:12:41] [mysql] Connected!
+[01:12:41] ---------------------------------
+[01:12:41] 
+
+[01:12:41] ---------------------------------
+[01:12:41]  ALL IN ONE v1.1.5
+[01:12:41]   Coded by Acu
+[01:12:41]   Updated by Cada
+[01:12:41]   acu.pe.kr@gmail.com
+[01:12:41] ---------------------------------
+
+[01:12:42] Number of vehicle models: 109
+[01:12:42] [connection] 127.0.0.1:57362 requests connection cookie.
+[01:12:42] [connection] 127.0.0.1:52908 requests connection cookie.
+[01:12:42] [connection] 127.0.0.1:52909 requests connection cookie.
+[01:12:42] [connection] 127.0.0.1:58146 requests connection cookie.
+[01:12:42] [connection] 127.0.0.1:58145 requests connection cookie.
+[01:12:42] [connection] 127.0.0.1:58147 requests connection cookie.
+[01:12:43] [connection] incoming connection: 127.0.0.1:57362 id: 0
+[01:12:43] [connection] incoming connection: 127.0.0.1:52908 id: 1
+[01:12:43] [connection] incoming connection: 127.0.0.1:52909 id: 2
+[01:12:43] [connection] incoming connection: 127.0.0.1:58146 id: 0
+[01:12:43] [connection] incoming connection: 127.0.0.1:58145 id: 3
+[01:12:43] [connection] incoming connection: 127.0.0.1:58147 id: 4
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:14:22] password = ""  (string)
+[01:14:22] 
+[01:14:22] Server Plugins
+[01:14:22] --------------
+[01:14:22]  Loading plugin: crashdetect
+[01:14:22]   CrashDetect plugin 4.19
+[01:14:22]   Loaded.
+[01:14:22]  Loading plugin: mysql
+[01:14:22]  >> plugin.mysql: R41-4 successfully loaded.
+[01:14:22]   Loaded.
+[01:14:22]  Loading plugin: streamer
+[01:14:22] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[01:14:22]   Loaded.
+[01:14:22]  Loading plugin: audio
+[01:14:22] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[01:14:22]   Loaded.
+[01:14:22]  Loading plugin: MapAndreas
+[01:14:22]   Loaded.
+[01:14:22]  Loaded 5 plugins.
+
+[01:14:22] 
+[01:14:22] Filterscripts
+[01:14:22] ---------------
+[01:14:22]   Loading filterscript 'Acu.amx'...
+[01:14:22]   Loaded 1 filterscripts.
+
+[01:14:22] *** Audio Plugin: Started TCP server on port 7777
+[01:14:22] ---------------------------------
+[01:14:22] [mysql] Connecting to DB server...
+[01:14:22] [mysql] Connected!
+[01:14:22] ---------------------------------
+[01:14:22] 
+
+[01:14:22] ---------------------------------
+[01:14:22]  ALL IN ONE v1.1.5
+[01:14:22]   Coded by Acu
+[01:14:22]   Updated by Cada
+[01:14:22]   acu.pe.kr@gmail.com
+[01:14:22] ---------------------------------
+
+[01:14:23] Number of vehicle models: 109
+[01:14:23] [connection] 127.0.0.1:58161 requests connection cookie.
+[01:14:23] [connection] 127.0.0.1:58162 requests connection cookie.
+[01:14:23] [connection] 127.0.0.1:58163 requests connection cookie.
+[01:14:23] [connection] 127.0.0.1:58165 requests connection cookie.
+[01:14:23] [connection] 127.0.0.1:58164 requests connection cookie.
+[01:14:24] [connection] 127.0.0.1:58166 requests connection cookie.
+[01:14:24] [connection] 127.0.0.1:58161 requests connection cookie.
+[01:14:24] [connection] 127.0.0.1:58162 requests connection cookie.
+[01:14:24] [connection] 127.0.0.1:58163 requests connection cookie.
+[01:14:24] [connection] 127.0.0.1:58165 requests connection cookie.
+[01:14:24] [connection] 127.0.0.1:58164 requests connection cookie.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:14:26] password = ""  (string)
+[01:14:26] 
+[01:14:26] Server Plugins
+[01:14:26] --------------
+[01:14:26]  Loading plugin: crashdetect
+[01:14:26]   CrashDetect plugin 4.19
+[01:14:26]   Loaded.
+[01:14:26]  Loading plugin: mysql
+[01:14:26]  >> plugin.mysql: R41-4 successfully loaded.
+[01:14:26]   Loaded.
+[01:14:26]  Loading plugin: streamer
+[01:14:26] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[01:14:26]   Loaded.
+[01:14:26]  Loading plugin: audio
+[01:14:26] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[01:14:26]   Loaded.
+[01:14:26]  Loading plugin: MapAndreas
+[01:14:26]   Loaded.
+[01:14:26]  Loaded 5 plugins.
+
+[01:14:26] 
+[01:14:26] Filterscripts
+[01:14:26] ---------------
+[01:14:26]   Loading filterscript 'Acu.amx'...
+[01:14:26]   Loaded 1 filterscripts.
+
+[01:14:26] ---------------------------------
+[01:14:26] [mysql] Connecting to DB server...
+[01:14:26] *** Audio Plugin: Started TCP server on port 7777
+[01:14:26] [mysql] Connected!
+[01:14:26] ---------------------------------
+[01:14:26] 
+
+[01:14:26] ---------------------------------
+[01:14:26]  ALL IN ONE v1.1.5
+[01:14:26]   Coded by Acu
+[01:14:26]   Updated by Cada
+[01:14:26]   acu.pe.kr@gmail.com
+[01:14:26] ---------------------------------
+
+[01:14:26] [connection] 127.0.0.1:58161 requests connection cookie.
+[01:14:26] [connection] 127.0.0.1:58162 requests connection cookie.
+[01:14:27] [connection] 127.0.0.1:58163 requests connection cookie.
+[01:14:27] [connection] 127.0.0.1:58165 requests connection cookie.
+[01:14:27] [connection] 127.0.0.1:58164 requests connection cookie.
+[01:14:27] [connection] 127.0.0.1:58166 requests connection cookie.
+[01:14:27] Number of vehicle models: 109
+[01:14:27] [connection] 127.0.0.1:54348 requests connection cookie.
+[01:14:27] [connection] 127.0.0.1:54349 requests connection cookie.
+[01:14:27] [connection] 127.0.0.1:54350 requests connection cookie.
+[01:14:27] [connection] 127.0.0.1:54351 requests connection cookie.
+[01:14:27] [connection] 127.0.0.1:54352 requests connection cookie.
+[01:14:27] [connection] 127.0.0.1:54353 requests connection cookie.
+[01:14:27] [connection] incoming connection: 127.0.0.1:58161 id: 0
+[01:14:27] [connection] incoming connection: 127.0.0.1:58162 id: 1
+[01:14:28] [connection] incoming connection: 127.0.0.1:58163 id: 2
+[01:14:28] [connection] incoming connection: 127.0.0.1:58164 id: 3
+[01:14:28] [connection] incoming connection: 127.0.0.1:58165 id: 4
+[01:14:28] [connection] incoming connection: 127.0.0.1:58166 id: 5
+[01:14:28] [connection] incoming connection: 127.0.0.1:54348 id: 0
+[01:14:28] [connection] incoming connection: 127.0.0.1:54349 id: 1
+[01:14:28] [connection] incoming connection: 127.0.0.1:54350 id: 2
+[01:14:28] [connection] incoming connection: 127.0.0.1:54351 id: 3
+[01:14:28] [connection] incoming connection: 127.0.0.1:54353 id: 4
+[01:14:28] [connection] incoming connection: 127.0.0.1:54352 id: 5
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:14:37] password = ""  (string)
+[01:14:37] 
+[01:14:37] Server Plugins
+[01:14:37] --------------
+[01:14:37]  Loading plugin: crashdetect
+[01:14:37]   CrashDetect plugin 4.19
+[01:14:37]   Loaded.
+[01:14:37]  Loading plugin: mysql
+[01:14:37]  >> plugin.mysql: R41-4 successfully loaded.
+[01:14:37]   Loaded.
+[01:14:37]  Loading plugin: streamer
+[01:14:37] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[01:14:37]   Loaded.
+[01:14:37]  Loading plugin: audio
+[01:14:37] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[01:14:37]   Loaded.
+[01:14:37]  Loading plugin: MapAndreas
+[01:14:37]   Loaded.
+[01:14:37]  Loaded 5 plugins.
+
+[01:14:38] 
+[01:14:38] Filterscripts
+[01:14:38] ---------------
+[01:14:38]   Loading filterscript 'Acu.amx'...
+[01:14:38]   Loaded 1 filterscripts.
+
+[01:14:38] *** Audio Plugin: Started TCP server on port 7777
+[01:14:38] ---------------------------------
+[01:14:38] [mysql] Connecting to DB server...
+[01:14:38] [mysql] Connected!
+[01:14:38] ---------------------------------
+[01:14:38] 
+
+[01:14:38] ---------------------------------
+[01:14:38]  ALL IN ONE v1.1.5
+[01:14:38]   Coded by Acu
+[01:14:38]   Updated by Cada
+[01:14:38]   acu.pe.kr@gmail.com
+[01:14:38] ---------------------------------
+
+[01:14:38] Number of vehicle models: 109
+[01:14:38] [connection] 127.0.0.1:62560 requests connection cookie.
+[01:14:38] [connection] 127.0.0.1:62561 requests connection cookie.
+[01:14:38] [connection] 127.0.0.1:62562 requests connection cookie.
+[01:14:38] [connection] 127.0.0.1:62563 requests connection cookie.
+[01:14:38] [connection] 127.0.0.1:62564 requests connection cookie.
+[01:14:38] [connection] 127.0.0.1:62565 requests connection cookie.
+[01:14:39] [connection] incoming connection: 127.0.0.1:62560 id: 0
+[01:14:39] [connection] incoming connection: 127.0.0.1:62561 id: 1
+[01:14:39] [connection] incoming connection: 127.0.0.1:62562 id: 2
+[01:14:39] [connection] incoming connection: 127.0.0.1:62563 id: 3
+[01:14:39] [connection] incoming connection: 127.0.0.1:62564 id: 4
+[01:14:39] [connection] incoming connection: 127.0.0.1:62565 id: 5
+[01:14:47] [connection] 127.0.0.1:55293 requests connection cookie.
+[01:14:48] [connection] incoming connection: 127.0.0.1:55293 id: 0
+[01:14:58] [connection] incoming connection: 127.0.0.1:55297 id: 0
+[01:14:58] [join] Cada_Test has joined the server (0:127.0.0.1)
+[01:15:06] *** Audio Plugin: Cada_Test (ID: 0) has connected
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:16:35] password = ""  (string)
+[01:16:35] 
+[01:16:35] Server Plugins
+[01:16:35] --------------
+[01:16:35]  Loading plugin: crashdetect
+[01:16:35]   CrashDetect plugin 4.19
+[01:16:35]   Loaded.
+[01:16:35]  Loading plugin: mysql
+[01:16:35]  >> plugin.mysql: R41-4 successfully loaded.
+[01:16:35]   Loaded.
+[01:16:35]  Loading plugin: streamer
+[01:16:35] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[01:16:35]   Loaded.
+[01:16:35]  Loading plugin: audio
+[01:16:35] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[01:16:35]   Loaded.
+[01:16:35]  Loading plugin: MapAndreas
+[01:16:35]   Loaded.
+[01:16:35]  Loaded 5 plugins.
+
+[01:16:35] 
+[01:16:35] Filterscripts
+[01:16:35] ---------------
+[01:16:35]   Loading filterscript 'Acu.amx'...
+[01:16:35]   Loaded 1 filterscripts.
+
+[01:16:35] *** Audio Plugin: Started TCP server on port 7777
+[01:16:35] ---------------------------------
+[01:16:35] [mysql] Connecting to DB server...
+[01:16:35] [mysql] Connected!
+[01:16:35] ---------------------------------
+[01:16:35] 
+
+[01:16:35] ---------------------------------
+[01:16:35]  ALL IN ONE v1.1.5
+[01:16:35]   Coded by Acu
+[01:16:35]   Updated by Cada
+[01:16:35]   acu.pe.kr@gmail.com
+[01:16:35] ---------------------------------
+
+[01:16:35] object
+[01:16:35] object removed
+[01:16:35] object
+[01:16:36] [connection] 127.0.0.1:54611 requests connection cookie.
+[01:16:36] Number of vehicle models: 109
+[01:16:36] [connection] 127.0.0.1:54612 requests connection cookie.
+[01:16:36] [connection] 127.0.0.1:54613 requests connection cookie.
+[01:16:36] [connection] 127.0.0.1:54614 requests connection cookie.
+[01:16:36] [connection] 127.0.0.1:54615 requests connection cookie.
+[01:16:36] [connection] 127.0.0.1:54616 requests connection cookie.
+[01:16:37] [connection] incoming connection: 127.0.0.1:54611 id: 0
+[01:16:37] [connection] incoming connection: 127.0.0.1:54612 id: 1
+[01:16:37] [connection] incoming connection: 127.0.0.1:54613 id: 2
+[01:16:37] [connection] incoming connection: 127.0.0.1:54614 id: 3
+[01:16:37] [connection] incoming connection: 127.0.0.1:54615 id: 4
+[01:16:37] [npc:join] Game1 has joined the server (0:127.0.0.1)
+[01:16:37] [connection] incoming connection: 127.0.0.1:54616 id: 5
+[01:16:37] [npc:join] Game2 has joined the server (1:127.0.0.1)
+[01:16:37] [npc:join] Game3 has joined the server (2:127.0.0.1)
+[01:16:37] [npc:join] Game4 has joined the server (3:127.0.0.1)
+[01:16:37] [npc:join] Game5 has joined the server (4:127.0.0.1)
+[01:16:37] [npc:join] Game6 has joined the server (5:127.0.0.1)
+[01:16:47] [connection] 127.0.0.1:49415 requests connection cookie.
+[01:16:48] [connection] incoming connection: 127.0.0.1:49415 id: 6
+[01:16:48] [join] Cada_Test has joined the server (6:127.0.0.1)
+[01:16:54] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[01:17:16] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[01:17:16] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[01:17:16] [mode] Mode has been unloaded.
+[01:17:28] ---------------------------------
+[01:17:28] [mysql] Connecting to DB server...
+[01:17:28] [mysql] Connected!
+[01:17:28] ---------------------------------
+[01:17:28] 
+
+[01:17:28] ---------------------------------
+[01:17:28]  ALL IN ONE v1.1.5
+[01:17:28]   Coded by Acu
+[01:17:28]   Updated by Cada
+[01:17:28]   acu.pe.kr@gmail.com
+[01:17:28] ---------------------------------
+
+[01:17:28] object
+[01:17:28] object
+[01:17:28] [connection] 127.0.0.1:61291 requests connection cookie.
+[01:17:29] [connection] 127.0.0.1:61292 requests connection cookie.
+[01:17:29] [connection] 127.0.0.1:61293 requests connection cookie.
+[01:17:29] Number of vehicle models: 109
+[01:17:29] [connection] 127.0.0.1:52550 requests connection cookie.
+[01:17:29] [connection] 127.0.0.1:57077 requests connection cookie.
+[01:17:29] [connection] 127.0.0.1:57144 requests connection cookie.
+[01:17:29] [connection] incoming connection: 127.0.0.1:61291 id: 7
+[01:17:30] [connection] incoming connection: 127.0.0.1:61292 id: 8
+[01:17:30] [connection] incoming connection: 127.0.0.1:61293 id: 7
+[01:17:30] [connection] incoming connection: 127.0.0.1:52550 id: 8
+[01:17:30] [connection] incoming connection: 127.0.0.1:57077 id: 7
+[01:17:30] [connection] incoming connection: 127.0.0.1:57144 id: 9
+[01:17:37] *** Audio Plugin: Cada_Test (ID: 6) has connected
+[01:19:29] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[01:19:29] [part] Cada_Test has left the server (6:1)
+Console input: gmx
+[01:43:27] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[01:43:27] [mode] Mode has been unloaded.
+[01:43:39] ---------------------------------
+[01:43:39] [mysql] Connecting to DB server...
+[01:43:39] [mysql] Connected!
+[01:43:39] ---------------------------------
+[01:43:39] 
+
+[01:43:39] ---------------------------------
+[01:43:39]  ALL IN ONE v1.1.5
+[01:43:39]   Coded by Acu
+[01:43:39]   Updated by Cada
+[01:43:39]   acu.pe.kr@gmail.com
+[01:43:39] ---------------------------------
+
+[01:43:39] object
+[01:43:39] object
+[01:43:40] [connection] 127.0.0.1:56662 requests connection cookie.
+[01:43:40] [connection] 127.0.0.1:56663 requests connection cookie.
+[01:43:40] [connection] 127.0.0.1:56664 requests connection cookie.
+[01:43:40] [connection] 127.0.0.1:56665 requests connection cookie.
+[01:43:40] Number of vehicle models: 109
+[01:43:40] [connection] 127.0.0.1:56666 requests connection cookie.
+[01:43:40] [connection] 127.0.0.1:56667 requests connection cookie.
+[01:43:41] [connection] incoming connection: 127.0.0.1:56662 id: 6
+[01:43:41] [connection] incoming connection: 127.0.0.1:56663 id: 7
+[01:43:41] [connection] incoming connection: 127.0.0.1:56664 id: 8
+[01:43:41] [connection] incoming connection: 127.0.0.1:56665 id: 6
+[01:43:41] [connection] incoming connection: 127.0.0.1:56666 id: 7
+[01:43:41] [connection] incoming connection: 127.0.0.1:56667 id: 9
+[01:44:05] [connection] 127.0.0.1:56671 requests connection cookie.
+[01:44:06] [connection] incoming connection: 127.0.0.1:56671 id: 6
+[01:44:06] [join] Cada_Test has joined the server (6:127.0.0.1)
+[01:44:09] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[01:44:41] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[01:44:41] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[01:44:41] [mode] Mode has been unloaded.
+[01:44:53] ---------------------------------
+[01:44:53] [mysql] Connecting to DB server...
+[01:44:53] [mysql] Connected!
+[01:44:53] ---------------------------------
+[01:44:53] 
+
+[01:44:53] ---------------------------------
+[01:44:53]  ALL IN ONE v1.1.5
+[01:44:53]   Coded by Acu
+[01:44:53]   Updated by Cada
+[01:44:53]   acu.pe.kr@gmail.com
+[01:44:53] ---------------------------------
+
+[01:44:53] object
+[01:44:53] object
+[01:44:54] [connection] 127.0.0.1:58105 requests connection cookie.
+[01:44:54] [connection] 127.0.0.1:58106 requests connection cookie.
+[01:44:54] [connection] 127.0.0.1:58107 requests connection cookie.
+[01:44:54] [connection] 127.0.0.1:58108 requests connection cookie.
+[01:44:54] Number of vehicle models: 109
+[01:44:54] [connection] 127.0.0.1:58109 requests connection cookie.
+[01:44:54] [connection] 127.0.0.1:58110 requests connection cookie.
+[01:44:55] [connection] incoming connection: 127.0.0.1:58105 id: 7
+[01:44:55] [connection] incoming connection: 127.0.0.1:58106 id: 8
+[01:44:55] [connection] incoming connection: 127.0.0.1:58107 id: 9
+[01:44:55] [connection] incoming connection: 127.0.0.1:58108 id: 7
+[01:44:55] [connection] incoming connection: 127.0.0.1:58109 id: 8
+[01:44:55] [connection] incoming connection: 127.0.0.1:58110 id: 9
+[01:45:03] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[01:55:15] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[01:55:15] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[01:55:15] [mode] Mode has been unloaded.
+[01:55:27] ---------------------------------
+[01:55:27] [mysql] Connecting to DB server...
+[01:55:27] [mysql] Connected!
+[01:55:27] ---------------------------------
+[01:55:27] 
+
+[01:55:27] ---------------------------------
+[01:55:27]  ALL IN ONE v1.1.5
+[01:55:27]   Coded by Acu
+[01:55:27]   Updated by Cada
+[01:55:27]   acu.pe.kr@gmail.com
+[01:55:27] ---------------------------------
+
+[01:55:27] object
+[01:55:27] object
+[01:55:28] [connection] 127.0.0.1:57156 requests connection cookie.
+[01:55:28] [connection] 127.0.0.1:57157 requests connection cookie.
+[01:55:28] [connection] 127.0.0.1:57158 requests connection cookie.
+[01:55:28] [connection] 127.0.0.1:57159 requests connection cookie.
+[01:55:28] Number of vehicle models: 109
+[01:55:28] [connection] 127.0.0.1:57160 requests connection cookie.
+[01:55:28] [connection] 127.0.0.1:57161 requests connection cookie.
+[01:55:29] [connection] incoming connection: 127.0.0.1:57156 id: 7
+[01:55:29] [connection] incoming connection: 127.0.0.1:57157 id: 8
+[01:55:29] [connection] incoming connection: 127.0.0.1:57158 id: 9
+[01:55:29] [connection] incoming connection: 127.0.0.1:57159 id: 7
+[01:55:29] [connection] incoming connection: 127.0.0.1:57160 id: 8
+[01:55:29] [connection] incoming connection: 127.0.0.1:57161 id: 9
+Console input: gmx
+[01:56:12] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[01:56:12] [mode] Mode has been unloaded.
+[01:56:24] ---------------------------------
+[01:56:24] [mysql] Connecting to DB server...
+[01:56:24] [mysql] Connected!
+[01:56:24] ---------------------------------
+[01:56:24] 
+
+[01:56:24] ---------------------------------
+[01:56:24]  ALL IN ONE v1.1.5
+[01:56:24]   Coded by Acu
+[01:56:24]   Updated by Cada
+[01:56:24]   acu.pe.kr@gmail.com
+[01:56:25] ---------------------------------
+
+[01:56:25] object
+[01:56:25] object
+[01:56:25] [connection] 127.0.0.1:55370 requests connection cookie.
+[01:56:25] [connection] 127.0.0.1:55371 requests connection cookie.
+[01:56:25] [connection] 127.0.0.1:55372 requests connection cookie.
+[01:56:25] [connection] 127.0.0.1:55373 requests connection cookie.
+[01:56:25] Number of vehicle models: 109
+[01:56:25] [connection] 127.0.0.1:55374 requests connection cookie.
+[01:56:25] [connection] 127.0.0.1:55375 requests connection cookie.
+[01:56:26] [connection] incoming connection: 127.0.0.1:55370 id: 7
+[01:56:26] [connection] incoming connection: 127.0.0.1:55371 id: 8
+[01:56:26] [connection] incoming connection: 127.0.0.1:55372 id: 9
+[01:56:26] [connection] incoming connection: 127.0.0.1:55373 id: 7
+[01:56:26] [connection] incoming connection: 127.0.0.1:55374 id: 8
+[01:56:26] [connection] incoming connection: 127.0.0.1:55375 id: 9
+[01:56:27] *** Streamer Plugin: Streamer_SetFloatData: Invalid ID specified.
+[01:56:31] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[01:57:09] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[01:57:09] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[01:57:09] [mode] Mode has been unloaded.
+[01:57:21] ---------------------------------
+[01:57:21] [mysql] Connecting to DB server...
+[01:57:21] [mysql] Connected!
+[01:57:21] ---------------------------------
+[01:57:21] 
+
+[01:57:21] ---------------------------------
+[01:57:21]  ALL IN ONE v1.1.5
+[01:57:21]   Coded by Acu
+[01:57:21]   Updated by Cada
+[01:57:21]   acu.pe.kr@gmail.com
+[01:57:21] ---------------------------------
+
+[01:57:21] object
+[01:57:21] object
+[01:57:21] [connection] 127.0.0.1:63348 requests connection cookie.
+[01:57:21] [connection] 127.0.0.1:63349 requests connection cookie.
+[01:57:21] [connection] 127.0.0.1:63350 requests connection cookie.
+[01:57:21] [connection] 127.0.0.1:52003 requests connection cookie.
+[01:57:21] Number of vehicle models: 109
+[01:57:21] [connection] 127.0.0.1:65200 requests connection cookie.
+[01:57:22] [connection] 127.0.0.1:65201 requests connection cookie.
+[01:57:22] [connection] incoming connection: 127.0.0.1:63348 id: 7
+[01:57:22] [connection] incoming connection: 127.0.0.1:63349 id: 8
+[01:57:22] [connection] incoming connection: 127.0.0.1:63350 id: 9
+[01:57:22] [connection] incoming connection: 127.0.0.1:52003 id: 7
+[01:57:22] [connection] incoming connection: 127.0.0.1:65200 id: 8
+[01:57:23] [connection] incoming connection: 127.0.0.1:65201 id: 7
+[01:57:23] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[01:58:31] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[01:58:31] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[01:58:31] [mode] Mode has been unloaded.
+[01:58:43] ---------------------------------
+[01:58:43] [mysql] Connecting to DB server...
+[01:58:43] [mysql] Connected!
+[01:58:43] ---------------------------------
+[01:58:43] 
+
+[01:58:43] ---------------------------------
+[01:58:43]  ALL IN ONE v1.1.5
+[01:58:43]   Coded by Acu
+[01:58:43]   Updated by Cada
+[01:58:43]   acu.pe.kr@gmail.com
+[01:58:43] ---------------------------------
+
+[01:58:43] object
+[01:58:43] object
+[01:58:43] [connection] 127.0.0.1:53351 requests connection cookie.
+[01:58:43] [connection] 127.0.0.1:53352 requests connection cookie.
+[01:58:43] [connection] 127.0.0.1:53353 requests connection cookie.
+[01:58:44] [connection] 127.0.0.1:53354 requests connection cookie.
+[01:58:44] Number of vehicle models: 109
+[01:58:44] [connection] 127.0.0.1:53356 requests connection cookie.
+[01:58:44] [connection] 127.0.0.1:53357 requests connection cookie.
+[01:58:44] [connection] incoming connection: 127.0.0.1:53351 id: 7
+[01:58:44] [connection] incoming connection: 127.0.0.1:53352 id: 8
+[01:58:44] [connection] incoming connection: 127.0.0.1:53353 id: 9
+[01:58:45] [connection] incoming connection: 127.0.0.1:53354 id: 7
+[01:58:45] [connection] incoming connection: 127.0.0.1:53356 id: 8
+[01:58:45] [connection] incoming connection: 127.0.0.1:53357 id: 9
+[01:58:52] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[02:00:20] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[02:00:20] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:00:20] [mode] Mode has been unloaded.
+[02:00:32] ---------------------------------
+[02:00:32] [mysql] Connecting to DB server...
+[02:00:33] [mysql] Connected!
+[02:00:33] ---------------------------------
+[02:00:33] 
+
+[02:00:33] ---------------------------------
+[02:00:33]  ALL IN ONE v1.1.5
+[02:00:33]   Coded by Acu
+[02:00:33]   Updated by Cada
+[02:00:33]   acu.pe.kr@gmail.com
+[02:00:33] ---------------------------------
+
+[02:00:33] object
+[02:00:33] object
+[02:00:35] [connection] 127.0.0.1:63638 requests connection cookie.
+[02:00:35] [connection] 127.0.0.1:63639 requests connection cookie.
+[02:00:35] Number of vehicle models: 109
+[02:00:36] [connection] 127.0.0.1:64133 requests connection cookie.
+[02:00:36] [connection] 127.0.0.1:64134 requests connection cookie.
+[02:00:36] [connection] 127.0.0.1:64136 requests connection cookie.
+[02:00:36] [connection] 127.0.0.1:64137 requests connection cookie.
+[02:00:36] [connection] incoming connection: 127.0.0.1:63638 id: 7
+[02:00:36] [connection] incoming connection: 127.0.0.1:63639 id: 8
+[02:00:37] [connection] incoming connection: 127.0.0.1:64133 id: 7
+[02:00:37] [connection] incoming connection: 127.0.0.1:64134 id: 8
+[02:00:37] [connection] incoming connection: 127.0.0.1:64136 id: 7
+[02:00:37] [connection] incoming connection: 127.0.0.1:64137 id: 8
+[02:01:43] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[02:07:25] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[02:07:25] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:07:25] [mode] Mode has been unloaded.
+[02:07:37] ---------------------------------
+[02:07:37] [mysql] Connecting to DB server...
+[02:07:37] [mysql] Connected!
+[02:07:37] ---------------------------------
+[02:07:37] 
+
+[02:07:37] ---------------------------------
+[02:07:37]  ALL IN ONE v1.1.5
+[02:07:37]   Coded by Acu
+[02:07:37]   Updated by Cada
+[02:07:37]   acu.pe.kr@gmail.com
+[02:07:37] ---------------------------------
+
+[02:07:37] object
+[02:07:37] object
+[02:07:38] [connection] 127.0.0.1:55119 requests connection cookie.
+[02:07:38] [connection] 127.0.0.1:55120 requests connection cookie.
+[02:07:38] [connection] 127.0.0.1:55121 requests connection cookie.
+[02:07:38] Number of vehicle models: 109
+[02:07:38] [connection] 127.0.0.1:55122 requests connection cookie.
+[02:07:38] [connection] 127.0.0.1:55123 requests connection cookie.
+[02:07:39] [connection] 127.0.0.1:58962 requests connection cookie.
+[02:07:39] [connection] incoming connection: 127.0.0.1:55119 id: 7
+[02:07:39] [connection] incoming connection: 127.0.0.1:55120 id: 8
+[02:07:39] [connection] incoming connection: 127.0.0.1:55121 id: 7
+[02:07:39] [connection] incoming connection: 127.0.0.1:55122 id: 7
+[02:07:39] [connection] incoming connection: 127.0.0.1:55123 id: 8
+[02:07:40] [connection] incoming connection: 127.0.0.1:58962 id: 9
+Console input: gmx
+[02:08:21] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:08:21] [mode] Mode has been unloaded.
+[02:08:33] ---------------------------------
+[02:08:33] [mysql] Connecting to DB server...
+[02:08:33] [mysql] Connected!
+[02:08:33] ---------------------------------
+[02:08:33] 
+
+[02:08:33] ---------------------------------
+[02:08:33]  ALL IN ONE v1.1.5
+[02:08:33]   Coded by Acu
+[02:08:33]   Updated by Cada
+[02:08:33]   acu.pe.kr@gmail.com
+[02:08:33] ---------------------------------
+
+[02:08:33] object
+[02:08:33] object
+[02:08:34] [connection] 127.0.0.1:60134 requests connection cookie.
+[02:08:34] [connection] 127.0.0.1:60135 requests connection cookie.
+[02:08:34] [connection] 127.0.0.1:60136 requests connection cookie.
+[02:08:34] [connection] 127.0.0.1:60137 requests connection cookie.
+[02:08:34] Number of vehicle models: 109
+[02:08:34] [connection] 127.0.0.1:60138 requests connection cookie.
+[02:08:34] [connection] 127.0.0.1:60139 requests connection cookie.
+[02:08:35] [connection] incoming connection: 127.0.0.1:60134 id: 7
+[02:08:35] [connection] incoming connection: 127.0.0.1:60135 id: 8
+[02:08:35] [connection] incoming connection: 127.0.0.1:60136 id: 7
+[02:08:35] [connection] incoming connection: 127.0.0.1:60137 id: 9
+[02:08:35] [connection] incoming connection: 127.0.0.1:60138 id: 8
+[02:08:35] [connection] incoming connection: 127.0.0.1:60139 id: 7
+[02:08:45] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[02:09:27] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[02:09:27] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:09:27] [mode] Mode has been unloaded.
+[02:09:39] ---------------------------------
+[02:09:39] [mysql] Connecting to DB server...
+[02:09:39] [mysql] Connected!
+[02:09:39] ---------------------------------
+[02:09:39] 
+
+[02:09:39] ---------------------------------
+[02:09:39]  ALL IN ONE v1.1.5
+[02:09:39]   Coded by Acu
+[02:09:39]   Updated by Cada
+[02:09:39]   acu.pe.kr@gmail.com
+[02:09:39] ---------------------------------
+
+[02:09:39] object
+[02:09:39] object
+[02:09:39] [connection] 127.0.0.1:53629 requests connection cookie.
+[02:09:39] [connection] 127.0.0.1:53630 requests connection cookie.
+[02:09:39] [connection] 127.0.0.1:53631 requests connection cookie.
+[02:09:39] [connection] 127.0.0.1:53632 requests connection cookie.
+[02:09:39] Number of vehicle models: 109
+[02:09:40] [connection] 127.0.0.1:53633 requests connection cookie.
+[02:09:40] [connection] 127.0.0.1:53634 requests connection cookie.
+[02:09:40] [connection] incoming connection: 127.0.0.1:53629 id: 7
+[02:09:40] [connection] incoming connection: 127.0.0.1:53630 id: 8
+[02:09:40] [connection] incoming connection: 127.0.0.1:53631 id: 9
+[02:09:40] [connection] incoming connection: 127.0.0.1:53632 id: 7
+[02:09:41] [connection] incoming connection: 127.0.0.1:53633 id: 8
+[02:09:41] [connection] incoming connection: 127.0.0.1:53634 id: 10
+[02:09:45] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[02:15:09] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[02:15:09] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:15:09] [mode] Mode has been unloaded.
+[02:15:21] ---------------------------------
+[02:15:21] [mysql] Connecting to DB server...
+[02:15:21] [mysql] Connected!
+[02:15:21] ---------------------------------
+[02:15:21] 
+
+[02:15:21] ---------------------------------
+[02:15:21]  ALL IN ONE v1.1.5
+[02:15:21]   Coded by Acu
+[02:15:21]   Updated by Cada
+[02:15:21]   acu.pe.kr@gmail.com
+[02:15:21] ---------------------------------
+
+[02:15:21] object
+[02:15:21] object
+[02:15:22] [connection] 127.0.0.1:52692 requests connection cookie.
+[02:15:22] [connection] 127.0.0.1:52693 requests connection cookie.
+[02:15:22] [connection] 127.0.0.1:52694 requests connection cookie.
+[02:15:22] [connection] 127.0.0.1:52695 requests connection cookie.
+[02:15:22] Number of vehicle models: 109
+[02:15:22] [connection] 127.0.0.1:52696 requests connection cookie.
+[02:15:22] [connection] 127.0.0.1:52697 requests connection cookie.
+[02:15:23] [connection] incoming connection: 127.0.0.1:52692 id: 7
+[02:15:23] [connection] incoming connection: 127.0.0.1:52693 id: 8
+[02:15:23] [connection] incoming connection: 127.0.0.1:52694 id: 9
+[02:15:23] [connection] incoming connection: 127.0.0.1:52695 id: 7
+[02:15:23] [connection] incoming connection: 127.0.0.1:52696 id: 8
+[02:15:23] [connection] incoming connection: 127.0.0.1:52697 id: 10
+[02:15:31] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[02:16:07] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[02:16:07] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:16:07] [mode] Mode has been unloaded.
+[02:16:19] ---------------------------------
+[02:16:19] [mysql] Connecting to DB server...
+[02:16:19] [mysql] Connected!
+[02:16:19] ---------------------------------
+[02:16:19] 
+
+[02:16:19] ---------------------------------
+[02:16:19]  ALL IN ONE v1.1.5
+[02:16:19]   Coded by Acu
+[02:16:19]   Updated by Cada
+[02:16:19]   acu.pe.kr@gmail.com
+[02:16:19] ---------------------------------
+
+[02:16:19] object
+[02:16:19] object
+[02:16:19] [connection] 127.0.0.1:55169 requests connection cookie.
+[02:16:19] [connection] 127.0.0.1:55170 requests connection cookie.
+[02:16:19] [connection] 127.0.0.1:55171 requests connection cookie.
+[02:16:20] [connection] 127.0.0.1:55172 requests connection cookie.
+[02:16:20] Number of vehicle models: 109
+[02:16:20] [connection] 127.0.0.1:55173 requests connection cookie.
+[02:16:20] [connection] 127.0.0.1:55174 requests connection cookie.
+[02:16:20] [connection] incoming connection: 127.0.0.1:55169 id: 7
+[02:16:20] [connection] incoming connection: 127.0.0.1:55170 id: 8
+[02:16:20] [connection] incoming connection: 127.0.0.1:55171 id: 9
+[02:16:21] [connection] incoming connection: 127.0.0.1:55172 id: 7
+[02:16:21] [connection] incoming connection: 127.0.0.1:55173 id: 8
+[02:16:21] [connection] incoming connection: 127.0.0.1:55174 id: 9
+[02:16:28] *** Audio Plugin: Cada_Test (ID: 6) has connected
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:17:39] password = ""  (string)
+[02:17:39] 
+[02:17:39] Server Plugins
+[02:17:39] --------------
+[02:17:39]  Loading plugin: crashdetect
+[02:17:39]   CrashDetect plugin 4.19
+[02:17:39]   Loaded.
+[02:17:39]  Loading plugin: mysql
+[02:17:39]  >> plugin.mysql: R41-4 successfully loaded.
+[02:17:39]   Loaded.
+[02:17:39]  Loading plugin: streamer
+[02:17:39] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:17:39]   Loaded.
+[02:17:39]  Loading plugin: audio
+[02:17:39] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:17:39]   Loaded.
+[02:17:39]  Loading plugin: MapAndreas
+[02:17:39]   Loaded.
+[02:17:39]  Loaded 5 plugins.
+
+[02:17:40] 
+[02:17:40] Filterscripts
+[02:17:40] ---------------
+[02:17:40]   Loading filterscript 'Acu.amx'...
+[02:17:40]   Loaded 1 filterscripts.
+
+[02:17:40] ---------------------------------
+[02:17:40] [mysql] Connecting to DB server...
+[02:17:40] *** Audio Plugin: Started TCP server on port 7777
+[02:17:40] [mysql] Connected!
+[02:17:40] ---------------------------------
+[02:17:40] 
+
+[02:17:40] ---------------------------------
+[02:17:40]  ALL IN ONE v1.1.5
+[02:17:40]   Coded by Acu
+[02:17:40]   Updated by Cada
+[02:17:40]   acu.pe.kr@gmail.com
+[02:17:40] ---------------------------------
+
+[02:17:40] object
+[02:17:40] object removed
+[02:17:40] object
+[02:17:40] [connection] 127.0.0.1:51791 requests connection cookie.
+[02:17:40] Number of vehicle models: 109
+[02:17:40] [connection] 127.0.0.1:51792 requests connection cookie.
+[02:17:41] [connection] 127.0.0.1:51793 requests connection cookie.
+[02:17:41] [connection] 127.0.0.1:51794 requests connection cookie.
+[02:17:41] [connection] 127.0.0.1:62133 requests connection cookie.
+[02:17:41] [connection] 127.0.0.1:62134 requests connection cookie.
+[02:17:41] [connection] incoming connection: 127.0.0.1:51791 id: 0
+[02:17:41] [connection] incoming connection: 127.0.0.1:51792 id: 1
+[02:17:42] [connection] incoming connection: 127.0.0.1:51793 id: 2
+[02:17:42] [npc:join] Game1 has joined the server (0:127.0.0.1)
+[02:17:42] [connection] incoming connection: 127.0.0.1:51794 id: 3
+[02:17:42] [connection] incoming connection: 127.0.0.1:62133 id: 4
+[02:17:42] [connection] incoming connection: 127.0.0.1:62134 id: 5
+[02:17:42] [npc:join] Game2 has joined the server (1:127.0.0.1)
+[02:17:42] [npc:join] Game3 has joined the server (2:127.0.0.1)
+[02:17:42] [npc:join] Game4 has joined the server (3:127.0.0.1)
+[02:17:42] [npc:join] Game5 has joined the server (4:127.0.0.1)
+[02:17:42] [npc:join] Game6 has joined the server (5:127.0.0.1)
+[02:18:09] [connection] 127.0.0.1:57316 requests connection cookie.
+[02:18:10] [connection] incoming connection: 127.0.0.1:57316 id: 6
+[02:18:10] [join] Cada_Test has joined the server (6:127.0.0.1)
+[02:18:17] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[02:18:44] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[02:18:44] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:18:44] [mode] Mode has been unloaded.
+[02:18:56] ---------------------------------
+[02:18:56] [mysql] Connecting to DB server...
+[02:18:56] [mysql] Connected!
+[02:18:56] ---------------------------------
+[02:18:56] 
+
+[02:18:56] ---------------------------------
+[02:18:56]  ALL IN ONE v1.1.5
+[02:18:56]   Coded by Acu
+[02:18:56]   Updated by Cada
+[02:18:56]   acu.pe.kr@gmail.com
+[02:18:56] ---------------------------------
+
+[02:18:56] object
+[02:18:56] object
+[02:18:57] [connection] 127.0.0.1:54750 requests connection cookie.
+[02:18:57] [connection] 127.0.0.1:54751 requests connection cookie.
+[02:18:57] [connection] 127.0.0.1:54752 requests connection cookie.
+[02:18:57] [connection] 127.0.0.1:54753 requests connection cookie.
+[02:18:57] Number of vehicle models: 109
+[02:18:57] [connection] 127.0.0.1:54754 requests connection cookie.
+[02:18:57] [connection] 127.0.0.1:54755 requests connection cookie.
+[02:18:58] [connection] incoming connection: 127.0.0.1:54750 id: 7
+[02:18:58] [connection] incoming connection: 127.0.0.1:54751 id: 8
+[02:18:58] [connection] incoming connection: 127.0.0.1:54752 id: 9
+[02:18:58] [connection] incoming connection: 127.0.0.1:54753 id: 7
+[02:18:58] [connection] incoming connection: 127.0.0.1:54754 id: 8
+[02:18:58] [connection] incoming connection: 127.0.0.1:54755 id: 9
+[02:19:09] *** Audio Plugin: Cada_Test (ID: 6) has connected
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:21:36] password = ""  (string)
+[02:21:36] 
+[02:21:36] Server Plugins
+[02:21:36] --------------
+[02:21:36]  Loading plugin: crashdetect
+[02:21:36]   CrashDetect plugin 4.19
+[02:21:36]   Loaded.
+[02:21:36]  Loading plugin: mysql
+[02:21:37]  >> plugin.mysql: R41-4 successfully loaded.
+[02:21:37]   Loaded.
+[02:21:37]  Loading plugin: streamer
+[02:21:37] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:21:37]   Loaded.
+[02:21:37]  Loading plugin: audio
+[02:21:37] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:21:37]   Loaded.
+[02:21:37]  Loading plugin: MapAndreas
+[02:21:37]   Loaded.
+[02:21:37]  Loaded 5 plugins.
+
+[02:21:37] 
+[02:21:37] Filterscripts
+[02:21:37] ---------------
+[02:21:37]   Loading filterscript 'Acu.amx'...
+[02:21:37]   Loaded 1 filterscripts.
+
+[02:21:37] *** Audio Plugin: Started TCP server on port 7777
+[02:21:37] ---------------------------------
+[02:21:37] [mysql] Connecting to DB server...
+[02:21:37] [mysql] Connected!
+[02:21:37] ---------------------------------
+[02:21:37] 
+
+[02:21:37] ---------------------------------
+[02:21:37]  ALL IN ONE v1.1.5
+[02:21:37]   Coded by Acu
+[02:21:37]   Updated by Cada
+[02:21:37]   acu.pe.kr@gmail.com
+[02:21:37] ---------------------------------
+
+[02:21:37] object
+[02:21:37] object removed
+[02:21:37] object
+[02:21:37] Number of vehicle models: 109
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:21:56] password = ""  (string)
+[02:21:56] 
+[02:21:56] Server Plugins
+[02:21:56] --------------
+[02:21:56]  Loading plugin: crashdetect
+[02:21:56]   CrashDetect plugin 4.19
+[02:21:56]   Loaded.
+[02:21:56]  Loading plugin: mysql
+[02:21:56]  >> plugin.mysql: R41-4 successfully loaded.
+[02:21:56]   Loaded.
+[02:21:56]  Loading plugin: streamer
+[02:21:56] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:21:56]   Loaded.
+[02:21:56]  Loading plugin: audio
+[02:21:56] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:21:56]   Loaded.
+[02:21:56]  Loading plugin: MapAndreas
+[02:21:56]   Loaded.
+[02:21:56]  Loaded 5 plugins.
+
+[02:21:56] 
+[02:21:56] Filterscripts
+[02:21:56] ---------------
+[02:21:56]   Loading filterscript 'Acu.amx'...
+[02:21:56]   Loaded 1 filterscripts.
+
+[02:21:56] ---------------------------------
+[02:21:56] [mysql] Connecting to DB server...
+[02:21:56] *** Audio Plugin: Started TCP server on port 7777
+[02:21:56] [mysql] Connected!
+[02:21:56] ---------------------------------
+[02:21:56] 
+
+[02:21:56] ---------------------------------
+[02:21:56]  ALL IN ONE v1.1.5
+[02:21:56]   Coded by Acu
+[02:21:56]   Updated by Cada
+[02:21:56]   acu.pe.kr@gmail.com
+[02:21:56] ---------------------------------
+
+[02:21:56] object
+[02:21:56] object removed
+[02:21:56] object
+[02:21:57] Number of vehicle models: 109
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:22:07] password = ""  (string)
+[02:22:07] 
+[02:22:07] Server Plugins
+[02:22:07] --------------
+[02:22:07]  Loading plugin: crashdetect
+[02:22:07]   CrashDetect plugin 4.19
+[02:22:07]   Loaded.
+[02:22:07]  Loading plugin: mysql
+[02:22:07]  >> plugin.mysql: R41-4 successfully loaded.
+[02:22:07]   Loaded.
+[02:22:07]  Loading plugin: streamer
+[02:22:07] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:22:07]   Loaded.
+[02:22:07]  Loading plugin: audio
+[02:22:07] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:22:07]   Loaded.
+[02:22:07]  Loading plugin: MapAndreas
+[02:22:07]   Loaded.
+[02:22:07]  Loaded 5 plugins.
+
+[02:22:07] 
+[02:22:07] Filterscripts
+[02:22:07] ---------------
+[02:22:07]   Loading filterscript 'Acu.amx'...
+[02:22:07]   Loaded 1 filterscripts.
+
+[02:22:07] ---------------------------------
+[02:22:07] *** Audio Plugin: Started TCP server on port 7777
+[02:22:07] [mysql] Connecting to DB server...
+[02:22:07] [mysql] Connected!
+[02:22:07] ---------------------------------
+[02:22:07] 
+
+[02:22:07] ---------------------------------
+[02:22:07]  ALL IN ONE v1.1.5
+[02:22:07]   Coded by Acu
+[02:22:07]   Updated by Cada
+[02:22:07]   acu.pe.kr@gmail.com
+[02:22:07] ---------------------------------
+
+[02:22:07] object
+[02:22:07] object removed
+[02:22:07] object
+[02:22:08] Number of vehicle models: 109
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:22:16] password = ""  (string)
+[02:22:16] 
+[02:22:16] Server Plugins
+[02:22:16] --------------
+[02:22:16]  Loading plugin: crashdetect
+[02:22:16]   CrashDetect plugin 4.19
+[02:22:16]   Loaded.
+[02:22:16]  Loading plugin: mysql
+[02:22:16]  >> plugin.mysql: R41-4 successfully loaded.
+[02:22:16]   Loaded.
+[02:22:16]  Loading plugin: streamer
+[02:22:16] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:22:16]   Loaded.
+[02:22:16]  Loading plugin: audio
+[02:22:16] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:22:16]   Loaded.
+[02:22:16]  Loading plugin: MapAndreas
+[02:22:16]   Loaded.
+[02:22:16]  Loaded 5 plugins.
+
+[02:22:16] 
+[02:22:16] Filterscripts
+[02:22:16] ---------------
+[02:22:16]   Loading filterscript 'Acu.amx'...
+[02:22:16]   Loaded 1 filterscripts.
+
+[02:22:16] ---------------------------------
+[02:22:16] [mysql] Connecting to DB server...
+[02:22:16] *** Audio Plugin: Started TCP server on port 7777
+[02:22:16] [mysql] Connected!
+[02:22:16] ---------------------------------
+[02:22:16] 
+
+[02:22:16] ---------------------------------
+[02:22:16]  ALL IN ONE v1.1.5
+[02:22:16]   Coded by Acu
+[02:22:16]   Updated by Cada
+[02:22:16]   acu.pe.kr@gmail.com
+[02:22:16] ---------------------------------
+
+[02:22:17] object
+[02:22:17] object removed
+[02:22:17] object
+[02:22:17] [connection] 127.0.0.1:52664 requests connection cookie.
+[02:22:17] Number of vehicle models: 109
+[02:22:17] [connection] 127.0.0.1:52665 requests connection cookie.
+[02:22:17] [connection] 127.0.0.1:52667 requests connection cookie.
+[02:22:17] [connection] 127.0.0.1:52666 requests connection cookie.
+[02:22:17] [connection] 127.0.0.1:52668 requests connection cookie.
+[02:22:17] [connection] 127.0.0.1:52871 requests connection cookie.
+[02:22:18] [connection] incoming connection: 127.0.0.1:52664 id: 0
+[02:22:18] [connection] incoming connection: 127.0.0.1:52665 id: 1
+[02:22:18] [connection] incoming connection: 127.0.0.1:52667 id: 2
+[02:22:18] [connection] incoming connection: 127.0.0.1:52666 id: 3
+[02:22:18] [connection] incoming connection: 127.0.0.1:52668 id: 4
+[02:22:18] [npc:join] Game1 has joined the server (0:127.0.0.1)
+[02:22:18] [connection] incoming connection: 127.0.0.1:52871 id: 5
+[02:22:18] [npc:join] Game2 has joined the server (1:127.0.0.1)
+[02:22:18] [npc:join] Game4 has joined the server (2:127.0.0.1)
+[02:22:18] [npc:join] Game3 has joined the server (3:127.0.0.1)
+[02:22:18] [npc:join] Game5 has joined the server (4:127.0.0.1)
+[02:22:19] [npc:join] Game6 has joined the server (5:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:22:29] password = ""  (string)
+[02:22:29] 
+[02:22:29] Server Plugins
+[02:22:29] --------------
+[02:22:29]  Loading plugin: crashdetect
+[02:22:29]   CrashDetect plugin 4.19
+[02:22:29]   Loaded.
+[02:22:29]  Loading plugin: mysql
+[02:22:29]  >> plugin.mysql: R41-4 successfully loaded.
+[02:22:29]   Loaded.
+[02:22:29]  Loading plugin: streamer
+[02:22:29] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:22:29]   Loaded.
+[02:22:29]  Loading plugin: audio
+[02:22:29] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:22:29]   Loaded.
+[02:22:29]  Loading plugin: MapAndreas
+[02:22:29]   Loaded.
+[02:22:29]  Loaded 5 plugins.
+
+[02:22:29] 
+[02:22:29] Filterscripts
+[02:22:29] ---------------
+[02:22:29]   Loading filterscript 'Acu.amx'...
+[02:22:29]   Loaded 1 filterscripts.
+
+[02:22:29] ---------------------------------
+[02:22:29] [mysql] Connecting to DB server...
+[02:22:29] *** Audio Plugin: Started TCP server on port 7777
+[02:22:29] [mysql] Connected!
+[02:22:30] ---------------------------------
+[02:22:30] 
+
+[02:22:30] ---------------------------------
+[02:22:30]  ALL IN ONE v1.1.5
+[02:22:30]   Coded by Acu
+[02:22:30]   Updated by Cada
+[02:22:30]   acu.pe.kr@gmail.com
+[02:22:30] ---------------------------------
+
+[02:22:30] object
+[02:22:30] object removed
+[02:22:30] object
+[02:22:30] Number of vehicle models: 109
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:22:47] password = ""  (string)
+[02:22:47] 
+[02:22:47] Server Plugins
+[02:22:47] --------------
+[02:22:47]  Loading plugin: crashdetect
+[02:22:47]   CrashDetect plugin 4.19
+[02:22:47]   Loaded.
+[02:22:47]  Loading plugin: mysql
+[02:22:47]  >> plugin.mysql: R41-4 successfully loaded.
+[02:22:47]   Loaded.
+[02:22:47]  Loading plugin: streamer
+[02:22:47] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:22:47]   Loaded.
+[02:22:47]  Loading plugin: audio
+[02:22:47] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:22:47]   Loaded.
+[02:22:47]  Loading plugin: MapAndreas
+[02:22:47]   Loaded.
+[02:22:47]  Loaded 5 plugins.
+
+[02:22:47] 
+[02:22:47] Filterscripts
+[02:22:47] ---------------
+[02:22:47]   Loading filterscript 'Acu.amx'...
+[02:22:47]   Loaded 1 filterscripts.
+
+[02:22:47] ---------------------------------
+[02:22:47] *** Audio Plugin: Started TCP server on port 7777
+[02:22:47] [mysql] Connecting to DB server...
+[02:22:47] [mysql] Connected!
+[02:22:47] ---------------------------------
+[02:22:47] 
+
+[02:22:47] ---------------------------------
+[02:22:47]  ALL IN ONE v1.1.5
+[02:22:47]   Coded by Acu
+[02:22:47]   Updated by Cada
+[02:22:47]   acu.pe.kr@gmail.com
+[02:22:47] ---------------------------------
+
+[02:22:48] object
+[02:22:48] object removed
+[02:22:48] object
+[02:22:48] Number of vehicle models: 109
+[02:22:48] [connection] 127.0.0.1:52443 requests connection cookie.
+[02:22:48] [connection] 127.0.0.1:52444 requests connection cookie.
+[02:22:48] [connection] 127.0.0.1:52445 requests connection cookie.
+[02:22:48] [connection] 127.0.0.1:52446 requests connection cookie.
+[02:22:48] [connection] 127.0.0.1:54518 requests connection cookie.
+[02:22:48] [connection] 127.0.0.1:52447 requests connection cookie.
+[02:22:49] [connection] incoming connection: 127.0.0.1:52443 id: 0
+[02:22:49] [connection] incoming connection: 127.0.0.1:52444 id: 1
+[02:22:49] [connection] incoming connection: 127.0.0.1:52445 id: 2
+[02:22:49] [connection] incoming connection: 127.0.0.1:52446 id: 3
+[02:22:49] [connection] incoming connection: 127.0.0.1:54518 id: 4
+[02:22:49] [connection] incoming connection: 127.0.0.1:52447 id: 5
+[02:22:49] [npc:join] Game1 has joined the server (0:127.0.0.1)
+[02:22:50] [npc:join] Game2 has joined the server (1:127.0.0.1)
+[02:22:50] [npc:join] Game3 has joined the server (2:127.0.0.1)
+[02:22:50] [npc:join] Game4 has joined the server (3:127.0.0.1)
+[02:22:50] [npc:join] Game6 has joined the server (4:127.0.0.1)
+[02:22:50] [npc:join] Game5 has joined the server (5:127.0.0.1)
+[02:22:55] [connection] 127.0.0.1:54520 requests connection cookie.
+[02:22:56] [connection] incoming connection: 127.0.0.1:54520 id: 6
+[02:22:56] [join] Cada_Test has joined the server (6:127.0.0.1)
+Console input: gmx
+[02:24:17] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:24:17] [mode] Mode has been unloaded.
+[02:24:29] ---------------------------------
+[02:24:29] [mysql] Connecting to DB server...
+[02:24:29] [mysql] Connected!
+[02:24:29] ---------------------------------
+[02:24:29] 
+
+[02:24:29] ---------------------------------
+[02:24:29]  ALL IN ONE v1.1.5
+[02:24:29]   Coded by Acu
+[02:24:29]   Updated by Cada
+[02:24:29]   acu.pe.kr@gmail.com
+[02:24:29] ---------------------------------
+
+[02:24:29] object
+[02:24:29] object
+[02:24:29] [connection] 127.0.0.1:60439 requests connection cookie.
+[02:24:29] [connection] 127.0.0.1:60440 requests connection cookie.
+[02:24:29] [connection] 127.0.0.1:60441 requests connection cookie.
+[02:24:29] [connection] 127.0.0.1:60442 requests connection cookie.
+[02:24:29] Number of vehicle models: 109
+[02:24:29] [connection] 127.0.0.1:60443 requests connection cookie.
+[02:24:29] [connection] 127.0.0.1:60444 requests connection cookie.
+[02:24:30] [connection] incoming connection: 127.0.0.1:60439 id: 7
+[02:24:30] [connection] incoming connection: 127.0.0.1:60440 id: 8
+[02:24:30] [connection] incoming connection: 127.0.0.1:60441 id: 9
+[02:24:30] [connection] incoming connection: 127.0.0.1:60442 id: 7
+[02:24:30] [connection] incoming connection: 127.0.0.1:60443 id: 10
+[02:24:30] [connection] incoming connection: 127.0.0.1:60444 id: 8
+[02:24:38] *** Audio Plugin: Cada_Test (ID: 6) has connected
+[02:24:41] [chat] [Cada_Test]: d
+[02:24:59] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[02:24:59] [part] Cada_Test has left the server (6:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:30:06] password = ""  (string)
+[02:30:06] 
+[02:30:06] Server Plugins
+[02:30:06] --------------
+[02:30:06]  Loading plugin: crashdetect
+[02:30:06]   CrashDetect plugin 4.19
+[02:30:06]   Loaded.
+[02:30:06]  Loading plugin: mysql
+[02:30:06]  >> plugin.mysql: R41-4 successfully loaded.
+[02:30:06]   Loaded.
+[02:30:06]  Loading plugin: streamer
+[02:30:06] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:30:06]   Loaded.
+[02:30:06]  Loading plugin: audio
+[02:30:06] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:30:06]   Loaded.
+[02:30:06]  Loading plugin: MapAndreas
+[02:30:06]   Loaded.
+[02:30:06]  Loaded 5 plugins.
+
+[02:30:06] 
+[02:30:06] Filterscripts
+[02:30:06] ---------------
+[02:30:06]   Loading filterscript 'Acu.amx'...
+[02:30:06]   Loaded 1 filterscripts.
+
+[02:30:06] *** Audio Plugin: Started TCP server on port 7777
+[02:30:06] ---------------------------------
+[02:30:06] [mysql] Connecting to DB server...
+[02:30:06] [mysql] Connected!
+[02:30:06] ---------------------------------
+[02:30:06] 
+
+[02:30:06] ---------------------------------
+[02:30:06]  ALL IN ONE v1.1.5
+[02:30:06]   Coded by Acu
+[02:30:06]   Updated by Cada
+[02:30:06]   acu.pe.kr@gmail.com
+[02:30:06] ---------------------------------
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:30:17] password = ""  (string)
+[02:30:17] 
+[02:30:17] Server Plugins
+[02:30:17] --------------
+[02:30:17]  Loading plugin: crashdetect
+[02:30:17]   CrashDetect plugin 4.19
+[02:30:17]   Loaded.
+[02:30:17]  Loading plugin: mysql
+[02:30:17]  >> plugin.mysql: R41-4 successfully loaded.
+[02:30:17]   Loaded.
+[02:30:17]  Loading plugin: streamer
+[02:30:17] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:30:17]   Loaded.
+[02:30:17]  Loading plugin: audio
+[02:30:17] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:30:17]   Loaded.
+[02:30:17]  Loading plugin: MapAndreas
+[02:30:17]   Loaded.
+[02:30:17]  Loaded 5 plugins.
+
+[02:30:17] 
+[02:30:17] Filterscripts
+[02:30:17] ---------------
+[02:30:17]   Loading filterscript 'Acu.amx'...
+[02:30:17]   Loaded 1 filterscripts.
+
+[02:30:17] *** Audio Plugin: Started TCP server on port 7777
+[02:30:17] ---------------------------------
+[02:30:17] [mysql] Connecting to DB server...
+[02:30:17] [mysql] Connected!
+[02:30:17] ---------------------------------
+[02:30:17] 
+
+[02:30:17] ---------------------------------
+[02:30:17]  ALL IN ONE v1.1.5
+[02:30:17]   Coded by Acu
+[02:30:17]   Updated by Cada
+[02:30:17]   acu.pe.kr@gmail.com
+[02:30:17] ---------------------------------
+
+[02:30:18] object
+[02:30:18] object removed
+[02:30:18] object
+[02:30:18] Number of vehicle models: 109
+[02:30:18] [connection] 127.0.0.1:55761 requests connection cookie.
+[02:30:18] [connection] 127.0.0.1:55762 requests connection cookie.
+[02:30:18] [connection] 127.0.0.1:55763 requests connection cookie.
+[02:30:18] [connection] 127.0.0.1:55764 requests connection cookie.
+[02:30:18] [connection] 127.0.0.1:55765 requests connection cookie.
+[02:30:18] [connection] 127.0.0.1:57568 requests connection cookie.
+[02:30:19] [connection] incoming connection: 127.0.0.1:55761 id: 0
+[02:30:19] [connection] incoming connection: 127.0.0.1:55762 id: 1
+[02:30:19] [connection] incoming connection: 127.0.0.1:55763 id: 2
+[02:30:19] [connection] incoming connection: 127.0.0.1:55764 id: 3
+[02:30:19] [connection] incoming connection: 127.0.0.1:55765 id: 4
+[02:30:19] [connection] incoming connection: 127.0.0.1:57568 id: 5
+[02:30:19] [npc:join] Game1 has joined the server (0:127.0.0.1)
+[02:30:19] [npc:join] Game2 has joined the server (1:127.0.0.1)
+[02:30:19] [npc:join] Game3 has joined the server (2:127.0.0.1)
+[02:30:19] [npc:join] Game4 has joined the server (3:127.0.0.1)
+[02:30:19] [npc:join] Game5 has joined the server (4:127.0.0.1)
+[02:30:20] [npc:join] Game6 has joined the server (5:127.0.0.1)
+[02:30:42] [connection] 127.0.0.1:57573 requests connection cookie.
+[02:30:43] [connection] incoming connection: 127.0.0.1:57573 id: 6
+[02:30:43] [join] Cada_Test has joined the server (6:127.0.0.1)
+[02:30:48] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[02:31:11] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[02:31:11] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:31:11] [mode] Mode has been unloaded.
+[02:31:23] ---------------------------------
+[02:31:23] [mysql] Connecting to DB server...
+[02:31:23] [mysql] Connected!
+[02:31:23] ---------------------------------
+[02:31:23] 
+
+[02:31:23] ---------------------------------
+[02:31:23]  ALL IN ONE v1.1.5
+[02:31:23]   Coded by Acu
+[02:31:23]   Updated by Cada
+[02:31:23]   acu.pe.kr@gmail.com
+[02:31:23] ---------------------------------
+
+[02:31:23] object
+[02:31:23] object
+[02:31:23] [connection] 127.0.0.1:56218 requests connection cookie.
+[02:31:23] [connection] 127.0.0.1:56219 requests connection cookie.
+[02:31:23] [connection] 127.0.0.1:56220 requests connection cookie.
+[02:31:23] [connection] 127.0.0.1:56221 requests connection cookie.
+[02:31:23] Number of vehicle models: 109
+[02:31:23] [connection] 127.0.0.1:56222 requests connection cookie.
+[02:31:24] [connection] 127.0.0.1:56223 requests connection cookie.
+[02:31:24] *** Audio Plugin: Cada_Test (ID: 6) has connected
+[02:31:24] [connection] incoming connection: 127.0.0.1:56218 id: 7
+[02:31:24] [connection] incoming connection: 127.0.0.1:56219 id: 8
+[02:31:24] [connection] incoming connection: 127.0.0.1:56220 id: 9
+[02:31:24] [connection] incoming connection: 127.0.0.1:56221 id: 7
+[02:31:24] [connection] incoming connection: 127.0.0.1:56222 id: 8
+[02:31:25] [connection] incoming connection: 127.0.0.1:56223 id: 9
+Console input: gmx
+[02:31:45] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[02:31:45] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:31:45] [mode] Mode has been unloaded.
+[02:31:57] ---------------------------------
+[02:31:57] [mysql] Connecting to DB server...
+[02:31:57] [mysql] Connected!
+[02:31:57] ---------------------------------
+[02:31:57] 
+
+[02:31:57] ---------------------------------
+[02:31:57]  ALL IN ONE v1.1.5
+[02:31:57]   Coded by Acu
+[02:31:57]   Updated by Cada
+[02:31:57]   acu.pe.kr@gmail.com
+[02:31:57] ---------------------------------
+
+[02:31:57] object
+[02:31:57] object
+[02:31:57] [connection] 127.0.0.1:56228 requests connection cookie.
+[02:31:57] [connection] 127.0.0.1:56230 requests connection cookie.
+[02:31:57] [connection] 127.0.0.1:56229 requests connection cookie.
+[02:31:57] [connection] 127.0.0.1:56231 requests connection cookie.
+[02:31:57] Number of vehicle models: 109
+[02:31:57] [connection] 127.0.0.1:56232 requests connection cookie.
+[02:31:58] [connection] 127.0.0.1:56233 requests connection cookie.
+[02:31:58] [connection] incoming connection: 127.0.0.1:56228 id: 7
+[02:31:58] [connection] incoming connection: 127.0.0.1:56230 id: 8
+[02:31:58] [connection] incoming connection: 127.0.0.1:56229 id: 7
+[02:31:58] [connection] incoming connection: 127.0.0.1:56231 id: 9
+[02:31:59] [connection] incoming connection: 127.0.0.1:56232 id: 7
+[02:31:59] [connection] incoming connection: 127.0.0.1:56233 id: 8
+Console input: gmx
+[02:33:02] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:33:02] [mode] Mode has been unloaded.
+[02:33:14] ---------------------------------
+[02:33:14] [mysql] Connecting to DB server...
+[02:33:14] [mysql] Connected!
+[02:33:14] ---------------------------------
+[02:33:14] 
+
+[02:33:14] ---------------------------------
+[02:33:14]  ALL IN ONE v1.1.5
+[02:33:14]   Coded by Acu
+[02:33:14]   Updated by Cada
+[02:33:14]   acu.pe.kr@gmail.com
+[02:33:14] ---------------------------------
+
+[02:33:14] object
+[02:33:14] object
+[02:33:14] [connection] 127.0.0.1:50567 requests connection cookie.
+[02:33:14] [connection] 127.0.0.1:50568 requests connection cookie.
+[02:33:14] [connection] 127.0.0.1:50569 requests connection cookie.
+[02:33:14] [connection] 127.0.0.1:50570 requests connection cookie.
+[02:33:14] Number of vehicle models: 109
+[02:33:14] [connection] 127.0.0.1:50571 requests connection cookie.
+[02:33:15] [connection] 127.0.0.1:50572 requests connection cookie.
+[02:33:15] [connection] incoming connection: 127.0.0.1:50567 id: 7
+[02:33:15] [connection] incoming connection: 127.0.0.1:50568 id: 8
+[02:33:15] [connection] incoming connection: 127.0.0.1:50569 id: 9
+[02:33:15] [connection] incoming connection: 127.0.0.1:50570 id: 7
+[02:33:15] [connection] incoming connection: 127.0.0.1:50571 id: 8
+[02:33:16] [connection] incoming connection: 127.0.0.1:50572 id: 9
+[02:33:20] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[02:36:35] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[02:36:35] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:36:35] [mode] Mode has been unloaded.
+[02:36:47] ---------------------------------
+[02:36:47] [mysql] Connecting to DB server...
+[02:36:47] [mysql] Connected!
+[02:36:47] ---------------------------------
+[02:36:47] 
+
+[02:36:47] ---------------------------------
+[02:36:47]  ALL IN ONE v1.1.5
+[02:36:47]   Coded by Acu
+[02:36:47]   Updated by Cada
+[02:36:47]   acu.pe.kr@gmail.com
+[02:36:47] ---------------------------------
+
+[02:36:47] object
+[02:36:47] object
+[02:36:47] [connection] 127.0.0.1:58507 requests connection cookie.
+[02:36:47] [connection] 127.0.0.1:58508 requests connection cookie.
+[02:36:47] [connection] 127.0.0.1:58509 requests connection cookie.
+[02:36:47] [connection] 127.0.0.1:58510 requests connection cookie.
+[02:36:47] Number of vehicle models: 109
+[02:36:47] [connection] 127.0.0.1:58511 requests connection cookie.
+[02:36:48] [connection] 127.0.0.1:58512 requests connection cookie.
+[02:36:48] [connection] incoming connection: 127.0.0.1:58507 id: 7
+[02:36:48] [connection] incoming connection: 127.0.0.1:58508 id: 8
+[02:36:48] [connection] incoming connection: 127.0.0.1:58509 id: 9
+[02:36:48] [connection] incoming connection: 127.0.0.1:58510 id: 7
+[02:36:48] [connection] incoming connection: 127.0.0.1:58511 id: 8
+[02:36:49] [connection] incoming connection: 127.0.0.1:58512 id: 10
+[02:36:58] *** Audio Plugin: Cada_Test (ID: 6) has connected
+Console input: gmx
+[02:44:14] *** Audio Plugin: Cada_Test (ID: 6) has disconnected
+[02:44:14] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[02:44:14] [mode] Mode has been unloaded.
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] Script[gamemodes/GIFT.amx]: Run time error 19: "File or function is not found"
+[02:44:26] Number of vehicle models: 0
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:26] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:26] [debug] Run time error 19: "File or function is not found"
+[02:44:26] [debug]  FCNPC_GetPluginVersion
+[02:44:26] [debug]  FCNPC_Create
+[02:44:26] [debug]  FCNPC_Spawn
+[02:44:26] [debug]  FCNPC_SetAngle
+[02:44:26] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:27] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:27] [debug] Run time error 19: "File or function is not found"
+[02:44:27] [debug]  FCNPC_GetPluginVersion
+[02:44:27] [debug]  FCNPC_Create
+[02:44:27] [debug]  FCNPC_Spawn
+[02:44:27] [debug]  FCNPC_SetAngle
+[02:44:27] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:28] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:28] [debug] Run time error 19: "File or function is not found"
+[02:44:28] [debug]  FCNPC_GetPluginVersion
+[02:44:28] [debug]  FCNPC_Create
+[02:44:28] [debug]  FCNPC_Spawn
+[02:44:28] [debug]  FCNPC_SetAngle
+[02:44:28] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:29] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:29] [debug] Run time error 19: "File or function is not found"
+[02:44:29] [debug]  FCNPC_GetPluginVersion
+[02:44:29] [debug]  FCNPC_Create
+[02:44:29] [debug]  FCNPC_Spawn
+[02:44:29] [debug]  FCNPC_SetAngle
+[02:44:29] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:30] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:30] [debug] Run time error 19: "File or function is not found"
+[02:44:30] [debug]  FCNPC_GetPluginVersion
+[02:44:30] [debug]  FCNPC_Create
+[02:44:30] [debug]  FCNPC_Spawn
+[02:44:30] [debug]  FCNPC_SetAngle
+[02:44:30] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:31] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:31] [debug] Run time error 19: "File or function is not found"
+[02:44:31] [debug]  FCNPC_GetPluginVersion
+[02:44:31] [debug]  FCNPC_Create
+[02:44:31] [debug]  FCNPC_Spawn
+[02:44:31] [debug]  FCNPC_SetAngle
+[02:44:31] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:32] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:32] [debug] Run time error 19: "File or function is not found"
+[02:44:32] [debug]  FCNPC_GetPluginVersion
+[02:44:32] [debug]  FCNPC_Create
+[02:44:32] [debug]  FCNPC_Spawn
+[02:44:32] [debug]  FCNPC_SetAngle
+[02:44:32] [debug]  FCNPC_SetWeapon
+[02:44:33] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:33] [debug] Run time error 19: "File or function is not found"
+[02:44:33] [debug]  FCNPC_GetPluginVersion
+[02:44:33] [debug]  FCNPC_Create
+[02:44:33] [debug]  FCNPC_Spawn
+[02:44:33] [debug]  FCNPC_SetAngle
+[02:44:33] [debug]  FCNPC_SetWeapon
+[02:44:33] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:33] [debug] Run time error 19: "File or function is not found"
+[02:44:33] [debug]  FCNPC_GetPluginVersion
+[02:44:33] [debug]  FCNPC_Create
+[02:44:33] [debug]  FCNPC_Spawn
+[02:44:33] [debug]  FCNPC_SetAngle
+[02:44:33] [debug]  FCNPC_SetWeapon
+[02:44:33] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:33] [debug] Run time error 19: "File or function is not found"
+[02:44:33] [debug]  FCNPC_GetPluginVersion
+[02:44:33] [debug]  FCNPC_Create
+[02:44:33] [debug]  FCNPC_Spawn
+[02:44:33] [debug]  FCNPC_SetAngle
+[02:44:33] [debug]  FCNPC_SetWeapon
+[02:44:33] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:33] [debug] Run time error 19: "File or function is not found"
+[02:44:33] [debug]  FCNPC_GetPluginVersion
+[02:44:33] [debug]  FCNPC_Create
+[02:44:33] [debug]  FCNPC_Spawn
+[02:44:33] [debug]  FCNPC_SetAngle
+[02:44:33] [debug]  FCNPC_SetWeapon
+[02:44:33] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:33] [debug] Run time error 19: "File or function is not found"
+[02:44:33] [debug]  FCNPC_GetPluginVersion
+[02:44:33] [debug]  FCNPC_Create
+[02:44:33] [debug]  FCNPC_Spawn
+[02:44:33] [debug]  FCNPC_SetAngle
+[02:44:33] [debug]  FCNPC_SetWeapon
+[02:44:33] [sampgdk:error] Too many callback arguments (at most 32 allowed)
+[02:44:33] [debug] Run time error 19: "File or function is not found"
+[02:44:33] [debug]  FCNPC_GetPluginVersion
+[02:44:33] [debug]  FCNPC_Create
+[02:44:33] [debug]  FCNPC_Spawn
+[02:44:33] [debug]  FCNPC_SetAngle
+[02:44:33] [debug]  FCNPC_SetWeapon
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:45:09] password = ""  (string)
+[02:45:09] 
+[02:45:09] Server Plugins
+[02:45:09] --------------
+[02:45:09]  Loading plugin: crashdetect
+[02:45:09]   CrashDetect plugin 4.19
+[02:45:09]   Loaded.
+[02:45:09]  Loading plugin: mysql
+[02:45:09]  >> plugin.mysql: R41-4 successfully loaded.
+[02:45:09]   Loaded.
+[02:45:09]  Loading plugin: streamer
+[02:45:09] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:45:09]   Loaded.
+[02:45:09]  Loading plugin: audio
+[02:45:09] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:45:09]   Loaded.
+[02:45:09]  Loading plugin: MapAndreas
+[02:45:09]   Loaded.
+[02:45:09]  Loading plugin: FCNPC
+[02:45:09] 
+[02:45:09] -------------------------------------------------
+[02:45:09]      FCNPC - Fully Controllable NPC v1.8.2
+[02:45:09]          Windows SA-MP 0.3.7 R2
+[02:45:09]           Jan  8 2018 at 01:14:48
+[02:45:09] 
+[02:45:09]   Author:       OrMisicL (2013 - 2015)
+[02:45:09]   Continued by: ziggi (2016 - present)
+[02:45:09]   Contributors: kurta999, Neutralneu
+[02:45:09] -------------------------------------------------
+[02:45:09] 
+[02:45:09] Loading...
+[02:45:09]   Loaded.
+[02:45:09]  Loaded 6 plugins.
+
+[02:45:09] 
+[02:45:09] Filterscripts
+[02:45:09] ---------------
+[02:45:09]   Loading filterscript 'Acu.amx'...
+[02:45:09]   Loaded 1 filterscripts.
+
+[02:45:09] ---------------------------------
+[02:45:09] [mysql] Connecting to DB server...
+[02:45:09] *** Audio Plugin: Started TCP server on port 7777
+[02:45:09] [mysql] Connected!
+[02:45:09] ---------------------------------
+[02:45:09] 
+
+[02:45:09] ---------------------------------
+[02:45:09]  ALL IN ONE v1.1.5
+[02:45:09]   Coded by Acu
+[02:45:09]   Updated by Cada
+[02:45:09]   acu.pe.kr@gmail.com
+[02:45:09] ---------------------------------
+
+[02:45:09] object
+[02:45:09] object removed
+[02:45:09] object
+[02:45:09] [npc:join] Game1 has joined the server (99:127.0.0.1)
+[02:45:09] [npc:join] Game2 has joined the server (98:127.0.0.1)
+[02:45:09] [npc:join] Game3 has joined the server (97:127.0.0.1)
+[02:45:09] [npc:join] Game4 has joined the server (96:127.0.0.1)
+[02:45:09] [npc:join] Game5 has joined the server (95:127.0.0.1)
+[02:45:09] [npc:join] Game6 has joined the server (94:127.0.0.1)
+[02:45:09] Number of vehicle models: 109
+[02:45:09] [death] Game1 died 255
+[02:45:09] [death] Game2 died 255
+[02:45:09] [death] Game3 died 255
+[02:45:09] [death] Game4 died 255
+[02:45:09] [death] Game5 died 255
+[02:45:09] [death] Game6 died 255
+[02:45:18] [connection] 127.0.0.1:54372 requests connection cookie.
+[02:45:19] [connection] incoming connection: 127.0.0.1:54372 id: 0
+[02:45:19] [join] Cada_Test has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:47:10] password = ""  (string)
+[02:47:10] 
+[02:47:10] Server Plugins
+[02:47:10] --------------
+[02:47:10]  Loading plugin: crashdetect
+[02:47:10]   CrashDetect plugin 4.19
+[02:47:10]   Loaded.
+[02:47:10]  Loading plugin: mysql
+[02:47:10]  >> plugin.mysql: R41-4 successfully loaded.
+[02:47:10]   Loaded.
+[02:47:10]  Loading plugin: streamer
+[02:47:10] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:47:10]   Loaded.
+[02:47:10]  Loading plugin: audio
+[02:47:10] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:47:10]   Loaded.
+[02:47:10]  Loading plugin: MapAndreas
+[02:47:10]   Loaded.
+[02:47:10]  Loading plugin: FCNPC
+[02:47:10] 
+[02:47:10] -------------------------------------------------
+[02:47:10]      FCNPC - Fully Controllable NPC v1.8.2
+[02:47:10]          Windows SA-MP 0.3.7 R2
+[02:47:10]           Jan  8 2018 at 01:14:48
+[02:47:10] 
+[02:47:10]   Author:       OrMisicL (2013 - 2015)
+[02:47:10]   Continued by: ziggi (2016 - present)
+[02:47:10]   Contributors: kurta999, Neutralneu
+[02:47:10] -------------------------------------------------
+[02:47:10] 
+[02:47:10] Loading...
+[02:47:10]   Loaded.
+[02:47:10]  Loaded 6 plugins.
+
+[02:47:10] 
+[02:47:10] Filterscripts
+[02:47:10] ---------------
+[02:47:10]   Loading filterscript 'Acu.amx'...
+[02:47:10]   Loaded 1 filterscripts.
+
+[02:47:10] ---------------------------------
+[02:47:10] *** Audio Plugin: Started TCP server on port 7777
+[02:47:10] [mysql] Connecting to DB server...
+[02:47:10] [mysql] Connected!
+[02:47:10] ---------------------------------
+[02:47:10] 
+
+[02:47:10] ---------------------------------
+[02:47:10]  ALL IN ONE v1.1.5
+[02:47:10]   Coded by Acu
+[02:47:10]   Updated by Cada
+[02:47:10]   acu.pe.kr@gmail.com
+[02:47:10] ---------------------------------
+
+[02:47:11] object
+[02:47:11] object removed
+[02:47:11] object
+[02:47:11] [npc:join] Game1 has joined the server (99:127.0.0.1)
+[02:47:11] [npc:join] Game2 has joined the server (98:127.0.0.1)
+[02:47:11] [npc:join] Game3 has joined the server (97:127.0.0.1)
+[02:47:11] [npc:join] Game4 has joined the server (96:127.0.0.1)
+[02:47:11] [npc:join] Game5 has joined the server (95:127.0.0.1)
+[02:47:11] [npc:join] Game6 has joined the server (94:127.0.0.1)
+[02:47:11] Number of vehicle models: 109
+[02:47:11] [death] Game1 died 255
+[02:47:11] [death] Game2 died 255
+[02:47:11] [death] Game3 died 255
+[02:47:11] [death] Game4 died 255
+[02:47:11] [death] Game5 died 255
+[02:47:11] [death] Game6 died 255
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:47:53] password = ""  (string)
+[02:47:53] 
+[02:47:53] Server Plugins
+[02:47:53] --------------
+[02:47:53]  Loading plugin: crashdetect
+[02:47:53]   CrashDetect plugin 4.19
+[02:47:53]   Loaded.
+[02:47:53]  Loading plugin: mysql
+[02:47:53]  >> plugin.mysql: R41-4 successfully loaded.
+[02:47:53]   Loaded.
+[02:47:53]  Loading plugin: streamer
+[02:47:53] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:47:53]   Loaded.
+[02:47:53]  Loading plugin: audio
+[02:47:53] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:47:53]   Loaded.
+[02:47:53]  Loading plugin: MapAndreas
+[02:47:53]   Loaded.
+[02:47:53]  Loading plugin: FCNPC
+[02:47:53] 
+[02:47:53] -------------------------------------------------
+[02:47:53]      FCNPC - Fully Controllable NPC v1.8.2
+[02:47:53]          Windows SA-MP 0.3.7 R2
+[02:47:53]           Jan  8 2018 at 01:14:48
+[02:47:53] 
+[02:47:53]   Author:       OrMisicL (2013 - 2015)
+[02:47:53]   Continued by: ziggi (2016 - present)
+[02:47:53]   Contributors: kurta999, Neutralneu
+[02:47:53] -------------------------------------------------
+[02:47:53] 
+[02:47:53] Loading...
+[02:47:53]   Loaded.
+[02:47:53]  Loaded 6 plugins.
+
+[02:47:54] 
+[02:47:54] Filterscripts
+[02:47:54] ---------------
+[02:47:54]   Loading filterscript 'Acu.amx'...
+[02:47:54]   Loaded 1 filterscripts.
+
+[02:47:54] ---------------------------------
+[02:47:54] [mysql] Connecting to DB server...
+[02:47:54] *** Audio Plugin: Started TCP server on port 7777
+[02:47:54] [mysql] Connected!
+[02:47:54] ---------------------------------
+[02:47:54] 
+
+[02:47:54] ---------------------------------
+[02:47:54]  ALL IN ONE v1.1.5
+[02:47:54]   Coded by Acu
+[02:47:54]   Updated by Cada
+[02:47:54]   acu.pe.kr@gmail.com
+[02:47:54] ---------------------------------
+
+[02:47:54] object
+[02:47:54] object removed
+[02:47:54] object
+[02:47:54] [npc:join] Game1 has joined the server (99:127.0.0.1)
+[02:47:54] [npc:join] Game2 has joined the server (98:127.0.0.1)
+[02:47:54] [npc:join] Game3 has joined the server (97:127.0.0.1)
+[02:47:54] [npc:join] Game4 has joined the server (96:127.0.0.1)
+[02:47:54] [npc:join] Game5 has joined the server (95:127.0.0.1)
+[02:47:54] [npc:join] Game6 has joined the server (94:127.0.0.1)
+[02:47:54] Number of vehicle models: 109
+[02:47:54] [death] Game1 died 255
+[02:47:54] [death] Game2 died 255
+[02:47:54] [death] Game3 died 255
+[02:47:54] [death] Game4 died 255
+[02:47:54] [death] Game5 died 255
+[02:47:54] [death] Game6 died 255
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:49:57] password = ""  (string)
+[02:49:57] 
+[02:49:57] Server Plugins
+[02:49:57] --------------
+[02:49:57]  Loading plugin: crashdetect
+[02:49:57]   CrashDetect plugin 4.19
+[02:49:57]   Loaded.
+[02:49:57]  Loading plugin: mysql
+[02:49:57]  >> plugin.mysql: R41-4 successfully loaded.
+[02:49:57]   Loaded.
+[02:49:57]  Loading plugin: streamer
+[02:49:57] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:49:57]   Loaded.
+[02:49:57]  Loading plugin: audio
+[02:49:57] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:49:57]   Loaded.
+[02:49:57]  Loading plugin: MapAndreas
+[02:49:57]   Loaded.
+[02:49:57]  Loading plugin: FCNPC
+[02:49:57] 
+[02:49:57] -------------------------------------------------
+[02:49:57]      FCNPC - Fully Controllable NPC v1.8.2
+[02:49:57]          Windows SA-MP 0.3.7 R2
+[02:49:57]           Jan  8 2018 at 01:14:48
+[02:49:57] 
+[02:49:57]   Author:       OrMisicL (2013 - 2015)
+[02:49:57]   Continued by: ziggi (2016 - present)
+[02:49:57]   Contributors: kurta999, Neutralneu
+[02:49:57] -------------------------------------------------
+[02:49:57] 
+[02:49:57] Loading...
+[02:49:57]   Loaded.
+[02:49:57]  Loaded 6 plugins.
+
+[02:49:57] 
+[02:49:57] Filterscripts
+[02:49:57] ---------------
+[02:49:57]   Loading filterscript 'Acu.amx'...
+[02:49:57]   Loaded 1 filterscripts.
+
+[02:49:57] ---------------------------------
+[02:49:57] *** Audio Plugin: Started TCP server on port 7777
+[02:49:57] [mysql] Connecting to DB server...
+[02:49:57] [mysql] Connected!
+[02:49:57] ---------------------------------
+[02:49:57] 
+
+[02:49:57] ---------------------------------
+[02:49:57]  ALL IN ONE v1.1.5
+[02:49:57]   Coded by Acu
+[02:49:57]   Updated by Cada
+[02:49:57]   acu.pe.kr@gmail.com
+[02:49:57] ---------------------------------
+
+[02:49:57] object
+[02:49:57] object removed
+[02:49:57] object
+[02:49:57] [npc:join] Game1 has joined the server (99:127.0.0.1)
+[02:49:57] [npc:join] Game2 has joined the server (98:127.0.0.1)
+[02:49:57] [npc:join] Game3 has joined the server (97:127.0.0.1)
+[02:49:57] [npc:join] Game4 has joined the server (96:127.0.0.1)
+[02:49:57] [npc:join] Game5 has joined the server (95:127.0.0.1)
+[02:49:57] [npc:join] Game6 has joined the server (94:127.0.0.1)
+[02:49:57] Number of vehicle models: 109
+[02:49:58] [death] Game1 died 255
+[02:49:58] [death] Game2 died 255
+[02:49:58] [death] Game3 died 255
+[02:49:58] [death] Game4 died 255
+[02:49:58] [death] Game5 died 255
+[02:49:58] [death] Game6 died 255
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:51:50] password = ""  (string)
+[02:51:50] 
+[02:51:50] Server Plugins
+[02:51:50] --------------
+[02:51:50]  Loading plugin: crashdetect
+[02:51:50]   CrashDetect plugin 4.19
+[02:51:50]   Loaded.
+[02:51:50]  Loading plugin: mysql
+[02:51:50]  >> plugin.mysql: R41-4 successfully loaded.
+[02:51:50]   Loaded.
+[02:51:50]  Loading plugin: streamer
+[02:51:50] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:51:50]   Loaded.
+[02:51:50]  Loading plugin: audio
+[02:51:50] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:51:50]   Loaded.
+[02:51:50]  Loading plugin: MapAndreas
+[02:51:50]   Loaded.
+[02:51:50]  Loading plugin: YSF
+[02:51:50] ARRAY_ConsoleCommands: 4e43d8
+[02:51:50] 
+
+[02:51:50]  ===============================
+
+[02:51:50]         YSF - kurta999's version R19 loaded
+
+[02:51:50]    (c) 2008 Alex "Y_Less" Cole - (c) 2010 - 2016 kurta999
+
+[02:51:50]     Server version: 0.3.7 R2-1
+
+[02:51:50]     Operating System: Windows
+
+[02:51:50]     Built on: Mar 11 2017 at 10:32:34
+
+[02:51:50]  ===============================
+
+[02:51:50]   Loaded.
+[02:51:50]  Loading plugin: FCNPC
+[02:51:50] 
+[02:51:50] -------------------------------------------------
+[02:51:50]      FCNPC - Fully Controllable NPC v1.8.2
+[02:51:50]          Windows SA-MP 0.3.7 R2
+[02:51:50]           Jan  8 2018 at 01:14:48
+[02:51:50] 
+[02:51:50]   Author:       OrMisicL (2013 - 2015)
+[02:51:50]   Continued by: ziggi (2016 - present)
+[02:51:50]   Contributors: kurta999, Neutralneu
+[02:51:50] -------------------------------------------------
+[02:51:50] 
+[02:51:50] Loading...
+[02:51:50]   Loaded.
+[02:51:50]  Loaded 7 plugins.
+
+[02:51:50] 
+[02:51:50] Filterscripts
+[02:51:50] ---------------
+[02:51:50]   Loading filterscript 'Acu.amx'...
+[02:51:50]   Loaded 1 filterscripts.
+
+[02:51:50] ---------------------------------
+[02:51:50] [mysql] Connecting to DB server...
+[02:51:50] *** Audio Plugin: Started TCP server on port 7777
+[02:51:50] [mysql] Connected!
+[02:51:50] ---------------------------------
+[02:51:50] 
+
+[02:51:50] ---------------------------------
+[02:51:50]  ALL IN ONE v1.1.5
+[02:51:50]   Coded by Acu
+[02:51:50]   Updated by Cada
+[02:51:50]   acu.pe.kr@gmail.com
+[02:51:50] ---------------------------------
+
+[02:51:50] object
+[02:51:50] object removed
+[02:51:50] object
+[02:51:50] [npc:join] Game1 has joined the server (99:127.0.0.1)
+[02:51:51] [npc:join] Game2 has joined the server (98:127.0.0.1)
+[02:51:51] [npc:join] Game3 has joined the server (97:127.0.0.1)
+[02:51:51] [npc:join] Game4 has joined the server (96:127.0.0.1)
+[02:51:51] [npc:join] Game5 has joined the server (95:127.0.0.1)
+[02:51:51] [npc:join] Game6 has joined the server (94:127.0.0.1)
+[02:51:51] Number of vehicle models: 109
+[02:51:51] [death] Game1 died 255
+[02:51:51] [death] Game2 died 255
+[02:51:51] [death] Game3 died 255
+[02:51:51] [death] Game4 died 255
+[02:51:51] [death] Game5 died 255
+[02:51:51] [death] Game6 died 255
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:52:12] password = ""  (string)
+[02:52:12] 
+[02:52:12] Server Plugins
+[02:52:12] --------------
+[02:52:12]  Loading plugin: crashdetect
+[02:52:12]   CrashDetect plugin 4.19
+[02:52:12]   Loaded.
+[02:52:12]  Loading plugin: mysql
+[02:52:12]  >> plugin.mysql: R41-4 successfully loaded.
+[02:52:12]   Loaded.
+[02:52:12]  Loading plugin: streamer
+[02:52:12] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:52:12]   Loaded.
+[02:52:12]  Loading plugin: audio
+[02:52:12] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:52:12]   Loaded.
+[02:52:12]  Loading plugin: MapAndreas
+[02:52:12]   Loaded.
+[02:52:12]  Loading plugin: YSF
+[02:52:12] ARRAY_ConsoleCommands: 4e43d8
+[02:52:12] 
+
+[02:52:12]  ===============================
+
+[02:52:12]         YSF - kurta999's version R19 loaded
+
+[02:52:12]    (c) 2008 Alex "Y_Less" Cole - (c) 2010 - 2016 kurta999
+
+[02:52:12]     Server version: 0.3.7 R2-1
+
+[02:52:12]     Operating System: Windows
+
+[02:52:12]     Built on: Mar 11 2017 at 10:32:34
+
+[02:52:12]  ===============================
+
+[02:52:12]   Loaded.
+[02:52:12]  Loading plugin: FCNPC
+[02:52:12] 
+[02:52:12] -------------------------------------------------
+[02:52:12]      FCNPC - Fully Controllable NPC v1.8.2
+[02:52:12]          Windows SA-MP 0.3.7 R2
+[02:52:12]           Jan  8 2018 at 01:14:48
+[02:52:12] 
+[02:52:12]   Author:       OrMisicL (2013 - 2015)
+[02:52:12]   Continued by: ziggi (2016 - present)
+[02:52:12]   Contributors: kurta999, Neutralneu
+[02:52:12] -------------------------------------------------
+[02:52:12] 
+[02:52:12] Loading...
+[02:52:12]   Loaded.
+[02:52:12]  Loaded 7 plugins.
+
+[02:52:12] 
+[02:52:12] Filterscripts
+[02:52:12] ---------------
+[02:52:12]   Loading filterscript 'Acu.amx'...
+[02:52:12]   Loaded 1 filterscripts.
+
+[02:52:12] *** Audio Plugin: Started TCP server on port 7777
+[02:52:12] ---------------------------------
+[02:52:12] [mysql] Connecting to DB server...
+[02:52:12] [mysql] Connected!
+[02:52:12] ---------------------------------
+[02:52:12] 
+
+[02:52:12] ---------------------------------
+[02:52:12]  ALL IN ONE v1.1.5
+[02:52:12]   Coded by Acu
+[02:52:12]   Updated by Cada
+[02:52:12]   acu.pe.kr@gmail.com
+[02:52:12] ---------------------------------
+
+[02:52:13] object
+[02:52:13] object removed
+[02:52:13] object
+[02:52:13] [npc:join] Game1 has joined the server (99:127.0.0.1)
+[02:52:13] [npc:join] Game2 has joined the server (98:127.0.0.1)
+[02:52:13] [npc:join] Game3 has joined the server (97:127.0.0.1)
+[02:52:13] [npc:join] Game4 has joined the server (96:127.0.0.1)
+[02:52:13] [npc:join] Game5 has joined the server (95:127.0.0.1)
+[02:52:13] [npc:join] Game6 has joined the server (94:127.0.0.1)
+[02:52:13] Number of vehicle models: 109
+[02:52:13] [death] Game1 died 255
+[02:52:13] [death] Game2 died 255
+[02:52:13] [death] Game3 died 255
+[02:52:13] [death] Game4 died 255
+[02:52:13] [death] Game5 died 255
+[02:52:13] [death] Game6 died 255
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:55:32] password = ""  (string)
+[02:55:32] 
+[02:55:32] Server Plugins
+[02:55:32] --------------
+[02:55:32]  Loading plugin: crashdetect
+[02:55:32]   CrashDetect plugin 4.19
+[02:55:32]   Loaded.
+[02:55:32]  Loading plugin: mysql
+[02:55:32]  >> plugin.mysql: R41-4 successfully loaded.
+[02:55:32]   Loaded.
+[02:55:32]  Loading plugin: streamer
+[02:55:32] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:55:32]   Loaded.
+[02:55:32]  Loading plugin: audio
+[02:55:32] 
+
+*** Audio Plugin v0.5 R2 by Incognito loaded ***
+
+[02:55:32]   Loaded.
+[02:55:32]  Loading plugin: MapAndreas
+[02:55:32]   Loaded.
+[02:55:32]  Loading plugin: FCNPC
+[02:55:32] 
+[02:55:32] -------------------------------------------------
+[02:55:32]      FCNPC - Fully Controllable NPC v1.8.2
+[02:55:32]          Windows SA-MP 0.3.7 R2
+[02:55:32]           Jan  8 2018 at 01:14:48
+[02:55:32] 
+[02:55:32]   Author:       OrMisicL (2013 - 2015)
+[02:55:32]   Continued by: ziggi (2016 - present)
+[02:55:32]   Contributors: kurta999, Neutralneu
+[02:55:32] -------------------------------------------------
+[02:55:32] 
+[02:55:32] Loading...
+[02:55:32]   Loaded.
+[02:55:32]  Loaded 6 plugins.
+
+[02:55:32] 
+[02:55:32] Filterscripts
+[02:55:32] ---------------
+[02:55:33]   Loading filterscript 'Acu.amx'...
+[02:55:33]   Loaded 1 filterscripts.
+
+[02:55:33] ---------------------------------
+[02:55:33] *** Audio Plugin: Started TCP server on port 7777
+[02:55:33] [mysql] Connecting to DB server...
+[02:55:33] [mysql] Connected!
+[02:55:33] ---------------------------------
+[02:55:33] 
+
+[02:55:33] ---------------------------------
+[02:55:33]  ALL IN ONE v1.1.5
+[02:55:33]   Coded by Acu
+[02:55:33]   Updated by Cada
+[02:55:33]   acu.pe.kr@gmail.com
+[02:55:33] ---------------------------------
+
+[02:55:33] object
+[02:55:33] object removed
+[02:55:33] object
+[02:55:33] [npc:join] Game1 has joined the server (99:127.0.0.1)
+[02:55:33] [npc:join] Game2 has joined the server (98:127.0.0.1)
+[02:55:33] [npc:join] Game3 has joined the server (97:127.0.0.1)
+[02:55:33] [npc:join] Game4 has joined the server (96:127.0.0.1)
+[02:55:33] [npc:join] Game5 has joined the server (95:127.0.0.1)
+[02:55:33] [npc:join] Game6 has joined the server (94:127.0.0.1)
+[02:55:33] Number of vehicle models: 109
+[02:55:40] [connection] 127.0.0.1:57256 requests connection cookie.
+[02:55:41] [connection] incoming connection: 127.0.0.1:57256 id: 0
+[02:55:41] [join] Cada_Test has joined the server (0:127.0.0.1)
+[02:55:48] *** Audio Plugin: Cada_Test (ID: 0) has connected
+Console input: gmx
+[03:00:58] *** Audio Plugin: Cada_Test (ID: 0) has disconnected
+[03:00:58] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[03:00:58] [mode] Mode has been unloaded.
+[03:01:10] ---------------------------------
+[03:01:10] [mysql] Connecting to DB server...
+[03:01:10] [mysql] Connected!
+[03:01:10] ---------------------------------
+[03:01:10] 
+
+[03:01:10] ---------------------------------
+[03:01:10]  ALL IN ONE v1.1.5
+[03:01:10]   Coded by Acu
+[03:01:10]   Updated by Cada
+[03:01:10]   acu.pe.kr@gmail.com
+[03:01:10] ---------------------------------
+
+[03:01:10] Number of vehicle models: 109
+[03:01:19] *** Audio Plugin: Cada_Test (ID: 0) has connected
+[03:01:47] *** Audio Plugin: Cada_Test (ID: 0) has disconnected
+[03:01:47] [part] Cada_Test has left the server (0:1)

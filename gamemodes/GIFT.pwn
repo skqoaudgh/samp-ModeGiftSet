@@ -37,6 +37,7 @@
 #include <streamer>
 #include <audio>
 #include <mapandreas>
+#include <FCNPC>
 	//--/ Modulizations /
 		// Cores //
 #include "./Modules/Cores/Module.pwn"
@@ -50,6 +51,7 @@
 #include "./Modules/Cores/Map.pwn"
 #include "./Modules/Cores/Death.pwn"
 #include "./Modules/Cores/MapRader.pwn"
+#include "./Modules/Cores/Object.pwn"
 		// Functions //
 #include "./Modules/Functions/ExtendedFunc.pwn"
 #include "./Modules/Functions/FreezePlayer.pwn"
@@ -110,6 +112,7 @@ public OnGameModeInit()
 	AddModule("Map");
 	AddModule("Admin");
 	AddModule("Death");
+	AddModule("Object");
 	    // Command //
     AddModule("Chatting");
     AddModule("Admin");

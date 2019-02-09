@@ -36,6 +36,7 @@
 #define COLOR_BLUE		  		0x0000FFFF
 #define COLOR_YELLOW			0xFFFF00FF
 #define COLOR_TEAM              0x30A9DEFF
+#define COLOR_AQUA             	0x00FFFFFF
 
 #define C_WHITE					"{FFFFFF}"
 #define C_GREY 					"{AAAAAA}"
@@ -44,6 +45,7 @@
 #define C_GREEN		  			"{00FF00}"
 #define C_BLUE		  			"{0000FF}"
 #define C_YELLOW				"{FFFF00}"
+#define C_AQUA					"{00FFFF}"
 	//--/ Pastel Colors /
 #define COLOR_PASTEL_BLACK		0x9A9691FF
 #define COLOR_PASTEL_YELLOW		0xFAF5A4FF

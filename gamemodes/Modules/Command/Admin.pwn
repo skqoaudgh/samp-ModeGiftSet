@@ -239,7 +239,24 @@ public CommandHandler_Admin(playerid,cmdtext[])
 		}
 		return 1;
 	}
-	
+
+	if(!strcmp("/좌표이동",cmd))
+	{
+		if(!IsPlayerAdminEx(playerid,2))
+			return SendClientMessage(playerid,COLOR_WHITE,"[!] 이 관리자 명령어를 사용할 권한이 없습니다.");
+		//-----
+		strcpy(string,stringslice_c(cmdtext,1));
+		if(!strlen(string))
+			return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: /좌표이동 [x,y,z]");
+		//-----
+		new splited[3][32];
+		split(string,splited,',');
+		SetPlayerPos(playerid, floatstr(splited[0]),floatstr(splited[1]),floatstr(splited[2]));
+		SendClientMessage(playerid,COLOR_WHITE,"[!] 해당 좌표로 이동했습니다.");
+		return 1;
+	}
+
+
 	//-----/ Player Commands /---------------------------------------------------
 	if(!strcmp("/신고",cmd) || !strcmp("/report",cmd))
 	{
