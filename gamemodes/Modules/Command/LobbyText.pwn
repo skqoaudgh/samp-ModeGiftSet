@@ -5,10 +5,10 @@
 */
 
 //-----/ Pre-Processing /
-#if defined _MDPWN_LobbyGame
+#if defined _MDPWN_LobbyText
 	#endinput
 #endif
-#define _MDPWN_LobbyGame
+#define _MDPWN_LobbyText
 
 
 
@@ -22,16 +22,16 @@
 
 
 //-----/ News /
-	//--/ LobbyGame /
+	//--/ LobbyText /
 new Text3D:GameText[MAX_PLAYERS][MAX_GAMENPC];
 new GameNPC[MAX_GAMENPC];
 
 
 //-----/ Forwards /
 	//--/ Handlers /
-forward AddHandler_LobbyGame();
-forward InitHandler_LobbyGame();
-forward KeyHandler_LobbyGame(playerid,newkeys,oldkeys);
+forward AddHandler_LobbyText();
+forward InitHandler_LobbyText();
+forward KeyHandler_LobbyText(playerid,newkeys,oldkeys);
 	//--/ Functions /
 
 
@@ -39,15 +39,15 @@ forward KeyHandler_LobbyGame(playerid,newkeys,oldkeys);
 
 
 //==========/ Callback Functions /==============================================
-//-----/ AddHandler_LobbyGame /-------------------------------------------------
-public AddHandler_LobbyGame()
+//-----/ AddHandler_LobbyText /-------------------------------------------------
+public AddHandler_LobbyText()
 {
-	AddHandler("LobbyGame",InitHandler);
-	AddHandler("LobbyGame",KeyHandler);
-	//AddTimer("LobbyGame",TIMER_1S_PLAYER);
+	AddHandler("LobbyText",InitHandler);
+	AddHandler("LobbyText",KeyHandler);
+	//AddTimer("LobbyText",TIMER_1S_PLAYER);
 }
-//-----/ InitHandler_LobbyGame /------------------------------------------------
-public InitHandler_LobbyGame()
+//-----/ InitHandler_LobbyText /------------------------------------------------
+public InitHandler_LobbyText()
 {
     new obj;
     //-----
@@ -66,8 +66,8 @@ public InitHandler_LobbyGame()
 	obj = CreateDynamicObject(19772, 1470.82178, -1623.45313, 13.62970,   0.00000, 0.00000, 90.00000);
 	SetDynamicObjectMaterial(obj, 0, 5174, "warehus_las2", "ws_alley_conc1", 0xFFFFFFFF);
 }
-//-----/ KeyHandler_LobbyGame /-------------------------------------------------
-public KeyHandler_LobbyGame(playerid,newkeys,oldkeys)
+//-----/ KeyHandler_LobbyText /-------------------------------------------------
+public KeyHandler_LobbyText(playerid,newkeys,oldkeys)
 {
 	if(KEY_PRESSED(KEY_FIRE) || KEY_PRESSED(KEY_SECONDARY_ATTACK))
 	{
