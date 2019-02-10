@@ -8,7 +8,7 @@
 	GetPVarStringEx(playerid,varname[])
     TextDrawShowForAllEx(playerid, Text:TD)
  	TextDrawHideForAllEx(mapid, Text:TD)
- 	DelayedGivePlayerWeapon(playerid, weaponid, ammo)
+ 	GetDistanceFromPlayerToPoint(playerid,Float:ax,Float:ay,Float:az)
  	
 	strcpy(dest[],src[])
 	strtok(const string[],&index,separator=' ')
@@ -26,7 +26,7 @@
 #define _MDPWN_ExtendedFunc
 
 //-----/ Forwards /
-forward DelayedGivePlayerWeapon2(playerid, weaponid, ammo);
+forward Float:GetDistanceFromPlayerToPoint(playerid,Float:ax,Float:ay,Float:az);
 
 
 
@@ -88,7 +88,18 @@ stock GivePlayerMoneyEx(playerid, value)
 	new cur = GetPVarInt(playerid,"Money");
 	SetPVarInt(playerid,"Money",cur+value);
 }
-
+//-----/ GetDistanceFromPlayerToPoint /-----------------------------------------
+stock Float:GetDistanceFromPlayerToPoint(playerid,Float:ax,Float:ay,Float:az)
+{
+	new Float:bx,Float:by,Float:bz;
+	GetPlayerPos(playerid,bx,by,bz);
+	new
+	    Float:x = (ax-bx)*(ax-bx),
+	    Float:y = (ay-by)*(ay-by),
+	    Float:z = (az-bz)*(az-bz)
+	;
+    return floatsqroot(x+y+z);
+}
 
 //==========/ String Functions /================================================
 //-----/ strcpy /---------------------------------------------------------------
@@ -138,16 +149,6 @@ stock split(const src[],dest[][],delimiter='|')
 			left = i+1;
 		}
 	return pieces;
-}
-//-----/ DelayedGivePlayerWeapon /----------------------------------------------
-stock DelayedGivePlayerWeapon(playerid, weaponid, ammo)
-{
-	SetTimerEx("GivePlayerWeaponEx2",200,false,"iii",playerid,weaponid,ammo);
-}
-//-----/ DelayedGivePlayerWeapon2 /---------------------------------------------
-public DelayedGivePlayerWeapon2(playerid, weaponid, ammo)
-{
-	GivePlayerWeapon(playerid, weaponid, ammo);
 }
 
 //==========/ Server-side Functions /===========================================

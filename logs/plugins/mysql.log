@@ -253,3 +253,7 @@
 [02:33:14] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'
 [02:36:47] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'
 [03:01:10] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'
+[13:52:05] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'
+[13:54:32] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'
+[13:55:37] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'
+[13:57:13] [WARNING] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'

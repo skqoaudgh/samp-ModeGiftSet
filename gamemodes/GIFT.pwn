@@ -62,6 +62,7 @@
 #include "./Modules/Command/Admin.pwn"
 #include "./Modules/Command/Skin.pwn"
 #include "./Modules/Command/Toggle.pwn"
+#include "./Modules/Command/LobbyGame.pwn"
 		// Game //
 #include "./Modules/Game/0_Lobby.pwn"
 #include "./Modules/Game/1_Run.pwn"
@@ -118,6 +119,7 @@ public OnGameModeInit()
     AddModule("Admin");
     AddModule("Skin");
     AddModule("Toggle");
+    AddModule("LobbyGame");
         // Function //
     AddModule("FreezePlayer");
     AddModule("InfoText");

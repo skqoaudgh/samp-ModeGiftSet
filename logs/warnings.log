@@ -1,1 +1,4 @@
-[03:01:10] [plugins/mysql] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'
+[13:52:05] [plugins/mysql] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'
+[13:54:32] [plugins/mysql] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'
+[13:55:37] [plugins/mysql] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'
+[13:57:13] [plugins/mysql] duplicate connection detected: handle id 1 already exists with host = '127.0.0.1', username = 'root' and database = 'gift'

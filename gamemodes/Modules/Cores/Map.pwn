@@ -3,6 +3,7 @@
 	GetPlayerMap(playerid)
 	ShowPlayerMapList(playerid)
 	GetMapPlayingCount(mapid)
+	ChangePlayerMap(playerid, mapid)
 */
 
 //-----/ Pre-Processing /
@@ -81,7 +82,8 @@ public InitHandler_Map()
 //-----/ ConnectHandler_Map /----------------------------------------------
 public ConnectHandler_Map(playerid)
 {
-	MapInfo[0][PlayerCount] ++;
+	if(!IsPlayerNPC(playerid))
+		MapInfo[0][PlayerCount] ++;
 }
 //-----/ DisconnectHandler_Map /-----------------------------------------
 public DisconnectHandler_Map(playerid,reason)
@@ -114,35 +116,7 @@ public DialogHandler_Map(playerid,dialogid,response,listitem,inputtext[])
 		{
 			if(response)
 			{
-			    // 게임 진행 중, 게임 변경 시 처리
-				// 대통령 지키기
-				if(GetPresidentPlayer() == playerid)
-				{
-			        KillTimer(GetRoundTimer());
-			        SetPresidentPlayer(-1);
-			        if(GetPlayerLanguage(playerid) == 0)
-			        	SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] 대통령이 접속을 종료해 게임이 중단됩니다. 대통령이 새롭게 선정되면 게임이 재개됩니다.");
-					else
-					{
-					    SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] The game is paused because the president is disconnected.");
-					    SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] The game will resume when new president is selected.");
-					}
-				}
-				SetPlayerTeam(playerid,NO_TEAM);
-				SetPlayerHasTeam(playerid, false);
-				ResetVariable_6(playerid);
-				HidePlayerTeamTD(playerid);
-				RemovePlayerMapIcon(playerid, 0);
-			    //-----
-			    new beforeIdx = GetPVarInt(playerid,"MapNumber");
-				SetPVarInt(playerid,"MapNumber",listitem);
-				MapInfo[listitem][PlayerCount] ++;
-				MapInfo[beforeIdx][PlayerCount] --;
-				SetPlayerMarkerForPlayerEx(playerid, GetPlayerColor(playerid));
-    			StopAudioStreamForPlayerEx(playerid);
-    			PlayAudioStreamForPlayerEx(playerid);
-    			DisablePlayerCheckpoint(playerid);
-				SpawnPlayer(playerid);
+				ChangePlayerMap(playerid,listitem);
 			}
 		}
 	}
@@ -182,4 +156,37 @@ stock ShowPlayerMapList(playerid)
 stock GetMapPlayingCount(mapid)
 {
 	return MapInfo[mapid][PlayerCount];
+}
+//-----/ ChangePlayerMap /------------------------------------------------------
+stock ChangePlayerMap(playerid, mapid)
+{
+    // 게임 진행 중, 게임 변경 시 처리
+	// 대통령 지키기
+	if(GetPresidentPlayer() == playerid)
+	{
+        KillTimer(GetRoundTimer());
+        SetPresidentPlayer(-1);
+        if(GetPlayerLanguage(playerid) == 0)
+        	SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] 대통령이 접속을 종료해 게임이 중단됩니다. 대통령이 새롭게 선정되면 게임이 재개됩니다.");
+		else
+		{
+		    SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] The game is paused because the president is disconnected.");
+		    SendMessage(playerid, COLOR_PASTEL_YELLOW,"[!] The game will resume when new president is selected.");
+		}
+	}
+	SetPlayerTeam(playerid,NO_TEAM);
+	SetPlayerHasTeam(playerid, false);
+	ResetVariable_6(playerid);
+	HidePlayerTeamTD(playerid);
+	RemovePlayerMapIcon(playerid, 0);
+    //-----
+    new beforeIdx = GetPVarInt(playerid,"MapNumber");
+	SetPVarInt(playerid,"MapNumber",mapid);
+	MapInfo[mapid][PlayerCount] ++;
+	MapInfo[beforeIdx][PlayerCount] --;
+	SetPlayerMarkerForPlayerEx(playerid, GetPlayerColor(playerid));
+	StopAudioStreamForPlayerEx(playerid);
+	PlayAudioStreamForPlayerEx(playerid);
+	DisablePlayerCheckpoint(playerid);
+	SpawnPlayer(playerid);
 }

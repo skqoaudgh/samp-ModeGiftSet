@@ -27,6 +27,9 @@
 
 
 //-----/ Defines /
+	//--/ Key Define /
+#define KEY_PRESSED(%0) ( !(oldkeys & (%0)) && (newkeys & (%0)) )
+
 	//--/ General Colors /
 #define COLOR_WHITE				0xFFFFFFFF
 #define COLOR_GREY 				0xAAAAAAFF
