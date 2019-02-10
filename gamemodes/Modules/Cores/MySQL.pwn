@@ -143,22 +143,39 @@ stock MySQL:GetMySQLHandle(type=1)
 //-----/ CheckMySQLTables /-----------------------------------------------------
 stock CheckMySQLTables()
 {
+	new string[1024];
 	mysql_query(GetMySQLHandle(),"SHOW TABLES LIKE 'user_data'");
 	if(cache_num_rows() == 0)
 	{
 		printf("[mysql] Tables not exist. Creating...");
 		//-----
-		mysql_query(GetMySQLHandle(),"\
+		strcat(string,"\
 			CREATE TABLE `user_data` (\
 			`ID` smallint(6) NOT NULL AUTO_INCREMENT,\
 			`Username` varchar(20) NOT NULL,\
 			`Password` text NOT NULL,\
 			`IP` int(11) NOT NULL COMMENT 'inet_aton/ntoa',\
+			`Skin` int(11) NOT NULL DEFAULT '0',\
+			`Money` int(11) NOT NULL DEFAULT '0',\
+			`Point` int(11) NOT NULL DEFAULT '0',\
+			`Level` int(11) NOT NULL DEFAULT '1',\
+			`Kills` int(11) NOT NULL DEFAULT '0',\
+			`Deaths` int(11) NOT NULL DEFAULT '0',\
+			`Wins` int(11) NOT NULL DEFAULT '0',\
+			`Loses` int(11) NOT NULL DEFAULT '0',\
+		");
+		strcat(string,"\
+			`MaxWinStreak` int(11) NOT NULL DEFAULT '0',\
+			`CurrentWinStreak` int(11) NOT NULL DEFAULT '0',\
+			`ToggleGlobal` int(11) NOT NULL DEFAULT '0',\
+			`TogglePM` int(11) NOT NULL DEFAULT '0',\
+			`ToggleBGM` int(11) NOT NULL DEFAULT '0',\
 			`CreatedTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\
 			`LastUpdate` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',\
 			PRIMARY KEY (ID)\
 			) ENGINE=InnoDB DEFAULT CHARSET=utf8;\
 		");
+		mysql_query(GetMySQLHandle(),string);
 		//-----
 		printf("[mysql] Done.");
 	}

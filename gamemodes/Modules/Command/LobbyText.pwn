@@ -1,7 +1,10 @@
 /*
   [Functions]
-	TogglePlayer3DText(playerid,language)
+	TogglePlayerGameText(playerid,language)
 	SetTingGameNpc()
+	
+	TogglePlayerRankText(playerid,language)
+	UpdateRankText(playerid)
 */
 
 //-----/ Pre-Processing /
@@ -20,11 +23,31 @@
 #define MAX_GAMENPC 6
 
 
-
 //-----/ News /
-	//--/ LobbyText /
-new Text3D:GameText[MAX_PLAYERS][MAX_GAMENPC];
-new GameNPC[MAX_GAMENPC];
+	//--/ Game /
+new
+	Text3D:GameText[MAX_PLAYERS][MAX_GAMENPC],
+	GameNPC[MAX_GAMENPC]
+;
+	//--/ Rank /
+new
+	Text3D:RankLabel[MAX_PLAYERS][3], // 1:최고연승 2:최다승
+	RankText[3][1024],
+	RankerID[10],
+	Float:RankPos[3][3] = {
+	    {1501.50525, -1617.01160, 16.77840},
+	    {1501.50525, -1621.01160, 16.77840},
+	    {1501.50525, -1625.01160, 16.77840}
+	},
+	
+    Text3D:InfoLabel[MAX_PLAYERS][3],
+	InfoText[3][1024],
+	Float:InfoPos[3][3] = {
+	    {1457.40515, -1625.01160, 15.77840},
+	    {1457.40515, -1621.01160, 15.77840},
+	    {1457.40515, -1617.01160, 15.77840}
+	}
+;
 
 
 //-----/ Forwards /
@@ -33,9 +56,9 @@ forward AddHandler_LobbyText();
 forward InitHandler_LobbyText();
 forward KeyHandler_LobbyText(playerid,newkeys,oldkeys);
 	//--/ Functions /
-
-
-
+forward UpdateWinningStreakRankTextQE();
+forward UpdateWinningRankTextQE();
+forward UpdateRatioRankTextQE();
 
 
 //==========/ Callback Functions /==============================================
@@ -52,7 +75,8 @@ public InitHandler_LobbyText()
     new obj;
     //-----
     SetTingGameNpc();
-	
+	UpdateRankText();
+	//-----
 	obj = CreateDynamicObject(19772, 1481.59875, -1625.29370, 13.62970,   0.00000, 0.00000, 90.00000);
 	SetDynamicObjectMaterial(obj, 0, 5174, "warehus_las2", "ws_alley_conc1", 0xFFFFFFFF);
 	obj = CreateDynamicObject(19772, 1477.50537, -1625.29370, 13.62970,   0.00000, 0.00000, 90.00000);
@@ -65,6 +89,13 @@ public InitHandler_LobbyText()
 	SetDynamicObjectMaterial(obj, 0, 5174, "warehus_las2", "ws_alley_conc1", 0xFFFFFFFF);
 	obj = CreateDynamicObject(19772, 1470.82178, -1623.45313, 13.62970,   0.00000, 0.00000, 90.00000);
 	SetDynamicObjectMaterial(obj, 0, 5174, "warehus_las2", "ws_alley_conc1", 0xFFFFFFFF);
+	
+	CreateDynamicObject(3077, 1501.50525, -1625.01160, 13.77840,   0.00000, 0.00000, 90.00000);
+	CreateDynamicObject(3077, 1501.50525, -1621.01160, 13.77840,   0.00000, 0.00000, 90.00000);
+	CreateDynamicObject(3077, 1501.50525, -1617.01160, 13.77840,   0.00000, 0.00000, 90.00000);
+	CreateDynamicObject(3077, 1457.40515, -1625.01160, 13.77840,   0.00000, 0.00000, 90.00000);
+	CreateDynamicObject(3077, 1457.40515, -1621.01160, 13.77840,   0.00000, 0.00000, 90.00000);
+	CreateDynamicObject(3077, 1457.40515, -1617.01160, 13.77840,   0.00000, 0.00000, 90.00000);
 }
 //-----/ KeyHandler_LobbyText /-------------------------------------------------
 public KeyHandler_LobbyText(playerid,newkeys,oldkeys)
@@ -100,8 +131,8 @@ public KeyHandler_LobbyText(playerid,newkeys,oldkeys)
 
 
 //==========/ Functions /=======================================================
-//-----/ TogglePlayer3DText /---------------------------------------------------
-stock TogglePlayer3DText(playerid,language)
+//-----/ TogglePlayerGameText /-------------------------------------------------
+stock TogglePlayerGameText(playerid,language)
 {
 	new string[128];
 	//-----
@@ -183,4 +214,81 @@ stock SetTingGameNpc()
 	SetPlayerColor(GameNPC[5],0x00000000);
 	FCNPC_SetWeapon(GameNPC[5], 3);
 	FCNPC_SetHealth(GameNPC[5], 1000);
+}
+//-----/ TogglePlayerRankText /-------------------------------------------------
+stock TogglePlayerRankText(playerid,language)
+{
+ 	new
+	 	rank_string1[512],
+	 	rank_string2[512],
+	 	rank_string3[512]
+	;
+	//-----
+	if(language == 0)
+	{
+		format(rank_string1,sizeof(rank_string1),""C_AQUA"최고 킬데스 기록\n\n%s",RankText[0]);
+		format(rank_string2,sizeof(rank_string2),""C_AQUA"최고 연승 기록\n\n%s",RankText[1]);
+		format(rank_string3,sizeof(rank_string3),""C_AQUA"최다 우승 기록\n\n%s",RankText[2]);
+	}
+	else
+	{
+		format(rank_string1,sizeof(rank_string1),""C_AQUA"Kill/Death Leaderboard\n\n%s",RankText[0]);
+		format(rank_string2,sizeof(rank_string2),""C_AQUA"Streak Leaderboard\n\n%s",RankText[1]);
+		format(rank_string3,sizeof(rank_string3),""C_AQUA"Winning Leaderboard\n\n%s",RankText[2]);
+	}
+    for(new i=0; i<3; i++)
+        DestroyDynamic3DTextLabel(RankLabel[playerid][i]);
+        
+   	RankLabel[playerid][0] = CreateDynamic3DTextLabel(rank_string1, COLOR_AQUA, RankPos[0][0], RankPos[0][1], RankPos[0][2], 10.0, .playerid = playerid);
+   	RankLabel[playerid][1] = CreateDynamic3DTextLabel(rank_string2, COLOR_AQUA, RankPos[2][0], RankPos[1][1], RankPos[1][2], 10.0, .playerid = playerid);
+   	RankLabel[playerid][2] = CreateDynamic3DTextLabel(rank_string3, COLOR_AQUA, RankPos[2][0], RankPos[2][1], RankPos[2][2], 10.0, .playerid = playerid);
+}
+//-----/ UpdateRankText /-------------------------------------------------------
+stock UpdateRankText()
+{
+	mysql_tquery(GetMySQLHandle(),"SELECT Username,MaxWinStreak FROM user_data Where MaxWinStreak > 0 ORDER BY MaxWinStreak DESC Limit 10","UpdateWinningStreakRankTextQE");
+	mysql_tquery(GetMySQLHandle(),"SELECT Username,Wins FROM user_data WHERE Wins > 0 ORDER BY Wins DESC Limit 1","UpdateWinningRankTextQE");
+	mysql_tquery(GetMySQLHandle(),"SELECT Username,Kills,IF(Deaths = 0, 1, Deaths) as Deaths,IFNULL(Kills/Deaths,0) as Ratio FROM gift.user_data WHERE Kills > 0 ORDER BY Ratio DESC Limit 10","UpdateRatioRankTextQE");
+}
+//-----/ UpdateRatioRankTextQE /------------------------------------------------
+public UpdateRatioRankTextQE()
+{
+	new
+		str[128],ratio
+	;
+	for(new i,r=cache_num_rows(); i<r; i++)
+	{
+		cache_get_value_name(i,"Username",str);
+		cache_get_value_name_int(i,"Ratio",ratio);
+		format(str,sizeof(str),""C_YELLOW"%d. "C_WHITE"%s - "C_YELLOW"%d\n",i+1,str,ratio);
+		strcat(RankText[0],str);
+	}
+}
+//-----/ UpdateWinningStreakRankTextQE /----------------------------------------
+public UpdateWinningStreakRankTextQE()
+{
+	new
+		str[128],score
+	;
+	for(new i,r=cache_num_rows(); i<r; i++)
+	{
+		cache_get_value_name(i,"Username",str);
+		cache_get_value_name_int(i,"MaxWinStreak",score);
+		format(str,sizeof(str),""C_YELLOW"%d. "C_WHITE"%s - "C_YELLOW"%d\n",i+1,str,score);
+		strcat(RankText[1],str);
+	}
+}
+//-----/ UpdateWinningRankTextQE /----------------------------------------------
+public UpdateWinningRankTextQE()
+{
+	new
+		str[128],score
+	;
+	for(new i,r=cache_num_rows(); i<r; i++)
+	{
+		cache_get_value_name(i,"Username",str);
+		cache_get_value_name_int(i,"Wins",score);
+		format(str,sizeof(str),""C_YELLOW"%d. "C_WHITE"%s - "C_YELLOW"%d\n",i+1,str,score);
+		strcat(RankText[2],str);
+	}
 }

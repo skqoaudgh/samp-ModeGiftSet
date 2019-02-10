@@ -256,7 +256,8 @@ public DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[])
 			{
 				SetPVarInt(playerid,"Language",listitem);
 				P_Selected[playerid] = true;
-				TogglePlayer3DText(playerid,listitem);
+				TogglePlayerGameText(playerid,listitem);
+				TogglePlayerRankText(playerid,listitem);
 				if(IsPlayerLoggedIn(playerid))
 					ShowPlayerChangeLanguageDialog(playerid);
 			}
@@ -526,6 +527,8 @@ public LoadPlayerDataQE(playerid)
 	    cache_get_value_name_int(0,"Deaths",value_int); SetPVarInt(playerid,"Deaths",value_int);
         cache_get_value_name_int(0,"Wins",value_int); SetPVarInt(playerid,"Wins",value_int);
 	    cache_get_value_name_int(0,"Loses",value_int); SetPVarInt(playerid,"Loses",value_int);
+	    cache_get_value_name_int(0,"MaxWinStreak",value_int); SetPVarInt(playerid,"MaxWinStreak",value_int);
+	    cache_get_value_name_int(0,"CurrentWinStreak",value_int); SetPVarInt(playerid,"CurrentWinStreak",value_int);
 	    cache_get_value_name_int(0,"ToggleGlobal",value_int); SetPVarInt(playerid,"ToggleGlobal",value_int);
         cache_get_value_name_int(0,"TogglePM",value_int); SetPVarInt(playerid,"TogglePM",value_int);
         cache_get_value_name_int(0,"ToggleBGM",value_int); SetPVarInt(playerid,"ToggleBGM",value_int);
@@ -536,7 +539,8 @@ public LoadPlayerDataQE(playerid)
 		//-----
 		SetPlayerMoney(playerid,GetPVarInt(playerid,"Money"));
 		SetPlayerScore(playerid,GetPVarInt(playerid,"Point"));
-		TogglePlayer3DText(playerid,GetPlayerLanguage(playerid));
+		TogglePlayerGameText(playerid,GetPlayerLanguage(playerid));
+		TogglePlayerRankText(playerid,GetPlayerLanguage(playerid));
 		//-----
 		P_LoggedIn[playerid] = true;
 		SpawnPlayerEx(playerid);
@@ -560,6 +564,8 @@ stock SavePlayerData(playerid)
         format(string,sizeof(string),"%s,Deaths=%d",string,GetPVarInt(playerid,"Deaths"));
         format(string,sizeof(string),"%s,Wins=%d",string,GetPVarInt(playerid,"Wins"));
         format(string,sizeof(string),"%s,Loses=%d",string,GetPVarInt(playerid,"Loses"));
+        format(string,sizeof(string),"%s,MaxWinStreak=%d",string,GetPVarInt(playerid,"MaxWinStreak"));
+        format(string,sizeof(string),"%s,CurrentWinStreak=%d",string,GetPVarInt(playerid,"CurrentWinStreak"));
 		format(string,sizeof(string),"%s,ToggleGlobal=%d",string,GetPVarInt(playerid,"ToggleGlobal"));
         format(string,sizeof(string),"%s,TogglePM=%d",string,GetPVarInt(playerid,"TogglePM"));
         format(string,sizeof(string),"%s,ToggleBGM=%d",string,GetPVarInt(playerid,"ToggleBGM"));
