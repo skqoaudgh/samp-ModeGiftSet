@@ -62,6 +62,7 @@ public InitHandler_ServerSide()
 	ShowPlayerMarkers(PLAYER_MARKERS_MODE_GLOBAL);
 	AllowInteriorWeapons(0);
 	EnableStuntBonusForAll(0);
+	UsePlayerPedAnims();
 	//DisableInteriorEnterExits();
 	//ManualVehicleEngineAndLights();
 	//------
