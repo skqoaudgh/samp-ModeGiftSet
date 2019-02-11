@@ -5,6 +5,7 @@
 	
 	TogglePlayerRankText(playerid,language)
 	UpdateRankText(playerid)
+	TogglePlayerLobbyInfoText()
 */
 
 //-----/ Pre-Processing /
@@ -33,7 +34,6 @@ new
 new
 	Text3D:RankLabel[MAX_PLAYERS][3], // 1:최고연승 2:최다승
 	RankText[3][1024],
-	RankerID[10],
 	Float:RankPos[3][3] = {
 	    {1501.50525, -1617.01160, 16.77840},
 	    {1501.50525, -1621.01160, 16.77840},
@@ -291,4 +291,32 @@ public UpdateWinningRankTextQE()
 		format(str,sizeof(str),""C_YELLOW"%d. "C_WHITE"%s - "C_YELLOW"%d\n",i+1,str,score);
 		strcat(RankText[2],str);
 	}
+}
+//-----/ TogglePlayerInfoText /-------------------------------------------------
+stock TogglePlayerLobbyInfoText(playerid, language)
+{
+ 	new
+	 	info_string1[512],
+	 	info_string2[512],
+	 	info_string3[512]
+	;
+	//-----
+	if(language == 0)
+	{
+		format(info_string1,sizeof(info_string1),""C_AQUA"새소식\n\n%s",InfoText[0]);
+		format(info_string2,sizeof(info_string2),""C_AQUA"새소식\n\n%s",InfoText[1]);
+		format(info_string3,sizeof(info_string3),""C_AQUA"규칙\n\n%s",InfoText[2]);
+	}
+	else
+	{
+		format(info_string1,sizeof(info_string1),""C_AQUA"News\n\n%s",InfoText[0]);
+		format(info_string2,sizeof(info_string2),""C_AQUA"News\n\n%s",InfoText[1]);
+		format(info_string3,sizeof(info_string3),""C_AQUA"Rules\n\n%s",InfoText[2]);
+	}
+    for(new i=0; i<3; i++)
+        DestroyDynamic3DTextLabel(InfoLabel[playerid][i]);
+
+   	InfoLabel[playerid][0] = CreateDynamic3DTextLabel(info_string1, COLOR_AQUA, InfoPos[0][0], InfoPos[0][1], InfoPos[0][2], 10.0, .playerid = playerid);
+   	InfoLabel[playerid][1] = CreateDynamic3DTextLabel(info_string2, COLOR_AQUA, InfoPos[2][0], InfoPos[1][1], InfoPos[1][2], 10.0, .playerid = playerid);
+   	InfoLabel[playerid][2] = CreateDynamic3DTextLabel(info_string3, COLOR_AQUA, InfoPos[2][0], InfoPos[2][1], InfoPos[2][2], 10.0, .playerid = playerid);
 }

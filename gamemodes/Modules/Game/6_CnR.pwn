@@ -910,6 +910,7 @@ stock ReleaseFromJail()
 			SetPlayerInterior(pid, 6);
 			SetPlayerPos(pid, 268.8174,78.0760,1001.0390);
 			SetPlayerFacingAngle(pid, 89.9040);
+			SetPlayerTeam(pid,2);
 			GivePlayerWeapon(pid, 24, 56);
 		}
 	}

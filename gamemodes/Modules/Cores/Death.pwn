@@ -57,7 +57,7 @@ public DeathHandler_Death(playerid,killerid,reason)
 	if(killerid != INVALID_PLAYER_ID)
 	{
 	    if(GetPlayerLanguage(playerid) == 0)
-			format(string,sizeof(string),"* %s(%d) ¥‘¿Ã %s(%d) ¥‘¿ª %s (¿∏)∑Œ ¡◊ø¥Ω¿¥œ¥Ÿ (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
+			format(string,sizeof(string),"* %s(%d)¥‘¿Ã %s(%d)¥‘¿ª %s∑Œ ¡◊ø¥Ω¿¥œ¥Ÿ (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
 		else
 		    format(string,sizeof(string),"* %s(%d) has killed %s(%d) with %s (Point +1, Money +100).",GetPlayerNameEx(killerid),killerid,GetPlayerNameEx(playerid),playerid,WeaponName);
 		SendMessage(2, COLOR_RED, string);

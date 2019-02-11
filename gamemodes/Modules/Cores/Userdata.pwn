@@ -258,6 +258,7 @@ public DialogHandler_Userdata(playerid,dialogid,response,listitem,inputtext[])
 				P_Selected[playerid] = true;
 				TogglePlayerGameText(playerid,listitem);
 				TogglePlayerRankText(playerid,listitem);
+				TogglePlayerLobbyInfoText(playerid,listitem);
 				if(IsPlayerLoggedIn(playerid))
 					ShowPlayerChangeLanguageDialog(playerid);
 			}
@@ -541,6 +542,7 @@ public LoadPlayerDataQE(playerid)
 		SetPlayerScore(playerid,GetPVarInt(playerid,"Point"));
 		TogglePlayerGameText(playerid,GetPlayerLanguage(playerid));
 		TogglePlayerRankText(playerid,GetPlayerLanguage(playerid));
+		TogglePlayerLobbyInfoText(playerid,GetPlayerLanguage(playerid));
 		//-----
 		P_LoggedIn[playerid] = true;
 		SpawnPlayerEx(playerid);
