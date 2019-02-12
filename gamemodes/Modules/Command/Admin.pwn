@@ -264,9 +264,9 @@ public CommandHandler_Admin(playerid,cmdtext[])
 		if(!strlen(cmd))
 		{
 		    if(GetPlayerLanguage(playerid) == 0)
-		    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 사용법: /신고 [번호] [내용]");
+		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: /신고 [번호] [내용]");
 			else
-			    return SendClientMessage(playerid,COLOR_WHITE,"[!] Usage: /report [playerid or part of name] [Text]");
+			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: /report [playerid or part of name] [Text]");
 		}
 		new destid = strval(cmd);
 		if(destid == INVALID_PLAYER_ID)
@@ -280,9 +280,9 @@ public CommandHandler_Admin(playerid,cmdtext[])
 		if(!strlen(cmd))
 		{
 		    if(GetPlayerLanguage(playerid) == 0)
-		    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 사용법: /신고 [번호] [내용]");
+		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: /신고 [번호] [내용]");
 			else
-			    return SendClientMessage(playerid,COLOR_WHITE,"[!] Usage: /report [playerid or part of name] [Text]");
+			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: /report [playerid or part of name] [Text]");
 		}
 		//-----
 		strcpy(cmd,stringslice_c(cmdtext,2));

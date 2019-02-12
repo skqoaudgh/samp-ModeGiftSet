@@ -622,5 +622,5 @@ stock SpawnPlayerEx(playerid)
 	SetPlayerVirtualWorld(playerid, 0);
 
 	SetPVarInt(playerid,"MapNumber",0);
-	SetPlayerMarkerForPlayerEx(playerid, GetPlayerColor(playerid));
+	SetPlayerMarkerForPlayerEx(playerid);
 }

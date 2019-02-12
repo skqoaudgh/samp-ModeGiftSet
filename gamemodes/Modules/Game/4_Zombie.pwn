@@ -62,28 +62,28 @@ public AddHandler_4_Zombie()
 //-----/ InitHandler_4_Zombie /----------------------------------------------------
 public InitHandler_4_Zombie()
 {
-	CreateDynamicObject(3279, 816.16840, -1120.27917, 25.13690,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3279, 816.16840, -1085.79834, 25.13690,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3885, 816.77594, -1103.24243, 34.57800,   0.00000, 0.00000, 75.00000, 4);
-	CreateDynamicObject(8483, 948.87341, -1103.87585, 29.26420,   0.00000, 0.00000, 180.00000, 4);
-	CreateDynamicObject(3461, 840.64313, -1110.98193, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 854.12952, -1110.78467, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 869.38416, -1110.44836, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 881.27240, -1109.90344, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 905.52271, -1109.60938, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 921.29041, -1109.16052, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 841.22156, -1093.65942, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 856.00781, -1093.51196, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 868.54529, -1092.87341, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 880.11578, -1092.23254, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 907.07562, -1091.79224, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 920.96588, -1092.43201, 24.65940,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 822.55713, -1119.04382, 31.63860,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3461, 822.58112, -1086.78748, 31.63860,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(2780, 822.66559, -1103.05457, 14.79770,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(3528, 823.67914, -1103.43689, 31.73759,   0.00000, 0.00000, 0.00000, 4);
-	CreateDynamicObject(7657, 831.31250, -1113.97949, 25.11190,   -60.00000, 90.00000, 90.00000, 4);
-	CreateDynamicObject(7657, 831.31250, -1091.82861, 25.11190,   -60.00000, 90.00000, 90.00000, 4);
+	CreateDynamicObject(3279, 816.16840, -1120.27917, 25.13690,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3279, 816.16840, -1085.79834, 25.13690,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3885, 816.77594, -1103.24243, 34.57800,   0.00000, 0.00000, 75.00000, .worldid=4);
+	CreateDynamicObject(8483, 948.87341, -1103.87585, 29.26420,   0.00000, 0.00000, 180.00000, .worldid=4);
+	CreateDynamicObject(3461, 840.64313, -1110.98193, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 854.12952, -1110.78467, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 869.38416, -1110.44836, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 881.27240, -1109.90344, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 905.52271, -1109.60938, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 921.29041, -1109.16052, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 841.22156, -1093.65942, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 856.00781, -1093.51196, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 868.54529, -1092.87341, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 880.11578, -1092.23254, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 907.07562, -1091.79224, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 920.96588, -1092.43201, 24.65940,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 822.55713, -1119.04382, 31.63860,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3461, 822.58112, -1086.78748, 31.63860,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(2780, 822.66559, -1103.05457, 14.79770,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(3528, 823.67914, -1103.43689, 31.73759,   0.00000, 0.00000, 0.00000, .worldid=4);
+	CreateDynamicObject(7657, 831.31250, -1113.97949, 25.11190,   -60.00000, 90.00000, 90.00000, .worldid=4);
+	CreateDynamicObject(7657, 831.31250, -1091.82861, 25.11190,   -60.00000, 90.00000, 90.00000, .worldid=4);
 }
 //-----/ DisconnectHandler_4_Zombie /-------------------------------------------
 public DisconnectHandler_4_Zombie(playerid,reason)
@@ -110,7 +110,7 @@ public SpawnHandler_4_Zombie(playerid)
 		    SendClientMessage(playerid,COLOR_WHITE,"You have to survive from zombies in a fortified graveyard.");
 		}
 		//-----
-		SetPlayerVirtualWorld(playerid, playerid+13);
+		SetPlayerVirtualWorld(playerid, 4);
 		SetPlayerInterior(playerid, 0);
         SetPlayerWorldBounds(playerid,939.6846, 808.0087, -1056.0449, -1129.5148);
         SetPlayerTime(playerid, 0, 0);
@@ -150,7 +150,7 @@ public SpawnHandler_4_Zombie(playerid)
 		    GameTextForPlayer(playerid,"~b~Human", 10000, 3);
 		    SetPlayerTeam(playerid, 1);
 		    SetPlayerSkin(playerid, 68);
-			SetPlayerVirtualWorld(playerid, 4);
+			SetPlayerVirtualWorld(playerid, 13+playerid);
 			SetPlayerPos(playerid,823.6836,-1102.9181,25.7891);
 			SetPlayerFacingAngle(playerid,265.1960);
 			SetPlayerCameraPos(playerid,827.4348,-1102.9203,28.1943);

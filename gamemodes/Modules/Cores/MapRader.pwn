@@ -44,20 +44,20 @@ public AddHandler_MapRader()
 
 //==========/ Functions /=======================================================
 //-----/ SetPlayerMarkerForPlayerEx /-------------------------------------------
-stock SetPlayerMarkerForPlayerEx(playerid, color) // pid°¡ playerid¸¦ color »ö±ò·Î º½
+stock SetPlayerMarkerForPlayerEx(playerid) // pid°¡ playerid¸¦ color »ö±ò·Î º½
 {
 	for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
 	{
 		pid = GetConnectedPlayerID(i);
 		if(GetPlayerMap(pid) == GetPlayerMap(playerid)) // °°Àº ¸Ê¿¡ ÀÖ´Â »ç¶÷µé¸¸ »ö±ò º¸ÀÌ°Ô
 		{
-		    SetPlayerMarkerForPlayer(pid, playerid, color);
+		    SetPlayerMarkerForPlayer(pid, playerid, GetPlayerColor(playerid));
 		    SetPlayerMarkerForPlayer(playerid, pid, GetPlayerColor(pid));
 		}
-		else if(GetPlayerMap(pid) != GetPlayerMap(playerid) || IsPlayerNPC(playerid))
+		else if(GetPlayerMap(pid) != GetPlayerMap(playerid) || IsPlayerNPC(pid))
 		{
-			SetPlayerMarkerForPlayer(pid, playerid, color | 0x000000FF);
-			SetPlayerMarkerForPlayer(playerid, pid, color | 0x000000FF);
+			SetPlayerMarkerForPlayer(pid, playerid, 0x00000000);
+			SetPlayerMarkerForPlayer(playerid, pid, 0x00000000);
 		}
 	}
 }

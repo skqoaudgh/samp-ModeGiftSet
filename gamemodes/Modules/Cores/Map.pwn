@@ -184,7 +184,7 @@ stock ChangePlayerMap(playerid, mapid)
 	SetPVarInt(playerid,"MapNumber",mapid);
 	MapInfo[mapid][PlayerCount] ++;
 	MapInfo[beforeIdx][PlayerCount] --;
-	SetPlayerMarkerForPlayerEx(playerid, GetPlayerColor(playerid));
+	SetPlayerMarkerForPlayerEx(playerid);
 	StopAudioStreamForPlayerEx(playerid);
 	PlayAudioStreamForPlayerEx(playerid);
 	DisablePlayerCheckpoint(playerid);

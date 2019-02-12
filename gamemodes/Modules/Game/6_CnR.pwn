@@ -489,7 +489,7 @@ public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
 			return 1;
 		}
 		
-		if(!strcmp("/무기구입",cmd) || !strcmp("/buygun",cmd))
+		if(!strcmp("/무기구입",cmd) || !strcmp("/buygun",cmd) || !strcmp("/무기구매",cmd) || !strcmp("/gunbuy",cmd))
 		{
 		    ShowPlayerWeaponDialog(playerid);
 		    return 1;
@@ -540,14 +540,14 @@ public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
 					if(Player_Gang_ID[playerid] == Player_Gang_ID[pid])
 					{
 					    if(GetPlayerLanguage(pid) == 0)
-							format(string,sizeof(string),"[!] %s(%d) 님이 갱에 합류하였습니다.",GetPlayerNameEx(playerid),playerid);
+							format(string,sizeof(string),"[!] %s(%d)님이 갱에 합류하였습니다.",GetPlayerNameEx(playerid),playerid);
 						else
 						  	format(string,sizeof(string),"[!] %s(%d) have joined the gang.",GetPlayerNameEx(playerid),playerid);
 						SendClientMessage(pid,COLOR_WHITE,string);
 					}
 				}
 			    if(GetPlayerLanguage(playerid) == 0)
-					format(string,sizeof(string),"[!] %s(%d) 님의 갱에 합류하였습니다.",GetPlayerNameEx(playerid),playerid);
+					format(string,sizeof(string),"[!] %s(%d)님의 갱에 합류하였습니다.",GetPlayerNameEx(playerid),playerid);
 				else
 				  	format(string,sizeof(string),"[!] You %s(%d) have joined %s(%d)`s gang",GetPlayerNameEx(playerid),playerid,GetPlayerNameEx(Player_Gang_ID[playerid]-1),Player_Gang_ID[playerid]-1);
 				SendClientMessage(playerid,COLOR_WHITE,string);
@@ -580,7 +580,7 @@ public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
 					else
 					    return SendClientMessage(playerid,COLOR_WHITE,"[!] You entered invalid playerid.");
 				}
-				if(Player_Gang_ID[destid] != 0)
+				if(Player_Gang_ID[destid] != Player_Gang_ID[playerid])
 				{
 				    if(GetPlayerLanguage(playerid) == 0)
 				    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 그 유저는 같은 갱에 속해있지 않습니다.");
@@ -601,7 +601,7 @@ public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
 				    SendClientMessage(destid,COLOR_WHITE,"[!] You have been kicked by leader from gang.");
 				
 			    if(GetPlayerLanguage(playerid) == 0)
-			        format(string,sizeof(string),"[!] 갱 리더가 %s(%d) 님을 갱에서 추방하였습니다.",GetPlayerNameEx(destid),destid);
+			        format(string,sizeof(string),"[!] 갱 리더가 %s(%d)님을 갱에서 추방하였습니다.",GetPlayerNameEx(destid),destid);
 				else
 				    format(string,sizeof(string),"[!] Your gang leader kick %s(%d) from your gang.",GetPlayerNameEx(destid),destid);
 				for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
@@ -648,13 +648,13 @@ public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
 				}
 				//-----
 			    if(GetPlayerLanguage(destid) == 0)
-			        format(string,sizeof(string),"[!] %s(%d) 님이 갱에 초대하였습니다. 수락하려면 [/갱 수락]을 입력해주세요.",GetPlayerNameEx(playerid),playerid);
+			        format(string,sizeof(string),"[!] %s(%d)님이 갱에 초대하였습니다. 수락하려면 [/갱 수락]을 입력해주세요.",GetPlayerNameEx(playerid),playerid);
 				else
 				    format(string,sizeof(string),"[!] %s(%d) have invited you to the gang. If you want to join, Enter [/gang join]",GetPlayerNameEx(playerid),playerid);
 				SendClientMessage(destid,COLOR_WHITE,string);
 				
 			    if(GetPlayerLanguage(playerid) == 0)
-			        format(string,sizeof(string),"[!] 갱 리더가 %s(%d) 님을 갱에 초대하였습니다.",GetPlayerNameEx(destid),destid);
+			        format(string,sizeof(string),"[!] 갱 리더가 %s(%d)님을 갱에 초대하였습니다.",GetPlayerNameEx(destid),destid);
 				else
 				    format(string,sizeof(string),"[!] Your gang leader have invited %s(%d) to your gang.",GetPlayerNameEx(destid),destid);
 				for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
@@ -686,7 +686,7 @@ public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
 						if(Player_Gang_ID[playerid] == Player_Gang_ID[pid])
 						{
 						    if(GetPlayerLanguage(pid) == 0)
-								format(string,sizeof(string),"[!] %s(%d) 님이 갱에 탈퇴하였습니다.",GetPlayerNameEx(playerid),playerid);
+								format(string,sizeof(string),"[!] %s(%d)님이 갱에 탈퇴하였습니다.",GetPlayerNameEx(playerid),playerid);
 							else
 							  	format(string,sizeof(string),"[!] %s(%d) have left the gang.",GetPlayerNameEx(playerid),playerid);
 							SendClientMessage(pid,COLOR_WHITE,string);
@@ -721,9 +721,9 @@ public CommandHandler_6_CnR(playerid,cmdtext[]) //return 1: processed
 			if(!strlen(cmd))
 			{
 			    if(GetPlayerLanguage(playerid) == 0)
-			    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 사용법: (/갱)채팅 [내용]");
+			    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: (/갱)채팅 [내용]");
 				else
-				    return SendClientMessage(playerid,COLOR_WHITE,"[!] Usage: (/g)ang(c)hat [Text]");
+				    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: (/g)ang(c)hat [Text]");
 			}
 			//-----
 			strcpy(string,stringslice_c(cmdtext,1));
@@ -765,7 +765,7 @@ public EnterCPHandler_6_CnR(playerid)
 					if(GetPlayerMap(pid) == 6)
 					{
 						if(GetPlayerLanguage(pid) == 0)
-							SendClientMessage(playerid,COLOR_YELLOW, "[!] 한 도둑이 석방된 도둑들을 풀어주는데 성공했습니다!");
+							SendClientMessage(playerid,COLOR_YELLOW, "[!] 한 도둑이 수감된 도둑들을 풀어주는데 성공했습니다!");
 						else
 						    SendClientMessage(playerid,COLOR_YELLOW, "[!] A robber succeeded in freeing the freed robbers!");
 					}

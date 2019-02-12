@@ -56,6 +56,45 @@ public CommandHandler_Chatting(playerid,cmdtext[])
 		string[384],temp[384]
 	;
 	cmd = strtok(cmdtext,idx);
+	if(!strcmp("/t",cmd,true) || !strcmp("/team",cmd,true) || !strcmp("/teamchat",cmd,true) || !strcmp("/tc",cmd,true))
+	{
+	    /*
+		if(GetPVarInt(playerid,"Mute"))
+		{
+			SendClientMessage(playerid,COLOR_WHITE,"[!] 관리자에 의해 말을 할 수 없는 상태입니다.");
+			return 0;
+		}
+		*/
+		if(GetPlayerMap(playerid) == 0)
+		{
+		    if(GetPlayerLanguage(playerid) == 0)
+		    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 로비에서는 사용할 수 없습니다.");
+			else
+			    return SendClientMessage(playerid,COLOR_WHITE,"[!] You can`t use this command in lobby.");
+		}
+		cmd = strtok(cmdtext,idx);
+		if(!strlen(cmd))
+		{
+		    if(GetPlayerLanguage(playerid) == 0)
+		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: (/t)eam(c)hat [내용]");
+			else
+			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: (/t)eam(c)hat [Text]");
+		}
+		strcpy(cmd,stringslice_c(cmdtext,1));
+		for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
+		{
+			pid = GetConnectedPlayerID(i);
+			if(GetPlayerTeam(pid) == GetPlayerTeam(playerid))
+			{
+			    if(GetPlayerLanguage(pid) == 0)
+			    	format(string,sizeof(string),"[팀채팅] %s(%d): %s",GetPlayerNameEx(playerid),playerid,cmd);
+				else
+				    format(string,sizeof(string),"[TeamChat] %s(%d): %s",GetPlayerNameEx(playerid),playerid,cmd);
+			    SendClientMessage(pid,0xFFBC42FF,string);
+			}
+		}
+		return 1;
+	}
 	if(!strcmp("/g",cmd,true) || !strcmp("/global",cmd,true) || !strcmp("/o",cmd,true) || !strcmp("/ooc",cmd,true))
 	{
 	    /*
@@ -76,11 +115,11 @@ public CommandHandler_Chatting(playerid,cmdtext[])
 		if(!strlen(cmd))
 		{
 		    if(GetPlayerLanguage(playerid) == 0)
-		    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 사용법: (/g)lobal [내용]");
+		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: (/g)lobal [내용]");
 			else
-			    return SendClientMessage(playerid,COLOR_WHITE,"[!] Usage: (/g)lobal [Text]");
+			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: (/g)lobal [Text]");
 		}
-		strcpy(string,stringslice_c(cmdtext,1));
+		strcpy(cmd,stringslice_c(cmdtext,1));
   		
 		for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
 		{
@@ -88,9 +127,9 @@ public CommandHandler_Chatting(playerid,cmdtext[])
 			if(GetPVarInt(pid,"ToggleGlobal"))
 			{
 			    if(GetPlayerLanguage(pid) == 0)
-			    	format(string,sizeof(string),"[전체] %s(%d): %s",GetPlayerNameEx(playerid),playerid,string);
+			    	format(string,sizeof(string),"[전체] %s(%d): %s",GetPlayerNameEx(playerid),playerid,cmd);
 				else
-				    format(string,sizeof(string),"[Global] %s(%d): %s",GetPlayerNameEx(playerid),playerid,string);
+				    format(string,sizeof(string),"[Global] %s(%d): %s",GetPlayerNameEx(playerid),playerid,cmd);
 			    SendClientMessage(pid,0xFDE8CDFF,string);
 			}
 		}
@@ -118,9 +157,9 @@ public CommandHandler_Chatting(playerid,cmdtext[])
 		if(!strlen(cmd))
 		{
 		    if(GetPlayerLanguage(playerid) == 0)
-		    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 사용법: /pm [유저번호] [내용]");
+		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: /pm [유저번호] [내용]");
 			else
-			    return SendClientMessage(playerid,COLOR_WHITE,"[!] Usage: /pm [playerid] [Text]");
+			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: /pm [playerid] [Text]");
 		}
 			
 		new destid = strval(cmd);
@@ -152,9 +191,9 @@ public CommandHandler_Chatting(playerid,cmdtext[])
 		if(!strlen(temp))
 		{
 		    if(GetPlayerLanguage(playerid) == 0)
-		    	return SendClientMessage(playerid,COLOR_WHITE,"[!] 사용법: /pm [유저번호] [내용]");
+		    	return SendClientMessage(playerid,COLOR_GREY,"[!] 사용법: /pm [유저번호] [내용]");
 			else
-			    return SendClientMessage(playerid,COLOR_WHITE,"[!] Usage: /pm [playerid] [Text]");
+			    return SendClientMessage(playerid,COLOR_GREY,"[!] Usage: /pm [playerid] [Text]");
 		}
 		//-----
 		format(string,sizeof(string),"[PM] >> %s(%d): %s",GetPlayerNameEx(destid),destid,temp);
