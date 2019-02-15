@@ -49,7 +49,7 @@ stock SetPlayerMarkerForPlayerEx(playerid) // pid°¡ playerid¸¦ color »ö±ò·Î º½
 	for(new i,pid,t=GetConnectedPlayers(); i<t; i++)
 	{
 		pid = GetConnectedPlayerID(i);
-		if(playerid == pid) continue;
+		if(playerid == pid || IsPlayerNPC(pid)) continue;
 		if(GetPlayerMap(pid) == GetPlayerMap(playerid)) // °°Àº ¸Ê¿¡ ÀÖ´Â »ç¶÷µé¸¸ »ö±ò º¸ÀÌ°Ô
 		{
 		    SetPlayerMarkerForPlayer(pid, playerid, GetPlayerColor(playerid));

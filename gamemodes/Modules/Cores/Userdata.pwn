@@ -81,10 +81,6 @@ public ConnectHandler_Userdata(playerid)
 		SetPlayerColor(playerid,COLOR_GREY);
 		CheckPlayerAccount(playerid);
 		strcpy(P_IP[playerid],GetPlayerIP(playerid));
-		//-----
-		for(new i=0; i<MAX_PLAYERS; i++)
-		    if(IsPlayerNPC(i))
-		        SetPlayerMarkerForPlayer(playerid, i, 0x00000000);
 	}
 }
 //-----/ DisconnectHandler_Userdata /-------------------------------------------
@@ -616,6 +612,8 @@ stock SpawnPlayerEx(playerid)
 	SetPlayerColor(playerid,COLOR_WHITE);
 	SetSpawnInfo(playerid, 0,0, 1479.5483,-1600.0005,13.5469,0.0, 0,0,0,0,0,0);
 	SpawnPlayer(playerid);
+	//-----
+	HideNpcMarkerForPlayer(playerid);
 	//-----
 	SetPlayerPos(playerid, 1479.5483,-1600.0005,13.5469);
 	SetPlayerFacingAngle(playerid, 180.2658);

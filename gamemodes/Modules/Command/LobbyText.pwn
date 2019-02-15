@@ -6,6 +6,7 @@
 	TogglePlayerRankText(playerid,language)
 	UpdateRankText(playerid)
 	TogglePlayerLobbyInfoText()
+	HideNpcMarkerForPlayer(playerid)
 */
 
 //-----/ Pre-Processing /
@@ -319,4 +320,10 @@ stock TogglePlayerLobbyInfoText(playerid, language)
    	InfoLabel[playerid][0] = CreateDynamic3DTextLabel(info_string1, COLOR_AQUA, InfoPos[0][0], InfoPos[0][1], InfoPos[0][2], 10.0, .playerid = playerid);
    	InfoLabel[playerid][1] = CreateDynamic3DTextLabel(info_string2, COLOR_AQUA, InfoPos[2][0], InfoPos[1][1], InfoPos[1][2], 10.0, .playerid = playerid);
    	InfoLabel[playerid][2] = CreateDynamic3DTextLabel(info_string3, COLOR_AQUA, InfoPos[2][0], InfoPos[2][1], InfoPos[2][2], 10.0, .playerid = playerid);
+}
+//-----/ HideNpcMarkerForPlayer /-----------------------------------------------
+stock HideNpcMarkerForPlayer(playerid)
+{
+	for(new i=0; i<MAX_GAMENPC; i++)
+	    SetPlayerMarkerForPlayer(playerid,GameNPC[i],0x00000000);
 }
