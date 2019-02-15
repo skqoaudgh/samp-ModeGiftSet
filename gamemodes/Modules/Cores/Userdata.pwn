@@ -81,6 +81,10 @@ public ConnectHandler_Userdata(playerid)
 		SetPlayerColor(playerid,COLOR_GREY);
 		CheckPlayerAccount(playerid);
 		strcpy(P_IP[playerid],GetPlayerIP(playerid));
+		//-----
+		for(new i=0; i<MAX_PLAYERS; i++)
+		    if(IsPlayerNPC(i))
+		        SetPlayerMarkerForPlayer(playerid, i, 0x00000000);
 	}
 }
 //-----/ DisconnectHandler_Userdata /-------------------------------------------
