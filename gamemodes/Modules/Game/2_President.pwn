@@ -608,6 +608,15 @@ public DeathHandler_2_President(playerid,killerid,reason)
 				{
 		    		GivePlayerPoint(pid, 10);
 					SetPVarInt(pid,"Money",GetPVarInt(pid,"Money")+1000);
+                    SetPVarInt(pid,"Wins",GetPVarInt(pid,"Wins")+1);
+                    SetPVarInt(pid,"CurrentWinStreak",GetPVarInt(pid,"CurrentWinStreak")+1);
+                    if(GetPVarInt(pid,"MaxWinStreak") < GetPVarInt(pid,"CurrentWinStreak"))
+                        SetPVarInt(pid,"MaxWinStreak",GetPVarInt(pid,"CurrentWinStreak"));
+				}
+				else
+				{
+				    SetPVarInt(pid,"Loses",GetPVarInt(pid,"Loses")+1);
+				    SetPVarInt(pid,"CurrentWinStreak",0);
 				}
 			}
   		}
@@ -812,6 +821,15 @@ public Round()
 				{
 		    		GivePlayerPoint(pid, 10);
 					SetPVarInt(pid,"Money",GetPVarInt(pid,"Money")+1000);
+                    SetPVarInt(pid,"Wins",GetPVarInt(pid,"Wins")+1);
+                    SetPVarInt(pid,"CurrentWinStreak",GetPVarInt(pid,"CurrentWinStreak")+1);
+                    if(GetPVarInt(pid,"MaxWinStreak") < GetPVarInt(pid,"CurrentWinStreak"))
+                    	SetPVarInt(pid,"MaxWinStreak",GetPVarInt(pid,"CurrentWinStreak"));
+				}
+				else
+				{
+				    SetPVarInt(pid,"Loses",GetPVarInt(pid,"Loses")+1);
+				    SetPVarInt(pid,"CurrentWinStreak",0);
 				}
 			}
   		}

@@ -158,17 +158,17 @@ stock TogglePlayerGameText(playerid,language)
 	}
 	else
 	{
-		format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Sperm Adventure : Remake\n"C_YELLOW"%d Playing",GetMapPlayingCount(1));
+		format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Sperm Adventure : Remake\n"C_YELLOW"%d Players",GetMapPlayingCount(1));
 	    GameText[playerid][0] = CreateDynamic3DTextLabel(string, COLOR_AQUA, 0.0, 0.0, 0.0, 10.0, GameNPC[0], .playerid = playerid);
-	    format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Protect President\n"C_YELLOW"%d Playing",GetMapPlayingCount(2));
+	    format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Protect President\n"C_YELLOW"%d Players",GetMapPlayingCount(2));
 	    GameText[playerid][1] = CreateDynamic3DTextLabel(string, COLOR_AQUA, 0.0, 0.0, 0.0, 10.0, GameNPC[1], .playerid = playerid);
-	    format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Fuck Mode Returned: Shovel DM\n"C_YELLOW"%d Playing",GetMapPlayingCount(3));
+	    format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Fuck Mode Returned: Shovel DM\n"C_YELLOW"%d Players",GetMapPlayingCount(3));
 	    GameText[playerid][2] = CreateDynamic3DTextLabel(string, COLOR_AQUA, 0.0, 0.0, 0.0, 10.0, GameNPC[2], .playerid = playerid);
-	    format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Fuck Mode Returned: Zombie Survival\n"C_YELLOW"%d Playing",GetMapPlayingCount(4));
+	    format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Fuck Mode Returned: Zombie Survival\n"C_YELLOW"%d Players",GetMapPlayingCount(4));
 	    GameText[playerid][3] = CreateDynamic3DTextLabel(string, COLOR_AQUA, 0.0, 0.0, 0.0, 10.0, GameNPC[3], .playerid = playerid);
-	    format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Fuck Mode Returned: 69 Scamper\n"C_YELLOW"%d Playing",GetMapPlayingCount(5));
+	    format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Fuck Mode Returned: 69 Scamper\n"C_YELLOW"%d Players",GetMapPlayingCount(5));
 	    GameText[playerid][4] = CreateDynamic3DTextLabel(string, COLOR_AQUA, 0.0, 0.0, 0.0, 10.0, GameNPC[4], .playerid = playerid);
-	    format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Cops and Robbers\n"C_YELLOW"%d Playing",GetMapPlayingCount(6));
+	    format(string,sizeof(string),""C_YELLOW"Click to play\n"C_AQUA"Cops and Robbers\n"C_YELLOW"%d Players",GetMapPlayingCount(6));
 	    GameText[playerid][5] = CreateDynamic3DTextLabel(string, COLOR_AQUA, 0.0, 0.0, 0.0, 10.0, GameNPC[5], .playerid = playerid);
 	    for(new i=0; i<MAX_GAMENPC; i++)
 	        Streamer_SetFloatData(STREAMER_TYPE_3D_TEXT_LABEL, GameText[playerid][i], E_STREAMER_ATTACH_OFFSET_Z, 0.3);

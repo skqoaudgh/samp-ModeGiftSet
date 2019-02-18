@@ -50,13 +50,13 @@
 #include "./Modules/Cores/Userdata.pwn"
 #include "./Modules/Cores/Map.pwn"
 #include "./Modules/Cores/Death.pwn"
-#include "./Modules/Cores/MapRader.pwn"
 #include "./Modules/Cores/Object.pwn"
 		// Functions //
 #include "./Modules/Functions/ExtendedFunc.pwn"
 #include "./Modules/Functions/FreezePlayer.pwn"
 #include "./Modules/Functions/BGM.pwn"
 #include "./Modules/Functions/InfoText.pwn"
+#include "./Modules/Functions/MapRader.pwn"
 		// Command //
 #include "./Modules/Command/Chatting.pwn"
 #include "./Modules/Command/Admin.pwn"
